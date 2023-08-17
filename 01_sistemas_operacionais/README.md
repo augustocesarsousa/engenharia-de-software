@@ -1,0 +1,38 @@
+# Sistemas Operacionais
+
+## Introdução aos sistemas operacionais
+
+- Primeira fase dos computadores:
+  - Perído de 1945 e 1955;
+  - Computadores utilizavam válvulas;
+  - Não possuiam sistema operacional;
+  - Utilização de comando bit-a-bit e posteriormente cartões perfurados;
+  - Utilizava as linguagens Fortran e Assembly para processar as instruções dos cartões.
+- Segunda fase dos computadores:
+  - Período de 1955 a 1965;
+  - Desenvolvimento do transistor e das memórias magnéticas;
+  - Almento na velocidade de processamento e capicidade de armazenamento;
+  - Redução do tamanho dos computadores;
+  - Início da comercialização para grandes empresas, órgãos governamentais e universidades;
+  - O _sistema batch (lote)_ passou a ser utilizado visando reduzir o tempo de ociosidade da máquina;
+  - Passou a utilizar as **fitas magnéticas** no lugar dos cartões perfurados, chamado de _rolamento (spooling)_;
+  - **Throughtput** = tarefas processadas por unidade de tempo;
+  - **Conceito de canal** = permitia a transferência de dados entre dispositivos de E/S e a memória principal, sem a
+    participação da CPU (UCP – Unidade Central de Processamento).
+- Terceira fase dos computadores:
+  - Perído de 1965 e 1980;
+  - Segmentação do uso dos computadores;
+  - Lançamento da **série 360** da IBM;
+    - Utilizava os _Circuitos Integrados (CI)_ ou _Small Scale Integration (SSI)_;
+    - Sistema operacional OS/360.
+  - Introdução da **multiprogramação**;
+  - Conceito de _compartilhamento de tempo_ (time sharing);
+  - Diminuição do tempo de retorno da execução de um programa;
+  - Início do uso de _memória virtual_ pelos sistemas operacionais **TSS**, **Multics** e **CP/CMS**;
+  - Lançamento do sistema operacional **Unix** em 1971;
+    - Desenvolvido por Ken Thompson, Dennis Ritchie, Douglas McIlroy e Joe Ossanna em assembly na AT&T Bell Laboratories;
+    - Em 1973 foi reescrito em **C** por Dennis Ritchie.
+  - Uso dos padrões Transmission Control Protocol/Internet Protocol (TCP/IP);
+  - Uso do padrão Ethernet, desenvolvido pelo Palo Alto Research
+    Center (PARC) da Xerox;
+  - Criação do microprocessador comercial 8080 da Intel.
