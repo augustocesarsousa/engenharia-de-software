@@ -36,3 +36,15 @@
   - Uso do padrão Ethernet, desenvolvido pelo Palo Alto Research
     Center (PARC) da Xerox;
   - Criação do microprocessador comercial 8080 da Intel.
+- Quarta fase dos computadores:
+  - Paríodo de 1981 atualmente;
+  - Desenvolvimento da integração de circuitos em grande escala (LSI - Large-scale Integration);
+  - Surgimento dos chips que possibilitaram o desenvolvimento do conceito de _computador pessoal (PC)_;
+  - Surgimento do conceito de _rede local_;
+  - Desenvolvimento da _Graphicals User Interfaces (GUI)_ e do _mouse_ pelo PARC da Xerox, com a finalidade de facilitar o uso do PC pelo usuário;
+  - Lançamento do MS-DOS da Microsoft em 1981;
+  - Lançamento do Macintosh pela Apple em 1984;
+  - Desenvolvimento dos sistemas operacionais distribuídos, popularizando o modelo _cliente/servidor_ (client/server);
+  - Início do **multiprocessamento**;
+  - Lançamento do núcle Linux por Linus Torvals em 1991;
+  - Início da computação em dispositivos móveis;
