@@ -89,3 +89,87 @@
 - Permite que várias instâncias de sistemas operacionais diferentes possam ser executadas simultaneamente;
 - Uma VM é capaz de criar componentes de software que simular dispositivos físicos, exemplo, processador, memória, discos etc;
 - Tendem a ser menos eficientes do que o computadores reais, pois não acessam o hardware diretamente e não simulam hardware que não está conectado ao computador hospedeiro.
+
+## Componentes e objetivos dos sistemas operacionais
+
+### Componentes centrais do sistema operacional
+
+- **Kernel (núcleo)**:
+  - Software que contém os componentes centrais do sistema operacional.
+- **Escalonador de processos**:
+  - Responsável pela decisão sobre o momento em que um processo acessará a CPU;
+  - É um subsistema do sistema operacional;
+  - Faz uso de algorítimos de escalonamento para estabelecer a lógica de sua execução;
+  - _Processo orientado a CPU_ (CPU bound):
+    - Processo onde o usuário informa os dados, iniciando a execução do programa;
+    - O programa será escalonado para uso da CPU;
+    - O programa faz uso dos dispositivos de E/S somente na fase inicial (inserção do dados) e no momento final (impressão dos resultados).
+  - _Processo orientado à E/S_ (In/Out bound):
+    - Processo onde os atos de entrada e saída de dados (E/S), são executados repetidamente dentro de um pequeno espaço de tempo.
+- **Gerenciador de memória**:
+  - Tem a tarefa de alocar a memória aos processos quando for necessário;
+  - Liberar memória, quando um processo terminar;
+    Tratar do problema de **Swapping**, isto é, quando a memória é insuficiente;
+  - Registradores:
+    - Memória que está dentro da CPU;
+    - É a memória mais rápida, mas também a mais cara;
+    - Encontrada em menor quantidade;
+  - Memória cache:
+    - Muito rápida, porém inferior a registradora;
+    - Maior quantidade que a registradora;
+  - Memória principal (Random Access Memory) ou _memória RAM_:
+    - Mais lenta que a memoria cache;
+    - Maior quantidade;
+  - Memória de armazenamento em disco (Hard Disk - HD):
+    - Possui a maior quantidade;
+    - Porém é a mais lenta;
+- **Gerenciador de E/S**:
+  - Responsável pelo gerenciamento dos dispositivos de entrada e saída de dados E/S;
+  - Estruturado em camadas;
+  - O níveis mais baixo ocultam as características de cada um dos dispositivos físicos das camadas superiores, permitindo que as aplicações executadas pelo usuário atuem sem conhecem a arquitetura do hardware;
+  - Subsistema de E/S (system calls):
+    - Faz o isolamento dos dispositivos para tratar a ampla gama de variações dando flexibilidade ao sistema operacional.
+  - Rotinas de E/S:
+    - Conjunto de rotinas especiais que cuidam dos detalhes das operações de leitura e escrita a serem realizadas pelo sistema operacional.
+  - Device Driver (driver):
+    - Camada responsável pela comunicação entre os dispositivos de E/S com a camada de subsistema.
+  - Controlador de E/S:
+    - Dispositivos de hardware responsável por interagir com os dispositivos de E/S;
+    - Executa os comandos traduzidos pelo driver nos dispositivos de E/S.
+- **Gerenciador de comunicação interprocessos (IPC)**:
+  - Responsável por gerenciar a execução de processos no sistema operacional;
+  - Os processos são executados em cápsulas autônomas, de modo que sua execução não afeta a dos demais;
+  - O hardware garante que um processo não ocupe o mesmo espaço endereçado a outro;
+  - O IPC realiza a sincronização dos processos;
+  - Os processos interagem e cooperam na execução de tarefas;
+  - Os processos se comunicam das seguintes formas:
+    - Internamente, quando dois módulos de um mesmo processo se comunicam;
+    - Entre dois processos diferentes, em um mesmo computador;
+    - Externamente, quando dois processos em computadores diferentes se comunicam.
+  - Para realizar sua tarefa, o IPC pode fazer uso dos seguintes modelos de comunicação:
+    - Difusão (broadcast): quando o receptor envia a mesma mensagem para um grupo de receptores, sem saber quem são eles;
+    - Produtor-consumidor: quando existe somente um emissor e um receptor, com a comunicação unidirecional entre eles;
+    - Cliente-servidor: quando o cliente, que pode ser um computador, programa ou processo, solicita uma requisição para um servidor, que também pode ser um computador, programa ou processo;
+    - Peer-to-Peer (P2P): quando cada um dos nós (computadores, programas ou processos) que participam da comunicação atuam como servidores ou clientes;
+    - Caixa de correio (mailbox): quando a comunicação entre o emissor e o receptor funciona como uma caixa de correio, na qual o receptor não escolhe o emissor que lhe escreveu a mensagem. Pode ser classificada em dois tipos: a escrita não bloqueante, quando a capacidade de armazenamento da caixa de correio é ilimitada; ou de leitura bloqueante, quando a caixa de correio está vazia;
+    - Diálogo: quando há servidores exclusivos para cada cliente, unidos por um canal de comunicação dedicado somente a eles, que será desligado quando a comunicação entre eles acabar.
+- **Gerenciador de sistemas de arquivos:**
+  - Responsável pela gerência dos arquivos e das operações que esses realizam, bem como pela segurança de acesso, e do compartilhamento entre usuários;
+  - Um arquivo é um conjunto de informações, dados ou instruções relacionados logicamente, podendo ser classificado como:
+    - Arquivo executável;
+    - Arquivo de dados;
+    - Arquivo de multimídia.
+  - Os arquivos são organizados em **diretórios**, que são criados pelo gerenciador de sistema de arquivos;
+  - Os diretórios são estruturas de dados no formado de árvore;
+  - Os diretórios contém informações dos arquivos, como localização, nome, forma de organização etc;
+  - Para controlar a criação de arquivos, o gerenciador de sistemas de arquivos realiza o gerenciamento do espaço livre em disco;
+  - Também gerencia o espaço alocado pelos arquivos já existentes.
+- **Objetivos do sistema operacional:**
+  - Eficiência: característica que mede a capacidade de um sistema operacional em oferecer o máximo de serviços a diferentes aplicações, no menor espaço de tempo.
+  - Robustez: característica que permite ao sistema operacional ser tolerante a falhas e confiável.
+  - Escalabilidade: característica que permite ao sistema operacional fazer uso de recursos à medida que eles vão sendo acrescentados ao computador.
+  - Extensibilidade: essa característica garante que o sistema operacional se adapte bem ao uso de novas tecnologias, bem como que execute tarefas diferentes daquelas para as quais foi projetado.
+  - Portabilidade: a portabilidade garante que o sistema operacional opere em muitas configurações de hardware.
+  - Segurança: a segurança em um sistema operacional impede que os usuários e/ou softwares acessem os serviços ou recursos sem a devida autorização.
+  - Interatividade: a interatividade permite que as aplicações (software) respondam, rapidamente, às solicitações dos usuários ou aos eventos do sistema operacional.
+  - Usabilidade: a usabilidade concede ao sistema operacional o potencial de atender a uma base significativa de usuários.
