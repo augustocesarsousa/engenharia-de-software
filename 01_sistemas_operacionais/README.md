@@ -173,3 +173,56 @@
   - Segurança: a segurança em um sistema operacional impede que os usuários e/ou softwares acessem os serviços ou recursos sem a devida autorização.
   - Interatividade: a interatividade permite que as aplicações (software) respondam, rapidamente, às solicitações dos usuários ou aos eventos do sistema operacional.
   - Usabilidade: a usabilidade concede ao sistema operacional o potencial de atender a uma base significativa de usuários.
+
+## Arquitetura de sistemas operacionais
+
+### Arquitetura monolítica
+
+- Os componentes era compilados em módulos separados e depois eram unidos em um único executável;
+- O módulos eram carregados em memória carregadas em memória e interagiam entre si por meio de funções;
+- A manutenção é mais complicada por ser mais difícil de encontrar o causador do problema;
+- Mais suscetível a danos provocados por códigos sujeitos a erros ou mal-intencionados.
+
+### Arquitetura em camadas
+
+- Composto de níveis de camadas que se comunicam entre si;
+- As camadas são isoladas umas das outras;
+- As camadas inferiores atendem as camadas superiores por meio de interfaces;
+- As camadas superiores não conhecem a implementação das camadas inferiores;
+- O desempenho acaba sendo afetado por conta do modo de acesso.
+
+### Arquitetura de micronúcleo
+
+- Busca tornar o núcleo do sistema operacional o menor e mais simples possível;
+- É altamente modular, sendo extensível, portável e escalável;
+- O componentes do sistema operacional são disponibilizados como serviços;
+- A aplicação que solicita um serviço é chamado de _cliente_, e o processo que responde a solicitação é chamado de _servidor_;
+- O núcleo se limita a executar a comunicação entre _cliente_ e _servidor_;
+- Os processos executam suas funções em modo **usuário**, não possuindo acesso aos componentes do sistema;
+- Apenas o núcleo executa em modo kernel.
+
+### Sistema Operacional de Redes (SOR)
+
+- Interação dos Sistemas Operacionais Locais (SOL) com SOR;
+- Permite a utilização dos recursos do computador local e os recursos da rede;
+- O SOL faz um requisição para a rede, e essa requisição é recebida pelo SOR;
+- O modelo utilizado é de _cliente/servidor_;
+- Utiliza Peer-to-Peer (P2P) como uns dos tipos de arquitetura;
+- Os servidores podem ter diferentes atuações, como:
+  - Servidor de arquivos;
+  - Servidor de banco de dados;
+  - Servidos de impressão;
+  - Servidor de comunicação;
+  - Servidor de gerenciamento.
+
+### Sistema operacional distribuído
+
+- Ampliação do conceito de _sistema operacional de rede_;
+- Conjunto de computadores ligados a uma rede e independeres entre si;
+- Atuam de modo que dão a impressão de que são um sistema único e integrado;
+- As tarefas são divididas entre os computadores que os compõem, sem a interferência do usuário;
+- Características:
+  - Capacidade de realizar tarefas simultaneamente;
+  - Capacidade de adicionar novos computadores (escalabilidade);
+  - Uso de mensagens para troca de informações;
+  - Alta disponibilidade, caso uma máquina falhe outra assume o lugar.
