@@ -226,3 +226,59 @@
   - Capacidade de adicionar novos computadores (escalabilidade);
   - Uso de mensagens para troca de informações;
   - Alta disponibilidade, caso uma máquina falhe outra assume o lugar.
+
+## Sistemas de arquivos
+
+### Nomenclatura de arquivos
+
+- Alguns sistemas operacionais suportam arquivos com nomes de 8 caracteres e outros suportam até 255 caracteres;
+- Alguns sistemas operacionais suportam o uso de caracteres especiais, outros não;
+- Alguns sistemas operacionais, como o UNIX, suportam a distinção em letras maiúsculas, outros não, como o MS-DOS.
+- Para alguns sistemas operacionais como o UNIX, o uso de extensões de arquivos é opcional, já para outros como o Windows, o uso de extensão possui valor, exemplo um _arquivo.txt_ informa para o sistema qual aplicativo irá executá-lo.
+
+### Tipos de armazenamento
+
+- Sequência de bytes;
+- Sequência de registros de tamanho fixo;
+- Árvore de registros.
+
+### Tipos de arquivos de armazenamento
+
+- Arquivos regulares: aqueles que contêm informações dos usuários;
+- Arquivos de diretórios: arquivos que mantém a estrutura do sistema de arquivos;
+- Arquivos especiais de caracteres: utilizados para se comunicar com dispositivos de E/S;
+- Arquivos especiais de blocos: utilizados para se comunicar com os discos.
+
+### Tipos de acesso à arquivos
+
+- Acesso sequencial: efetua a leitura dos **bytes** ou **registros**,do início ao fim;
+- Acesso aleatório aos arquivos: os **bytes** ou **registros** não eram mais gravados sequencialmente, fazendo com o sistema não precise ler toda a sequência para encontrar os dados.
+
+### Partições
+
+- Setor 0 do disco: chamado de _Master Boot Record_ (MBR, traduzido como Registro Mestre de Inicialização), é o setor responsável por armazenar a **tabela de partição**;
+- Tabela de partição: tabela que contém os endereços iniciais e finais das partições;
+- O sistema operacional pode ter mais de uma partição no mesmo disco, cada uma com um **sistema de arquivos** diferente;
+- Superbloco: local que armazena os principais parâmetros do sistema de arquivos, é lido pela memória quando o sistema é iniciado.
+
+### Armazenamento de arquivos em disco
+
+- Alocação contínua: o sistema operacional armazena so arquivos um ao lado do outro;
+- Alocação por lista encadeada: o sistema operacional armazena os arquivos em uma lista encadeada de blocos de disco;
+- Alocação por lista encadeada usando uma tabela na memória: evolução da lista encadeada em que os ponteiros dos blocos são substituídos por uma tabela na memória;
+- I-nodes (Index-node - nó-índice): o sistema operacional vincula cada um dos arquivos a uma estrutura de dados chamada I-node;
+
+### Sistema de arquivos
+
+- FAT16:
+  - 16 bits para o endereçamento de dados;
+  - Suporta discos ou partições de até 2GB;
+- FAT32:
+  - 32 bits para o endereçamento de dados;
+  - Suporta discos ou partições de até 2TB;
+- NTFS:
+  - Suporta discos ou partições de até 256TB;
+  - Em relação ao sistema FAT, possui maior desempenho, possibilidade de aplicar políticas de segurança, e a recuperação de falhas através do uso de _journal_;
+- Fourth Extended Filesystem (EXT4):
+  - Utilizado pela maioria dos sistemas operacionais Linux;
+  - Suporta disco ou partições de até 1EB;
