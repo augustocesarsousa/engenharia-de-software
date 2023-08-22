@@ -282,3 +282,17 @@
 - Fourth Extended Filesystem (EXT4):
   - Utilizado pela maioria dos sistemas operacionais Linux;
   - Suporta disco ou partições de até 1EB;
+
+## Interpretadores e compiladores
+
+- Linguagens de montagem: faziam usos de programas montadores _(assemblers)_;
+- Linguagens de alto nível: executam tarefas com menos instruções que as linguagens de montagem;
+- Compiladores: fazem a conversão de uma linguagem de alto nível, para linguagem de máquina;
+- Interpretadores: faz a conversão e execução do código gerado em uma linguagem de auto nível em tempo real, isso o torna mais lento do que o método utilizado por compiladores, porém traz a vantagem da portabilidade;
+- Exemplos de linguagens de auto nível:
+  - **FORTRAN**: desenvolvido pela IBM na década de 1950, é considerada a primeira linguagem de auto nível;
+  - **Common Business Oriented Language** (COBOL): traduzida como Linguagem Comum Orientada para Negócios, foi desenvolvida pelo Conference on Data Systems Languages (CODASYL), em 1959, com propósito comercial, e ainda é a mais utilizada em mainframes na atualidade.
+  - **C**: desenvolvida por Dennis Ritchie, pesquisador da Bell Laboratories, no início da década de 1970. A linguagem C ganhou destaque ao ser utilizada no desenvolvimento do sistema operacional UNIX;
+  - **C++**: desenvolvida por Dennis Ritchie, pesquisador da Bell Laboratories, no início da década de 1970. A linguagem C ganhou destaque ao ser utilizada no desenvolvimento do sistema operacional UNIX;
+  - **Java**: desenvolvida por James Gosling, pesquisador da Sun MicroSystems, em 1995, com propósito de ser utilizada em aplicações baixadas pela web e/ou executadas nos navegadores (browsers). Java é uma linguagem orientada a objeto. O sistema operacional Android, desenvolvido pela Google, utilizou a linguagem Java no seu desenvolvimento;
+  - **C#**: desenvolvida pela Microsoft, em 2000, com o propósito de ser a linguagem principal da plataforma de desenvolvimento, chamada .NET. A C# é uma linguagem orientada a objeto, que une conceitos de outras linguagens, como: C, C++ e Java.
