@@ -296,3 +296,30 @@
   - **C++**: desenvolvida por Dennis Ritchie, pesquisador da Bell Laboratories, no início da década de 1970. A linguagem C ganhou destaque ao ser utilizada no desenvolvimento do sistema operacional UNIX;
   - **Java**: desenvolvida por James Gosling, pesquisador da Sun MicroSystems, em 1995, com propósito de ser utilizada em aplicações baixadas pela web e/ou executadas nos navegadores (browsers). Java é uma linguagem orientada a objeto. O sistema operacional Android, desenvolvido pela Google, utilizou a linguagem Java no seu desenvolvimento;
   - **C#**: desenvolvida pela Microsoft, em 2000, com o propósito de ser a linguagem principal da plataforma de desenvolvimento, chamada .NET. A C# é uma linguagem orientada a objeto, que une conceitos de outras linguagens, como: C, C++ e Java.
+
+## Firmware e middleware
+
+### Firmware
+
+- Firmware são instruções executáveis armazenadas em **memória não volátil** (Chips, que não se perde quando o computador é desligado), voltadas em grande parte para operações de leitura; _(Deitel; Deitel; Choffnes, 2005)_
+- O firmware é desenvolvido por meio de microprogramação, ou seja, uma camada desenvolvida em microcódigo, que inclui instruções em linguagem de máquina utilizadas pelo hardware;
+- Atualmente um firmware é desenvolvido na linguagem **C** e compilado em linguagem de máquina;
+- Sua finalidade é permitir que os fabricantes utilizem chips programáveis de uso geral ao invés de hardware dedicado, ocasionando economia de custos e facilidade de inovação e implantação;
+- O conceito de microprogramação foi criado em 1951 pelo professor Maurice Wilkes, da Universidade de Cambridge;
+- Passou a ser amplamente utilizado na série 360 da IBM em 1964;
+- Atualmente é utilizado em muitos dispositivos, exemplo:
+  - Controle remoto de TV;
+  - Discos rígidos (HD);
+  - Players blu-ray;
+  - Teclados;
+  - Webcams, etc.
+
+### Middleware
+
+- O middleware permite que uma aplicação seja executada em um computador e se comunique com um outra executada em um outro computador quando ambos fazem parte de um sistema distribuído; _(Deitel; Deitel; Choffnes, 2005)_
+- Também permite a execução de aplicações em ambientes de computação heterogêneos, desde que antes façam uso de um middleware comum entre eles;
+- Faz uso de uma API _(Applications Programming Interface)_;
+- Exemplos de middleware;
+  - Open Database Connectivity (ODBC - Conectividade aberta para banco de dados);
+  - Open Graphics Library (OpenGL - Biblioteca de Gráficos Aberta).
+- Um middleware possui muitas semelhanças com o sistema operacional;
