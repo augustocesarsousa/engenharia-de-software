@@ -323,3 +323,45 @@
   - Open Database Connectivity (ODBC - Conectividade aberta para banco de dados);
   - Open Graphics Library (OpenGL - Biblioteca de Gráficos Aberta).
 - Um middleware possui muitas semelhanças com o sistema operacional;
+
+## Processadores
+
+- O conceito de processador é um componente de hardware que executa linguagem de máquina (assembly) e que pode ser encontrado em vários formatos dentro da máquina;
+- O sistema operacional fornece mecanismos de proteção ao processador, evitando que os processos tenham acesso a instruções privilegiadas ou em memória.
+
+### Desempenho do processador
+
+- O desempenho do sistema operacional está fortemente vinculado ao desempenho do processador;
+- Os projetistas de processadores fazem uso de um padrão conhecido como Instruction Set Architecture (ISA) – Arquitetura do Conjunto de Instruções;
+- No ISA é feita a descrição do processador, seu conjunto de instruções, o seu número de registradores e o seu tamanho de memória.
+
+#### Processadores CISC
+
+- Complex Instruction Set Computing (CISC - Computação com Conjunto de Instruções Complexas);
+- Surgiram na metade dos anos 1960;
+- Possuíam um conjunto de instruções que podiam executar diversas operações, ocasionando a diminuição da quantidade de linhas de código dos softwares;
+- Segundo Deitel, Deitel e Choffnes (2005), os processadores CISC tentavam transferir muito da complexidade do software para o hardware, reduzindo o tamanho dos programas, diminuindo o acesso à memória e facilitando o processo de depuração do código-fonte;
+- Utilizavam _pipeline_ para permitir a execução simultânea de várias instruções.
+
+#### Processadores RISC
+
+- Reduced Instruction Set Computing (RISC - Computação com Conjunto de Instruções Reduzidas);
+- Os processadores RISC seguiram caminho inverso dos processadores CISC. Neles, a complexidade da programação foi transferida do hardware para o código-fonte compilado;
+- Fazem uso de palavras com tamanho fixo de memória, aumentando o número de registradores e propósito geral, diminuindo a necessidade de acesso à memória;
+- Utilizam _pipeline_ com mais eficiência que os processadores CISC;
+- Uma desvantagem em relação aos processadores CISC é que as operações que fazem uso de pontos flutuantes são mais rápidas nos processadores CISC;
+- A arquitetura RISC deu origem a vários novos projetos de processadores, entre eles, podemos destacar o Advanced RISC Machine (ARM - Máquina RISC Avançada), esse projeto é utilizado amplamente em smartphones, tablets e no Raspberry PI;
+
+### Projeto de processador
+
+- Unidade de Controle (UC): responsável pela busca das instruções na memória principal (MP);
+- Registradores: responsável por armazenar os dados para uso imediato pelo processador;
+- Unidade de Lógica e Aritmética (ULA): se assemelha muito a uma calculadora convencional, executando operações lógicas e aritméticas, com números inteiros ou reais;
+- Interface de Barramento: é responsável pela interação do processador com a memória e os outros dispositivos do sistema;
+- Memória Cache: armazena os dados que serão posteriormente utilizados pelo processador, muito mais rápida que a memória principal.
+
+### Gerenciamento de multiprocessador
+
+- Segundo Deitel, Deitel e Choffnes (2005), o termo sistema de multiprocessamento engloba qualquer sistema que contenha mais de um processador;
+- Sistemas Fortemente Acoplados (Tightly Coupled Systems): os processadores compartilham a maior parte dos componentes do sistema;
+- Sistemas Fracamente Acoplados (Loosely Coupled Systems): a comunicação entre o processador e os componentes é feita por enlaces de comunicação;
