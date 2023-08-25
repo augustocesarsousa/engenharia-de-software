@@ -400,4 +400,23 @@
 
 - Usado pelo computador para resolver o problema de capacidade e volatilidade da memória RAM, quando o computador é desligado, os dados gravados na memória secundária são mantidos;
 - Tem a capacidade de armazenar grande quantidade de dados;
-- Porém é muito mais lenta do que as memórias de níveis superiores;
+- Porém é muito mais lenta do que as memórias de níveis superiores.
+
+## Discos e fitas
+
+### Discos rígidos
+
+- A forma mais comum de armazenamento secundário nos computadores é o disco rígido;
+- É um dispositivo de bloco, transmite os dados em tamanhos fixos de bytes;
+- É construindo por um ou mais pratos metálicos, que giram com velocidade entre 5.400 e 10.800 rpm (rotação por minuto);
+- Os dados são lidos e escritos nesses pratos metálicos por um braço mecânico;
+- Uma região circular lida pelo braço em um dos pratos metálicos é chamada de _trilha_;
+- A soma de todas as trilhas, em um movimento de leitura feito pelo braço, do começo ao fim do prato metálico, é chamada de cilindro;
+- Latência rotacional: é o termo dado a lentidão no uso dos disco rígido, pela necessidade de mover o braço mecânico entre os pratos até que os dados sejam acessados, somado ao tempo de transferência para a memória principal.
+
+### Fita magnética
+
+- Mais utilizada para cópia de segurança (backup);
+- O acesso aos dados é feito por uma unidade leitora de fitas, a qual é inserida manualmente ou por braços robóticos;
+- Como vantagens podemos destacar o baixo custo por bit e o fato de ser uma forma de armazenamento removível;
+- Como desvantagem destacamos o acesso aos dados de forma sequencial, no qual a fita terá que ser percorrida até que o dado seja encontrado.
