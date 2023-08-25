@@ -365,3 +365,39 @@
 - Segundo Deitel, Deitel e Choffnes (2005), o termo sistema de multiprocessamento engloba qualquer sistema que contenha mais de um processador;
 - Sistemas Fortemente Acoplados (Tightly Coupled Systems): os processadores compartilham a maior parte dos componentes do sistema;
 - Sistemas Fracamente Acoplados (Loosely Coupled Systems): a comunicação entre o processador e os componentes é feita por enlaces de comunicação;
+
+## Memórias
+
+- Hardware maiores são mais lentos que hardware menores;
+- Princípio de localidade:
+  - Localidade temporal: observa uma tendência por parte de um processo em realizar referências futuras a posições feitas recentemente;
+  - Localidade espacial: observa uma tendência por parte de um processo em realizar referências a posições na vizinhança da última referência;
+  - Localidade sequencial: observa uma tendência por parte de um processo em fazer referência à posição seguinte a atual.
+
+### Hierarquia de memória
+
+- Segundo Deitel, Deitel e Choffnes (2005), a hierarquia de memória é um esquema de categorização da memória, em que a mais rápida e mais cara fica no topo da hierarquia, enquanto a mais lenta e mais barata fica na base;
+- Temos então:
+  - Registrador: no topo da hierarquia, internos a CPU, os quais são feitos do mesmo material que ela, garantido velocidade de acesso aos dados e às instruções;
+  - Cache: abaixo da memória registradora, antes fora da CPU hoje se encontra dentro junto das memórias registradoras, elas fazem o intermédio entre as registradoras e a memória principal;
+  - Memória principal: abaixo da memória cache, também conhecida como _memória real_ ou _memória física_, é o nível mais baixo de armazenamento de dados em que o processador tem acesso;
+  - Memória secundária: abaixo da memória principal, composta por dispositivos de armazenamento como o disco rígido (HD - Hard Disk), por ocupar o último lugar na hierarquia, os dispositivos de memória secundária são os menos caros e os mais lentos entre todos eles. A memória principal e a secundária são as memórias a que o usuário tem acesso.
+  - Armazenamento terciário: composto de dispositivos de armazenamento **externos**, por exemplo: CD, DVD, pen driver, fitas magnéticas etc. Vem como uma solução para sistemas que necessitam de níveis de memória superiores ao que a memória secundária oferece.
+  - Memória virtual: funciona como um _auxilio_ à memória principal quando a mesma não possui capacidade de armazenamento suficiente que do é requisitado, o sistema então aloca um espaço na memória secundária fazendo parecer que o computador têm "mais memória", porém esse método não é muito eficiente por causa da diferença de velocidade entre as memórias.
+  - CMOS (Complement-ary metal–oxide–semiconductor - Metal-óxido-semicondutor de simetria complementar): utilizada para manter a data e a hora do computador atualizadas, ela é alimentada por uma bateria;
+  - ROM (Read Only Memory - Memória Somente de Leitura): é uma memória que já vem programada de fábrica e não pode ser utilizada pelo usuário, utilizada no processo de inicialização do computador;
+- As memórias registradoras, caches, principais e CMOS, são memórias voláteis, ou seja, quando o fluxo de energia é cortado, o armazenamento é perdido;
+
+### Memória principal
+
+- Mais conhecida como **RAM** (Random Access Memory – Memória de Acesso Aleatório);
+- Segundo Tanenbaum e Bos (2015), ela é a locomotiva do sistema de memória;
+- Entre os anos 1950 e 1960, ela era conhecida como memória de núcleos;
+- Quando as requisições feitas pela CPU não podem ser atendidas pela memória cache, elas são encaminhadas para a memória RAM;
+- Sua característica é que o acesso aos dados é feito de forma aleatório;
+
+### Armazenamento secundário
+
+- Usado pelo computador para resolver o problema de capacidade e volatilidade da memória RAM, quando o computador é desligado, os dados gravados na memória secundária são mantidos;
+- Tem a capacidade de armazenar grande quantidade de dados;
+- Porém é muito mais lenta do que as memórias de níveis superiores;
