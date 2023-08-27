@@ -420,3 +420,29 @@
 - O acesso aos dados é feito por uma unidade leitora de fitas, a qual é inserida manualmente ou por braços robóticos;
 - Como vantagens podemos destacar o baixo custo por bit e o fato de ser uma forma de armazenamento removível;
 - Como desvantagem destacamos o acesso aos dados de forma sequencial, no qual a fita terá que ser percorrida até que o dado seja encontrado.
+
+## Dispositivos de E/S e barramentos
+
+### Barramentos
+
+- Segundo Deitel, Deitel e Choffnes (2005), um barramento é um conjunto de pistas, ou de outras conexões elétricas, que transportam informações entre dispositivos de hardware;
+- Tipos de barramentos:
+  - Barramentos de dados: são responsáveis pelo transporte de dados;
+  - Barramentos de endereços: armazenam e informam o endereço, em que os dados estão armazenados;
+  - Portas: permitem a conexão entre dois dispositivos;
+  - Canais de E/S: permitem a realização de operações de E/S por meio de um barramento compartilhado entre vários dispositivos.
+- O Barramento Frontal (FSB – Front Side Bus) é o responsável por conectar o processador à memória principal;
+- O Barramento de Interconexão de Componente Periférico (PCI – Peripheral Component Interconnect) é o responsável pela conexão dos dispositivos periféricos – como placas de vídeo, de som ou de rede – ao resto do computador;
+- Uma evolução do barramento PCI é o barramento PCI Express (PCIe), que permite a comunicação de larguras variáveis entre os barramentos;
+- O barramento Universal Serial Bus (USB) – Barramento Serial Universal – foi criado para realizar a conexão dos dispositivos de E/S, considerados lentos, como mouses e teclados, ao computador. Uma grande vantagem na sua utilização é que os dispositivos USB fazem uso do mesmo driver, portanto não é necessário instalar um novo driver cada vez que um novo dispositivo USB é acoplado ao computador, nem mesmo reiniciar a máquina;
+- O barramento Small Computer System Interface (SCSI) – Interface de Pequeno Sistema de Computadores – foi criado para a conexão de dispositivos de alto desempenho e alto consumo de banda, como os discos rígidos rápidos, os scanners etc;
+- O barramento Instituto de Engenheiros Elétricos e Eletrônicos 1394 (IEEE) – Institute of Electrical and Electronic Engineers –, conhecido comercialmente como FireWire, assim como o USB, efetua a transferência de dados de modo serial, porém alcançando velocidades superiores.
+
+### Dispositivos de E/S
+
+- Segundo Tanenbaum e Bos (2015), um dispositivo de E/S é constituído por duas partes, um controlador, isto é, um chip ou um conjunto
+  de chips responsável pelo gerenciamento do dispositivo, e o dispositivo propriamente dito;
+- A comunicação do dispositivo de E/S com o controlador é feita por um software conhecido como driver do dispositivo;
+- Segundo Tanenbaum e Bos (2015), todo controlador tem um pequeno número de registradores usados na comunicação;
+- Na prática, o sistema operacional envia um comando para o driver, o qual ativa o controlador, traduzindo o comando recebido, para que este possa ser gravado nos registradores do dispositivo;
+- O conjunto de registradores do dispositivo é chamado espaço de porta de E/S;
