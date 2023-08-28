@@ -446,3 +446,72 @@
 - Segundo Tanenbaum e Bos (2015), todo controlador tem um pequeno número de registradores usados na comunicação;
 - Na prática, o sistema operacional envia um comando para o driver, o qual ativa o controlador, traduzindo o comando recebido, para que este possa ser gravado nos registradores do dispositivo;
 - O conjunto de registradores do dispositivo é chamado espaço de porta de E/S;
+
+## Processos e threads
+
+### Processos
+
+- Segundo Deitel, Deitel e Choffnes. "A primeira vez em que o termo processo foi utilizado, ao se referir a sistemas operacionais, foi no desenvolvimento do sistema operacional \*\*MULTICS", sendo um sinônimo da tarefa (job)";
+- Um processo possui o seu próprio espaço de endereçamento, composto por três regiões:
+  - Região de texto: armazena textos para a utilização;
+  - Região de dados: armazena os dados que serão utilizados pelo processador;
+  - Região de pilha: região onde as tarefas são empilhadas para serem processadas posteriormente;
+
+#### Estados de processo
+
+- Uma das responsabilidades do sistema operacional é garantir que cada processo tenha acesso à mesma quantidade de tempo de uso da CPU;
+- Em virtude dos eventos a que está sujeito, um processo faz uso de diferentes estados, como:
+  - Estado de execução: processo que está sendo executado pelo processador;
+  - Estado de pronto: processo que está pronto para ser executado;
+  - Estado de bloqueado: processo que estava em execução, mas teve uma parada para fazer uma solicitação de E/S, somente após obter a resposta o processo retorna para o estado de pronto para então continuar o processamento.
+- Cabe ao sistema operacional conhecer os processos e seus respectivos estados, para realizar essa tarefa, ele faz uso de duas listas:
+  1. Lista de pronto: armazena todos os processos que estão prontos para serem executados;
+  2. Lista de bloqueados: armazena todos os processos que estão aguardando o retorno de uma solicitação de E/S.
+- Os processos na lista de prontos são armazenados de acordo com a sua prioridade, da mais alta para a mais baixa;
+- Os processos na lista de bloqueados, a ordenação não é importante, pois os processos são enviados para lista de prontos à medida que vão obtendo as respostas das solicitações de E/S.
+
+#### Gerenciamento de processo
+
+- Os sistemas operacionais prestam serviços essenciais aos processos, como:
+  - Criação;
+  - Destruição;
+  - Suspensão;
+  - Retomada;
+  - Mudança de prioridade;
+  - Bloqueio, ativação;
+  - Comunicação interprocessos (IPC - Interprocess Communication).
+
+#### Estados de processo e estados de transição
+
+- A lista de prontos recebe processos de acordo com o que um usuário executa programas em seu computador;
+- Ao encontrar um processador disponível para executá-lo, os processos vão galgando posições na lista de prontos, deixando o estado de pronto para o estado de execução, sofrendo uma transição de estado;
+- Cabe ao _despachante_, a responsabilidade de indicar ao processo que ocupa a primeira posição na lista de pronto, que ele pode fazer o uso de um processador, essa atividade recebe o nome de _despacho_;
+- O sistema operacional controla as transições de estado, possibilitando que o maior número de processos possível possa acessar os processadores disponíveis no computador;
+- Para evitar o monopólio do processador, o sistema operacional faz uso de um timer, que permite ao processo ser executado durante um intervalo de tempo específico (quantum);
+- Caso o processo não libere o processor, após o limite de tempo de execução expirar:
+  1. O timer cria uma interrupção, permitindo que o sistema operacional recupere o controle sobre o processador;
+  2. O processo terá seu estado alterado de execução para pronto;
+  3. Por fim o primeiro processo da fila de pronto muda para execução, iniciando de novo o timer.
+- Um processo muda seu estado de execução de para bloqueado quando:
+  1. Ele está em execução e necessita realizar uma operação de E/S e a resposta não chegou antes do seu tempo de execução terminar;
+  2. Ele devolve o controle do processador ao sistema operacional, de maneira voluntária;
+  3. Ao receber a resposta do dispositivo de E/S, o sistema operacional muda o estado do processo de bloqueado para pronto.
+
+#### Blocos de controle de processo (PCBs)/descritores de processo
+
+- Quando um processo é criado pelo sistema operacional, ele recebe:
+- Um número para a sua identificação, o **PIN** (Process Identification Number - Número de Identificação de Processo);
+- Um conjunto de informações que auxiliam o sistema operacional a gerenciá-lo, esse conjunto recebe o nome de **PCB** (Process Control Block - Bloco de Controle de Processo) ou **descritor de processo**;
+- O PCB armazena as seguintes informações:
+  - O PIN;
+  - O estado do processo;
+  - Um contador de programa;
+  - A prioridade de escalonamento;
+  - As credenciais;
+  - O ponteiro para o processo **pai**;
+  - Os ponteiros para os processos **filhos**;
+  - Os ponteiros para localizar os dados e as instruções do processo na memória;
+  - Os ponteiros para recursos alocados pelo processo;
+  - Contexto de execução.
+- O sistema operacional cria uma lista dos PCBs, para que ele possa gerenciar as constantes atualizações de informações;
+- Quando um processo é encerrado, voluntariamente ou não, o sistema operacional retira o registro dele da lista de processos, disponibilizando os recursos que ele estava utilizando e liberando-s para outros;
