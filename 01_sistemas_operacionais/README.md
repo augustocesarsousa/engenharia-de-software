@@ -593,3 +593,80 @@
 - Nos sistemas distribuídos, as mensagens, ao serem transmitidas, podem apresentar falhas ou até mesmo se perderem no meio da comunicação;
 - Para tentar evitar esse cenário, eles fazem uso de protocolos de confirmação, caso a confirmação não seja recebida pelo emissor, ele poderá esperar um tempo e retransmiti-la;
 - Outro problema é a segurança. pois os processos emissores e receptores podem identificar possíveis tentativas de roubo de dados.
+
+## Threads
+
+### Definição de threads
+
+- A linguagem de programação ADA, desenvolvida pela Bull SAS para o Departamento de Defesa dos EUA na década de 1970, foi uma das principais linguagens de programação a dar suporte à programação concorrente;
+- Um **thread** permite ao sistema operacional executar uma tarefa de modo independente dos outros processos ou threads, esse processo é chamado de **LWP** (Lightweight Process - Processo leve);
+- Os threads são criados com base em processo tradicional, chamado de HWP (Heavyweight - Processo pesado);
+- Threads usam um subconjunto dos recursos utilizados por um processo comum, como:
+  - Registradores;
+  - Pilha;
+  - TSD (Thread Specific Data - Dados Específicos de Thread).
+- O espaço de endereço e outras informações globais, são compartilhadas pelos threads com o processo pesado;
+- O gerenciamento de threads pode ser realizado pelo software do usuário ou pelo sistema operacional;
+- O uso de threads acabou se tornando relevante por vários motivos, entre eles podemos citar:
+  - Projeto de software: desenvolvimento modular do software;
+  - Desempenho: permite às aplicações multithread fazerem uso de um ou vários processadores paralelamente;
+  - Cooperação: permite a IPC pelos threads, o que minimiza o uso de memória;
+
+### Estados de threads
+
+- Assim como os processos, todo thread tem uma série de estados:
+  - **Nascido**: estado em que a thread é criada;
+  - **Pronto** (runnable): estado em que a thread está pronta para ser executada;
+  - **Execução**: thread que está sendo executada;
+  - Bloqueado: estado em que a thread espera o resultado de uma requisição de E/S;
+  - Espera: estado em que a thread espera por um evento, como o sinal de outra thread;
+  - Adormecido: estado em que a thread não possui nenhuma atividade para realizar no momento;
+  - **Morto**: estado em que a thread finaliza sua tarefa e é encerrada.
+
+### Operações de threads
+
+- Cancelamento: quando uma thread deve ser encerrada, o que não significa o seu término real, pois ele pode mascarar ou desativar o recebimento de sinais de cancelamento;
+- Associação: quando um processo é criado inicia uma thread **primária**, que será associada a outras threads e fica dormindo até que as outras threads encerrem sua execução.
+
+### Modelos de threads
+
+#### Threads de usuários
+
+- Executam operações de suporte a threads no espaço do usuário;
+- São criados por bibliotecas;
+- Não podem executar instruções privilegiadas nem acessar o núcleo (core) do sistema operacional;
+- Mapeamento de thread _muitos-para-um_: é o processo onde o sistema operacional despacha todas as threads que compõem um processo multithread em um único bloco;
+- O sistema operacional não precisa suportar threads;
+- Garante a portabilidade do processo;
+- O sistema operacional não consegue despachar as threads para mais de um processador simultaneamente.
+
+#### Threads de núcleo
+
+- Mapeiam cada thread em seu contexto de execução;
+- Fazem o uso do mapeamento _um-para-um_;
+- O sistema operacional consegue despachar as threads de um processo para mais de um processador simultaneamente;
+- O sistema operacional consegue visualizar as threads de forma independente;
+- As threads de núcleo estão sujeitos à sobrecarga ocasionada pelo chaveamento de contexto;
+- São dependentes de API para tratamento de threads do sistema operacional;
+- Perde a portabilidade referente as threads de usuário.
+
+#### Threads de usuários e núcleo
+
+- Usam o mapeamento _muitos-para-muitos_;
+- O número de threads de usuário e núcleo não precisa ser igual;
+- Esse modelo consegue diminuir a sobrecarga do sistema operacional;
+- Implementa um reservatório de threads (thread pooling);
+- A aplicação informa ao sistema operacional o número de threads de núcleo que precisa.
+
+### Implementação de threads
+
+- A execução de um processo pode ser pausada por uma interrupção gerada por hardware ou por um sinal que, por sua vez, é gerado por software;
+- Há dois tipos de sinais:
+  - Sinal síncrono: que ocorre quando o sinal é emitido por uma instrução de um processo ou thread em execução;
+  - Sinal assíncrono: que não está vinculado a um processo ou thread em execução, como a resposta de uma operação de E/S que está sendo concluída;
+- O sinal assíncrono deve possuir um identificador (ID) para definir quem é o receptor da mensagem;
+- Caso o receptor não esteja em execução, o sistema operacional adicionará o sinal recebido a uma fila de sinais pendentes;
+- Ao receber um sinal assíncrono e o processo fizer uso de threads na sua execução, o sistema operacional deverá decidir se realizará a entrega da mensagem para todos os threads do processo ou para apenas um deles;
+- O Linux não faz distinção entre processos e threads, por isso os chama de tarefas;
+- Um thread pode chegar ao fim de maneira natural, quando encerra sua execução; ou de maneira abrupta, quando ocorre uma exceção na sua execução ou quando recebe um sinal de cancelamento;
+- Cabe ao sistema operacional, ao identificar o término de um thread, removê-lo prontamente do sistema.
