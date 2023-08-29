@@ -451,7 +451,7 @@
 
 ### Processos
 
-- Segundo Deitel, Deitel e Choffnes. "A primeira vez em que o termo processo foi utilizado, ao se referir a sistemas operacionais, foi no desenvolvimento do sistema operacional \*\*MULTICS", sendo um sinônimo da tarefa (job)";
+- Segundo Deitel, Deitel e Choffnes (2005). "A primeira vez em que o termo processo foi utilizado, ao se referir a sistemas operacionais, foi no desenvolvimento do sistema operacional **MULTICS**, sendo um sinônimo da tarefa (job)";
 - Um processo possui o seu próprio espaço de endereçamento, composto por três regiões:
   - Região de texto: armazena textos para a utilização;
   - Região de dados: armazena os dados que serão utilizados pelo processador;
@@ -514,4 +514,82 @@
   - Os ponteiros para recursos alocados pelo processo;
   - Contexto de execução.
 - O sistema operacional cria uma lista dos PCBs, para que ele possa gerenciar as constantes atualizações de informações;
-- Quando um processo é encerrado, voluntariamente ou não, o sistema operacional retira o registro dele da lista de processos, disponibilizando os recursos que ele estava utilizando e liberando-s para outros;
+- Quando um processo é encerrado, voluntariamente ou não, o sistema operacional retira o registro dele da lista de processos, disponibilizando os recursos que ele estava utilizando e liberando-s para outros.
+
+#### Operações de processos
+
+- Um software em execução, into é, um processo, consegue gerar novos processos, quando isso ocorre, ele passa a ser chamado de _processo pai_, os processos que são criados por ele passam a se chamar _processos filhos_, no qual não podem tem mais que um processo pai;
+- O sistema operacional pode controlar quando um processo pai é encerrado, se os processos filhos vão sem mantidos ou destruídos;
+- O sistema operacional Linux, cria um processo chamado _init_ quando o core (núcleo do sistema) é iniciado;
+- O ini gera vários processos filhos, como:
+  - kswapd: responsável por operações de gerenciamento de memória;
+  - khudb: responsável por operações de dispositivos;
+  - xfx: responsável por operações do sistema de arquivos;
+  - login: responsável pela autenticação dos usuários no sistema operacional;
+  - klogd: responsável pela leitura das mensagens do sistema de log do kernel do sistema operacional.
+
+#### Suspender e retomar
+
+- Para detectar possíveis ameaças à segurança ou para depuração (debug), dos software em execução, os sistemas operacionais permitem que os administradores, ou usuários e os processos realizem a suspensão de um processo;
+- Quando isso ocorre, ele não é destruído, mas é retirado da disputa pelo tempo de execução da CPU, sem previsão de retorno;
+- Um processo pode suspender a si mesmo ou ser suspenso por um outro processo;
+- Quando um processo está suspenso, ele somente poderá ser retomado por um outro processo;
+- Quando um processo está em execução e suspende a si mesmo ele passa para o estado suspenso-pronto, que posteriormente será alterado para pronto;
+- Quando a suspensão é feita por um outro processo, temos duas opções:
+  - Se o processo suspenso estiver no estado pronto, o seu estado mudará para suspenso-pronto;
+  - Se ele estiver no estado bloqueado, o seu estado mudará para suspenso-bloqueado.
+
+#### Chaveamento de contexto
+
+- Dizemos que um sistema operacional realiza um chaveamento de contexto quando ele interrompe a execução de um processo e começa a executar outro, que estava no estado pronto;
+- Quando isso ocorre, o sistema operacional salva o contexto de execução do processo, que estava no estado execução, no PCB desse processo, além de carregar o contexto de execução anterior do processo, que estava no estado pronto, também em seu PCB;
+- Cabe ao sistema operacional tornar essa operação transparente para os processos, que não percebem que tiveram seu uso do processador paralisado;
+- O sistema operacional realiza o chaveamento de contexto porque ele precisa que o processador realize tarefas, consideradas por ele como essenciais, e não as tarefas designadas por um processo.
+
+#### Interrupções
+
+- Segundo Deitel, Deitel e Choffnes (2005). "As interrupções habilitam o software a responder aos sinais do hardware";
+- O sistema operacional faz uso de um conjunto de instruções, chamado _tratador de interrupções_, para poder gerenciar melhor as interrupções;
+- O sistema operacional armazena no tratador de interrupção a resposta para cada tipo de interrupção que pode ocorrer, controlando melhor o processador;
+- _Desvio_ (trap): é quando uma interrupção é gerada pelo processador, baseada nas instruções de um processo, que está sendo executado;
+- O desvio é uma operação síncrona;
+- Um trap ocorre quando um processo tenta realizar uma ação ilegal;
+- Uma interrupção pode ser iniciada por algum evento que pode ou não estar relacionado à execução de um processo, nesse caso ela é considerada assíncrona;
+- Uma interrupção assíncrona ocorre quando o usuário pressiona uma tecla no teclado ou movimenta o mouse;
+- Para o sistema operacional, o uso de interrupções é uma forma simples e barata de chamar a atenção do processador;
+- Uma alternativa para a substituir as interrupções é fazer uso da sondagem (polling), na qual o próprio processador solicita a cada um dos dispositivos o seu status;
+- A sondagem somente é viável quando estamos tratando de sistemas com baixa complexidade;
+- Se um número de interrupções aumentar desproporcionalmente, o sistema operacional pode encontrar dificuldades para acompanhar e executar todas elas;
+- Ao receber um interrupção, o processador precisa gravar os dados do processo em execução, para que ele possa recuperá-lo e executá-lo posteriormente:
+  - PSW (Program Status Word - Palavra de Estado de Programa): utilizado nos antigos computadores desenvolvidos pela IBM;
+  - TSS (Task State Segment - Segmento de Estado de Tarefa): utilizado nas arquitetura IA-32;
+- A arquitetura IA-32 pode receber dois tipos de sinais diferentes:
+  - O término do quantum do processo em execução;
+  - A conclusão de uma comunicação com um dispositivo de E/S ou uma interrupção gerada por um processo.
+
+### Comunicação interprocessos
+
+- O ambientes multiprogramação e os ambientes de rede obrigaram os sistemas operacionais a criarem formas de comunicação interprocessos (IPC).
+
+#### Sinais
+
+- Segundo Deitel, Deitel e Choffnes (2005). "Sinais são interrupções de software que notificam ao processo que um evento ocorreu";
+- Eles não permitem que os processos troquem dados entre si;
+- Fica sob responsabilidade do sistema operacional determinar qual processo deverá receber o sinal e como ele será respondido pelo processo que o recebeu;
+- Ao receber um sinal, os processo podem:
+  - Capturá-lo;
+  - Ignorá-lo;
+  - Mascará-lo.
+
+#### Troca de mensagens
+
+- Com o aumento do interesse pelo uso de **sistemas distribuídos**, a IPC passou a utilizar troca de mensagens, que pode ser:
+  - Unidirecional;
+  - Bidirecional.
+- As mensagens podem ter envios, que são:
+  - Bloqueantes: síncrona;
+  - Não bloqueantes: assíncrona.
+- O Linux e o Windows XP fazem uso de uma implementação de troca de mensagens chamada _pipe_, na qual o sistema operacional faz uso de uma região na memória, que serve como buffer, onde um processo atua como escritor (emissor), e outro como leitor (receptor);
+- Nos sistemas distribuídos, as mensagens, ao serem transmitidas, podem apresentar falhas ou até mesmo se perderem no meio da comunicação;
+- Para tentar evitar esse cenário, eles fazem uso de protocolos de confirmação, caso a confirmação não seja recebida pelo emissor, ele poderá esperar um tempo e retransmiti-la;
+- Outro problema é a segurança. pois os processos emissores e receptores podem identificar possíveis tentativas de roubo de dados.
