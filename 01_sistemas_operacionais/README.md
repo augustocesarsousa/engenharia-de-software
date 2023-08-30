@@ -670,3 +670,34 @@
 - O Linux não faz distinção entre processos e threads, por isso os chama de tarefas;
 - Um thread pode chegar ao fim de maneira natural, quando encerra sua execução; ou de maneira abrupta, quando ocorre uma exceção na sua execução ou quando recebe um sinal de cancelamento;
 - Cabe ao sistema operacional, ao identificar o término de um thread, removê-lo prontamente do sistema.
+
+## Execução assíncrona concorrente
+
+- Se houver mais de um thread em execução no sistema operacional dizemos que esses threads são concorrentes entre si;
+- Execução assíncrona: ocorre quando os threads em execução se comunicam entre si;
+- Exclusão mútua: ocorre quando os threads precisam acessar um mesma variável para executar uma operação de escrita, o sistema operacional permite que apenas um thread tenha acesso e que os outros aguardem;
+- Serialização: nome dado ao evento dos threads que estão aguardando na fila para poderem ter acesso de escrita à variável compartilhada;
+- Seção ou região crítica: local que possui dados que podem ser modificados;
+- Limpeza final: ação em que o sistema operacional encerra a exclusão mútua de um thread que teve seu processamento finalizado enquanto estava acessando a região crítica;
+- Segundo Tanenbaum e Bos (2015), quatro condições precisam ser atendidas para que tenhamos uma boa solução de gerenciamento ao acesso da região crítica:
+  1. Dois processos não podem estar acessando simultaneamente as suas regiões críticas;
+  2. Não há certeza no que se refere à velocidade e ao número de CPUs disponíveis;
+  3. Um processo que está em execução, fora da sua região crítica, não pode bloquear outros processos;
+  4. Um processo não pode ficar esperando infinitamente para acessar a região crítica.
+- Mecanismo de semáforo:
+  - Criado por Edsger W. Dijkstra, cientista da computação holandês, em 1965 para gerenciar a exclusão mútua;
+  - Quando um thread está na região crítica, é atribuído o valor **P** (proberen – testar, em holandês);
+  - Quando o thread seja sair, é atribuído o valor **V** (verhogen – incrementar, em holandês);
+  - Os semáforos que são utilizados por dois ou mais processos são chamados _semáforos binários_.
+- Mutex (mutual exclusion – exclusão mútua):
+  - Utilizado para gerenciar a exclusão mútua de um recurso ou parte de código compartilhado entre dois processos;
+  - Possui dois estados, _desimpedido_ ou _impedido_, podendo ser implementado com apenas em bit;
+  - Diferente do mecanismo de semáforo, ele não utiliza fila;
+  - Quando um thread tenta acessar um mutex impedido, ele passa para o estado _bloqueado_, quando o mutex é desimpedido, um deles é escolhido aleatoriamente para acessá-lo.
+- Troca de mensagens (message passing):
+  - Estratégia utilizada em sistemas distribuídos;
+  - Enquanto a mensagem não chega, o receptor permanece bloqueado ou emite um código de erro;
+  - O receptor envia uma mensagem de recebimento para evitar a perca da mensagem (acknowledgement);
+  - As mensagens possuem um número sequencial para evitar a leitura da mesma mensagem duas vezes;
+  - O nome dos processos são únicos para evitar o envio e recebimento de mensagens por processos errados;
+  - Utiliza autenticação para evitar comunicação com CPUs não autorizadas.
