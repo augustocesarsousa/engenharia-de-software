@@ -702,6 +702,17 @@
   - O nome dos processos são únicos para evitar o envio e recebimento de mensagens por processos errados;
   - Utiliza autenticação para evitar comunicação com CPUs não autorizadas.
 
+## Programação concorrente
+
+- Monitor: é um objeto que contém dados e procedimentos necessários para realizar a alocação de determinado recurso compartilhado ou um grupo de recursos compartilhados reutilizáveis serialmente;
+- Ocultação de informações: técnica onde os dados do monitor só podem ser acessados por um thread que está dentro dele;
+- Para que um thread aloque recursos por meio dos monitores, ele chama uma rotina de entrada de monitor;
+- Caso vários threads tentem acessar o monitor simultaneamente, o sistema operacional aplica a exclusão mútua;
+- Quando um thread, que está dentro do monitor, descobre que não pode continuar, ele executa um wait sobre uma variável condicional, informando, por exemplo, que o buffer que ele estava utilizando está cheio;
+- Quando um thread produtor entrega dados para um thread consumidor, por meio de um buffer em comum, dizemos que eles usam um buffer circular ou limitado;
+- O buffer circular permite ao thread produtor escrever dados no buffer, sem ter de esperar que o thread consumidor o retire em seguida;
+- O buffer circular pode ser utilizado pelo sistema operacional para gerenciar o controle de spooling, que ocorre quando um thread (spooler) gera dados que precisam ser impressos por uma impressora, por exemplo.
+
 ## Deadlock e adiantamento indefinido
 
 - De acordo com Deitel, Deitel e Choffnes (2005), um processo ou thread está em estado de deadlock (impasse) ou travado se estiver esperando por um evento que não vai acontecer;
