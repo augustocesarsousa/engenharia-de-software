@@ -730,3 +730,34 @@
   - Impasse de comunicação: pode ocorrer quando um processo X envia uma mensagem para o processo Y e fica bloqueado até que a mensagem de retorno seja recebida;
   - Livelock: pode acontecer quando a tabela de processos do sistema operacional está cheia e um processo que tenta criar threads descobre isso;
   - Condição de inanição (starvation): pode acontecer quando um processo nunca tenha acesso a um recurso que está solicitando.
+
+## Escalonamento de processador
+
+- Quando um computador possui vários processos ou threads no estado de pronto e apenas um processador livre para atendê-los, o sistema operacional precisa usar um escalonador;
+- Esse algoritmo possui algumas características essenciais, como:
+  - Justiça: concedendo a cada processo um tempo considerado adequado para o uso da CPU;
+  - Aplicação da política: verificando se a política de escalonamento está sendo utilizada;
+  - Equilíbrio: garantindo que todas as partes do sistema estão realizando o seu trabalho.
+- Quando falamos de comportamento de processos, encontramos duas situações:
+  - Os processos que fazem uso da CPU por um longo tempo e quase não são afetados por esperas de E/S;
+  - Os que vivem uma situação contrária, com longos intervalos de espera de E/S e pouco tempo de utilização da CPU.
+- A decisão do escalonador sobre qual processo será executado deve ser realizada quando um outro processo está terminando a sua execução;
+- Os algoritmos de escalonamento podem ser divididos em duas categorias com relação às interrupções de E/S:
+  - Na primeira, o algoritmo de escalonamento não preemptivo escolhe um processo para execução e o executa até que ele seja bloqueado, para uma requisição de E/S, por outro processo, ou quando o processo libera a CPU por conta própria;
+  - Na segunda, o algoritmo de escalonamento preemptivo escolhe um processo para execução e o executa por um tempo máximo definido.
+- Há três categorias de algoritmos de escalonamento:
+  - Sistemas em lote: são utilizados em empresas que operam com atividades realizadas periodicamente, como folhas de pagamento, contas a pagar etc, possui as características:
+    - A vazão (throughput);
+    - O tempo de retorno, menor tempo entre o início e o término da execução do processo;
+    - E a utilização da CPU, isto é, minimizar o máximo possível a ociosidade da CPU.
+  - Sistemas interativos: em que há usuários interagindo e aguardando uma resposta, faz-se necessário o uso do algoritmo de escalonamento preemptivo para evitar que um processo tome o controle da CPU, possui as características;
+    - Tempo de resposta;
+    - Proporcionalidade e satisfação dos usuários.
+  - Sistemas com restrição de tempo real: em que os processos sabem que não podem ser executados por um longo período, o algoritmo de escalonamento preemptivo não faz sentido, possui as características;
+    - Cumprimento de prazos;
+    - Evita que os dados sejam perdidos durante a execução;
+    - Previsibilidade, evitando perda de qualidade durante a execução do processo.
+- Ao analisar e procurar soluções para os problemas de sincronização de sistemas operacionais, foram formulados vários problemas, dentre eles podemos destacar:
+  - Problema do produtor-consumidor;
+  - Problema dos filósofos, proposto por Dijkstra em 1965;
+  - Problema dos leitores e escritores, proposto por Courtois, Heymans, Parnas (1971).
