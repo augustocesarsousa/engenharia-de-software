@@ -701,3 +701,32 @@
   - As mensagens possuem um número sequencial para evitar a leitura da mesma mensagem duas vezes;
   - O nome dos processos são únicos para evitar o envio e recebimento de mensagens por processos errados;
   - Utiliza autenticação para evitar comunicação com CPUs não autorizadas.
+
+## Deadlock e adiantamento indefinido
+
+- De acordo com Deitel, Deitel e Choffnes (2005), um processo ou thread está em estado de deadlock (impasse) ou travado se estiver esperando por um evento que não vai acontecer;
+- Um recurso é algo que pode ser adquirido, usado e liberado com o passar do tempo;
+- Há dois tipos de recursos:
+  - Preemptível: pode ser retirado do seu processo proprietário sem prejudicá-lo, como o uso da memória no computador;
+  - Não preemptível: não pode ser retirado do seu processo proprietário sem causar prejuízo à atividade que estava sendo realizada.
+- Os impasses ocorrem com recursos não preemptíveis;
+- Impasse de recurso: ocorre quando um conjunto de processos está esperando por um evento que somente outro processo pode liberar;
+- Existem quatro condições que podem gerar um impasse de recurso:
+  - Condição de exclusão mútua: quando um recurso está associado a um único processo ou disponível;
+  - Condição de posse e espera: em que os processos já estão fazendo uso de recursos e precisam fazer uso de outros recursos;
+  - Condição de não preempção: na qual os recursos que já estão sendo utilizados por um processo não podem ser tomados dele, tendo de ser liberados por eles voluntariamente;
+  - Condição de espera circular – em que ocorre um encadeamento circular de processos, que estão esperando pela liberação de um recurso que está sendo utilizado por outro processo, pertencente à mesma cadeia.
+- Algoritmos/estratégias para identificar/evitar os impasses:
+  - Algoritmo do avestruz: quando o sistema operacional detecta um impasse, bloqueia o processo solicitante ou emite um código de erro;
+  - Verificação por parte da CPU a cada X minutos ou quando a sua utilização estiver abaixo do esperado, se existe algum impasse ocorrendo;
+  - Checkpoint: permite ao processo armazenar o seu estado (uso de memória e recursos alocados) em um arquivo, podendo ser reinicializados com base nessa informação;
+  - Recuperação por meio de eliminação de processos: estratégia em que o sistema operacional finaliza um dos processos envolvidos, esperando que o seu fim permita que os demais processos realizem suas tarefas.
+- As trajetórias de recursos se baseiam no conceito de:
+  - Estado seguro: quando o recurso não está envolvido em um impasse e se há um ordem de escalonamento para que ele possa concluir sua execução;
+  - Estado inseguro: o sistema operacional não pode garantir que o processo será concluído.
+- Em 1965, Dijkstra propôs o algoritmo do banqueiro, no qual o banqueiro (sistema operacional) precisa atender aos seus clientes (processos/threads) com uma linha de crédito (recursos);
+- Algoritmos para evitar a ocorrência de impasses específicos:
+  - Bloqueio em duas fases (two-phase blocking): atende à necessidade dos sistemas gerenciadores de bancos de dados que realizam o bloqueio (lock) de alguns registros para que eles possam ser atualizados;
+  - Impasse de comunicação: pode ocorrer quando um processo X envia uma mensagem para o processo Y e fica bloqueado até que a mensagem de retorno seja recebida;
+  - Livelock: pode acontecer quando a tabela de processos do sistema operacional está cheia e um processo que tenta criar threads descobre isso;
+  - Condição de inanição (starvation): pode acontecer quando um processo nunca tenha acesso a um recurso que está solicitando.
