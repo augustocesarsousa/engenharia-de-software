@@ -567,11 +567,11 @@
   - O término do quantum do processo em execução;
   - A conclusão de uma comunicação com um dispositivo de E/S ou uma interrupção gerada por um processo.
 
-### Comunicação interprocessos
+#### Comunicação interprocessos
 
 - O ambientes multiprogramação e os ambientes de rede obrigaram os sistemas operacionais a criarem formas de comunicação interprocessos (IPC).
 
-#### Sinais
+##### Sinais
 
 - Segundo Deitel, Deitel e Choffnes (2005). "Sinais são interrupções de software que notificam ao processo que um evento ocorreu";
 - Eles não permitem que os processos troquem dados entre si;
@@ -581,7 +581,7 @@
   - Ignorá-lo;
   - Mascará-lo.
 
-#### Troca de mensagens
+##### Troca de mensagens
 
 - Com o aumento do interesse pelo uso de **sistemas distribuídos**, a IPC passou a utilizar troca de mensagens, que pode ser:
   - Unidirecional;
@@ -594,9 +594,9 @@
 - Para tentar evitar esse cenário, eles fazem uso de protocolos de confirmação, caso a confirmação não seja recebida pelo emissor, ele poderá esperar um tempo e retransmiti-la;
 - Outro problema é a segurança. pois os processos emissores e receptores podem identificar possíveis tentativas de roubo de dados.
 
-## Threads
+### Threads
 
-### Definição de threads
+#### Definição de threads
 
 - A linguagem de programação ADA, desenvolvida pela Bull SAS para o Departamento de Defesa dos EUA na década de 1970, foi uma das principais linguagens de programação a dar suporte à programação concorrente;
 - Um **thread** permite ao sistema operacional executar uma tarefa de modo independente dos outros processos ou threads, esse processo é chamado de **LWP** (Lightweight Process - Processo leve);
@@ -612,7 +612,7 @@
   - Desempenho: permite às aplicações multithread fazerem uso de um ou vários processadores paralelamente;
   - Cooperação: permite a IPC pelos threads, o que minimiza o uso de memória;
 
-### Estados de threads
+#### Estados de threads
 
 - Assim como os processos, todo thread tem uma série de estados:
   - **Nascido**: estado em que a thread é criada;
@@ -623,14 +623,14 @@
   - Adormecido: estado em que a thread não possui nenhuma atividade para realizar no momento;
   - **Morto**: estado em que a thread finaliza sua tarefa e é encerrada.
 
-### Operações de threads
+#### Operações de threads
 
 - Cancelamento: quando uma thread deve ser encerrada, o que não significa o seu término real, pois ele pode mascarar ou desativar o recebimento de sinais de cancelamento;
 - Associação: quando um processo é criado inicia uma thread **primária**, que será associada a outras threads e fica dormindo até que as outras threads encerrem sua execução.
 
-### Modelos de threads
+#### Modelos de threads
 
-#### Threads de usuários
+##### Threads de usuários
 
 - Executam operações de suporte a threads no espaço do usuário;
 - São criados por bibliotecas;
@@ -640,7 +640,7 @@
 - Garante a portabilidade do processo;
 - O sistema operacional não consegue despachar as threads para mais de um processador simultaneamente.
 
-#### Threads de núcleo
+##### Threads de núcleo
 
 - Mapeiam cada thread em seu contexto de execução;
 - Fazem o uso do mapeamento _um-para-um_;
@@ -650,7 +650,7 @@
 - São dependentes de API para tratamento de threads do sistema operacional;
 - Perde a portabilidade referente as threads de usuário.
 
-#### Threads de usuários e núcleo
+##### Threads de usuários e núcleo
 
 - Usam o mapeamento _muitos-para-muitos_;
 - O número de threads de usuário e núcleo não precisa ser igual;
@@ -658,7 +658,7 @@
 - Implementa um reservatório de threads (thread pooling);
 - A aplicação informa ao sistema operacional o número de threads de núcleo que precisa.
 
-### Implementação de threads
+#### Implementação de threads
 
 - A execução de um processo pode ser pausada por uma interrupção gerada por hardware ou por um sinal que, por sua vez, é gerado por software;
 - Há dois tipos de sinais:
@@ -671,7 +671,7 @@
 - Um thread pode chegar ao fim de maneira natural, quando encerra sua execução; ou de maneira abrupta, quando ocorre uma exceção na sua execução ou quando recebe um sinal de cancelamento;
 - Cabe ao sistema operacional, ao identificar o término de um thread, removê-lo prontamente do sistema.
 
-## Execução assíncrona concorrente
+### Execução assíncrona concorrente
 
 - Se houver mais de um thread em execução no sistema operacional dizemos que esses threads são concorrentes entre si;
 - Execução assíncrona: ocorre quando os threads em execução se comunicam entre si;
@@ -702,7 +702,7 @@
   - O nome dos processos são únicos para evitar o envio e recebimento de mensagens por processos errados;
   - Utiliza autenticação para evitar comunicação com CPUs não autorizadas.
 
-## Programação concorrente
+### Programação concorrente
 
 - Monitor: é um objeto que contém dados e procedimentos necessários para realizar a alocação de determinado recurso compartilhado ou um grupo de recursos compartilhados reutilizáveis serialmente;
 - Ocultação de informações: técnica onde os dados do monitor só podem ser acessados por um thread que está dentro dele;
@@ -713,7 +713,7 @@
 - O buffer circular permite ao thread produtor escrever dados no buffer, sem ter de esperar que o thread consumidor o retire em seguida;
 - O buffer circular pode ser utilizado pelo sistema operacional para gerenciar o controle de spooling, que ocorre quando um thread (spooler) gera dados que precisam ser impressos por uma impressora, por exemplo.
 
-## Deadlock e adiantamento indefinido
+### Deadlock e adiantamento indefinido
 
 - De acordo com Deitel, Deitel e Choffnes (2005), um processo ou thread está em estado de deadlock (impasse) ou travado se estiver esperando por um evento que não vai acontecer;
 - Um recurso é algo que pode ser adquirido, usado e liberado com o passar do tempo;
@@ -742,7 +742,7 @@
   - Livelock: pode acontecer quando a tabela de processos do sistema operacional está cheia e um processo que tenta criar threads descobre isso;
   - Condição de inanição (starvation): pode acontecer quando um processo nunca tenha acesso a um recurso que está solicitando.
 
-## Escalonamento de processador
+### Escalonamento de processador
 
 - Quando um computador possui vários processos ou threads no estado de pronto e apenas um processador livre para atendê-los, o sistema operacional precisa usar um escalonador;
 - Esse algoritmo possui algumas características essenciais, como:
@@ -772,3 +772,48 @@
   - Problema do produtor-consumidor;
   - Problema dos filósofos, proposto por Dijkstra em 1965;
   - Problema dos leitores e escritores, proposto por Courtois, Heymans, Parnas (1971).
+
+## Memória real e virtual
+
+- O processador não acessa a memória secundária diretamente por considerá-la muito lenta;
+- Para aumentar a velocidade de acesso do processador, o sistema operacional transfere os dados da memória secundária (HD) para a memória principal (RAM);
+- Com o aumento de tamanho e complexidade dos programas, somado à limitação no custo da memória principal, os projetistas tiveram de criar a memória virtual;
+- Esse processo cria a ilusão que existe mais memória RAM do que há realmente;
+
+### Memória real
+
+- A memória real atua como um depósito de instruções e dados gerados pelos programas em execução no computador;
+- A memória real é considerada um dos componentes básicos do computador;
+- Ela fica posicionada no meio da hierarquia das memórias, abaixo dos registradores e cache, mas acima da memória secundária e outros dispositivos.
+
+#### Conceito
+
+- É o único componente do computador acessado diretamente pela CPU;
+- O último estágio na evolução e no aprimoramento da memória real é a memória de acesso aleatório – Random-Access Memory (RAM);
+- Ela está conectada direta ou indiretamente à CPU por meio de dois barramentos:
+  - Barramento de endereços: a CPU envia um número também chamado de _endereço de memória_, que indica o local desejado dos dados;
+  - Barramento de dados: a CPU lê ou grava os dados por meio desse barramento.
+
+#### Organização
+
+- De acordo com Deitel, Deitel e Choffnes (2005), cabe aos projetistas de sistemas operacionais tomar algumas decisões sobre a organização da memória, como:
+  a. O sistema operacional executará um processo por vez ou optará pela multiprogramação, na qual vários processos serão executados simultaneamente?
+  b. Caso o projetista tenha optado pela multiprogramação, a memória será dividida em partes (partições) iguais ou de tamanhos diferentes?
+  c. Essas partições serão criadas dinamicamente, de acordo com a necessidade dos processos, ou estaticamente, com base em levantamentos estatísticos de comportamento?
+  d. Os processos terão de fazer uso de partições específicas para as quais foram designados ou poderão fazer uso de partições livres?
+  e. Os processos poderão fazer uso de partições contíguas, isto é, uma do lado da outra, ou poderão ser divididos entre partições separadas?
+
+#### Gerenciamento
+
+- O sistema operacional faz uso do gerenciador de memória para organizar e definir as estratégias de gestão de memória, que determinam qual organização deverá ser utilizada, mediante diferentes cargas de processos;
+- As estratégias de gerenciamento de memória são divididas nas seguintes categorias:
+  a. Estratégia de busca: determina qual próxima parte de um programa ou de um conjunto de dados será transferida para a memória principal. É dividida em dois tipos: sob demanda, na qual a transferência ocorre somente quando é referenciada por um programa em execução; ou antecipada, quando isso é feito antes de o programa ou os dados serem referenciados;
+  b. Estratégia de posicionamento: estabelece qual lugar da memória principal deverá ser ocupado pelos programas e dados que estão chegando. É dividida em três tipos: first fit (FF), traduzido como primeiro que couber; best fit (BF), ou seja, melhor que couber; e worst fit (WF), ou pior que couber;
+  c. Estratégia de substituição: indica quais dados deverão ser removidos da memória principal para liberar espaço para um novo programa.
+- Alocação de memória contígua: estratégia de buscavam encontrar uma área na memória principal contígua que fosse grande o suficiente para acomodar todo o programa a ser executado;
+- Sobreposições (overlays): estratégia que permitia a execução de programas cujo tamanho era maior que a memória principal, por meio da divisão do programa em seções lógicas, alocando a memória conforme a necessidade;
+- Alocação de memória não contígua: o programa é dividido em blocos (segmentos) para que possa ser disposto em áreas não contíguas da memória principal;
+- Registrador de fronteira: armazena o endereço de memória destinado ao programa do usuário – endereço esse que é validado a cada requisição de alocação de memória;
+- Multiprogramação por partição variável: permite que os processos façam uso da quantidade de memória necessária, respeitando a quantidade de memória total disponível;
+- Fragmentação externa: ocorre quando a soma de todas as lacunas na memória principal é grande o suficiente para acomodar um processo, mas cada uma delas é pequena demais para fazer o mesmo;
+- Coleta de lixo (garbage collector): estratégia de compactação de memória, na qual as áreas ocupadas são enviadas para uma das extremidades da memória principal, criando uma grande área livre e contígua;
