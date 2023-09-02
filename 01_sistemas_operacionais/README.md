@@ -817,3 +817,74 @@
 - Multiprogramação por partição variável: permite que os processos façam uso da quantidade de memória necessária, respeitando a quantidade de memória total disponível;
 - Fragmentação externa: ocorre quando a soma de todas as lacunas na memória principal é grande o suficiente para acomodar um processo, mas cada uma delas é pequena demais para fazer o mesmo;
 - Coleta de lixo (garbage collector): estratégia de compactação de memória, na qual as áreas ocupadas são enviadas para uma das extremidades da memória principal, criando uma grande área livre e contígua;
+
+### Memória virtual
+
+- As limitações de espaço e custo da memória real levaram à criação da memória virtual, dando ao usuário e computador a ilusão de que existe mais memória do que realmente há.
+
+#### Conceito
+
+- O conceito de memória virtual surgiu para buscar solucionar o problema de pouco espaço de memória real. Esse conceito foi empregado pela primeira vez no computador Atlas, desenvolvido pela Universidade de Manchester, na década de 1960;
+- Fazem uso de segmentação e paginação.
+
+#### Organização
+
+- O sistema de memória virtual utiliza dois tipos de endereço:
+  - Virtuais: empregados pelos processos;
+  - Físicos ou reais: responsáveis por informar as localizações físicas de armazenamento na memória principal.
+- Quando um processo tenta acessar um endereço virtual, cabe ao sistema operacional identificar o endereço real correspondente. Isso é feito por meio de um componente de hardware chamado unidade de gerenciamento de memória (Memory Management Unit – MMU);
+- Para realizar a tradução dos endereços virtuais em endereços físicos durante a execução de um processo o sistema operacional utiliza mecanismos de tradução dinâmica de endereço (Dynamic Address Translation – DAT).
+
+##### Paginação
+
+- A paginação usa o mapeamento de blocos de tamanho fixo (páginas) e é representada pela tupla (p, d):
+  - **p**: corresponde ao número da página na memória virtual;
+  - **d**: corresponde ao deslocamento do início da página p.
+- Ao realizar a migração da página armazenada na memória secundária para a memória principal, o sistema operacional faz uso de uma área para recepcioná-la, área essa que precisa ter o tamanho exato da página, sendo chamada de _moldura da página_ (page frame – p’);
+- Para controlar se uma página virtual (p) corresponde a uma moldura de página (p’), o sistema operacional faz uso de um registro chamado de _entrada de tabela de páginas_ (Page Table Entry – PTE);
+- Segundo Deitel, Deitel e Choffnes (2005), a tradução de endereços virtuais em endereços físicos pode ser realizada das seguintes formas:
+  a. **Mapeamento direto**: em que a tradução dinâmica de endereço na paginação é semelhante à tradução de endereço de bloco;
+  b. **Mapeamento associativo**; que armazena a tabela de páginas em uma tabela associativa, guardando o conteúdo endereçado, e não a sua localização;
+  c. **Mapeamento direto/associativo**: em que as PTEs são armazenadas na memória cache associativa, denominada buffer de tradução lateral (Translation Lookaside Buffer – TLB), que guarda as páginas que foram referenciadas recentemente, concedendo melhor desempenho com base no conceito de localidade temporal;
+  d. **Tabelas de páginas multiníveis** ou **tabelas hierárquicas**: que permitem ao sistema operacional armazenar em localizações não contíguas da memória principal as porções da tabela de páginas que o processo está utilizando;
+  e. **Tabelas de páginas invertidas**: que armazenam uma PTE na memória para cada moldura de página no sistema;
+  f. **Compartilhamento em um sistema de paginação**: o qual diminui o consumo de memória pelos programas que usam dados/instruções comuns.
+
+##### Segmentação
+
+- Uma alternativa para a paginação é a **segmentação** da memória física, na qual o programa é dividido em blocos de dados ou instruções, que são nomeados segmentos;
+- Uma das vantagens dos sistemas de segmentação virtual é a possibilidade de armazenar na memória principal somente os segmentos necessários para a execução do processo;
+- O endereço de segmentação virtual é representado pela tupla v = (s, d):
+  - **s**: corresponde ao número do segmento na memória virtual;
+  - **d**: corresponde ao deslocamento dentro do segmento s, onde está localizado o item referenciado.
+- Para Deitel, Deitel e Choffnes (2005), o sistema operacional faz uso de três diferentes estratégias para a tradução de endereços de segmentação:
+  a. **Tradução de endereço de segmentação por mapeamento direto**: na qual o processo faz referência a um endereço de memória virtual para identificar onde o segmento está armazenado na memória principal;
+  b. **Compartilhamento em um sistema de segmentação**: em que a sobrecarga do compartilhamento dos segmentos pode ser menor que o compartilhamento das páginas, pois as estruturas de dados a serem compartilhadas podem crescer ou diminuir sem alterar as informações;
+  c. **Proteção e controle de acesso em sistemas de segmentação**: que busca criar um esquema de implementação de proteção de memória nos sistemas de segmentação com base nas chaves de proteção de memória, no qual cada processo está vinculado a um valor (chave de proteção).
+
+##### Sistemas de segmentação/paginação
+
+- Os sistemas operacionais da década de 1960, como o MULTICS e o TSS, combinavam os conceitos de paginação e segmentação;
+- Nessa abordagem, os segmentos ocupam uma ou mais páginas;
+- Nem todas as páginas do segmento precisam estar na memória principal simultaneamente, e as páginas contíguas na memória virtual não necessitam ser contíguas na memória principal;
+- O endereço da memória virtual é implementado pela representação v = (s, p, d):
+  - **s**: corresponde ao número do segmento;
+  - **p**: corresponde ao número da página dentro do segmento;
+  - **d**: corresponde ao deslocamento dentro da página que armazena o item.
+
+#### Gerenciamento
+
+- O conceito de _localidade_ o afirma que um processo tende a referenciar a memória principal seguindo padrões altamente localizados;
+- Conforme Deitel, Deitel e Choffnes (2005), o gerenciamento de memória virtual pode fazer uso de diferentes estratégias:
+  - **Estratégia de busca na memória virtual**: responsável por definir quando as páginas ou os segmentos serão movimentados do armazenamento secundário para a memória principal. Essa técnica pode se dividir em dois tipos de estratégia:
+    a. **Busca por demanda**: ocorre quando o sistema operacional fica esperando pela requisição feita pelo processo para utilizar uma página;
+    b. **Busca antecipada**: o sistema operacional faz uso de heurísticas para tentar prever quais páginas ou segmentos serão requisitados pelos processos.
+  - **Estratégia de substituição**: o sistema operacional define qual página ou segmento deverá ser substituído quando a memória principal estiver cheia. Podemos dividir em oito tipos de estratégia:
+    1. **Substituição aleatória de páginas** (Random Page Replacement – RAND): todas as páginas armazenadas na memória principal têm a mesma probabilidade de serem selecionadas e substituídas;
+    2. **Substituição de páginas FIFO** (First-In-First-Out): a qual opta por substituir a página que está há mais tempo no sistema e que, infelizmente, pode substituir as páginas mais utilizadas pelo sistema;
+    3. **Anomalia de Belady ou Anomalia FIFO**: baseada nos estudos do matemático húngaro Laszlo Belady, nos anos 1960, que descobriu que o aumento do número de molduras de páginas não reduz o número de falhas – na verdade, aumenta;
+    4. **Substituição da página menos recentemente usada** (Least-Recently-Used – MRU): faz uso do conceito de _localidade temporal_, substituindo a página que ficou mais tempo armazenada na memória sem ser referenciada;
+    5. **Substituição de página menos frequentemente usada** (Least-Frequently-Used – MFU): decide por substituir a página que está sendo menos requisitada com base na heurística de que provavelmente não será requisitada novamente no futuro;
+    6. **Substituição de página não usada recentemente** (Not-Used-Recently – NUR): se aproxima da MRU, com pouca sobrecarga, fazendo uso de um bit eferenciado ou bit acessado, o qual indica se a página foi requisitada ou não, e um bit modificado, o qual indica se a página foi modificada ou não;
+    7. **Substituição de página do tipo relógio**: que organiza as páginas em uma lista circular. O sistema operacional Linux faz uso de uma variação do algoritmo do relógio;
+    8. **Substituição de página longínqua**: cria um grafo de acesso para mapear os padrões de requisição do processo, substituindo a página não requisitada mais distante no grafo por uma nova página;
