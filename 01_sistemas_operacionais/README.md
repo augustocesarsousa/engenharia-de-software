@@ -885,7 +885,7 @@
     3. **Anomalia de Belady ou Anomalia FIFO**: baseada nos estudos do matemático húngaro Laszlo Belady, nos anos 1960, que descobriu que o aumento do número de molduras de páginas não reduz o número de falhas – na verdade, aumenta;
     4. **Substituição da página menos recentemente usada** (Least-Recently-Used – MRU): faz uso do conceito de _localidade temporal_, substituindo a página que ficou mais tempo armazenada na memória sem ser referenciada;
     5. **Substituição de página menos frequentemente usada** (Least-Frequently-Used – MFU): decide por substituir a página que está sendo menos requisitada com base na heurística de que provavelmente não será requisitada novamente no futuro;
-    6. **Substituição de página não usada recentemente** (Not-Used-Recently – NUR): se aproxima da MRU, com pouca sobrecarga, fazendo uso de um bit eferenciado ou bit acessado, o qual indica se a página foi requisitada ou não, e um bit modificado, o qual indica se a página foi modificada ou não;
+    6. **Substituição de página não usada recentemente** (Not-Used-Recently – NUR): se aproxima da MRU, com pouca sobrecarga, fazendo uso de um bit referenciado ou bit acessado, o qual indica se a página foi requisitada ou não, e um bit modificado, o qual indica se a página foi modificada ou não;
     7. **Substituição de página do tipo relógio**: que organiza as páginas em uma lista circular. O sistema operacional Linux faz uso de uma variação do algoritmo do relógio;
     8. **Substituição de página longínqua**: cria um grafo de acesso para mapear os padrões de requisição do processo, substituindo a página não requisitada mais distante no grafo por uma nova página.
 
@@ -917,3 +917,44 @@
   3. Na ocorrência da falta de página, quando o sistema operacional realiza a leitura dos registradores (hardware) para identificar qual endereço virtual está gerando a falta de página, corrigindo o erro por meio do descarte de uma página que não está sendo utilizada e alocando uma nova página a ser usada pelo processo que deu erro;
   4. Na finalização do processo, quando o sistema operacional libera a tabela de páginas, as páginas e o espaço em disco ocupado pelas páginas.
 - Quando um processo requisita uma página que não está na memória principal, a instrução responsável pela falta de página sofre um bloqueio em sua execução, gerando uma interrupção, que é encaminhada para o sistema operacional;
+
+## Segurança em sistemas operacionais
+
+### Criptografia
+
+- De acordo com Deitel, Deitel e Choffnes (2005), a criptografia trata da codificação e decodificação de dados, de modo que esses possam ser interpretados apenas pelos receptores a que se destinam;
+- Ocorre devido á transformação dos dados por meio de uma cifra ou sistema criptográfico;
+- Os sistemas criptográficos modernos usam algoritmos que atuam nos bits ou grupos de bits (blocos) dos dados, e não nas letras, como os algoritmos antigos;
+- As chaves, utilizadas para a criptografia e decriptação, são cadeias binárias com uma chave de tamanho determinado. Por exemplo, um sistema criptográfico de
+  64 bits usa uma chave de 64 bits;
+- Quanto maior a chave, maiores serão o tempo e a capacidade computacional necessários para desvendar (quebrar) a cifra;
+- A criptografia por chave secreta, ou criptografia simétrica, é um exemplo de sistema criptográfico moderno, que utiliza a mesma chave secreta tanto para criptografar quanto decriptar um texto;
+- **KDC** (Key Distribution Center - central de distribuição de chaves): gera uma chave de sessão utilizada pelo emissor e receptor durante uma transação;
+- Exemplos de criptografia simétrica:
+  - **DES** (Data Encryption Standard - Padrão para Criptografia de Dados):
+    - Desenvolvido em 1970 pela IBM;
+    - Utilizado pelo governo norte-americano e pelo ANSI (American National Standards Institute - Instituto Nacional Americano de Padrões) até o final da década de 1990;
+  - **Triple DES** ou **3DES**:
+    - Substituto do padrão DES;
+    - Aplicava o padrão DES três vezes em cada um dos blocos, utilizando chaves diferentes;
+    - Mais seguro porém mais custoso computacionalmente;
+    - Em 2000 foi substituído pelo padrão AES (Advanced Encryption Standard - Padrão Avançado de Criptografia), faz uso de chaves e blocos de 128,192, e 256 bits.
+- Criptografia por chave pública:
+  - Desenvolvida na década de 1970 por pesquisadores da Universidade de Stanford, Whitfield Diffie e Martin Hellman;
+  - Buscavam uma solução para a necessidade de compartilhamento das chaves simétricas;
+  - Utiliza uma chave pública (criptografar) e uma privada (descriptografar);
+- Exemplos de criptografia de chave pública:
+  - **RSA** (Rivest-Shamir-Adleman):
+    - Desenvolvido por Ron Rivest, Adi Shamir e Leonard Adleman, pesquisadores do MIT;
+    - Utilizado amplamente na internet em navegadores Web, servidores e sistemas de e-mail.
+  - **PGP** (Pretty Good Privacy - Privacidade Razoável):
+    - Desenvolvido em 1991 pelo pesquisador Philip Zimmermann;
+    - Utilizado na criptografia de mensagens e arquivos de e-mail, confirmando a identidade do emissor ou do conteúdo enviado.
+- **Assinaturas Digitais**: forma de assinar mensagens de e-mail e outros documentos digitais para garantir a identidade do emissor;
+  - Submete o documento a uma função de resumo de sentido único, que produz um resultado, chamado resumo(hash), que possui um tamanho fixo, independentemente do tamanho do documento original;
+  - Exemplos de função de resumo de sentido único:
+    - **MD5** (Message Digest 5 - Compêndio de Mensagens 5): que gera um hash de 16 bytes;
+    - **SHA-1** (Secure Hash Algorithm - Algoritmo Hash Seguro): gera um hash de 20 bytes;
+  - Ao obter o resumo, o proprietário do documento usa uma chave privada sobre ele, gerando um bloco de assinatura, que é anexado ao documento enviado para o receptor;
+  - Quando o documento é recebido, o receptor realiza a decriptação do resumo, via MD5 ou SHA-1. Ao mesmo tempo, ele realiza a decriptação do bloco de assinatura, fazendo uso de uma chave pública;
+  - Caso o valor do resumo decriptado não seja igual ao valor do bloco de assinatura decriptado, o documento é considerado adulterado;
