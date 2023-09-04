@@ -887,4 +887,33 @@
     5. **Substituição de página menos frequentemente usada** (Least-Frequently-Used – MFU): decide por substituir a página que está sendo menos requisitada com base na heurística de que provavelmente não será requisitada novamente no futuro;
     6. **Substituição de página não usada recentemente** (Not-Used-Recently – NUR): se aproxima da MRU, com pouca sobrecarga, fazendo uso de um bit eferenciado ou bit acessado, o qual indica se a página foi requisitada ou não, e um bit modificado, o qual indica se a página foi modificada ou não;
     7. **Substituição de página do tipo relógio**: que organiza as páginas em uma lista circular. O sistema operacional Linux faz uso de uma variação do algoritmo do relógio;
-    8. **Substituição de página longínqua**: cria um grafo de acesso para mapear os padrões de requisição do processo, substituindo a página não requisitada mais distante no grafo por uma nova página;
+    8. **Substituição de página longínqua**: cria um grafo de acesso para mapear os padrões de requisição do processo, substituindo a página não requisitada mais distante no grafo por uma nova página.
+
+### Questões de projeto e implementação
+
+- Os algoritmos de alocação (substituição) de página possuem duas abordagens:
+  - Local: aloca um porção fixa de memória para cada um dos processos em execução;
+  - Global: considera todos os processos como uma unidade, ignorando as suas características individuais.
+
+#### Questões de projeto para sistemas de paginação
+
+- **MRU global** (gMRU): estratégia de substituição de página global que substitui a página menos usada recentemente em todo o sistema;
+- **SEQ** (sequência): usa a estratégia MRU para substituir as páginas até que uma sequência de falta de página seja detectada. Quando isso ocorre, o sistema passa a utilizar a estratégia de substituição da página usada mais recentemente (UMR);
+- **Taxa de falta de página**: usado pelo sistema operacional para medir o gerenciamento de memória virtual;
+- **Algoritmo de frequência de falta de página** (Page-Fault-Frequency – PFF): realiza o ajuste do conjunto de páginas residente do processo de medição;
+- **Teoria do conjunto de trabalho para o comportamento do programa**: proposta pelo cientista da computação Peter J. Denning, afirma que para um programa ser executado de modo eficaz o sistema deve manter na memória principal apenas as páginas que fazem parte do conjunto de trabalho corrente do processo, caso isso não ocorra ele pode armazenar páginas desnecessárias (thrasing) no sistema, comprometendo a utilização do processador;
+- Segundo Deitel, Deitel e Choffnes (2005), os projetistas de sistema operacional podem optar por três diferentes tamanhos de página:
+  1. Tamanho de página pequeno: reduz a fragmentação interna e permite a redução da quantidade de memória necessária para conter o conjunto de trabalho de um processo;
+  2. Tamanho de página grande: reduz o desperdício de memória provocado pela fragmentação de tabela e permite à entrada da TLB mapear uma região maior da memória, melhorando o desempenho;
+  3. Tamanhos diferentes de página: criam a possibilidade de fragmentação externa.
+- Segundo Tanenbaum e Bos (2015), a maioria dos computadores possui um único espaço para endereçamento de programas e dados;
+- Uma forma de compartilhamento de recursos pode ser feita pelo compartilhamento de bibliotecas, as _Dynamic-link Library_ (DLLs - bibliotecas de ligação dinâmica), utilizadas no sistema operacional Windows.
+
+#### Questões de implementação
+
+- Conforme Tanenbaum e Bos (2015), existem quatro situações em que o sistema operacional precisa se envolver com a paginação:
+  1. Na criação do processo, quando o sistema operacional precisa determinar o tamanho inicial do programa e realizar a criação da tabela de páginas a ser usada por ele;
+  2. No tempo de execução do processo, quando a MMU deve ser reinicializada e a TLB limpa os registros do processo anterior;
+  3. Na ocorrência da falta de página, quando o sistema operacional realiza a leitura dos registradores (hardware) para identificar qual endereço virtual está gerando a falta de página, corrigindo o erro por meio do descarte de uma página que não está sendo utilizada e alocando uma nova página a ser usada pelo processo que deu erro;
+  4. Na finalização do processo, quando o sistema operacional libera a tabela de páginas, as páginas e o espaço em disco ocupado pelas páginas.
+- Quando um processo requisita uma página que não está na memória principal, a instrução responsável pela falta de página sofre um bloqueio em sua execução, gerando uma interrupção, que é encaminhada para o sistema operacional;
