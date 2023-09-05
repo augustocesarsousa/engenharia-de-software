@@ -984,3 +984,32 @@
   - **Scripts de acesso de estações de trabalho**: enviam a senha do usuário aos servidores de aplicação, autenticando-o e permitindo o seu acesso futuro;
   - **Scripts de servidor de autenticação**: realizam a autenticação dos usuários fazendo uso de um servidor responsável por gerenciar as conexões dos usuários e das aplicações acessadas por eles;
   - **Autenticação por ficha (token)**: gerada quando o usuário é autenticado, habilitando-o a acessar as aplicações desejadas.
+
+### Controle de acesso
+
+- Os direitos de acesso são gerenciados por listas de controle de acesso ou por listas de capacidades;
+- **Direito de acesso**: forma encontrada pelo sistema operacional para manter a segurança gerenciando o acesso aos dados e aos recursos internos;
+- Os direitos de acesso podem ser:
+  - Copiados: conceder o direito de acesso de um usuário para outro;
+  - Transferidos: o direito de acesso de um usuário é entregue para outro usuário;
+  - Propagados: um usuário copia o seu direito de acesso para vários usuários.
+- **Domínio de proteção**: coleção de direitos de acesso, representada por um par ordenado, contendo o nome do objeto e seus privilégios;
+- De acordo com Deitel, Deitel e Choffnes (2005), o controle de acesso pode ser dividido em três níveis conceituais:
+  a. **Modelo de segurança**: define os sujeitos, objetos e privilégios de um sistema operacional;
+  b. **Política de segurança**: define para os usuários quais são os privilégios que eles possuem. A política de segurança é definida pelo usuário ou administrador do sistema operacional;
+  c. **Mecanismo de segurança**: forma com que o sistema operacional realiza a implementação da política de segurança adotada por ele.
+- **Princípio do mínimo privilégio**: o usuário recebe permissão de acesso somente nos objetos necessários para a execução das suas atividades;
+- UNIX e o Linux utilizam o modelo de **controle de acesso discricionário** (Discretionary Access Control – DAC), que concede controle das permissões de um objeto ao seu criador;
+- Sistemas governamentais, que processam dados sigilosos, usam o controle de acesso obrigatório (Mandatory Access Control – MAC), em que um esquema de permissão central é utilizado para gerenciar os sujeitos e os objetos;
+- O sistema operacional pode fazer uso das seguintes estratégias de mecanismo de segurança:
+  a. **Matrizes de controle de acesso**: utilizam uma matriz para armazenar a relação dos sujeitos, armazenados nas linhas, e dos objetos, armazenados nas colunas;
+  b. **Listas de controle de acesso**: usam listas para armazenar os direitos de acesso. Essa estratégia pode ser implementada tanto para os sujeitos quanto para os objetos;
+  c. **Listas de capacidades**: armazenam as capacidades, isto é, ponteiros ou fichas que concedem os privilégios aos sujeitos. Elas não podem ser modificadas, mas podem ser reproduzidas.
+- No Linux, cada um dos arquivos do sistema recebe atributos de controle de acesso que vão definir as permissões de segurança do arquivo:
+  - **Leitura** (read – r);
+  - **Escrita** (write – w);
+  - **Execução** (execute - X).
+  - É atribuída a três níveis diferentes:
+    - Usuário: as permissões são concedidas ao dono do arquivo;
+    - Grupo: concede as permissões a um membro de um grupo;
+    - Outros: e as permissões são atribuídas a um usuário que não é o dono do arquivo nem membro de um grupo.
