@@ -957,4 +957,30 @@
     - **SHA-1** (Secure Hash Algorithm - Algoritmo Hash Seguro): gera um hash de 20 bytes;
   - Ao obter o resumo, o proprietário do documento usa uma chave privada sobre ele, gerando um bloco de assinatura, que é anexado ao documento enviado para o receptor;
   - Quando o documento é recebido, o receptor realiza a decriptação do resumo, via MD5 ou SHA-1. Ao mesmo tempo, ele realiza a decriptação do bloco de assinatura, fazendo uso de uma chave pública;
-  - Caso o valor do resumo decriptado não seja igual ao valor do bloco de assinatura decriptado, o documento é considerado adulterado;
+  - Caso o valor do resumo decriptado não seja igual ao valor do bloco de assinatura decriptado, o documento é considerado adulterado.
+
+### Autenticação
+
+- Conforme Tanenbaum e Bos (2015), a maioria dos métodos de autenticação de usuários tem como base um dos três princípios gerais da identificação:
+  a. **Alguma coisa que o usuário sabe**: uma senha, um número de identificação pessoal (Personal Identification Number – PIN) etc;
+  b. **Alguma coisa que o usuário tenha em posse**: por exemplo, um crachá, uma carteira de identidade, uma chave, e assim por diante;
+  c. **Alguma coisa que o usuário é**: uma característica exclusiva dele – impressão digital, varredura de retina, assinatura, entre outras.
+- Alguns sistemas utilizam dois fatores para aumentar a autenticidade do usuário;
+- BAPI (Biometric Application Programming Interface – Interface para Programação de Aplicação Biométrica);
+- Conforme Deitel, Deitel e Choffnes (2005), estima-se que 70% a 90% dos ataques a redes corporativas é realizado internamente – usuários da própria empresa (funcionários ou terceiros);
+- Podemos citar como formas de ataques internos:
+  a. **As bombas lógicas**: códigos inseridos no sistema operacional de produção da empresa e que dependem da inserção diária de uma senha para que nada ocorra;
+  b. **Os alçapões (trap door)**: códigos inseridos por um programador para evitar uma verificação, por exemplo, acessando o sistema com o login 12345, sem a necessidade de informar uma senha;
+  c. **O logro na autenticação do usuário**: tela criada por um desenvolvedor muito parecida com a tela de autenticação original (Figura 6), que é executada nos computadores de uma rede, normalmente em redes de computadores públicos, utilizadas em universidades e colégios.
+- Para tentar evitar a ameaça dos ataques internos à segurança, o MIT desenvolveu um protocolo de código-fonte aberto, denominado **Kerberos**;
+- O Kerberos utiliza um servidor de autenticação e um serviço de concessão de bilhetes (Ticket Granting Service – TGS), que seguem o seguinte fluxo:
+  - O usuário fornece login e senha para o servidor de autenticação;
+  - Caso os dados fornecidos sejam válidos, o servidor de autenticação emite um bilhete de concessão de entrada (Ticket--Granting Ticket – TGT), que é criptografado fazendo uso da chave secreta fornecida pelo usuário;
+  - O usuário envia o TGT decriptado ao TGS e solicita um bilhete de serviço, que autorizará ao usuário o acesso aos serviços da rede;
+  - Se o TGT for válido, o TGS vai gerar um bilhete de serviço que é criptografado fazendo uso da chave secreta do usuário;
+  - Ao receber o bilhete de serviço, o usuário o decripta e o utiliza para acessar os recursos da rede;
+  - Para evitar o uso indiscriminado do bilhete de serviço, ele possui um prazo de expiração, que pode ser renovado ou não pelo TGS.
+- Sistemas de assinatura única: criado para simplificar o processo de autenticação, utilizando uma única senha, permite acesso a várias aplicações do sistema em diferentes computadores, exemplos de assinatura única:
+  - **Scripts de acesso de estações de trabalho**: enviam a senha do usuário aos servidores de aplicação, autenticando-o e permitindo o seu acesso futuro;
+  - **Scripts de servidor de autenticação**: realizam a autenticação dos usuários fazendo uso de um servidor responsável por gerenciar as conexões dos usuários e das aplicações acessadas por eles;
+  - **Autenticação por ficha (token)**: gerada quando o usuário é autenticado, habilitando-o a acessar as aplicações desejadas.
