@@ -1013,3 +1013,18 @@
     - Usuário: as permissões são concedidas ao dono do arquivo;
     - Grupo: concede as permissões a um membro de um grupo;
     - Outros: e as permissões são atribuídas a um usuário que não é o dono do arquivo nem membro de um grupo.
+
+### Ataques à segurança
+
+- Um _ataque criptoanalítico_, os invasores tentam decriptar um texto previamente cifrado sem possuir a chave para a decriptação. O objetivo desse tipo de ataque é descobrir a chave utilizada por meio do texto cifrado;
+- _Vírus_ é um código executável, para Deitel, Deitel e Choffnes (2005), os vírus podem ser classificados em três tipos:
+  a. **Vírus de setor de boot (inicialização)**: : infecta o setor de boot do computador, fazendo com que ele seja inicializado com o sistema operacional e permitindo o controle do sistema;
+  b. **Vírus transiente**: anexo a uma aplicação do computador, sendo ativado e desativado quando a aplicação é executada ou encerrada, respectivamente;
+  c. **Vírus residente**: fica armazenado na memória do computador, agindo enquanto o computador estiver em funcionamento.
+- Um _verme_ (worm) é um código executável que se propaga em uma rede infectando outros arquivos. Diferentemente do vírus, o verme não necessita da ação de um usuário ou de ser anexado a um arquivo;
+- _Cavalo de Troia_ (Trojan Horse) é um programa mal-intencionado que tem autorização para ser executado no sistema operacional, o que dificulta a sua identificação, visto que ele se assemelha aos programas do computador;
+- O programa de _porta dos fundos_ (backdoor) é um vírus que permite ao atacante o acesso completo aos recursos do computador infectado;
+- Um _ataque de recusa de serviço_ (Denial-of-Service – DoS), os invasores enviam muitos pacotes de dados contra servidores, saturando-os e impedindo que as solicitações dos verdadeiros usuários sejam atendidas;
+- O _ataque de sistema de nome de domínio_ (Domain Name System – DNS) busca alterar o endereço utilizado por um site Web, redirecionando os usuários para outro site, semelhante ao original, no qual os 148 Sistemas Operacionais usuários desavisados irão revelar dados sigilosos, como os seus logins e senhas de acesso;
+- O _ataque de recusa de serviço distribuído_ ocorre quando os pacotes de dados são enviados de vários computadores, simultaneamente;
+- O _ataque transbordamento de buffer_, que ocorre quando um programa envia mais dados a um buffer do que ele consegue armazenar, substituindo os dados corretos por código mal-intencionado que pode permitir ao invasor acesso ao sistema;
