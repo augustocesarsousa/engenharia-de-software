@@ -1027,4 +1027,38 @@
 - Um _ataque de recusa de serviço_ (Denial-of-Service – DoS), os invasores enviam muitos pacotes de dados contra servidores, saturando-os e impedindo que as solicitações dos verdadeiros usuários sejam atendidas;
 - O _ataque de sistema de nome de domínio_ (Domain Name System – DNS) busca alterar o endereço utilizado por um site Web, redirecionando os usuários para outro site, semelhante ao original, no qual os 148 Sistemas Operacionais usuários desavisados irão revelar dados sigilosos, como os seus logins e senhas de acesso;
 - O _ataque de recusa de serviço distribuído_ ocorre quando os pacotes de dados são enviados de vários computadores, simultaneamente;
-- O _ataque transbordamento de buffer_, que ocorre quando um programa envia mais dados a um buffer do que ele consegue armazenar, substituindo os dados corretos por código mal-intencionado que pode permitir ao invasor acesso ao sistema;
+- O _ataque transbordamento de buffer_, que ocorre quando um programa envia mais dados a um buffer do que ele consegue armazenar, substituindo os dados corretos por código mal-intencionado que pode permitir ao invasor acesso ao sistema.
+
+### Prevenção de ataques e soluções de segurança
+
+- Um _firewall_ realiza a proteção de uma rede local (Local Area Network – LAN), gerenciando o seu tráfego e impedindo a invasão por pessoas não autorizadas, proibindo todas as transmissões que não possuem uma permissão explícita para serem realizadas, e permitindo todas as transmissões que não possuem uma proibição explícita;
+- Para se conectar à internet, a LAN faz uso de um _gateway_ (portal), que utiliza o firewall como forma de segurança;
+- Segundo Deitel, Deitel, e Choffnes (2005), há dois tipos primários de firewall:
+  - **Firewall de filtragem de pacotes**: examina os pacotes que são enviados de fora da rede, com base em regras como a origem do pacote, do endereço ou da porta. Uma desvantagem nesse tipo de firewall é que ele avalia somente a origem do pacote de dados, sem levar em conta os dados anexados à mensagem, o que pode permitir a entrada de vírus no sistema;
+  - **Gateway de nível de aplicação**: busca proteger a rede contra os dados contidos nos pacotes. Caso o pacote recebido contenha um vírus, ele será identificado pelo gateway, que vai impedir o seu envio para o destinatário.
+- Uma solução complementar ao uso do firewall é o uso da tecnologia de _camada de ar_, que separa a rede interna da rede externa, impedindo que os usuários externos vejam a estrutura de rede interna;
+- Um sistema de detecção de intrusos (Intrusion Detection Systems – IDS) monitora os arquivos de registro (log files) gerados pela rede, pelos computadores ou pelas aplicações, procurando por comportamentos suspeitos;
+- Os sistemas de _detecção de intrusos baseada no hospedeiro_ monitoram, continuamente, os arquivos de log gerados pelo sistema operacional e suas aplicações, buscando detectar possíveis ameaças, como o Cavalo de Troia;
+- Os sistemas de _detecção de intrusos baseada na rede_ monitoram, continuamente, o tráfego da rede, buscando detectar padrões fora do comum, que poderiam indicar um ataque DoS ou a tentativa de acesso à rede sendo feita por um usuário não autorizado;
+- A detecção de intrusos utiliza técnicas como a análise estática, na qual cria um modelo de comportamento esperado para as aplicações;
+- De acordo com Deitel, Deitel e Choffnes (2005), os softwares antivírus empregam as seguintes técnicas de detecção:
+  - **Detecção de vírus por verificação de assinatura**: usa uma lista de vírus conhecidos, uma região que não muda durante a propagação do vírus. Para identificar o vírus, o software compara os arquivos com as assinaturas contidas em sua lista;
+  - **Verificação heurística**: tem como base a forma com que o vírus se replica, como ele reside na memória e/ou no seu código malicioso;
+  - **Verificação de consistência**: com base na premissa de que um vírus precisa modificar os arquivos de um computador para infectá-los, mantém um registro de consistência dos arquivos considerados essenciais para o sistema;
+  - **Verificação de tempo real**: técnica em que os softwares são alocados na memória do computador, impedindo a infecção por vírus de maneira ativa.
+- Buscando melhores resultados, os softwares antivírus, em sua maioria, usam uma combinação dessas duas formas de detecção, por assinatura e heurística;
+- A proposta do projeto Berkeley Software Distribution (BSD) UNIX, OpenBSD, que é ser a distribuição UNIX mais segura possível. A equipe do projeto realiza as seguintes atividades:
+  - Pesquisas sobre possíveis falhas de segurança, feitas por uma equipe de auditoria;
+  - Liberação de correções de segurança (security patch) para as falhas identificadas;
+  - Criação de linhas de comunicação com os usuários por meio de um fórum público.
+- Tanto o OpenBSD quanto o Apple MacOS X mantêm todas as suas portas fechadas, além de desativar os serviços de rede, que poderão ser habilitados pelo usuário posteriormente;
+- A Microsoft aplica correções de segurança chamadas hotfixes (reparos a quente) para os seus sistemas operacionais;
+- O Windows utiliza a Nova Tecnologia de Sistema de Arquivos (New Technology File System – NTFS) para proteger seus arquivos por meio de criptografia e controle de acesso;
+- O sistema de arquivos NTFS usa o sistema de criptografia de arquivos (Encrypting File System – EFS) para proteger os arquivos e as pastas do sistema;
+- O EFS utiliza criptografia por chave secreta e por chave pública para garantir que os arquivos protegidos não sejam acessados por um usuário indevido;
+- Em 1985, o Departamento de Defesa (Department of Defense – DoD) dos EUA publicou um documento oficialmente intitulado Critérios Confiáveis de Avaliação de Sistemas de Computador (Department of Defense Trusted Computer System Evaluation Criteria), que ficou conhecido como Livro Laranja (Orange Book), escrito para classificar em quatro os níveis de segurança dos sistemas operacionais, de A a D, em ordem decrescente de segurança. Conforme Deitel, Deitel e Choffnes (2005), as características de cada nível são:
+  - **Nível D** (proteção mínima): armazena qualquer sistema operacional que não cumpra os requisitos dos outros níveis, sendo considerados inseguros;
+  - **Nível C** (proteção discricionária): compreende dois subníveis, C1 e C2. Os sistemas operacionais enquadrados no subnível C1 precisam que seja informado um usuário ou um grupo, acrescido de uma senha, para obter acesso ao sistema. As primeiras versões do UNIX pertenciam ao subnível C1. O subnível C2 suporta o acesso com um usuário e uma senha. Sistemas operacionais como o Windows NT, UNIX mais modernos e o IBM OS/400 pertencem ao subnível C2;
+  - **Nível B** (proteção mandatória): compreende três subníveis. No primeiro subnível, o B1, o sistema operacional deve possuir um esquema de permissão central predefinido e aplicar etiquetas de sensibilidade aos sujeitos e aos objetos. O subnível B2 exige que a comunicação entre o usuário e o sistema operacional ao realizar a autenticação seja segura, somados aos requisitos do subnível B1. O subnível B3 exige que o sistema operacional implemente domínios de proteção, que concede ao sistema mecanismos de recuperação seguros e o monitoramento dos acessos aos sujeitos e aos objetos, para análise futura, somados aos requisitos do subnível B2;
+  - **Nível A** (proteção verificada): compreende dois subníveis, o subnível A1, que exige a verificação formal da segurança do sistema operacional, somados aos requisitos do subnível B3 e o subnível A2, que ainda não foi definido.
+- O Orange Book é considerado um documento ultrapassado, mas representa um marco na padronização e busca por um ambiente computacional seguro.
