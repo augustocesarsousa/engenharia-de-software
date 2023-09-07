@@ -1062,3 +1062,42 @@
   - **Nível B** (proteção mandatória): compreende três subníveis. No primeiro subnível, o B1, o sistema operacional deve possuir um esquema de permissão central predefinido e aplicar etiquetas de sensibilidade aos sujeitos e aos objetos. O subnível B2 exige que a comunicação entre o usuário e o sistema operacional ao realizar a autenticação seja segura, somados aos requisitos do subnível B1. O subnível B3 exige que o sistema operacional implemente domínios de proteção, que concede ao sistema mecanismos de recuperação seguros e o monitoramento dos acessos aos sujeitos e aos objetos, para análise futura, somados aos requisitos do subnível B2;
   - **Nível A** (proteção verificada): compreende dois subníveis, o subnível A1, que exige a verificação formal da segurança do sistema operacional, somados aos requisitos do subnível B3 e o subnível A2, que ainda não foi definido.
 - O Orange Book é considerado um documento ultrapassado, mas representa um marco na padronização e busca por um ambiente computacional seguro.
+
+### Comunicação e protocolos de segurança
+
+- Segundo Deitel, Deitel e Choffnes (2005), há cinco requisitos para uma operação de conexão bem-sucedida e segura:
+  a. **Privacidade**: busca a garantia de que a informação transmitida pela internet não será capturada ou entregue sem a sua autorização e conhecimento à outra pessoa;
+  b. **Integridade**: busca assegurar que a informação enviada ou recebida em uma operação não será comprometida ou alterada;
+  c. **Autenticação**: analisa a forma com que o emissor e o receptor da operação realizam a verificação das suas identidades;
+  d. **Autorização**: analisa a forma com que o sistema operacional gerencia o acesso aos seus recursos protegidos, fazendo uso das credenciais do usuário – identidade (login) e a prova da identidade (senha);
+  e. **Não rejeição**: busca provar, de modo legal, que uma mensagem foi enviada ou recebida durante uma operação.
+- Disponibilidade: assegura que os computadores interligados por uma rede conseguirão se conectar de maneira contínua;
+- Protocolo de acordo de chaves: quando duas partes precisam trocar chaves usando um meio considerado inseguro;
+- Envelope digital: considerado a forma mais simples de utilizar o protocolo de acordo de chaves e ocorre quando a mensagem é criptografada por uma chave secreta;
+- **SSL** (Secure Sockets Layer - Camada Segura de Soquetes):
+  - Considerado uma forma de garantir a comunicação entre dois computadores interligados pela internet;
+  - Desenvolvido pela Netscape Communications, atuando entre o protocolo TCP/IP e o software da aplicação.
+- **TLS** (Transport Layer Security – Segurança de Camada de Transporte):
+  - É o substituto do protocolo SSL;
+  - Se diferenciam pela implementação do algoritmo e pela estrutura dos pacotes utilizados.
+- **VPN** (Virtual Private Network - Redes Virtuais Privadas):
+  - Estabelecem um canal de comunicação seguro (túnel), o qual permite o tráfego de dados pela internet;
+  - O túnel é criado com o IPSec (Internet Protocol Security – Protocolo de Segurança da Internet), desenvolvido pela Força Tarefa de Engenharia da Internet (Internet Engineering Task Force – IETF);
+  - Usa uma chave pública e criptografia simétrica para que os dados sejam transmitidos de maneira íntegra e confidencial, além de autenticar as partes envolvidas;
+  - Para Deitel, Deitel e Choffnes (2005), a segurança da VPN tem como base três conceitos:
+    a. **Autenticação do usuário**: feita pelo cabeçalho de autenticação (Authentication Header – AH), que anexa informações a cada um dos pacotes, validando a identidade do emissor e garantindo que os dados não sejam modificados durante o seu trajeto;
+    b. **Criptografia dos dados**: feita pelo protocolo de segurança de encapsulamento de carga útil (Encapsuling Security Payload – ESP), que realiza a criptografia dos dados utilizando chaves simétricas;
+    c. **Acesso controlado ao túnel**: feito por meio do protocolo de troca de chaves da internet (Internet Key Exchange – IKE), que permite a troca segura das chaves;
+  - Para fazer uso de uma VPN, os usuários necessitam realizar a instalação de software e/ou hardware especializados que suportam o IPSec;
+- **WEP** (Wired Equivalent Privacy - Privacidade Equivalente á das Redes com Fio):
+  - Protocolo de especificações de redes sem fio definido pelo padrão **IEEE 802.11**;
+  - Visa proteger as comunicações entre dispositivos sem fio por meio da criptografia dos dados transmitidos e não permitindo o acesso de usuários não autorizados;
+  - Compartilha uma única chave secreta com vários usuários, sem alterá-la por um longo período;
+  - A segurança é considerada insuficiente, pois pode ser quebrada por um ataque de força bruta.
+- **WPA** (Wi-Fi Protected Access - Acesso Protegido Wi-Fi):
+  - Especificação desenvolvida pela IEEE e a Wi-Fi Alliance buscando solucionar as deficiências do protocolo WEP;
+  - Introduziu a criptografia de chave dinâmica exclusiva para cada um dos usuários;
+  - Usa um servidor para armazenar as credenciais dos usuários.
+- **Esteganografia** (escrita oculta em grego):
+  - Técnica de ocultação de informações dentro de outra;
+  - Tem sido utilizada para proteção de propriedade intelectual por meio de marcas-d'água digitais, que podem ser visíveis ou não.
