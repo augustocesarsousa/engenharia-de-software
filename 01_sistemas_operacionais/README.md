@@ -1101,3 +1101,27 @@
 - **Esteganografia** (escrita oculta em grego):
   - Técnica de ocultação de informações dentro de outra;
   - Tem sido utilizada para proteção de propriedade intelectual por meio de marcas-d'água digitais, que podem ser visíveis ou não.
+
+## Atividades
+
+1. Por que os computadores da primeira fase não usavam sistemas operacionais?
+2. Quais tecnologias foram responsáveis pela segunda fase de computadores? Quais foram os ganhos obtidos com elas?
+3. Quais são os diferenciais da série 360 da IBM?
+4. Qual conceito foi incorporado aos sistemas operacionais TSS, Multics e CP/CMS? Qual foi o benefício que esse conceito trouxe?
+5. O que é um sistema crítico em negócios?
+6. Qual é a maneira mais simples de se armazenar um arquivo em um sistema operacional?
+7. Qual é a finalidade dos arquivos especiais de caracteres no sistema operacional UNIX?
+8. Qual é a finalidade dos arquivos especiais de blocos no sistema operacional UNIX?
+9. O que você compreende por diretório-raiz?
+10. Quais são as vantagens na utilização do firmware?
+11. Do que é formado o espaço de endereçamento do processo?
+12. Qual a diferença entre o estado de execução e o estado de pronto de um processo?
+13. Explique o que é o bloco de controle de processo (Process Control Block – PCB).
+14. O que determina a estratégia de busca?
+15. O que determina a estratégia de posicionamento?
+16. O que determina a estratégia de substituição?
+17. Qual a diferença entre os endereços virtuais e os endereços físicos?
+18. Qual o papel da MMU?
+19. O que é um sistema de criptografia por chave secreta ou chave simétrica?
+20. Por que os algoritmos de chave pública são chamados de funções de uma via ou de armadilha?
+21. O que são bombas lógicas?
