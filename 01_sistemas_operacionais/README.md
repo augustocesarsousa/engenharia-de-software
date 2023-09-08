@@ -1105,23 +1105,44 @@
 ## Atividades
 
 1. Por que os computadores da primeira fase não usavam sistemas operacionais?
+   **Resposta**: A primeira fase dos computadores não possuíam sistema operacional porque os programas era rodados de forma manual pelos operadores através da inserção dos comandos bit-a-bit e posteriormente com o uso de cartões perfurados ou fitas magnéticas.
 2. Quais tecnologias foram responsáveis pela segunda fase de computadores? Quais foram os ganhos obtidos com elas?
+   **Resposta**: As tecnologias responsáveis pela segunda fase dos computadores foram os transistors e as memórias magnéticas. O transistor substituiu a válvula, trazendo mais velocidade e confiabilidade dos dados obtidos, já a memória magnética permitiu um acesso aos dados com mais velocidade e o aumento na capacidade de armazenamento, permitindo a redução no tamanha dos computadores.
 3. Quais são os diferenciais da série 360 da IBM?
+   **Resposta**: Os diferenciais dos computadores da série 360 da IBM estava na busca pela solução de performance e armazenamento onde ao criar essa linha a IBM trouxe a compatibilidade dos programas a serem executados nos computadores, garantindo uma arquitetura comum entre eles pelo mesmo conjunto de instruções básicas, os computadores de diferenciavam entre si no preço e na performance, levava em consideração a quantidade de memória, a velocidade do processador, o número de periféricos de E/S etc.
 4. Qual conceito foi incorporado aos sistemas operacionais TSS, Multics e CP/CMS? Qual foi o benefício que esse conceito trouxe?
+   **Resposta**: Os sistemas operacionais TSS, Multics e CP/CMS incorporaram o conceito de memória virtual, onde os programas conseguiam endereçar mais memória do que a existente na memória principal, esse conceito trouxe o benefício de que os programadores não precisavam mais atuar no gerenciamento da memória e focassem no desempenho da aplicação.
 5. O que é um sistema crítico em negócios?
+   **Resposta**: Um sistema crítico em negócios é o sistema que quando ocorre uma falha acarreta perdas financeiras para a empresa que o utiliza, por exemplo, servidores de bancos de dados utilizados por instituições financeiras e os servidores web utilizados por sites de e-commerce.
 6. Qual é a maneira mais simples de se armazenar um arquivo em um sistema operacional?
+   **Resposta**: A maneira mais simples de se armazenar um arquivo em um sistema operacional é considerá-lo uma sequência de bytes, onde o sistema operacional não se importa com o conteúdo do arquivo, deixando a responsabilidade da identificação para o usuário.
 7. Qual é a finalidade dos arquivos especiais de caracteres no sistema operacional UNIX?
+   **Resposta**: O sistema operacional UNIX utiliza os arquivos especiais de caracteres para fazer a comunicação com os dispositivos de E/S.
 8. Qual é a finalidade dos arquivos especiais de blocos no sistema operacional UNIX?
+   **Resposta**: O sistema operacional UNIX utiliza os arquivos especiais de blocos para fazer a comunicação com os discos.
 9. O que você compreende por diretório-raiz?
+   **Resposta**: Diretória-raiz é o conceito de armazenar todos os arquivos em um único diretório, essa é a forma mais simples do uso de diretórios, porém pode acarretar problemas quando se trabalha com sistemas multiusuários.
 10. Quais são as vantagens na utilização do firmware?
+    **Resposta**: As vantagens de se utilizar um firmware é que os fabricantes de dispositivos podem utilizar chips programáveis de uso geral ou invés de um hardware dedicado, resultando em economia de custos, pois permite adicionar novas funcionalidades por meio da alteração do firmware ao invés da substituição do chip.
 11. Do que é formado o espaço de endereçamento do processo?
+    **Resposta**: O espaço de endereçamento do processo é formado de três regiões: a região de texto, que armazena o código a ser executado; a região de dados, que armazena as variáveis e a memória, que é alocada dinamicamente durante a execução do processo; e a região de pilha, que armazena as instruções e as variáveis locais para as chamadas ativas do procedimento.
 12. Qual a diferença entre o estado de execução e o estado de pronto de um processo?
+    **Resposta**: A diferença entre os estados de execução e pronto de um processo é que quando um processo está em estado de pronto significa que ele está na fila de processos disponíveis para ser executado, o estado de execução significa que o processo está alocado no processador executando as suas tarefas.
 13. Explique o que é o bloco de controle de processo (Process Control Block – PCB).
+    **Resposta**: O bloco de controle de processo é um conjunto de informações recebido pelo processo na sua criação que irá auxiliar o sistema operacional e gerenciá-lo.
 14. O que determina a estratégia de busca?
+    **Responta**: A estratégia de busca, determina qual será a próxima parte de um programa ou de um conjunto de dados que será transferido para a memória principal.
 15. O que determina a estratégia de posicionamento?
+    **Resposta**: A estratégia de posicionamento, determina qual lugar da memória principal deverá ser ocupado pelos programas e dados que estão chegando.
 16. O que determina a estratégia de substituição?
+    **Resposta**: A estratégia de substituição, determina quais dados deverão ser removidos da memória principal para liberar espaço para um novo programa.
 17. Qual a diferença entre os endereços virtuais e os endereços físicos?
+    **Resposta**: A diferença entre endereços virtuais e endereços físicos é que os endereços virtuais são gerenciados pelos processos e os endereços físicos indicam as localizações físicas na memória principal.
 18. Qual o papel da MMU?
+    **Resposta**: O papel do MMU é identificar o endereço real que corresponde a um endereço virtual acessado por um processo.
 19. O que é um sistema de criptografia por chave secreta ou chave simétrica?
+    **Resposta**: Um sistema de criptografia por chave secreta ou chave simétrica é um sistema de criptografia que utiliza a mesma chave secreta tanto para criptografar quanto para decriptar um texto.
 20. Por que os algoritmos de chave pública são chamados de funções de uma via ou de armadilha?
+    **Resposta**: os algoritmos de chave pública são chamados de funções de uma via ou de armadilha porque a ação de criptografar uma mensagem utilizando a chave pública não requer muitos recursos computacionais, entretanto a ação de decriptar a mensagem, sem ter acesso à chave privada, requer muito tempo e recursos computacionais.
 21. O que são bombas lógicas?
+    **Resposta**: Uma bomba lógica é o ato de inserir códigos em um sistema em produção que necessita de uma inserção diária de uma senha para que o código não seja ativado, quando não alimentado pela senha e código se ativa efetuando alguma ação que gere prejuízo ao sistema.
