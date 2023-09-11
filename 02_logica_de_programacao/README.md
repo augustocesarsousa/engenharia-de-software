@@ -34,3 +34,49 @@
 - Podemos definir _programação_ como o processo de escrita do programa de computador, a realização de testes e a manutenção;
 - O programa escrito utiliza todo o conjunto de semântica e sintaxe de uma linguagem, reunindo um conjunto de técnicas, como lógica, conhecimento na linguagem de programação e compreensão do problema;
 - A relação da lógica com a programação pode ser definida como o conjunto de pensamentos e ideias que nos faz refletir sobre as estratégias até chegarmos a uma solução viável.
+
+### Algoritmos
+
+- Um algoritmo é considerado uma sequência lógica ordenada de ações aplicadas à resolução de algum problema;
+- São amplamente utilizados em áreas da ciência e principalmente em exatas;
+- O algoritmo está diretamente associado à etapa do desenvolvimento de um software;
+- Exemplo de um algoritmo para calcular três números:
+  - Passo 1: receba três números;
+  - Passo 2: multiplique os três números;
+  - Passo 3: mostre o resultado.
+
+#### A importância da construção de algoritmos
+
+- A construção de um algoritmo é realizada quando as ações já estão definidas para a solução de um problema;
+- O próprio sistema operacional é um conjunto de soluções implementado utilizando a lógica e as pesquisas científicas para chegar à solução atual;
+- A importância dos algoritmos é tão grande que outras áreas, como a medicina, a bioinformática, a engenharia, entre outras, utilizam softwares implementados por desenvolvedores para avaliar ou simular alguma solução.
+
+#### Modos de retratar a lógica
+
+##### Fluxogramas
+
+- O fluxograma consiste na análise e na escrita do problema por meio de símbolos gráficos que representam as ações ou as instruções a serem seguidas;
+- A estrutura de um fluxograma é muito utilizada na organização do pensamento, na documentação de rotinas de sistemas, e seu uso é recomendado para problemas pequenos, como ilustrado a seguir:
+  ![Diagrama multiplicação três números](/02_logica_de_programacao/img/diagrama001.png)
+- Para a construção de fluxogramas utilizamos uma simbologia. Iniciamos com o terminal; em seguida, utilizamos as setas para mostrar qual o próximo processamento, no caso, o símbolo de teclado para entrada dos dados e o de retângulo, também conhecido como processamento, para realização dos cálculos; depois, usamos o símbolo de vídeo para exibir o resultado; por fim, finalizamos com o terminal;
+- Simbologia do fluxograma:
+  ![Simbologia do fluxograma](/02_logica_de_programacao/img/diagrama002.png)
+
+##### Pseudocódigos
+
+- Pseudocódigo, também conhecido como portugol, é a maneira utilizada para analisar e escrever a solução de um problema de fácil entendimento;
+- Possui a vantagem de ser escrito em linguagem próxima à linguagem de programação, respeitando a sintaxe e a semântica;
+- Descrição do algoritmo de multiplicação de três números em pseudocódigo:
+
+  ```
+  Var
+    N1, N2, N3: Numerico
+  Inicio
+    Escreva “Digite três números: ”
+    Leia (N1, N2, N3)
+    R <- (N1 * N2 * N3)
+    Escreva (“Multiplicação = ”, R)
+  Fimalgoritmo
+  ```
+
+- O pseudocódigo possui uma desvantagem que muitos poderiam dizer ser redundante;
