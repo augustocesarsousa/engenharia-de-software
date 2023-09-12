@@ -93,3 +93,24 @@
   - Sistema desenvolvido que unifica vários plugins em um única ferramente (DEITEL; DEITEL, 2009);
   - No geral, inclui um editor para a escrita e a edição dos arquivos, depuradores utilizados na localização de prováveis erros lógicos;
   - A utilização de uma IDE traz benefícios como o aumento na produtividade do desenvolvedor, a economia financeira e, principalmente, o desempenho no desenvolvimento.
+
+## Linguagem de programação Java I
+
+### A linguagem de programação Java
+
+- A primeira versão estável da linguagem Java ficou concluída em 1996;
+- O Java possui 11 características-chave que fazem com que seja um bom recurso para o desenvolvedor, são elas:
+  - Simplicidade;
+  - Orientação a objetos;
+  - Compatibilidade com redes;
+  - Robustez;
+  - Segurança;
+  - Arquitetura neutra;
+  - Portabilidade;
+  - Interpretação;
+  - Alto desempenho;
+  - Múltiplas threads;
+  - Dinamicidade.
+- É uma linguagem _compilada e interpretada_;
+  - O código Java (.java) é compilado em _bytecode_ (.class);
+  - O bytecode é interpretado pela **JVM** (Java Virtual Machine - Máquina Virtual Java), isso permite a portabilidade da linguagem, pois basta o sistema operacional possuir a JVM instalada que os programas feitos em Java podem ser executados.
