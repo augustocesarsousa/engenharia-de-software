@@ -80,3 +80,9 @@
   ```
 
 - O pseudocódigo possui uma desvantagem que muitos poderiam dizer ser redundante;
+
+### Teste de mesa
+
+- Testes de mesa tem como finalidade o teste lógico do algoritmo, no qual, conhecendo a entrada de informação e todo o processamento interno do algoritmo, a saída deve corresponder ao resultado esperado;
+- Testes de mesa geralmente são utilizados para problemas simples;
+- Para testes complexos existem ferramentas que auxiliam nos teste e até mesmo do desenvolvimento, realizando o teste de modo indireto e exibindo a linha do provável erro.
