@@ -114,3 +114,88 @@
 - É uma linguagem _compilada e interpretada_;
   - O código Java (.java) é compilado em _bytecode_ (.class);
   - O bytecode é interpretado pela **JVM** (Java Virtual Machine - Máquina Virtual Java), isso permite a portabilidade da linguagem, pois basta o sistema operacional possuir a JVM instalada que os programas feitos em Java podem ser executados.
+
+### Conceitos básicos da linguagem Java
+
+- Abaixo um exemplo de um programa que exibe a mensagem **Hello World** feito em Java:
+
+  ```
+  public class HelloWorld {
+    public static void main (String [] args) {
+      System.out.println ("Hello World!");
+    }
+  }
+  ```
+
+  - Na primeira linha informamos que se trata de uma _classe_ (class), _publica_ (public), seu nome é _HelloWorld_, e por fim, a _abertura da chave de bloco_ ({);
+    - Uma boa prática no desenvolvimento da linguagem Java é a nomenclatura das **classes** usar o padrão **PascalCase**, onde a primeira letra de cada palavra é iniciada com letra maiúscula, exemplo: **NomeDaClasseEmPascalCase**;
+  - Na segunda linha define o método principal que inicia a execução do programa Java, nela definimos que é um método _publico_ (public), possui um modificador de acesso _estático_ (static), não possui _retorno_ (void), seu nome é _main_, possui como entrada um _lista de textos_ (String [] args), e por fim, a abertura da chave de bloco ({);
+    - Para nomenclatura de **métodos** e **variáveis** em Java, usamos o padrão **camelCase**, onde a primeira letra da primeira palavra é minúscula, seguindo da primeira letra das palavras restantes em maiúscula, exemplo: metodoEmCamelCase;
+  - Na terceira linha utilizamos o **objeto** _System.out.println_ para comandar o computador à fazer a saída do texto ("Hello World!"), por fim, utilizamos o _ponto e vírgula_ ( ; ) para finalizar o comando;
+    - Todo comando em Java tem que ser finalizado com ponto e vírgula;
+  - Na quarta e quinta linha, temos os fechamentos das chaves de blocos da classe e do método;
+    - Toda classe e método em Java precisam ter as chaves de abertura e fechamento, chamamos isso de **escopo**, onde todo o código inserido entre as chaves de abertura e fechamento, pertencem ao escopo daquele bloco;
+  - **Observação**: a nomenclatura de classes, métodos e variáveis em Java, não poder ser iniciados com número ou caracteres especiais, salvo o caractere _underline_ ( \_ ), já no corpo no do nome é permitido números, mas não é permitido caracteres especiais salvo o underline, exemplos:
+    Nome | Permissão
+    --------|----------
+    001Classe | N
+    Classe001 | S
+    metodoAçúcar | N
+    metodoAcucar | S
+    $variavel | N
+    \_variavel | S
+
+#### Comentários
+
+- Muitas das vezes precisamos deixar comentários nos códigos, no Java existem dois tipos de comentários:
+
+  - _Comentário de Linha_: utilizamos duas barras // e em seguida o texto do comentário, muito utilizado para comentários simples;
+  - _Comentário de bloco_: utilizamos a barra com asteriscos, onde o texto fica entre elas, mais utilizado para comentários maiores ou documentação;
+  - Exemplo:
+
+    ```
+    /*
+      Esse é um
+      comentário de
+      bloco
+    */
+
+    public class HelloWorld {
+
+      // Esse é um comentário de linha
+
+      public static void main (String [] args) {
+        System.out.println ("Hello World!");
+      }
+    }
+    ```
+
+  - Na hora da compilação do código Java para bytecode, o compilador ignora os texto descritos nos comentários.
+
+#### Tipos de dados primitivos
+
+- O Java é considerado uma linguagem **fortemente tipada**, isso significa todos os dados que são utilizados pela linguagem devem possuir um tipo definido, abaixo temos uma tabela com os dados _primitivos_ suportados pela linguagem:
+  Tipo | Categoria | Quantidade de bits | Valores | Observação
+  -----|-----------|--------------------|---------|-----------
+  char | numérico | 16 | \u000 a \uFFF | utilizado para caracteres
+  byte | numérico | 8 | -128 a 127 | números inteiros
+  short | numérico | 16 | -32.768 a 32.767 | números inteiros
+  int | numérico | 32 | -2.147.483.648 a 2.147.483.647 | números inteiros
+  long | numérico | 64 | -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807 | números inteiros
+  float | numérico | 32 | -3.40292347E+38 a 3.40292347E+38 | números com casas decimais
+  double | numérico | 64 | -1.797.693.134.862.315.70E+308 a 1.797.693.134.862.315.70E+308 | números com casas decimais
+  boolean | lógico |8 | true ou false | controle de decisão
+
+#### Variáveis
+
+- Podemos definir uma variável como uma _caixinha_ na memória onde iremos guardar um valor;
+- Na linguagem de programação Java, as variáveis são utilizadas para armazenar os dados que serão utilizados posteriormente;
+- Uma variável em Java precisa ter o seu tipo definido;
+- Variáveis em Java podem ter seus valores trocados, mas não os seus tipos;
+- Exemplo de uma variável:
+
+  ```
+  int numero1 = 10;
+  ```
+
+  - No exemplo acima, criamos uma variável do tipo _inteiro_ (int), seu nome é _numero1_, atribuímos à ela o valor _10_, e por fim, finalizamos o comando com ponto e vírgula;
