@@ -286,3 +286,85 @@
 |              ->              |             |     |     |            |           |
 |              =               |     op=     |     |     |            |           |
 | **Classificação mais baixa** |             |     |     |            |           |
+
+### Estruturas de decisão
+
+- As estruturas de decisão são aplicadas no fluxo de execução dos algoritmos, possibilitando caminhos alternativos e a leitura de blocos que satisfaçam as condições (FILGUEIRAS, 2015);
+
+#### IF - ELSE
+
+- Exemplo de **IF** para aplicar um desconto de 15%:
+
+```
+  public class ExemploIF {
+    public static void main (String [] args) {
+      double valorProduto = 29.99;
+      boolean temDesconto = true;
+      double percentualDesconto = 0.15;
+
+      if(temDesconto == true) {
+        valorProduto = valorProduto - (valorProduto * percentualDesconto);
+      }
+
+      System.out.println("Valor do produto: " + valorProduto);
+    }
+  }
+```
+
+- Exemplo de **IF - ELSE** para verificar se o número é par:
+
+```
+  public class ExemploIFELSE {
+    public static void main (String [] args) {
+      int numero = 15;
+
+      if(numero % 2 == 0) {
+        System.out.println("O número é par!");
+      } else {
+        System.out.println("O número é ímpar!");
+      }
+    }
+  }
+```
+
+- Exemplo de **IF - ELSE aninhado** para verificar o dia da semana:
+
+```
+  public class ExemploIFELSEAninhado {
+    public static void main (String [] args) {
+      int diaDaSemana = 3;
+
+      if(diaDaSemana == 1) {
+        System.out.println("Domingo");
+      } else if(diaDaSemana == 2) {
+        System.out.println("Segunda-feira");
+      } else if(diaDaSemana == 3) {
+        System.out.println("Terça-feira");
+      } else if(diaDaSemana == 4) {
+        System.out.println("Quarta-feira");
+      } else if(diaDaSemana == 5) {
+        System.out.println("Quinta-feira");
+      } else if(diaDaSemana == 6) {
+        System.out.println("Sexta-feira");
+      } else if(diaDaSemana == 7) {
+        System.out.println("Sábado");
+      } else {
+        System.out.println("Dia incorreto");
+      }
+    }
+  }
+```
+
+#### Operador ternário
+
+- Exemplo de **Operador ternário** para verificar se um número é par:
+
+```
+  public class ExemploIFELSEAninhado {
+    public static void main (String [] args) {
+      int numero = 12;
+      String resposta = (numero % 2 == 0) ? "O número é par!" : "O número é ímpar!";
+
+      System.out.println(resposta);
+  }
+```
