@@ -199,3 +199,90 @@
   ```
 
   - No exemplo acima, criamos uma variável do tipo _inteiro_ (int), seu nome é _numero1_, atribuímos à ela o valor _10_, e por fim, finalizamos o comando com ponto e vírgula;
+
+#### Operadores aritméticos, relacionais e lógicos
+
+##### Operadores aritméticos
+
+| Operador | Significado   |
+| :------: | ------------- |
+|    -     | Subtração     |
+|    +     | Soma          |
+|    \*    | Multiplicação |
+|    /     | Divisão       |
+
+- Exemplos:
+
+```
+ public class OperadoresAritmeticos {
+   public static void main (String [] args) {
+     int subtracao = 25 - 10;
+     int soma = 25 + 25;
+     int multiplicacao = 15 * 10;
+     int divisao = 36 / 6;
+
+     System.out.println("Resultado da subtração: " + subtracao);
+     System.out.println("Resultado da soma: " + soma);
+     System.out.println("Resultado da multiplicação: " + multiplicacao);
+     System.out.println("Resultado da divisão: " + divisao);
+   }
+ }
+```
+
+##### Operadores relacionais
+
+| Operador | Significado        |
+| :------: | ------------------ |
+|    ==    | Igual a            |
+|    !=    | Diferente          |
+|    >     | Maior que          |
+|    <     | Menor que          |
+|    >=    | Maior ou igual que |
+|    <=    | Menor ou igual que |
+
+- Exemplos:
+
+```
+ public class OperadoresRelacionais {
+   public static void main (String [] args) {
+     System.out.println(2 == 2);
+     System.out.println(2 != 2);
+     System.out.println(2 > 2);
+     System.out.println(2 < 2);
+     System.out.println(2 >= 2);
+     System.out.println(2 <= 2);
+   }
+ }
+```
+
+##### Operadores lógicos
+
+| Operador |      Significado      |
+| :------: | :-------------------: |
+|    &     |          AND          |
+|    \|    |          OR           |
+|    ^     |  XOR (exclusive OR)   |
+|   \|\|   | OR de curto-circuito  |
+|    &&    | AND de curto-circuito |
+|    !     |          NOT          |
+
+##### Ordem de procedência
+
+|   Classificação mais alta    |             |     |     |            |           |
+| :--------------------------: | :---------: | :-: | :-: | :--------: | :-------: |
+|         ++(prefixo)          | --(prefixo) |     |     |            |           |
+|         ++(posfixo)          | --(prefixo) |  ~  |  !  | +(unário)  | -(unário) |
+|              \*              |      /      |  %  |     |            |           |
+|              +               |      -      |     |     |            |           |
+|              >>              |     >>>     | <<  |     |            |           |
+|              >               |     >=      |  <  | <=  | Instanceof |           |
+|              ==              |     !=      |     |     |            |           |
+|              &               |             |     |     |            |           |
+|              ^               |             |     |     |            |           |
+|              \|              |             |     |     |            |           |
+|              &&              |             |     |     |            |           |
+|             \|\|             |             |     |     |            |           |
+|              ?:              |             |     |     |            |           |
+|              ->              |             |     |     |            |           |
+|              =               |     op=     |     |     |            |           |
+| **Classificação mais baixa** |             |     |     |            |           |
