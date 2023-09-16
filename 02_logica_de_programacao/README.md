@@ -410,3 +410,124 @@
     }
   }
 ```
+
+### Fluxo de repetição
+
+O fluxo de repetição, também conhecido como laços de repetição (do inglês, loops), é muito útil quando queremos repetir uma série de operações que serão executadas.
+
+#### Operador de incremento e decremento
+
+| Operador | Nome do operador | Expressão de exemplo |
+| :------: | :--------------: | :------------------: |
+|    ++    |  Pré-incremento  |         ++a          |
+|    --    |  Pré-decremento  |         --a          |
+|    ++    |  Pós-incremento  |         b++          |
+|    --    |  Pós-decremento  |         b--          |
+
+- Exemplo:
+
+```
+  public class ExemploIncrementoDecremento {
+    public static void main (String [] args) {
+      int a = 7;
+      int b = 8;
+
+      System.out.println(“Valor da variável A: ” + a);
+      System.out.println("");
+
+      System.out.println(“Pós-incremento: ” + a++);
+      System.out.println(“Valor da variável A: ” + a);
+      System.out.println("");
+
+      System.out.println(“Pré-incremento: ” + ++a);
+      System.out.println(“Valor da variável A: ” + a);
+      System.out.println("");
+
+      System.out.println(“Valor da variável B: ” + b);
+      System.out.println("");
+
+      System.out.println(“Pós-decremento: ” + b--);
+      System.out.println(“Valor da variável B: ” + b);
+      System.out.println("");
+
+      System.out.println(“Pré-decremento: ” + --b);
+      System.out.println(“Valor da variável B: ” + b);
+      System.out.println("");
+    }
+  }
+```
+
+#### Fluxo de repetição FOR
+
+- O fluxo, ou laço, de repetição FOR é utilizado quando se conhece quantas iterações ou repetições serão realizadas;
+- Sintaxe:
+
+  ```
+  for (valor inicial; teste booleano; incremento)
+  { <expressão> }
+  ```
+
+- Exemplo de **FOR** calculando a tabuada de um número:
+  ```
+    public class ExemploFOR {
+      public static void main (String [] args) {
+        for(int i = 1; i < 11; i++) {
+          System.out.println("5 x " + i + " = " + 5 * i);
+        }
+      }
+    }
+  ```
+
+#### Fluxo de repetição WHILE
+
+- Utilizamos a repetição WHILE quando a informação de quantas vezes o bloco de expressão será executado é desconhecida, até que determinada condição booleana seja verdadeira.
+- Sintaxe:
+
+  ```
+  While ( condição ) { <instrução> }
+  ```
+
+- Exemplo de **WHILE** para calcular o juros de um investimento por 30 à uma taxa de 10% ao ano:
+
+  ```
+    public class ExemploWHILE {
+      public static void main (String [] args) {
+        double valorInvestimento = 5000.0;
+        double taxaJuros = 0.10;
+        int ano = 1;
+
+        System.out.printf("Investimento inicial: %.2f", valorInvestimento);
+        System.out.println("");
+
+        while (ano < 31) {
+            valorInvestimento += valorInvestimento * taxaJuros;
+            System.out.printf("Ano %d = %.2f", ano++, valorInvestimento);
+            System.out.println("");
+        }
+      }
+    }
+  ```
+
+#### Fluxo de repetição DO... WHILE
+
+- O repetidor DO... WHILE, diferente do WHILE, é executado pelo menos uma vez, ou seja, o bloco de instrução é efetuado uma única vez. Posteriormente, ele verifica se as condições foram satisfeitas para sair da repetição;
+
+- Sintaxe:
+  ```
+    do {
+    <instrução>
+    }while( <condição> )
+  ```
+- Exemplo **DO... WHILE**:
+
+  ```
+    public class ExemploWHILE {
+      public static void main (String [] args) {
+        boolean validador = false;
+
+        do{
+          System.out.println("Exemplo DO... WHILE");
+        } while (validador == true);
+      }
+    }
+  ```
