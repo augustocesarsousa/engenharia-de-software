@@ -531,3 +531,65 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
       }
     }
   ```
+
+### Métodos na linguagem Java
+
+- Na linguagem de programação Java, o método descreve os mecanismos que realmente realizam as tarefas. Dessa forma, o desenvolvedor oculta dos usuários as tarefas complexas que podem ser realizadas (DEITEL; DEITEL, 2009);
+
+#### Métodos
+
+- Métodos em Java podem receber parâmetros;
+- Métodos em Java podem ter retorno de resultado;
+- Sintaxe:
+  ```
+    <tipo de encapsulamento> <tipo do retorno método> <nome do método> ( <parâmetros> ) {
+      <Bloco de instrução>
+    }
+  ```
+  - <tipo de encapsulamento>: podemos declarar o tipo de método que estamos implementando como público (public), privado (private) e protegido (protected);
+  - <tipo do retorno método>: permite que declaremos um método no qual retornará um tipo específico de valor, como int, float, double, char, string, entre outros. Dessa forma, podemos especificar que um retorno diferente do que esperamos não será permitido;
+  - <nome do método>: denominação que o método pode ter, ficando à escolha do programador;
+  - <parâmetros>: tipos de dado que usaremos para declarar as variáveis que receberão os dados. Podemos emprega;
+  - <bloco de instrução>: se declararmos um tipo de método, obrigatoriamente devemos retornar um valor com a chamada return; caso o programador tenha declarado um retorno vazio void, não precisamos retornar os valores do método;
+- Exemplo de um **método** para calcular um tabuada:
+
+  ```
+    public class ExemploMetodo {
+      public static void main (String [] args) {
+        for(int i = 1; i < 11; i++) {
+          System.out.println("5 x " + i + " = " + multiplicar(i));
+        }
+      }
+
+      public static int multiplicar(int i) {
+        return i * 5;
+      }
+    }
+  ```
+
+#### Sobrecarga
+
+- A linguagem Java também permite a utilização de vários métodos com o mesmo nome; o que importa é que as assinaturas não sejam iguais, isto é, que apresentem diferenças no tipo de dado ou na ordem dos parâmetros. Quando ocorre a chamada do método, o compilador avalia os métodos disponíveis e seleciona o mais dequado de acordo com a assinatura correspondente (FURGERI, 2018);
+- Exemplo de **sobrecarga** para calculo de área:
+
+  ```
+    public class ExemploMetodo {
+      public static void main (String [] args) {
+        System.out.println("Área de um quadrado...." + calcularArea(4));
+        System.out.println("Área de um retângulo..." + calcularArea(4, 5));
+        System.out.println("Área de um cubo........" + calcularArea(4, 5, 6));
+      }
+
+      public static double calcularArea(int x) {
+        return x * x;
+      }
+
+      public static double calcularArea(int x, int y) {
+        return x * y;
+      }
+
+      public static double calcularArea(int x, int y, int z) {
+        return x * y * z;
+      }
+    }
+  ```
