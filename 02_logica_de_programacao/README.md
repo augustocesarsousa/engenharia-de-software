@@ -546,11 +546,11 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
       <Bloco de instrução>
     }
   ```
-  - <tipo de encapsulamento>: podemos declarar o tipo de método que estamos implementando como público (public), privado (private) e protegido (protected);
-  - <tipo do retorno método>: permite que declaremos um método no qual retornará um tipo específico de valor, como int, float, double, char, string, entre outros. Dessa forma, podemos especificar que um retorno diferente do que esperamos não será permitido;
-  - <nome do método>: denominação que o método pode ter, ficando à escolha do programador;
-  - <parâmetros>: tipos de dado que usaremos para declarar as variáveis que receberão os dados. Podemos emprega;
-  - <bloco de instrução>: se declararmos um tipo de método, obrigatoriamente devemos retornar um valor com a chamada return; caso o programador tenha declarado um retorno vazio void, não precisamos retornar os valores do método;
+  - \<tipo de encapsulamento\>: podemos declarar o tipo de método que estamos implementando como público (public), privado (private) e protegido (protected);
+  - \<tipo do retorno método\>: permite que declaremos um método no qual retornará um tipo específico de valor, como int, float, double, char, string, entre outros. Dessa forma, podemos especificar que um retorno diferente do que esperamos não será permitido;
+  - \<nome do método\>: denominação que o método pode ter, ficando à escolha do programador;
+  - \<parâmetros\>: tipos de dado que usaremos para declarar as variáveis que receberão os dados. Podemos emprega;
+  - \<bloco de instrução\>: se declararmos um tipo de método, obrigatoriamente devemos retornar um valor com a chamada return; caso o programador tenha declarado um retorno vazio void, não precisamos retornar os valores do método;
 - Exemplo de um **método** para calcular um tabuada:
 
   ```
@@ -590,6 +590,57 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
 
       public static double calcularArea(int x, int y, int z) {
         return x * y * z;
+      }
+    }
+  ```
+
+### Vetores e matrizes
+
+- Os vetores e as matrizes são estruturas de dado que possuem a diferença dimensional somente entre si. Enquanto os primeiros têm uma única dimensão ou uma única linha de informações e são conhecidos como estruturas homogêneas de dados, os segundos são estruturas indexadas, ou seja, cada valor armazenado possui um índice que permite acessar o valor adicionado no vetor;
+- Para percorrer um vetor ou matriz, utilizamos de função de iteração, exemplo um **FOR**;
+
+#### Vetor
+
+- Sintaxe:
+
+  ```
+    <tipo de dados> <nome da variável> = new <tipo de dados>[<n>];
+  ```
+
+  - \<tipo de dados\>: podem ser do tipo int, float, double, entre outros, dependendo da necessidade no momento da implementação;
+  - \<nome da variável\>: definido pelo programador;
+  - \<n\>: quantidade de índice de vetores.
+
+- Exemplo da declaração de um vetor:
+
+  ```
+    public class ExemploVetor {
+      public static void main (String [] args) {
+        int exemploVetor[] = new int[10];
+      }
+    }
+  ```
+
+#### Matriz
+
+- As matrizes são apresentadas como bidimensionais, tendo linhas e colunas (DEITEL; DEITEL, 2009), e podem ser classificadas como um vetor de vetores de mesmo tamanho (2x2/4x4);
+- Na linguagem Java, é possível criarmos uma com tamanhos, linhas e colunas diferentes;
+- Sintaxe:
+
+  ```
+    <tipo de dados> <nome da variável> = new <tipo de dados>[<n>][<n>];
+  ```
+
+  - \<tipo de dados\>: podem ser do tipo int, float, double, entre outros, dependendo da necessidade no momento da implementação;
+  - \<nome da variável\>: definido pelo programador;
+  - \<n\>: quantidade de índice de vetores.
+
+- Exemplo da declaração de um vetor:
+
+  ```
+    public class ExemploMatriz {
+      public static void main (String [] args) {
+        int matrizExemplo[][] = new int[10][10];
       }
     }
   ```
