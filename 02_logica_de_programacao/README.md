@@ -72,10 +72,10 @@
   Var
     N1, N2, N3: Numerico
   Inicio
-    Escreva “Digite três números: ”
+    Escreva "Digite três números: "
     Leia (N1, N2, N3)
     R <- (N1 * N2 * N3)
-    Escreva (“Multiplicação = ”, R)
+    Escreva ("Multiplicação = ", R)
   Fimalgoritmo
   ```
 
@@ -432,26 +432,26 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
       int a = 7;
       int b = 8;
 
-      System.out.println(“Valor da variável A: ” + a);
+      System.out.println("Valor da variável A: " + a);
       System.out.println("");
 
-      System.out.println(“Pós-incremento: ” + a++);
-      System.out.println(“Valor da variável A: ” + a);
+      System.out.println("Pós-incremento: " + a++);
+      System.out.println("Valor da variável A: " + a);
       System.out.println("");
 
-      System.out.println(“Pré-incremento: ” + ++a);
-      System.out.println(“Valor da variável A: ” + a);
+      System.out.println("Pré-incremento: " + ++a);
+      System.out.println("Valor da variável A: " + a);
       System.out.println("");
 
-      System.out.println(“Valor da variável B: ” + b);
+      System.out.println("Valor da variável B: " + b);
       System.out.println("");
 
-      System.out.println(“Pós-decremento: ” + b--);
-      System.out.println(“Valor da variável B: ” + b);
+      System.out.println("Pós-decremento: " + b--);
+      System.out.println("Valor da variável B: " + b);
       System.out.println("");
 
-      System.out.println(“Pré-decremento: ” + --b);
-      System.out.println(“Valor da variável B: ” + b);
+      System.out.println("Pré-decremento: " + --b);
+      System.out.println("Valor da variável B: " + b);
       System.out.println("");
     }
   }
@@ -641,6 +641,41 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
     public class ExemploMatriz {
       public static void main (String [] args) {
         int matrizExemplo[][] = new int[10][10];
+      }
+    }
+  ```
+
+### Bibliotecas
+
+- Bibliotecas são conjuntos de códigos que já estão implementados e que podem ser reutilizados no desenvolvimento de um novo sistema;
+- Elas possuem classes específicas empregadas em diversas áreas, como matemática, design gráfico e de interface, entre outras;
+- Sintaxe de importação de biblioteca na linguagem Java:
+  ```
+  import <caminho da biblioteca>;
+  ```
+  - import: chamada que informa a importação de uma biblioteca Java;
+  - \<caminho da biblioteca\>: caminho no qual o compilador pode encontrar a biblioteca a ser chamada, por exemplo, import java.util.ArrayList.
+
+#### Scanner
+
+- A biblioteca Scanner é muito utilizada na linguagem de programação Java, pois por meio dela podemos desenvolver programas no modo texto, também conhecidos como console;
+- Exemplo de utilização da classe Scanner:
+
+  ```
+    import java.util.Scanner;
+
+    public class ExemploScanner {
+
+      public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String nome;
+
+        System.out.print("Qual o seu nome: ");
+        nome = scanner.next();
+
+        System.out.println("Seja bem vindo " + nome);
+
+        scanner.close();
       }
     }
   ```
