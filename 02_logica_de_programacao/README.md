@@ -716,3 +716,57 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
     }
 
   ```
+
+#### NIO
+
+- A biblioteca NIO serve para trabalhar com entradas e saídas de dados, por isso existe uma grande variedade de classes. Nas primeiras versões
+  do Java estava disponível o pacote Java.io, e posteriormente na JDK 1.4 o chamado NIO (NEW I/O), que trouxe melhorias e novas classes;
+- Na biblioteca NIO podemos utilizar algumas funções para trabalhar com diretórios e arquivos, exemplos:
+  - Interface Path: permite representar o local de um arquivo ou um diretório no sistema;
+  - Interface DirectoryStream: possibilita que a aplicação seja capaz de iterar pelo conteúdo de uma pasta no sistema;
+  - Classe Paths: obtém um objeto que representa o local de um arquivo ou um diretório no sistema;
+  - Classe Files: realiza a manipulação de arquivos e diretórios, como criar, excluir, entre outros.
+- Exemplo de utilização da biblioteca NIO:
+
+  ```
+    import java.io.IOException;
+    import java.nio.file.DirectoryStream;
+    import java.nio.file.Files;
+    import java.nio.file.Path;
+    import java.nio.file.Paths;
+    import java.util.Scanner;
+
+    public class ExemploNIO {
+
+      public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+
+        // Imprime a mensagem na tela do usuário
+        System.out.println("Entre com nome de um arquivo ou diretório existente: ");
+        // Recebe a informação adicionada pelo usuário
+        Path caminho = Paths.get(scanner.nextLine());
+
+        // Verificar se o diretório ou arquivo existe:
+        if (Files.exists(caminho)) {
+            System.out.printf("Nome do arquivo: %s%n", caminho.getFileName());
+            System.out.printf("É diretório? $s%n", Files.isDirectory(caminho) ? "Sim" : "Não");
+            System.out.printf("Última modificação: %s%n", Files.getLastModifiedTime(caminho));
+            System.out.printf("Tamanho: %s%n", Files.size(caminho));
+            System.out.printf("Caminho: %s%n", caminho);
+
+            // Mostrar o conteúdo do diretório
+            if (Files.isDirectory(caminho)) {
+                System.out.printf("Conteúdo do diretório:\n");
+                DirectoryStream<Path> directoryStream = Files.newDirectoryStream(caminho);
+                for (Path cam : directoryStream) {
+                    System.out.println(cam);
+                }
+            }
+        } else {
+            System.out.printf("%n0 caminho %s não existe.", caminho);
+        }
+
+        scanner.close();
+      }
+    }
+  ```
