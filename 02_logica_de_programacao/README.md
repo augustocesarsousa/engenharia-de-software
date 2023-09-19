@@ -679,3 +679,40 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
       }
     }
   ```
+
+#### Math
+
+- A biblioteca Math é usada nas operações matemáticas. Por padrão, é encontrada em todas as versões do Java, ou seja, não precisamos importá-la para utilizarmos a nomenclatura;
+- Sintaxe:
+  ```
+  Math.<operador matemático>
+  ```
+- Exemplo de algumas operações da biblioteca Math:
+
+  | Operação       | Significado                                                     |
+  | -------------- | --------------------------------------------------------------- |
+  | Math.max(x, y) | Encontra o maior número de x e y                                |
+  | Math.min(x, y) | Encontra o menor número de x e y                                |
+  | Math.sqrt(x)   | Calcula a raiz quadrada de x                                    |
+  | Math.abs(x)    | Retorna o valor absoluto(positivo) de x                         |
+  | Math.random()  | Retorna um número aleatório entre 0,0 (incluso) e 1.0 (excluso) |
+
+- Exemplo da biblioteca Math utilizando as operações anteriores;
+
+  ```
+    public class ExemploMath {
+
+      public static void main(String[] args) {
+        double x = 16;
+        double y = 14;
+
+        System.out.println(“Valor de X é ” + X + “ e de Y é ” + y);
+        System.out.println(“Máximo com a função max(x, y): ” + Math.max(x, y));
+        System.out.println(“Mínimo com a função min(x, y): ” + Math.min(x, y));
+        System.out.println(“Raiz quadrada com a função sqrt(x): ” + Math.sqrt(x));
+        System.out.println(“Valor absoluto com a função abs(x): ” + Math.abs(x));
+        System.out.println(“Valor aleatório entre 0 e 1 com a função random(): ” + Math.random());
+      }
+    }
+
+  ```
