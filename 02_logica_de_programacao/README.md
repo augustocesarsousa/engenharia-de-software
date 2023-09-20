@@ -770,3 +770,88 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
       }
     }
   ```
+
+## Orientação a objetos
+
+- A orientação a objetos (OO) é atualmente a técnica de desenvolvimento de software mais utilizada no mundo, pois apresenta fácil manutenção e teste de programas;
+- Por meio da OO, somos capazes de criar, utilizando a técnica de abstração, objetos que simulam as características de objetos reais;
+
+#### Classes/Objetos
+
+- Classe também é conhecida como objeto ou entidade que manipulamos;
+- Internamente, esses objetos são organizados e bem definidos, o que é importante quando os utilizamos;
+- A manipulação ocorre com a chamada de um ou mais métodos, e cada método consiste em blocos de instruções que acessam dados internos a cada acesso chamado;
+- Abaixo temos uma classe que representa um objeto _pessoa_:
+
+  ```
+  import java.util.Date;
+
+  public class Pessoa {
+
+      private String nome;
+      private String cpf;
+      private Date dataNascimento;
+      private String telefone;
+      private String email;
+      private String rua;
+      private Integer numero;
+      private String bairro;
+      private String cidade;
+
+      public String getNome() {
+          return nome;
+      }
+      public void setNome(String nome) {
+          this.nome = nome;
+      }
+      public String getCpf() {
+          return cpf;
+      }
+      public void setCpf(String cpf) {
+          this.cpf = cpf;
+      }
+      public Date getDataNascimento() {
+          return dataNascimento;
+      }
+      public void setDataNascimento(Date dataNascimento) {
+          this.dataNascimento = dataNascimento;
+      }
+      public String getTelefone() {
+          return telefone;
+      }
+      public void setTelefone(String telefone) {
+          this.telefone = telefone;
+      }
+      public String getEmail() {
+          return email;
+      }
+      public void setEmail(String email) {
+          this.email = email;
+      }
+      public String getRua() {
+          return rua;
+      }
+      public void setRua(String rua) {
+          this.rua = rua;
+      }
+      public Integer getNumero() {
+          return numero;
+      }
+      public void setNumero(Integer numero) {
+          this.numero = numero;
+      }
+      public String getBairro() {
+          return bairro;
+      }
+      public void setBairro(String bairro) {
+          this.bairro = bairro;
+      }
+      public String getCidade() {
+          return cidade;
+      }
+      public void setCidade(String cidade) {
+          this.cidade = cidade;
+      }
+
+  }
+  ```
