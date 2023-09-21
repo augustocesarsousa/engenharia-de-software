@@ -951,3 +951,59 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
         }
     }
   ```
+
+## Construtores
+
+- Os construtores são métodos utilizados nos objetos e possuem o objetivo de inicializar os atributos de uma classe;
+- Cada construtor possui o mesmo nome da classe/objeto e pode receber passagem de parâmetros de acordo com a necessidade dos objetos;
+- Exemplo de construtor:
+
+  ```
+    public class ExemploConstrutor {
+        private Double altura;
+        private Double largura;
+
+        //construtor vazio
+        public ExemploConstrutor() {
+        }
+
+        //construtor com argumentos
+        public ExemploConstrutor(Double altura, Double largura) {
+            this.altura = altura;
+            this.largura = largura;
+        }
+
+        public Double getAltura() {
+            return altura;
+        }
+
+        public void setAltura(Double altura) {
+            this.altura = altura;
+        }
+
+        public Double getLargura() {
+            return largura;
+        }
+
+        public void setLargura(Double largura) {
+            this.largura = largura;
+        }
+
+        public Double getArea() {
+            return this.altura * this.largura;
+        }
+    }
+  ```
+
+- Quem define qual construtor será usado é a da classe que está chamando o objeto, exemplo:
+
+  ```
+      public class Main {
+
+          public static void main(String[] args) {
+              ExemploConstrutor retangulo = new ExemploConstrutor(15.2, 16.77);
+
+              System.out.println(retangulo.getArea());
+          }
+      }
+  ```
