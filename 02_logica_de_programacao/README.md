@@ -1007,3 +1007,28 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
           }
       }
   ```
+
+## Reutilização e herança
+
+- A reutilização de objetos é uma das vantagens permitidas pela orientação a objetos, pois todos os sistemas computacionais desenvolvidos em Java utilizam mais de um objeto, sendo que cada um coopera com os demais;
+- A reutilização do código permite melhor organização, facilidade na manutenção do sistema e melhor escalabilidade da aplicação, possibilitando ampliar as funcionalidades e aplicações do sistema;
+- Esse tipo de reutilização de objeto também é conhecido como herança;
+- No exemplo abaixo temos um exemplo de herança onde as classes _aluno_ e _professor_, herdam os atributos da classe _pessoa_:
+
+```mermaid
+ classDiagram
+      Pessoa --|> Aluno
+      Pessoa --|> Professor
+      Pessoa: +String name
+      Pessoa: +String telefone
+      Pessoa: +String email
+      Pessoa: +String cpf
+      class Aluno{
+          +String classe
+          +String materia
+          +Double nota
+      }
+      class Professor{
+          +String classe
+      }
+```
