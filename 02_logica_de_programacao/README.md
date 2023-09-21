@@ -776,7 +776,7 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
 - A orientação a objetos (OO) é atualmente a técnica de desenvolvimento de software mais utilizada no mundo, pois apresenta fácil manutenção e teste de programas;
 - Por meio da OO, somos capazes de criar, utilizando a técnica de abstração, objetos que simulam as características de objetos reais;
 
-#### Classes/Objetos
+### Classes/Objetos
 
 - Classe também é conhecida como objeto ou entidade que manipulamos;
 - Internamente, esses objetos são organizados e bem definidos, o que é importante quando os utilizamos;
@@ -784,74 +784,170 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
 - Abaixo temos uma classe que representa um objeto _pessoa_:
 
   ```
-  import java.util.Date;
+    import java.util.Date;
 
-  public class Pessoa {
+    public class ExemploObjeto {
 
-      private String nome;
-      private String cpf;
-      private Date dataNascimento;
-      private String telefone;
-      private String email;
-      private String rua;
-      private Integer numero;
-      private String bairro;
-      private String cidade;
+        private String nome;
+        private String cpf;
+        private Date dataNascimento;
+        private String telefone;
+        private String email;
+        private String rua;
+        private Integer numero;
+        private String bairro;
+        private String cidade;
 
-      public String getNome() {
-          return nome;
-      }
-      public void setNome(String nome) {
-          this.nome = nome;
-      }
-      public String getCpf() {
-          return cpf;
-      }
-      public void setCpf(String cpf) {
-          this.cpf = cpf;
-      }
-      public Date getDataNascimento() {
-          return dataNascimento;
-      }
-      public void setDataNascimento(Date dataNascimento) {
-          this.dataNascimento = dataNascimento;
-      }
-      public String getTelefone() {
-          return telefone;
-      }
-      public void setTelefone(String telefone) {
-          this.telefone = telefone;
-      }
-      public String getEmail() {
-          return email;
-      }
-      public void setEmail(String email) {
-          this.email = email;
-      }
-      public String getRua() {
-          return rua;
-      }
-      public void setRua(String rua) {
-          this.rua = rua;
-      }
-      public Integer getNumero() {
-          return numero;
-      }
-      public void setNumero(Integer numero) {
-          this.numero = numero;
-      }
-      public String getBairro() {
-          return bairro;
-      }
-      public void setBairro(String bairro) {
-          this.bairro = bairro;
-      }
-      public String getCidade() {
-          return cidade;
-      }
-      public void setCidade(String cidade) {
-          this.cidade = cidade;
-      }
+        public String getNome() {
+            return nome;
+        }
 
-  }
+        public void setNome(String nome) {
+            this.nome = nome;
+        }
+
+        public String getCpf() {
+            return cpf;
+        }
+
+        public void setCpf(String cpf) {
+            this.cpf = cpf;
+        }
+
+        public Date getDataNascimento() {
+            return dataNascimento;
+        }
+
+        public void setDataNascimento(Date dataNascimento) {
+            this.dataNascimento = dataNascimento;
+        }
+
+        public String getTelefone() {
+            return telefone;
+        }
+
+        public void setTelefone(String telefone) {
+            this.telefone = telefone;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+        public String getRua() {
+            return rua;
+        }
+
+        public void setRua(String rua) {
+            this.rua = rua;
+        }
+
+        public Integer getNumero() {
+            return numero;
+        }
+        public void setNumero(Integer numero) {
+            this.numero = numero;
+        }
+
+        public String getBairro() {
+            return bairro;
+        }
+
+        public void setBairro(String bairro) {
+            this.bairro = bairro;
+        }
+
+        public String getCidade() {
+            return cidade;
+        }
+
+        public void setCidade(String cidade) {
+            this.cidade = cidade;
+        }
+
+        @Override
+        public String toString() {
+            return "Pessoa [nome=" + nome + ", cpf=" + cpf + ", dataNascimento=" + dataNascimento + ", telefone=" + telefone
+                    + ", email=" + email + ", rua=" + rua + ", numero=" + numero + ", bairro=" + bairro + ", cidade=" + cidade + "]";
+        }
+    }
+  ```
+
+### Variáveis
+
+- As variáveis que podemos utilizar podem ser do tipo global ou local, e a forma de acessá-las é uma das principais diferenças que podemos ter entre os tipos de programação estruturada e POO;
+- As variáveis podem ser do tipo primitivo, como int, float, char, entre outras, e do tipo dados wrapper, como Integer, Double, Long, entre outras;
+- Também podemos criar variáveis a partir de objetos;
+- No exemplo abaixo vamos criar uma variável a partir do objeto pessoa:
+
+  ```
+    import java.util.Date;
+
+    public class ExemploVariavel {
+
+        public static void main(String[] args) {
+            Pessoa pessoa = new Pessoa();
+
+            pessoa.setNome("Nome da Pessoa");
+            pessoa.setCpf("12345678910");
+            pessoa.setDataNascimento(new Date());
+            pessoa.setTelefone("12345678");
+            pessoa.setEmail("pessoa@email.com");
+            pessoa.setRua("Rua 1");
+            pessoa.setNumero(100);
+            pessoa.setBairro("Bairro 1");
+            pessoa.setCidade("Cidade 1");
+
+            System.out.println(pessoa);
+        }
+    }
+  ```
+
+### Encapsulamento de variáveis
+
+- O encapsulamento possui o objetivo de ocultar recursos que não são pertinentes ao usuário, os quais são usados pelos qualificadores public, private, package e protected;
+  - Public: acessível por todas as classes, subclasses e pacotes do projeto;
+  - Protected: acessível apenas pelas classes e subclasses do mesmo pacote;
+  - Private: acessível apenas pela classe criadora;
+  - Package: acessível na classe criadora, e nas classes e subclasses do mesmo pacote, é o modificado de acesso padrão.
+- Exemplo:
+
+  ```
+    import java.util.Date;
+
+    public class ExemploEncapsulamento {
+
+        public static void main(String[] args) {
+            private String varPrivate;
+            protected String varProtected;
+            String varPackage;
+
+            public String getVarPrivate() {
+                return varPrivate;
+            }
+
+            public void setVarPrivate(String varPrivate) {
+                this.varPrivate = varPrivate;
+            }
+
+            public String getVarProtected() {
+                return varProtected;
+            }
+
+            public void setVarProtected(String varProtected) {
+                this.varProtected = varProtected;
+            }
+
+            public String getVarPackage() {
+                return varPackage;
+            }
+
+            public void setVarPackage(String varPackage) {
+                this.varPackage = varPackage;
+            }
+        }
+    }
   ```
