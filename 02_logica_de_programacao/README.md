@@ -1032,3 +1032,32 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
           +String classe
       }
 ```
+
+## Polimorfismo
+
+- O polimorfismo é uma técnica que junta o encapsulamento à herança e em que novas funcionalidades podem ser adicionadas à class;
+- Muitas vezes, é apresentada como uma classe avançada que tem a possibilidade de economia nos recursos computacionais disponíveis (FURGERI, 2010);
+- De maneira prática, podemos utilizar um objeto que pode ser executado de modos diferentes, ou seja, o mesmo objeto terá uma execução distinta, dependendo da classe que o chamou;
+- Exemplo:
+
+  ```
+  public interface Calculadora {
+      public Integer calcular(Integer x, Integer y);
+  }
+
+  public class Soma implements Calculadora {
+      @Override
+      public Integer calcular(Integer x, Integer y) {
+          return x + y;
+      }
+  }
+
+  public class Subtracao implements Calculadora {
+      @Override
+      public Integer calcular(Integer x, Integer y) {
+          return x - y;
+      }
+  }
+  ```
+
+  - No exemplo acima temos a interface **Calculadora** que de define o método **calcular**, e posteriormente temos as classes **Soma** e **Subtracao** implementam a interface e sobrescrevem o método retornando resultados distintos;
