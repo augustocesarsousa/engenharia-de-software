@@ -952,7 +952,7 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
     }
   ```
 
-## Construtores
+### Construtores
 
 - Os construtores são métodos utilizados nos objetos e possuem o objetivo de inicializar os atributos de uma classe;
 - Cada construtor possui o mesmo nome da classe/objeto e pode receber passagem de parâmetros de acordo com a necessidade dos objetos;
@@ -1008,7 +1008,7 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
       }
   ```
 
-## Reutilização e herança
+### Reutilização e herança
 
 - A reutilização de objetos é uma das vantagens permitidas pela orientação a objetos, pois todos os sistemas computacionais desenvolvidos em Java utilizam mais de um objeto, sendo que cada um coopera com os demais;
 - A reutilização do código permite melhor organização, facilidade na manutenção do sistema e melhor escalabilidade da aplicação, possibilitando ampliar as funcionalidades e aplicações do sistema;
@@ -1033,7 +1033,7 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
       }
 ```
 
-## Polimorfismo
+### Polimorfismo
 
 - O polimorfismo é uma técnica que junta o encapsulamento à herança e em que novas funcionalidades podem ser adicionadas à class;
 - Muitas vezes, é apresentada como uma classe avançada que tem a possibilidade de economia nos recursos computacionais disponíveis (FURGERI, 2010);
@@ -1060,4 +1060,18 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
   }
   ```
 
-  - No exemplo acima temos a interface **Calculadora** que de define o método **calcular**, e posteriormente temos as classes **Soma** e **Subtracao** implementam a interface e sobrescrevem o método retornando resultados distintos;
+  - No exemplo acima temos a interface **Calculadora** que de define o método **calcular**, e posteriormente temos as classes **Soma** e **Subtracao** implementam a interface e sobrescrevem o método retornando resultados distintos.
+
+## Testes e tratamento de erros
+
+- Na programação, há muitos erros que podem acontecer e frequentemente ser visualizados no início do projeto, já outros só podem ser vistos durante os testes da aplicação. Estes podem ser feitos na programação ou na execução do sistema, simulando assim o usuário.
+
+### Tipos de erros
+
+- Os erros na programação podem aparecer de diversas formas, principalmente por erros de compilação, tempo de execução e lógica (LEAL, 2016).
+
+#### Erros lógicos
+
+- Os erros lógicos ou de má interpretação são os mais difíceis de identificar e corrigir, uma vez que sua aplicação não para de funcionar, alterando assim o resultado esperado (LEAL, 2016);
+- Os problemas lógicos mais comuns são esquecer de atribuir os valores às variáveis específicas e documentação insuficiente;
+- Esses tipos de problemas podem ser solucionados utilizando o debug para analisar linha a linha e cada entrada e saída de dados do código.
