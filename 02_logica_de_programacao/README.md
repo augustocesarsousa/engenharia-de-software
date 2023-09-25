@@ -1075,3 +1075,48 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
 - Os erros lógicos ou de má interpretação são os mais difíceis de identificar e corrigir, uma vez que sua aplicação não para de funcionar, alterando assim o resultado esperado (LEAL, 2016);
 - Os problemas lógicos mais comuns são esquecer de atribuir os valores às variáveis específicas e documentação insuficiente;
 - Esses tipos de problemas podem ser solucionados utilizando o debug para analisar linha a linha e cada entrada e saída de dados do código.
+
+#### Erros sintáticos
+
+- Os erros sintáticos ocorrem quando dispomos a forma de escrita errada, pois como a linguagem natural, as expressões matemáticas e as regras em geral devem ser seguidas, com a linguagem de programação não é diferente.
+
+### Tratamento de erros
+
+- A linguagem de programação orientada a objetos permite diversos tratamentos aos erros, cuja finalidade é de continuar a execução do programa mesmo com erros;
+- Esses tipos de tratamentos devem prever todos os possíveis erros, para que possamos contorná-los e assim manter o sistema em execução.
+
+#### Try catch
+
+- Na linguagem de programação Java, existe a técnica de try catch, em que a instrução try contém o código que pode lançar uma exceção, enquanto a instrução catch contém o código que trata a exceção, caso ocorra (DEITEL; DEITEL, 2009);
+- Exemplo, imprimindo uma posição inexistente de um vetor:
+  ```
+    public class ExemploTryCatch {
+        public static void main(String[] args) {
+            try {
+                int[] numeros = { 2, 8, 7 };
+                System.out.println(numeros[5]);
+            } catch (Exception e) {
+                System.out.println("Algo deu errado no acessar a posição do vetor.");
+            }
+        }
+    }
+  ```
+
+#### Tratamento de múltiplos erros
+
+- Os tratamentos de múltiplos erros utilizam diversos tipos e exceções. Caso os blocos catch sejam idênticos, utilizamos o multi-catch para capturar esses tipos de exceção em uma única rotina de tratamento (DEITEL; DEITEL, 2009);
+- Exemplo:
+  ```
+    public class ExemploMultiplosErros {
+        public static void main(String[] args) {
+            int lista[] = new int [3];
+            try {
+                lista[3] = 10/0;
+            } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
+                System.out.println("Ocorreu um erro aritmético");
+                System.out.println(e.toString());
+            }
+        }
+    }
+  ```
+- Os tratamentos de múltiplos erros possibilitam a verificação de diversos erros em sequência, mantendo a execução do sistema, dessa forma sistemas complexos acabam se tornando mais eficientes.
