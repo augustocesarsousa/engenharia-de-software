@@ -1120,3 +1120,73 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
     }
   ```
 - Os tratamentos de múltiplos erros possibilitam a verificação de diversos erros em sequência, mantendo a execução do sistema, dessa forma sistemas complexos acabam se tornando mais eficientes.
+
+### Testes na linguagem Java
+
+- Os testes de software pretendem mostrar que um programa desenvolvido faz o que foi destinado a fazer e pretende descobrir erros/defeitos antes de ser colocado em uso;
+- De acordo com Sommervile (2018), quem realiza os testes no software tenta fazer duas coisas:
+  1. Demonstrar ao programador e ao cliente que o software atende aos requisitos coletados. Para um sistema customizado, é necessário testar cada requisito no documento de requisitos;
+  2. Encontrar sequências de entrada nas quais o software se comporta de modo impreciso e indesejável, ou seja, não segue as especificações. Essas inconsistências no software são conhecidas como bug, e por meio dos testes tentamos encontrar e erradicar esses comportamentos indesejáveis.
+
+### Junit
+
+- O JUNIT é um framework do tipo código aberto, ou seja, qualquer programador ou desenvolvedor pode ter acesso ao código fonte. Esse framework facilita a criação e a manutenção do código desenvolvido para a automação de testes com apresentação dos resultados (AZEVEDO, 2018);
+- Exemplo, testando o método área do objeto quadrado:
+
+  ```
+    public class Quadrado {
+
+        private Double lado;
+
+        public Quadrado(Double lado) {
+            this.lado = lado;
+        }
+
+        public Double getLado() {
+            return lado;
+        }
+
+        public void setLado(Double lado) {
+            this.lado = lado;
+        }
+
+        public Double area() {
+            return 0d;
+        }
+    }
+  ```
+
+  ```
+    import org.junit.Assert;
+    import org.junit.Test;
+
+    public class QuadradoTest {
+
+        @Test
+        public void testArea() {
+            Quadrado quadrado = new Quadrado(2d);
+            Double expectativa = 4d;
+
+            Double resultado = quadrado.area();
+
+            Assert.assertEquals(expectativa, resultado);
+        }
+
+    }
+  ```
+
+  - No exemplo o teste retorna um erro, pois esperamos o resultado 4, mas o método area() retorna 0.
+
+### Testes unitários e planejamento
+
+- Os testes unitários são aplicados na validação ou verificação de uma parte do algoritmo desenvolvido, ou seja, confirmamos se a funcionalidade para a qual foi desenvolvido está de acordo com o propósito desenvolvido (SOUZA, 2009);
+- Percebemos que o teste não é aplicado a toda a classe ou funcionalidade de todo o sistema, mas às instruções específicas, ou seja, o objetivo é testar um pedaço de código (AZEVEDO, 2018);
+- Quando utilizamos qualquer tipo de metodologias ágeis, como o Extreme Programming, também conhecido como XP, é necessário ter disciplina de organização e desenvolvimento, ou seja, para que tudo ocorra dentro do prazo, é necessário um forte planejamento antes de iniciar a escrita do código ou mesmo a realização dos testes;
+- Podemos seguir uma lista desenvolvida por Medeiros (2009):
+  - definir listas de tarefas e implementar (o que testar);
+  - escrever uma classe de teste e implementar um método para cada tarefa da lista;
+  - rodar o JUNIT e certificar que o teste falha;
+  - implementar o código mais simples que rode o teste;
+  - refatorar o código para remover a duplicação de dados;
+  - caso necessário, escrever mais um teste ou refinar o existente;
+  - fazer esses passos para toda a lista de tarefas.
