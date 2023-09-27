@@ -1190,3 +1190,22 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
   - refatorar o código para remover a duplicação de dados;
   - caso necessário, escrever mais um teste ou refinar o existente;
   - fazer esses passos para toda a lista de tarefas.
+
+## Atividades
+
+1. O que seria lógica para você?
+2. Elabore o fluxograma do índice de massa corporal (IMC) com as seguintes variáveis: IMC entre 17.8 e 20.5 estará com peso normal, IMC entre 20.5 e 24.5
+   indicará sobrepeso, e acima de 24.5 será considerado obeso:
+3. Descreva a importância de utilizar um IDE:
+4. Por que devemos ter boas práticas de programação e escolher muito bem nossas variáveis?
+5. Para que serve o condicional de decisão e por que devemos utilizar junto aos operadores lógicos e relacionais?
+6. Por que levamos em consideração a ordem de procedência?
+7. Utilizando a biblioteca Scanner podemos realizar diversas funcionalidades, dentre elas a manipulação de arquivos e a entrada de dados. Explique de que forma seria a chamada da função para a entrada de dados do tipo double e String?
+8. A biblioteca Math apresenta diversas operações matemáticas, o que faz da linguagem de programação Java uma ferramenta poderosa e bastante útil quando se trata de cálculos matemáticos. Explique de que forma a ordem de procedência pode influenciar o cálculo matemático utilizando a biblioteca Math:
+9. Observamos diversas bibliotecas que apresentam muitas novidades ao desenvolvimento de sistemas, principalmente a NIO, que veio para complementar a IO. Mesmo com todas as vantagens e desvantagens da biblioteca IO, justifique quando devemos utilizá-la:
+10. Qual a principal vantagem que o desenvolvimento orientado a objetos trouxe para a qualidade de software?
+11. De que forma a linguagem de programação orientada a objetos pode ser executada em diversos tipos de hardware?
+12. Toda classe descreve um objeto? Justifique:
+13. Quais os principais tipos de erros que podemos encontrar na programação?
+14. O que são erros lógicos?
+15. Quais as formas de tratamento que encontramos na linguagem Java para impedir a interrupção de um programa quando ocorrem erros?
