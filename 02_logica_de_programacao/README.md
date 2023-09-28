@@ -1194,18 +1194,43 @@ O fluxo de repetição, também conhecido como laços de repetição (do inglês
 ## Atividades
 
 1. O que seria lógica para você?
-2. Elabore o fluxograma do índice de massa corporal (IMC) com as seguintes variáveis: IMC entre 17.8 e 20.5 estará com peso normal, IMC entre 20.5 e 24.5
-   indicará sobrepeso, e acima de 24.5 será considerado obeso:
+   **Resposta**: Lógica é o ato de pensar e agir de uma forma coesa, seguindo passos determinados a fim de resolver um problema da melhor forma possível.
+2. Elabore o fluxograma do índice de massa corporal (IMC) com as seguintes variáveis: IMC entre 17.8 e 20.5 estará com peso normal, IMC entre 20.5 e 24.5 indicará sobrepeso, e acima de 24.5 será considerado obeso:
+   **Resposta**:
+   ```mermaid
+       flowchart TD
+         A(Início) --> B[/Altura e Peso/]
+         B --> C{IMC = Peso/Altura^2}
+         C --> |17.8 >= IMC <= 20.5| E{{Normal}}
+         C --> |20.5 > IMC <= 24.5| F{{Sobrepeso}}
+         C --> |24.5 > IMC| G{{Acima do peso}}
+         E --> H[Fim]
+         F --> H
+         G --> H
+   ```
 3. Descreva a importância de utilizar um IDE:
+   **Resposta**: Uma IDE concentra funcionalidades que auxiliam no desenvolvimento, gerando um ganho na produtividade.
 4. Por que devemos ter boas práticas de programação e escolher muito bem nossas variáveis?
+   **Resposta**: Ter boa prática na programação garante um código mais legível e de fácil entendimento, ao se utilizar nomes que fazem sentido com os dados que eles representam, garante um código de fácil manutenção.
 5. Para que serve o condicional de decisão e por que devemos utilizar junto aos operadores lógicos e relacionais?
+   **Resposta**: Serva para tomada de decisão para controlar o fluxo do programa, a utilização dos operadores lógicos auxilia a operação retornando um valor verdadeiro ou falso.
 6. Por que levamos em consideração a ordem de procedência?
+   **Resposta**: A ordem de procedência é utilizada em operações aritméticas, lógicas e relacionais que utilizam chaves e colchetes ou até mesmo em operações básicas.
 7. Utilizando a biblioteca Scanner podemos realizar diversas funcionalidades, dentre elas a manipulação de arquivos e a entrada de dados. Explique de que forma seria a chamada da função para a entrada de dados do tipo double e String?
+   **Resposta**: A entrada para o tipo String utilizamos a função _nextLine()_, exemplo (String texto = scanner.nextLine()). Para a entrada de um tipo double também utilizamos a função _nextLine()_ mas precisamos converter o valor utilizando a função _Double.parseDouble()_, exemplo (double numero = Double.parseDouble(scanner.nextLine())).
 8. A biblioteca Math apresenta diversas operações matemáticas, o que faz da linguagem de programação Java uma ferramenta poderosa e bastante útil quando se trata de cálculos matemáticos. Explique de que forma a ordem de procedência pode influenciar o cálculo matemático utilizando a biblioteca Math:
+   **Resposta**: Os cálculos feitos pelos métodos da biblioteca Math, já possuem a ordem de procedência implementada neles.
 9. Observamos diversas bibliotecas que apresentam muitas novidades ao desenvolvimento de sistemas, principalmente a NIO, que veio para complementar a IO. Mesmo com todas as vantagens e desvantagens da biblioteca IO, justifique quando devemos utilizá-la:
+   **Resposta**: A biblioteca IO pode ser usada para o processamento de arquivos pequenos, por ser mais simples a sua implementação.
 10. Qual a principal vantagem que o desenvolvimento orientado a objetos trouxe para a qualidade de software?
+    **Resposta**: O reaproveitamento de código foi a principal vantagem trazida pelo desenvolvimento orientado a objeto.
 11. De que forma a linguagem de programação orientada a objetos pode ser executada em diversos tipos de hardware?
+    **Resposta**: Usando como exemplo a linguagem Java, a sua arquitetura neutra garante a ela portabilidade e permite que ela possa ser executada em diversos tipos de hardwares diferentes dependendo apenas da instalação da JVM.
 12. Toda classe descreve um objeto? Justifique:
+    **Resposta**: No Java toda classe é um objeto, onde possui métodos e variáveis que podem ser manipulados, esses objetos representam de forma abstrata o nosso mundo real.
 13. Quais os principais tipos de erros que podemos encontrar na programação?
+    **Resposta**: COmpilação, tempo de execução e lógica.
 14. O que são erros lógicos?
+    **Resposta**: São erros que ocorrem pelo mal entenrecimento do problema, onde muitas vezes o software continua funcionando porém trás resultados inadequados.
 15. Quais as formas de tratamento que encontramos na linguagem Java para impedir a interrupção de um programa quando ocorrem erros?
+    **Resposta**: O Java utiliza o bloco _try catch_ para tratamentos dos erros, onde os erros são capturados e podemos fazer algum processamentos sobre ele, seja emitindo uma mensagem de erro ou desviando o fluxo do software.
