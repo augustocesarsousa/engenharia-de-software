@@ -22,4 +22,21 @@
   - Discos de estado sólido (SSD): São dispositivos sem partes móveis, mais rápidos e silenciosos que os tradicionais discos rígidos e de menor capacidade (os maiores têm em torno de 2 tb);
   - Memória flash (pendrive): São pentes de memória não voláteis. Costumam ser pequenos, portáteis e ligados ao computador por meio de uma porta USB. Os pendrives tornaram o disquete obsoleto por serem portáteis, silenciosos e confiáveis, além de terem milhares de vezes mais capacidade de armazenamento;
   - Fitas de dados (DAT): São fitas magnéticas de baixo custo de armazenamento. Sua grande característica é a resiliência, ou seja, se corretamente armazenadas, duram muitos anos. Por isso, ainda são muito usadas para backup. Sua velocidade de acesso é muito baixa e permite praticamente somente o acesso sequencial;
-  - Outras mídias: Várias outras mídias se popularizaram e caíram (ou estão caindo) em desuso com os anos, como os disquetes, CDs e DVDs;
+  - Outras mídias: Várias outras mídias se popularizaram e caíram (ou estão caindo) em desuso com os anos, como os disquetes, CDs e DVDs.
+
+#### Áreas de memória de um processo
+
+- Segundo Tanenbaum e Bos (2016), duas áreas são especialmente importantes na programação: a pilha (stack) e o heap;
+- Quando um programa é executado, suas instruções são carregadas em uma área especial de memória conhecida como somente leitura (read only);
+- Os projetistas têm a preocupação de tornar seu uso seguro, sem que você sequer perceba que essa área de memória existe
+  (SIERRA; BATES, 2010);
+- Outras linguagens de mais baixo nível, como o C e o C++, permitem que você tente alterar dados criados nesse local,
+  o que ocasiona um erro no tempo de execução (MAIN; SAVITCH, 2005);
+- O heap representa toda a memória disponível no sistema. Essa memória precisa ser explicitamente requisitada (alocada) e liberada (desalocada) pelo programador, por meio de comandos específicos;
+- Algumas linguagens, como o Java, possuem um sistema especial para realizar automaticamente as desalocações no heap, chamado garbage collector (GOODRICH; TAMASSIA, 2013);
+- Esse sistema é capaz de identificar automaticamente um objeto sem referências e eliminá-lo, acabando com a necessidade de comandos como free ou delete utilizados pelas linguagens C e C++.
+- Além disso, o garbage collector realiza uma gerência inteligente no processo de alocação e desalocação, sendo capaz de, conforme Goetz (2003):
+  - Agrupar dados que precisem ser desalocados em blocos grandes, realizando a operação de uma vez só;
+  - Reutilizar áreas de memória recém-desalocadas em novas alocações, evitando o custo do sistema operacional em ambas as operações;
+  - Utilizar vários núcleos de processamento para máxima performance.
+- Como desvantagem desse sistema está a imprevisibilidade. Apesar de ser um sistema crítico e, portanto, extremamente eficiente, o programador não tem como controlar quando a execução ocorrerá, não tem como prever quanto tempo levará e nem quanta memória será desalocada. Por isso, o Java não costuma ser recomendado em aplicações com exigência de tempo real, como jogos ou vídeo.
