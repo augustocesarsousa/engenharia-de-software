@@ -40,3 +40,13 @@
   - Reutilizar áreas de memória recém-desalocadas em novas alocações, evitando o custo do sistema operacional em ambas as operações;
   - Utilizar vários núcleos de processamento para máxima performance.
 - Como desvantagem desse sistema está a imprevisibilidade. Apesar de ser um sistema crítico e, portanto, extremamente eficiente, o programador não tem como controlar quando a execução ocorrerá, não tem como prever quanto tempo levará e nem quanta memória será desalocada. Por isso, o Java não costuma ser recomendado em aplicações com exigência de tempo real, como jogos ou vídeo.
+
+### Tipos primitivos
+
+- Os tipos variem de uma linguagem para outra, o conjunto básico geralmente inclui tipos numéricos, caracteres de texto e variáveis booleanas (verdadeiro/falso);
+- Conforme a Oracle (2019), no caso do Java, os tipos primitivos são chamados de:
+  - booleano (verdadeiro/falso): boolean;
+  - numéricos inteiros: byte, short, int e long;
+  - numéricos decimais: float e double;
+  - caracteres: char.
+- Os tipos primitivos geralmente trabalham por valor, isto é, eles representam apelidos para endereços de memória. Assim, duas variáveis diferentes representarão áreas diferentes da memória, e atribuir o valor de uma a outra gerará a cópia desse valor.
