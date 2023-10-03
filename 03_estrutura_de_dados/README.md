@@ -45,8 +45,19 @@
 
 - Os tipos variem de uma linguagem para outra, o conjunto básico geralmente inclui tipos numéricos, caracteres de texto e variáveis booleanas (verdadeiro/falso);
 - Conforme a Oracle (2019), no caso do Java, os tipos primitivos são chamados de:
-  - booleano (verdadeiro/falso): boolean;
-  - numéricos inteiros: byte, short, int e long;
-  - numéricos decimais: float e double;
-  - caracteres: char.
-- Os tipos primitivos geralmente trabalham por valor, isto é, eles representam apelidos para endereços de memória. Assim, duas variáveis diferentes representarão áreas diferentes da memória, e atribuir o valor de uma a outra gerará a cópia desse valor.
+  - Booleano (verdadeiro/falso): boolean;
+  - Numéricos inteiros: byte, short, int e long;
+  - Numéricos decimais: float e double;
+  - Caracteres: char.
+- Os tipos primitivos geralmente trabalham por valor, isto é, eles representam apelidos para endereços de memória. Assim, duas variáveis diferentes representarão áreas diferentes da memória, e atribuir o valor de uma a outra gerará a cópia desse valor;
+- Os tipos primitivos são alocados na memória **stack**;
+
+### Vetores
+
+- Um vetor é um conjunto de variáveis primitivas associadas;
+- A linguagem Java trata os vetores como um tipo especial de dado, armazenado-os na memória **heap**;
+- Quando um vetor é alocado, todos os seus valores são dispostos na memória lado a lado (LAFORE, 2005);
+- Essa continuidade permite que o acesso sequencial aos dados do vetor seja muito veloz, pois ele maximiza o uso das memórias cache do processador;
+- As linguagens de programação podem armazenar apenas o primeiro endereço do vetor e descobrir a posição de qualquer outro elemento por uma operação matemática simples;
+- Exemplo, calculando a posição 8 de um vetor de 10 posições do tipo inteiro, onde cada unidade de inteiro é composta por 4 bytes, temos a seguinte fórmula (3.328 + 8 \* 4 = 3.328 + 32 = 3.360);
+- Para fins práticos de um software de grande porte, os vetores apresentam uma séria desvantagem: são estáticos, isto é, não mudam de tamanho (LAFORE, 2005);
