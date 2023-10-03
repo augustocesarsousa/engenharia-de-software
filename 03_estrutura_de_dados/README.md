@@ -77,3 +77,20 @@
 - Isso tem uma consequência importante: um vetor de objetos em Java será um vetor de referências. Desse modo, os objetos em si ainda estarão espalhados pela memória, pois serão criados em várias alocações diferentes;
 - Assim, os dados não estarão mais lado a lado, o que implica em perda de performance por não aproveitar tão bem o cache. Esse é o pior caso, já que o garbage collector possui algoritmos que tentam alocar os objetos juntos (GOETZ, 2003);
 - Embora a variável de referência valores tenha sido criada no stack, o vetor em si, para o qual ela aponta, foi criado no heap. Isso porque ele também é considerado um objeto em Java.
+
+## Pilhas e filas
+
+### Conceitos
+
+- A estrutura de dados **pilha** controlamos o acesso aos dados, de modo que as inserções sejam, obrigatoriamente, feitas em sequência, no topo da pilha, e as remoções sejam feitas na ordem inversa das inserções (LAFORE, 2005);
+- Um dos exemplos mais clássicos de implementação da pilha é o recurso voltar. Ele empilha cada comando dado pelo usuário para que possam ser desempilhados a cada pressionar das teclas CTRL+Z, desfazendo-os;
+- A **fila** é outra estrutura que também fornece acesso a dados de maneira controlada. A diferença desta e da pilha está na ordem em que os elementos são removidos (GOODRICH; TAMASSIA, 2013);
+- Um exemplo clássico de fila é a fila de impressão, chamada de _spool da impressora_, que enfileira as requisições de impressão feitas a uma única impressora por meio da rede;
+- Podemos classificar as implementações de qualquer estrutura de dados de duas maneiras (LAFORE, 2005). São elas:
+  - Quanto ao limite de dados, em que as estruturas podem ser estáticas ou dinâmicas:
+    - Estáticas: possuem uma quantidade fixa de dados que são capazes de comportar, geralmente definida no momento de sua criação;
+    - Dinâmicas: não possuem essa limitação, tendo sua capacidade máxima definida apenas pela quantidade de memória disponível para o processo.
+  - Quanto à disposição dos dados na memória, em que as estruturas podem ser sequenciais ou encadeadas:
+    - Sequenciais: os dados são colocados lado a lado na memória;
+    - Encadeadas: os dados se encontram dispersos em vários endereços de memória.
+- Uma estrutura estática só pode ser sequencial e uma estrutura encadeada só pode ser dinâmica, porém, uma estrutura sequencial pode ser dinâmica;
