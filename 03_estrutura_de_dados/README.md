@@ -61,3 +61,19 @@
 - As linguagens de programação podem armazenar apenas o primeiro endereço do vetor e descobrir a posição de qualquer outro elemento por uma operação matemática simples;
 - Exemplo, calculando a posição 8 de um vetor de 10 posições do tipo inteiro, onde cada unidade de inteiro é composta por 4 bytes, temos a seguinte fórmula (3.328 + 8 \* 4 = 3.328 + 32 = 3.360);
 - Para fins práticos de um software de grande porte, os vetores apresentam uma séria desvantagem: são estáticos, isto é, não mudam de tamanho (LAFORE, 2005);
+
+### Classes
+
+- Embora os tipos primitivos sejam úteis, os dados normalmente possuem forte correlação, sendo dificilmente usados de maneira isolada;
+- A linguagens de programação permitem criar tipos de dados compostos, agrupando dados de tipos diferentes em uma estrutura mais complexa, criada pelo programador. Na linguagem Java, esses tipos de dados compostos são chamados de classes (SIERRA; BATES, 2010);
+- A alocação de memória de um objeto de uma classe é feita por meio do comando new. Quando ele é executado, o compilador calcula o tamanho dos dados de todos os atributos da classe e realiza uma única alocação de toda aquela área no heap. Em seguida, é executado o construtor da classe para inicializar a memória com os valores iniciais determinados pelo programador;
+- Os dados da classe ficarão armazenados de maneira contínua, lado a lado. Em boa parte das linguagens, a mesma lógica pode ser usada para vetores; porém, esse não é o caso do Java (LAFORE, 2005);
+- Cada objeto de uma classe possui uma única referência para a tabela de métodos virtuais da classe (chamada vtable). Essa tabela tem o endereço de todos os métodos que podem sofrer polimorfismo, ou seja, que, em algum momento, foram sobrescritos nas classes filhas.
+
+#### Valores e referências
+
+- No Java, as variáveis de objetos são chamadas de referências (DEITEL, 2010), porque, em vez de guardar todos os dados do objeto, elas contêm apenas um número inteiro com o endereço de memória onde esses dados estão;
+- Quando atribuímos uma referência a outra, esse endereço de memória simplesmente é copiado e, portanto, as duas passam a apontar para o mesmo objeto (SIERRA; BATES, 2010);
+- Isso tem uma consequência importante: um vetor de objetos em Java será um vetor de referências. Desse modo, os objetos em si ainda estarão espalhados pela memória, pois serão criados em várias alocações diferentes;
+- Assim, os dados não estarão mais lado a lado, o que implica em perda de performance por não aproveitar tão bem o cache. Esse é o pior caso, já que o garbage collector possui algoritmos que tentam alocar os objetos juntos (GOETZ, 2003);
+- Embora a variável de referência valores tenha sido criada no stack, o vetor em si, para o qual ela aponta, foi criado no heap. Isso porque ele também é considerado um objeto em Java.
