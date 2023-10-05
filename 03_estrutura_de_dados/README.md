@@ -98,12 +98,24 @@
 ### Implementação da pilha
 
 - As operações possíveis para as pilhas e filas são:
-  - Adicionar: Insere o elemento no topo da pilha/fila;
-  - Remover: Remove o elemento do topo da pilha/fila;
-  - Limpeza: Elimina todos os elementos da pilha/fila;
-  - Verificar se está cheia: Retorna verdadeiro se não há mais espaço para a inserção de elementos na pilha/fila;
-  - Verificar se está vazia: Retorna verdadeiro se não há nenhum elemento na pilha/fila;
-  - Iteração: Consulta elementos da pilha/fila na mesma ordem em que seriam removidos, mas sem removê-los.
-- Quando tentamos adicionar um valor em uma pilha cheia temos um erro de **overflow**;
+  - Adicionar: Insere o elemento no topo da pilha;
+  - Remover: Remove o elemento do topo da pilha;
+  - Limpeza: Elimina todos os elementos da pilha;
+  - Verificar se está cheia: Retorna verdadeiro se não há mais espaço para a inserção de elementos na pilha;
+  - Verificar se está vazia: Retorna verdadeiro se não há nenhum elemento na pilha;
+  - Iteração: Consulta elementos da pilha na mesma ordem em que seriam removidos, mas sem removê-los.
+- Quando tentamos adicionar um valor em uma pilha estática cheia temos um erro de **overflow**;
 - Quando tentamos remover um valor em uma pilha vazia temos um erro de **underflow**;
-- **Overhead**: “valor extra”, que não representa informação de fato dentro da estrutura da pilha. No caso da pilha estática, o overhead é fixo e muito pequeno (só 4 bytes);
+- **Overhead**: “valor extra”, que não representa informação de fato dentro da estrutura da pilha. No caso da pilha estática, o overhead é fixo e muito pequeno (só 4 bytes).
+
+### Implementação da fila
+
+- As operações possíveis para as filas são as mesmas disponíveis para as pilhas, com algumas diferenças:
+  - Adicionar: Insere o elemento no fim da fila;
+  - Remover: Remove o elemento do início da fila;
+  - Limpeza: Elimina todos os elementos da fila;
+  - Verificar se está cheia: Retorna verdadeiro se não há mais espaço para a inserção de elementos na fila;
+  - Verificar se está vazia: Retorna verdadeiro se não há nenhum elemento na fila;
+  - Iteração: Consulta elementos da fila na mesma ordem em que seriam removidos, mas sem removê-los.
+- Assim como nas pilhas, quando tentamos adicionar um valor em um fila estática cheia, temos um erro de **overflow**, porém isso pode ser contornado utilizando uma **fila circular**;
+- Nas filas também pode ocorrer o caso de **underflow**, quando tentamos remover um item de uma fila vazia;
