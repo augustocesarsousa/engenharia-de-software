@@ -119,3 +119,11 @@
   - Iteração: Consulta elementos da fila na mesma ordem em que seriam removidos, mas sem removê-los.
 - Assim como nas pilhas, quando tentamos adicionar um valor em um fila estática cheia, temos um erro de **overflow**, porém isso pode ser contornado utilizando uma **fila circular**;
 - Nas filas também pode ocorrer o caso de **underflow**, quando tentamos remover um item de uma fila vazia;
+
+## Listas
+
+### Conceitos
+
+- Uma lista é um conjunto de elementos, acessíveis por meio de seus índices (GOODRICH; TAMASSIA, 2013);
+- Ela garante que os elementos respeitem uma ordem de inserção, seja colocando-os ao final, na ordem em que forem inseridos, ou respeitando a posição imposta
+  pelo programador;
