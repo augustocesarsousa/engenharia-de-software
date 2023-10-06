@@ -127,3 +127,13 @@
 - Uma lista é um conjunto de elementos, acessíveis por meio de seus índices (GOODRICH; TAMASSIA, 2013);
 - Ela garante que os elementos respeitem uma ordem de inserção, seja colocando-os ao final, na ordem em que forem inseridos, ou respeitando a posição imposta
   pelo programador;
+- Similarmente à pilha e à fila, as listas consideram um conjunto básico de operações
+  - Limpeza: Elimina todos os elementos da lista;
+  - Adicionar: Adiciona um elemento à lista. São fornecidas duas versões geralmente: uma que permite escolher a posição a ser inserida, e outra que sempre adiciona o elemento ao final da lista;
+  - Remover: Remove o elemento que contém um índice específico;
+  - Testar se está cheio ou vazia: Verifica se a lista está vazia ou se está cheia;
+  - Alterar (set): Substitui um elemento em uma posição por outro;
+  - Obter (get): Obtém um elemento em um determinado índice;
+  - Tamanho: Retorna a quantidade de elementos da lista (getTamanho);
+  - Busca: Encontra o índice de um elemento dentro da lista. Geralmente são fornecidas duas versões de busca: para a primeira ocorrência (indice) e para a última (ultimoIndice);
+  - Iteração: Permite consultar os elementos da lista em ordem sequencial, sem removê-los.
