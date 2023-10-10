@@ -137,3 +137,57 @@
   - Tamanho: Retorna a quantidade de elementos da lista (getTamanho);
   - Busca: Encontra o índice de um elemento dentro da lista. Geralmente são fornecidas duas versões de busca: para a primeira ocorrência (indice) e para a última (ultimoIndice);
   - Iteração: Permite consultar os elementos da lista em ordem sequencial, sem removê-los.
+
+### Implementação da lista estática
+
+- A lista estática é uma estrutura sequencial que utiliza um vetor de tamanho fixo para armazenar os elementos (GOODRICH; TAMASSIA, 2013);
+- Apesar de não aparecer de maneira explícita, a variável tamanho tem tamanho 0, pois é o valor de inicialização padrão das variáveis inteiras em Java (DEITEL, P.; DEITEL; H., 2009).
+
+#### Informações da lista
+
+- A lista estará vazia sempre que não contiver elementos, ou seja, sempre que o tamanho for igual a 0;
+- Ela estará cheia quando a variável tamanho atingir a capacidade máxima da lista, ou seja, for igual ao tamanho do vetor dados.
+
+#### Adição de elementos
+
+- Uma lista que armazena objetos pode ter o valor nulo como candidato a ser inserido;
+- Os índice de uma lista não pode ser negativo, pois por definição os índice começa em zero;
+- Os índice de uma lista não pode ser superior a capacidade da lista;
+- A função **Objects.checkIndex** checa se um índice é inválido;
+- Ao adicionar um elemento em uma posição já ocupada na lista, é necessário mover os elemento posteriores para a direita.
+
+#### Remoção de elementos
+
+- Para excluirmos um elemento, teremos que deslocar os elementos posteriores para a esquerda, sobre o elemento excluído. Após isso, definiremos o elemento do final da lista para nulo, para garantir que não haja uma referência a ele fora da lista;
+- A limpeza da lista funciona de modo similar ao que ocorre com a pilha, basta remover a referência a todos os elementos e zerar a variável tamanho.
+
+#### Acesso direto aos dados da lista
+
+- Obter um dado sem removê-lo (get) ou substituir um dado em uma posição específica (set) são operações mais simples. Para fazê-las, basta validar o índice informado e, se ele estiver dentro da lista, utilizar o elemento correspondente do vetor.
+
+#### Busca na lista
+
+- Uma operação importante é localizar o índice de um elemento dentro da lista. Entretanto, lembre-se de que um mesmo elemento pode estar presente em mais de uma posição. Por isso, essa operação é fornecida em duas versões:
+  - indice: retorna a primeira ocorrência do elemento na lista;
+  - ultimoIndice: retorna a última ocorrência do elemento na lista;
+  - Ambas as funções retornam o valor negativo –1 caso o elemento não seja encontrado.
+
+#### Iteração
+
+- A operação de iteração envolve percorrer a lista, elemento a elemento. No caso da lista estática, isso pode ser feito por meio de um while;
+- As operações presentes em qualquer iteração são:
+  1. Posicionar-se antes do primeiro elemento;
+  2. Testar se há um próximo elemento e, caso haja:
+     - Saltar para o próximo elemento;
+     - Retorná-lo.
+  3. Repetir o passo 2.
+- Para permitirmos que nossas coleções sejam iteráveis, iniciamos implementando a interface Iterable. Essa interface exige apenas a criação de um método, que retorna um objeto do tipo Iterator (SIERRA; BATES, 2010);
+- Por sua vez, o objeto iterador deve implementar dois métodos:
+  - hasNext: Diz se há um dado ainda na coleção sobre a qual ele está iterando;
+  - next: Salta para o próximo elemento e o retorna.
+
+#### Tornando a lista dinâmica
+
+- Embora toda estrutura estática seja sequencial, o inverso não é necessariamente verdadeiro;
+- A forma mais fácil de realizar cópias de vetores em Java é por meio do método Arrays.copyOf, o qual recebe um vetor a ser copiado e seu novo tamanho como parâmetro;
+- É possível implementar a redução da lista alterando o método remover e o método limpar. Porém, não faremos isso, já que a classe ArrayList do Java também não o faz (LAFORE, 2005). No lugar, criaremos o método ajustar, que faz com que a lista fique com o tamanho idêntico à sua capacidade;
