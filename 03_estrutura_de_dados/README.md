@@ -191,3 +191,37 @@
 - Embora toda estrutura estática seja sequencial, o inverso não é necessariamente verdadeiro;
 - A forma mais fácil de realizar cópias de vetores em Java é por meio do método Arrays.copyOf, o qual recebe um vetor a ser copiado e seu novo tamanho como parâmetro;
 - É possível implementar a redução da lista alterando o método remover e o método limpar. Porém, não faremos isso, já que a classe ArrayList do Java também não o faz (LAFORE, 2005). No lugar, criaremos o método ajustar, que faz com que a lista fique com o tamanho idêntico à sua capacidade;
+
+### Implementação da lista encadeada
+
+- Lista duplamente encadeada: quando cada nó contém uma referência tanto para o próximo nó quanto para o nó anterior;
+- Uma lista duplamente encadeada permite a iteração nos dois sentidos, permitindo que ela possa ser utilizada como pilha ou fila quando necessário;
+- A implementação **LinkedList** do Java é uma lista duplamente encadeada;
+
+#### Informação da lista
+
+- As informações básicas da lista são implementadas de maneira direta;
+- A lista nunca estará cheia por ser dinâmica;
+- O tamanho da lista é indicado diretamente pela variável _tamanho_, sendo que ela estará vazia quanto _tamanho_ for zero;
+
+#### Adição de elementos
+
+- Para adição ao fim da lista:
+  - Caso a lista esteja vazia, as variáveis _topo_ e _base_ passarão a conter o _nó_ recém-adicionado, e o tamanho da lista se tornará 1;
+  - Caso contrário, o _nó_ adicionado será o novo _topo_ da lista, e o atual _topo_ será colocado anteriormente a ele;
+  - Diferentemente do que acontece com uma lista sequencial, não é possível acessar diretamente um nó específico;
+  - Para adicionar em um índice, teremos que navegar até o nó em questão, e isso só pode ser feito iterando nó a nó.
+- Para adição no meio da lista:
+  - Atualizamos os valores de _proximo_ e _anterior_ em no para referenciarem as variáveis descritas;
+  - Caso o nó _anterior_ seja nulo, trata-se de uma inserção na _base_. Nesse caso, atualizamos a variável _base_ para apontar para o nó. Caso contrário, atualizamos a referência _anterior_.proximo para o nó sendo inserido;
+  - Finalmente, atualizamos a variável _próximo.anterior_ para o nó sendo inserido e o tamanho da lista.
+
+#### Remoção de elementos
+
+- O processo de remoção de elementos ocorre de maneira parecida com o de adição. Assim, localizamos o item a ser removido e atualizamos os campos próximo e anterior dos nós ao seu redor para que ele seja removido;
+- O processo de limpeza da lista é bastante simples. As referências topo e base são as únicas referências a todos os nós da lista. Por isso, para eliminá-las, basta defini-las para null.
+
+#### Acesso direto aos dados da lista
+
+- Uma das grandes desvantagens da estrutura de nós é que ela impossibilita o acesso direto a um elemento (GOODRICH; TAMASSIA, 2013);
+- Para acessar um índice, seremos sempre obrigados a saltar nó a nó até o elemento desejado. Isso implica em um custo de performance alto, se comparado ao da lista sequencial.
