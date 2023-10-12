@@ -254,3 +254,11 @@
 - Os algoritmos de ordenação também poder ser classificados como estáveis e não estáveis (GOODRICH; TAMASSIA, 2013):
   - Um algoritmo estável garante que, caso dois elementos sejam considerados iguais, eles se mantenham na mesma ordem que estavam antes de a execução ocorrer;
   - Os não estáveis, estudados neste capítulo, não dão essa garantia.
+
+#### Bubble sort
+
+- O bubble sort, geralmente traduzido como algoritmo da bolha, ordena um vetor percorrendo-o várias vezes (LAFORE, 2005);
+- A cada passada, cada elemento é comparado ao seu vizinho; caso esteja fora de ordem, ele é trocado de lugar, isso faz com que o maior elemento
+  se desloque para o final do vetor;
+- O algoritmo deve repetir o processo novamente, para todos os elementos restantes da lista, até que não haja mais elementos a serem comparados, ou até que a comparação não tenha resultado em nenhuma troca;
+- Uma das grandes vantagens desse algoritmo é que sua implementação é bastante simples, porém por ter um alto custo de processamento, esse algoritmo é praticamente inviável para a maioria das aplicações práticas.
