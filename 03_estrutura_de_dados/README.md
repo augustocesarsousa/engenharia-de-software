@@ -245,3 +245,12 @@
   - Transitividade: se o1 comparado a o2 for positivo, e o2 comparado a o3 for positivo, então o1 comparado a o3 também deve ser positivo;
   - Consistência: se a comparação de o1 com o2 for igual a zero, então a comparação de o1 com o3 deve ser igual à de o2 com o3 para qualquer o3;
   - Por fim, uma propriedade desejável, mas não obrigatória, é a de igualdade. Com ela, sempre que houver uma relação o1.equals(o2), a comparação de o1 e o2 também deve retornar zero.
+
+### Algoritmos de ordenação
+
+- Os algoritmos de ordenação têm como objetivo classificar uma lista inteira e possuem duas operações essenciais (LAFORE, 2005):
+  - Comparar elementos (como vimos anteriormente);
+  - Trocar a posição de elementos fora de ordem.
+- Os algoritmos de ordenação também poder ser classificados como estáveis e não estáveis (GOODRICH; TAMASSIA, 2013):
+  - Um algoritmo estável garante que, caso dois elementos sejam considerados iguais, eles se mantenham na mesma ordem que estavam antes de a execução ocorrer;
+  - Os não estáveis, estudados neste capítulo, não dão essa garantia.
