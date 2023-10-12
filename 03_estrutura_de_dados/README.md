@@ -225,3 +225,23 @@
 
 - Uma das grandes desvantagens da estrutura de nós é que ela impossibilita o acesso direto a um elemento (GOODRICH; TAMASSIA, 2013);
 - Para acessar um índice, seremos sempre obrigados a saltar nó a nó até o elemento desejado. Isso implica em um custo de performance alto, se comparado ao da lista sequencial.
+
+## Ordenação de dados
+
+### Conceitos
+
+- Alguns tipos de dados são comparáveis entre si, isto é, podemos olhar para dois elementos de mesmo tipo e determinar se um deles é maior, menor ou igual a outro (DEITEL, P.; DEITEL, H., 2009);
+- Como essa comparação é possível, podemos colocar esses dados em algum tipo de ordem, seja ela crescente ou decrescente;
+- Esse conceito é facilmente entendido com alguns dados simples naturalmente ordenados, como números ou datas, porém, ele pode ser mais complexo quando lidamos com dados compostos, como um aluno ou um carro, pois dados desse tipo podem ser ordenados de várias formas;
+- Na programação, podemos resolver esse problema por meio de duas estratégias:
+  - Permitir a implementação de uma interface chamada Comparable às classes que possuem uma ordenação natural;
+  - Fornecer, para as funções de ordenação, um objeto comparador que implementa a interface Comparator, para que elas organizem os dados de acordo com o critério que ele implementa. (DEITEL, P.; DEITEL, H., 2009).
+- Ambas as interfaces fornecem uma função de comparação, isto é, uma função que, dado dois objetos o1 e o2, retorne:
+  - Um número negativo, caso o1 seja menor que o2;
+  - Zero, caso o1 seja igual a o2;
+  - Um número positivo, caso o1 seja maior que o2.
+- Além disso, para que seja consistente, essa função deve garantir três propriedades básicas (ORACLE, 2019):
+  - Simetria: o sinal de o1 comparado a o2 deve ser o inverso do sinal de o2 comparado a o1. Isso também implica que a comparação de o1 com o2 deve lançar uma exceção se, e somente se, a comparação de o2 com o1 também lançar exceção;
+  - Transitividade: se o1 comparado a o2 for positivo, e o2 comparado a o3 for positivo, então o1 comparado a o3 também deve ser positivo;
+  - Consistência: se a comparação de o1 com o2 for igual a zero, então a comparação de o1 com o3 deve ser igual à de o2 com o3 para qualquer o3;
+  - Por fim, uma propriedade desejável, mas não obrigatória, é a de igualdade. Com ela, sempre que houver uma relação o1.equals(o2), a comparação de o1 e o2 também deve retornar zero.
