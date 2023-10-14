@@ -273,3 +273,15 @@
 - Diferentemente do que ocorre com o bubble sort, esse algoritmo não possui uma forma de abandonar a iteração caso o vetor fique ordenado;
 - Uma das vantagens desse algoritmo é que ele também é simples de implementar em uma lista encadeada;
 - Uma alternativa para listas encadeadas seria, em vez disso, trocar os nós.
+
+#### Quick sort
+
+- O algoritmo quick sort usa a estratégia de "dividir para conquistar", ele é dividido em três partes:
+  - Escolher: escolher um elemento da lista, chamado de pivô, que será usado como base nos próximos passos;
+  - Separar: separar a lista, de modo que os elementos inferiores ou iguais ao pivô fiquem à sua esquerda e os elementos maiores que o pivô, à sua direita. O pivô em si não é adicionado a essas listas, pois agora está na sua posição correta;
+  - Conquistar: unir as listas.
+- O truque desse algoritmo está no fato de ele ser recursivo;
+- Para que o quick sort funcione, basta executar três passos (LAFORE, 2005):
+  1. separar a lista, obtendo a posição final do pivô p;
+  2. executar o quick sort para a sublista de inicio até p – 1;
+  3. executar o quick sort para a lista de p + 1 até fim.
