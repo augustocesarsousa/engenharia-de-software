@@ -262,3 +262,14 @@
   se desloque para o final do vetor;
 - O algoritmo deve repetir o processo novamente, para todos os elementos restantes da lista, até que não haja mais elementos a serem comparados, ou até que a comparação não tenha resultado em nenhuma troca;
 - Uma das grandes vantagens desse algoritmo é que sua implementação é bastante simples, porém por ter um alto custo de processamento, esse algoritmo é praticamente inviável para a maioria das aplicações práticas.
+
+#### Selection sort
+
+- O algoritmo select sort apresenta um número de comparações mais alto do que o bubble sort, porém minimiza o número de trocas. Seu processo é bastante simples (LAFORE, 2005):
+  - O algoritmo começa no primeiro elemento da lista;
+  - Partindo dele, busca-se o menor elemento dentro de toda a lista, comparando-o com os demais;
+  - Ao final da iteração, troca-se o menor elemento da lista com o primeiro;
+  - O elemento, agora, encontra-se ordenado. Portanto, o algoritmo passa para o próximo elemento da lista e retorna ao passo 2.
+- Diferentemente do que ocorre com o bubble sort, esse algoritmo não possui uma forma de abandonar a iteração caso o vetor fique ordenado;
+- Uma das vantagens desse algoritmo é que ele também é simples de implementar em uma lista encadeada;
+- Uma alternativa para listas encadeadas seria, em vez disso, trocar os nós.
