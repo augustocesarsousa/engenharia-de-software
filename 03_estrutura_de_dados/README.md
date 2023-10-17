@@ -285,3 +285,17 @@
   1. separar a lista, obtendo a posição final do pivô p;
   2. executar o quick sort para a sublista de inicio até p – 1;
   3. executar o quick sort para a lista de p + 1 até fim.
+
+### Listas ordenadas
+
+- Organizar os elementos não é a única forma de garantir a ordem. Uma alternativa a esse processo é sempre inserir os elementos no local correto;
+- O primeiro passo para criar uma lista ordenada é implementar a função indice. Essa função busca um elemento e retorna a posição dele na lista, ou –1, se ele não for encontrado;
+- No caso desse tipo de lista, essa função tem um papel adicional: ela deve retornar o ponto de inserção, caso o elemento não seja encontrado (LAFORE, 2005);
+- Em nossa função indice da lista sequencial, iterávamos sobre a lista toda até encontrar o elemento. Entretanto, no caso de uma lista ordenada, há uma abordagem muito mais inteligente, conhecida como busca binária:
+  - Ela parte da observação de que, dado um elemento qualquer, todos os elementos a sua esquerda são menores do que ele e todos os elementos a sua direita, maiores.
+- Para buscar um valor, podemos, então, utilizar a abordagem a seguir (LAFORE, 2005):
+  1. Pegamos o elemento do meio da lista. Então, há três possibilidades:
+     a. Ele pode ser igual ao que buscamos. Nesse caso, a busca terminou;
+     b. Ele pode ser maior do que o valor que estamos buscando. Nesse caso, descartamos todos os elementos à direita dele;
+     c. Ele pode ser menor do que o elemento que estamos buscando. Nesse caso, descartamos os elementos à esquerda dele;
+  2. Após o descarte, repetimos o passo 1 na sublista formada pelos elementos não descartados.
