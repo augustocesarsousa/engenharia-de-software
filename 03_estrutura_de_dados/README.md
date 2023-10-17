@@ -299,3 +299,11 @@
      b. Ele pode ser maior do que o valor que estamos buscando. Nesse caso, descartamos todos os elementos à direita dele;
      c. Ele pode ser menor do que o elemento que estamos buscando. Nesse caso, descartamos os elementos à esquerda dele;
   2. Após o descarte, repetimos o passo 1 na sublista formada pelos elementos não descartados.
+
+## Espalhamento
+
+### Conceitos
+
+- Espalhamento também é conhecido como dispersão ou hashing;
+- O conceito de espalhamento pode ser definido como a divisão de uma coleção em _grupos_ a fim de facilitar e busca de elementos;
+- Podemos utilizar o conceito de _gaveteiro_ onde colocamos os grupos em _gavetas_, podemos fazer isso por meio de tabelas e funções de espalhamento.
