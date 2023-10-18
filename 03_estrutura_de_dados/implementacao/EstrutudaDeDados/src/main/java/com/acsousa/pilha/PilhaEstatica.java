@@ -11,24 +11,25 @@ public class PilhaEstatica<T> implements Pilha<T> {
 
     @Override
     public void adicionar(T dado) {
-        if(isCheia()) {
+        if(isCheia()) { //Está cheia? Dispara a exceção
             throw new IllegalStateException("Pilha cheia!");
         }
 
-        topo++;
-        dados[topo] = dado;
+        topo++; //Movimenta o topo
+        dados[topo] = dado; //Adiciona o dado no vetor
     }
 
     @Override
     public T remover() {
-        if(isVazia()) {
+        if(isVazia()) { //Vazia? Dispara exceção
             throw new IllegalStateException("Pilha vazia!");
         }
 
-        T dado = dados[topo];
-        topo--;
+        T dado = dados[topo]; //Guarda o valor
+        dados[topo] = null; //Removemos o dado
+        topo--; //Movimenta o topo
 
-        return dado;
+        return dado; //Retorna o dado
     }
 
     @Override
