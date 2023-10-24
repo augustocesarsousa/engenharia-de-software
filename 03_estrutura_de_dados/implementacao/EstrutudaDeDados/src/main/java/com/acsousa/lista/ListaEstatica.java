@@ -1,5 +1,6 @@
 package com.acsousa.lista;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Objects;
 
@@ -36,10 +37,14 @@ public class ListaEstatica<T> implements Lista<T> {
 
     @Override
     public void adicionar(int pos, T valor) {
-        if (pos < 0 || pos > tamanho) {
-            throw new IndexOutOfBoundsException("Posição inválida!");
+        //Já está em capacidade máxima
+        if (getTamanho() == getCapacidade()) {
+            //Redimenciona
+            int novaCapacidade = (int) (getCapacidade() * 1.5);
+            dados = Arrays.copyOf(dados, novaCapacidade);
         }
-        //Objects.checkIndex(pos, tamanho+1);
+
+        Objects.checkIndex(pos, tamanho+1);
 
         //Move os dados para a direita
         for (int i = tamanho-1; i >= pos; i--) {
@@ -74,6 +79,7 @@ public class ListaEstatica<T> implements Lista<T> {
 
         dados[tamanho-1] = null; //Elimina o último dado
         tamanho--; //Reduz o tamanho da lista
+        ajustar(); //Ajusta o tamanho da lista
 
         return dado;
     }
@@ -114,6 +120,12 @@ public class ListaEstatica<T> implements Lista<T> {
         for (var valor : dados) {
             System.out.print(valor + " ");
         }
+
+        System.out.println(" ");
+    }
+
+    public void ajustar() {
+        dados = Arrays.copyOf(dados, getTamanho());
     }
 
     @Override

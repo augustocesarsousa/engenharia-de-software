@@ -20,5 +20,19 @@ public class TesteListaEstatica {
 
         //Imprimindo a lista
         listaEstatica.imprimir();
+
+        //Adiciona mais 3 números à lista
+        for (int i = 0; i < 3; i++) {
+            listaEstatica.adicionar(i);
+        }
+
+        //Imprimindo a lista
+        listaEstatica.imprimir();
+
+        //Remove o elemento na posição 9
+        System.out.println(listaEstatica.remover(9));
+
+        //Imprimindo a lista
+        listaEstatica.imprimir();
     }
 }
