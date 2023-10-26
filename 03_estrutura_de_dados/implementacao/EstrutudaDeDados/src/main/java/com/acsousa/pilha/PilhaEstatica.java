@@ -1,5 +1,7 @@
 package com.acsousa.pilha;
 
+import java.util.Iterator;
+
 public class PilhaEstatica<T> implements Pilha<T> {
 
     private T[] dados;
@@ -48,6 +50,24 @@ public class PilhaEstatica<T> implements Pilha<T> {
 
         for(int i = 0; i <= topo; i++) {
             dados[i] = null;
+        }
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new PilhaEstaticaIterator();
+    }
+
+    private class PilhaEstaticaIterator implements Iterator<T> {
+        private int atual = topo+1;
+        @Override
+        public boolean hasNext() {
+            return atual > 0;
+        }
+        @Override
+        public T next() {
+            atual = atual - 1;
+            return dados[atual];
         }
     }
 }

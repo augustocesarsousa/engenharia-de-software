@@ -1,6 +1,9 @@
 package com.acsousa.fila;
 
+import java.util.Iterator;
+
 public class FilaEncadeada<T> implements Fila<T> {
+
     private static class No<T> {
         T dado;
         No proximo;
@@ -53,5 +56,24 @@ public class FilaEncadeada<T> implements Fila<T> {
     public void limpar() {
         base = null;
         topo = null;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return null;
+    }
+
+    private class FilaEncadeadaIterator implements Iterator<T> {
+        private No<T> atual = null;
+
+        @Override
+        public boolean hasNext() {
+            return !isVazia() && atual != topo;
+        }
+        @Override
+        public T next() {
+            atual = (atual == null ? base : atual.proximo);
+            return atual.dado;
+        }
     }
 }

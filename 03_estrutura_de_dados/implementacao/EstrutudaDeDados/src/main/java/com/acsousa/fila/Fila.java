@@ -1,9 +1,8 @@
 package com.acsousa.fila;
 
-public interface Fila<T> {
-    void adicionar(T dado);
+import com.acsousa.util.Colecao;
+
+public interface Fila<T> extends Colecao<T> {
+
     T remover();
-    boolean isCheia();
-    boolean isVazia();
-    void limpar();
 }

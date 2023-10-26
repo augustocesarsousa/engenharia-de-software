@@ -1,5 +1,7 @@
 package com.acsousa.fila;
 
+import java.util.Iterator;
+
 public class FilaCircular<T> implements Fila<T>{
     private int base = 0;
     private int topo = -1;
@@ -59,6 +61,24 @@ public class FilaCircular<T> implements Fila<T>{
 
         for(int i = 0; i < dados.length; i++) {
             dados[i] = null;
+        }
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new FilaCircularIterator();
+    }
+
+    private class FilaCircularIterator implements Iterator<T> {
+        private int atual = -100;
+        @Override
+        public boolean hasNext() {
+            return !isVazia() && atual != topo;
+        }
+        @Override
+        public T next() {
+            atual = (atual == -100 ? base : mover(atual));
+            return dados[atual];
         }
     }
 }

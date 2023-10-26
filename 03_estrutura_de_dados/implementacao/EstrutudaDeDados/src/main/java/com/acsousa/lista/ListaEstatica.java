@@ -116,14 +116,6 @@ public class ListaEstatica<T> implements Lista<T> {
         return -1;
     }
 
-    public void imprimir() {
-        for (var valor : dados) {
-            System.out.print(valor + " ");
-        }
-
-        System.out.println(" ");
-    }
-
     public void ajustar() {
         dados = Arrays.copyOf(dados, getTamanho());
     }

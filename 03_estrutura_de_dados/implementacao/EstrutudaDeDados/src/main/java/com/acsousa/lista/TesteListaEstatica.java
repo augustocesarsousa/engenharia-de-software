@@ -2,7 +2,7 @@ package com.acsousa.lista;
 
 public class TesteListaEstatica {
     public static void main(String[] args) {
-        ListaEstatica<Integer> listaEstatica = new ListaEstatica<>(11);
+        Lista<Integer> listaEstatica = new ListaEstatica<>(11);
 
         //Adiciona os números de 0 a 9
         for (int i = 0; i < 10; i++) {
@@ -19,7 +19,8 @@ public class TesteListaEstatica {
         listaEstatica.set(9, 15);
 
         //Imprimindo a lista
-        listaEstatica.imprimir();
+        listaEstatica.imprimir(listaEstatica);
+        System.out.println(" ");
 
         //Adiciona mais 3 números à lista
         for (int i = 0; i < 3; i++) {
@@ -27,12 +28,14 @@ public class TesteListaEstatica {
         }
 
         //Imprimindo a lista
-        listaEstatica.imprimir();
+        listaEstatica.imprimir(listaEstatica);
+        System.out.println(" ");
 
         //Remove o elemento na posição 9
         System.out.println(listaEstatica.remover(9));
 
         //Imprimindo a lista
-        listaEstatica.imprimir();
+        listaEstatica.imprimir(listaEstatica);
+        System.out.println(" ");
     }
 }

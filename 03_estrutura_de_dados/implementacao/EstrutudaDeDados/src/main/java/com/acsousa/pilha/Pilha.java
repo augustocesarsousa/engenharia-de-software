@@ -1,9 +1,7 @@
 package com.acsousa.pilha;
 
-public interface Pilha<T> {
-    void adicionar(T dado);
+import com.acsousa.util.Colecao;
+
+public interface Pilha<T> extends Colecao<T> {
     T remover();
-    boolean isCheia();
-    boolean isVazia();
-    void limpar();
 }

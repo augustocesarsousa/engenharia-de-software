@@ -1,17 +1,15 @@
 package com.acsousa.lista;
 
-public interface Lista<T> extends Iterable<T> {
+import com.acsousa.util.Colecao;
+
+public interface Lista<T> extends Colecao<T> {
     //Informações
-    boolean isVazia();
-    boolean isCheia();
     int getTamanho();
 
     //Inclusão de itens
-    void adicionar(T valor);
     void adicionar(int pos, T valor);
 
     //Exclusão de itens
-    void limpar();
     T remover(int pos);
 
     //Acesso direto a valores da lista
@@ -21,6 +19,4 @@ public interface Lista<T> extends Iterable<T> {
     //Métodos para buscar itens
     int indice(T valor);
     int ultimoIndice(T valor);
-
-
 }

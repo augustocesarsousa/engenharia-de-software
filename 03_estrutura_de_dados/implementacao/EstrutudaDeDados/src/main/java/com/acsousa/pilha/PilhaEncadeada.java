@@ -1,6 +1,9 @@
 package com.acsousa.pilha;
 
+import java.util.Iterator;
+
 public class PilhaEncadeada<T> implements Pilha<T>{
+
     private static class No<T> {
         public No anterior;
         public T dado;
@@ -41,5 +44,23 @@ public class PilhaEncadeada<T> implements Pilha<T>{
     @Override
     public void limpar() {
         topo = null;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new PilhaEncadeadaIterator();
+    }
+
+    private class PilhaEncadeadaIterator implements Iterator<T> {
+        private No<T> atual = null;
+        @Override
+        public boolean hasNext() {
+            return !isVazia() && (atual == null || atual.anterior != null);
+        }
+        @Override
+        public T next() {
+            atual = (atual == null ? topo : atual.anterior);
+            return atual.dado;
+        }
     }
 }
