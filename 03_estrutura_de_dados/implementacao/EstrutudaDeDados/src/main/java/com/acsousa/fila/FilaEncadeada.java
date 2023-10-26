@@ -11,6 +11,7 @@ public class FilaEncadeada<T> implements Fila<T> {
 
     private No<T> topo;
     private No<T> base;
+    private int tamanho;
 
     @Override
     public void adicionar(T dado) {
@@ -24,6 +25,8 @@ public class FilaEncadeada<T> implements Fila<T> {
             topo.proximo = no;
             topo = no;
         }
+
+        tamanho++;
     }
 
     @Override
@@ -39,12 +42,18 @@ public class FilaEncadeada<T> implements Fila<T> {
             topo = null;
         }
 
+        tamanho--;
         return dado;
     }
 
     @Override
     public boolean isCheia() {
         return false;
+    }
+
+    @Override
+    public int getTamanho() {
+        return 0;
     }
 
     @Override
@@ -56,6 +65,7 @@ public class FilaEncadeada<T> implements Fila<T> {
     public void limpar() {
         base = null;
         topo = null;
+        tamanho = 0;
     }
 
     @Override

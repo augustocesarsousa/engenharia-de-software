@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 public class PilhaEstatica<T> implements Pilha<T> {
 
-    private T[] dados;
+    private final T[] dados;
     private int topo = -1;
 
     public PilhaEstatica(int tamanho) {
@@ -40,17 +40,26 @@ public class PilhaEstatica<T> implements Pilha<T> {
     }
 
     @Override
+    public int getTamanho() {
+        return topo + 1;
+    }
+
+    @Override
+    public Integer getCapacidade() {
+        return dados.length;
+    }
+
+    @Override
     public boolean isVazia() {
         return topo == -1;
     }
 
     @Override
     public void limpar() {
-        topo = -1;
-
         for(int i = 0; i <= topo; i++) {
             dados[i] = null;
         }
+        topo = -1;
     }
 
     @Override
@@ -59,7 +68,7 @@ public class PilhaEstatica<T> implements Pilha<T> {
     }
 
     private class PilhaEstaticaIterator implements Iterator<T> {
-        private int atual = topo+1;
+        private int atual = topo + 1;
         @Override
         public boolean hasNext() {
             return atual > 0;

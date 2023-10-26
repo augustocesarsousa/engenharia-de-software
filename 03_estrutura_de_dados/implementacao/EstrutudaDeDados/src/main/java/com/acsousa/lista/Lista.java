@@ -3,8 +3,6 @@ package com.acsousa.lista;
 import com.acsousa.util.Colecao;
 
 public interface Lista<T> extends Colecao<T> {
-    //Informações
-    int getTamanho();
 
     //Inclusão de itens
     void adicionar(int pos, T valor);

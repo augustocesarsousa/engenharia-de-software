@@ -11,12 +11,15 @@ public class PilhaEncadeada<T> implements Pilha<T>{
 
     private No<T> topo = null;
 
+    private int tamanho;
+
     @Override
     public void adicionar(T dado) {
         var novo = new No<T>();     //1. Cria o no
         novo.dado = dado;           //e associa o dado
         novo.anterior = topo;       //2. Associa o topo ao anterior
         topo = novo;                //3. Atualiza o topo
+        tamanho++;                  //4. Atualiza o tamanho
     }
 
     @Override
@@ -27,13 +30,24 @@ public class PilhaEncadeada<T> implements Pilha<T>{
 
         var dado = topo.dado; //1. Dado a ser removido
         topo = topo.anterior; //2. Atualiza o topo
+        tamanho--;            //3. Atualiza o tamanho
 
         return dado;
     }
 
     @Override
+    public Integer getCapacidade() {
+        return null;
+    }
+
+    @Override
     public boolean isCheia() {
         return false;
+    }
+
+    @Override
+    public int getTamanho() {
+        return tamanho;
     }
 
     @Override
@@ -44,6 +58,7 @@ public class PilhaEncadeada<T> implements Pilha<T>{
     @Override
     public void limpar() {
         topo = null;
+        tamanho = 0;
     }
 
     @Override

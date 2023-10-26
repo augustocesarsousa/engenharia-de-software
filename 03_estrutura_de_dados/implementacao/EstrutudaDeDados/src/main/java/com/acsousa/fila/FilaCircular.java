@@ -50,6 +50,11 @@ public class FilaCircular<T> implements Fila<T>{
     }
 
     @Override
+    public int getTamanho() {
+        return dados.length;
+    }
+
+    @Override
     public boolean isVazia() {
         return topo == -1;
     }

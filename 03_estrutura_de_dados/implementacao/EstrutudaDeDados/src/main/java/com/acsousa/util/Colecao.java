@@ -7,6 +7,7 @@ public interface Colecao<T> extends Iterable<T> {
     void adicionar(T valor);
     boolean isVazia();
     boolean isCheia();
+    int getTamanho();
 
     default void adicionarTodos(Colecao<? extends T> valores){
         if(valores == this) {
