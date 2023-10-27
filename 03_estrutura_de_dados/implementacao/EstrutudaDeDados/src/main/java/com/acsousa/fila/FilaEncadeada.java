@@ -47,13 +47,18 @@ public class FilaEncadeada<T> implements Fila<T> {
     }
 
     @Override
+    public Integer getCapacidade() {
+        return null;
+    }
+
+    @Override
     public boolean isCheia() {
         return false;
     }
 
     @Override
     public int getTamanho() {
-        return 0;
+        return tamanho;
     }
 
     @Override

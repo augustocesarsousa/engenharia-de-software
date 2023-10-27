@@ -5,8 +5,8 @@ import java.util.Iterator;
 public class FilaCircular<T> implements Fila<T>{
     private int base = 0;
     private int topo = -1;
-
     private T[] dados;
+    private int tamanho;
 
     public FilaCircular(int tamanho) {
         this.dados = (T[]) new Object[tamanho];
@@ -24,6 +24,7 @@ public class FilaCircular<T> implements Fila<T>{
 
         topo = mover(topo);
         dados[topo] = dado;
+        tamanho++;
     }
 
     @Override
@@ -41,7 +42,14 @@ public class FilaCircular<T> implements Fila<T>{
             base = mover(base);
         }
 
+        tamanho--;
+
         return dado;
+    }
+
+    @Override
+    public Integer getCapacidade() {
+        return dados.length;
     }
 
     @Override
@@ -51,7 +59,7 @@ public class FilaCircular<T> implements Fila<T>{
 
     @Override
     public int getTamanho() {
-        return dados.length;
+        return tamanho;
     }
 
     @Override
@@ -63,6 +71,7 @@ public class FilaCircular<T> implements Fila<T>{
     public void limpar() {
         base = 0;
         topo = -1;
+        tamanho = 0;
 
         for(int i = 0; i < dados.length; i++) {
             dados[i] = null;
