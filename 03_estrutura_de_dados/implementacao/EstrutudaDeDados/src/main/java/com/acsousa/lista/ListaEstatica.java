@@ -11,7 +11,8 @@ public class ListaEstatica<T> implements Lista<T> {
         this.dados = (T[]) new Object[capacidade];
     }
 
-    public int getCapacidade() {
+    @Override
+    public Integer getCapacidade() {
         return dados.length;
     }
 

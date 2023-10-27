@@ -32,6 +32,11 @@ public class ListaEncadeada<T> implements Lista<T>{
     }
 
     @Override
+    public Integer getCapacidade() {
+        return null;
+    }
+
+    @Override
     public void adicionar(T valor) {
         var no = new No<T>(valor);
 
