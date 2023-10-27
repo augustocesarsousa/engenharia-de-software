@@ -75,7 +75,7 @@ public class FilaEncadeada<T> implements Fila<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new FilaEncadeadaIterator();
     }
 
     private class FilaEncadeadaIterator implements Iterator<T> {
