@@ -3,6 +3,8 @@ package com.acsousa.lista;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Comparator;
+
 import static org.junit.Assert.assertThrows;
 
 public class ListaEstaticaTest {
@@ -137,5 +139,20 @@ public class ListaEstaticaTest {
         }
 
         assertThrows(IndexOutOfBoundsException.class, () -> listaEstatica.remover(100));
+    }
+
+    @Test
+    public void deveOrdernarAListaComBubleShort() {
+        ListaEstatica<Integer> listaEstatica = new ListaEstatica<>(10);
+
+        for (int i = 0; i < 10; i++) {
+            int numero = (int) (Math.random() * 100);
+            listaEstatica.adicionar(numero);
+        }
+
+        listaEstatica.bubbleSort(Comparator.naturalOrder());
+
+        Assert.assertTrue(listaEstatica.get(0) < listaEstatica.get(5));
+        Assert.assertTrue(listaEstatica.get(5) < listaEstatica.get(9));
     }
 }

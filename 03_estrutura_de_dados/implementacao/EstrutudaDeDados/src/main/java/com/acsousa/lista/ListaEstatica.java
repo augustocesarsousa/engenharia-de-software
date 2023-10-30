@@ -1,6 +1,7 @@
 package com.acsousa.lista;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Objects;
 
@@ -143,6 +144,25 @@ public class ListaEstatica<T> implements Lista<T> {
         public void remove() {
             remover(atual);
             atual = atual - 1;
+        }
+    }
+
+    private void troca(int i, int j) {
+        var temp = dados[i];
+        dados[i] = dados[j];
+        dados[j] = temp;
+    }
+
+    public void bubbleSort(Comparator<? super T> comparator) {
+        for (int i = 0; i < getTamanho(); i++) {
+            boolean trocou = false;
+            for (int j = 0; j < getTamanho() - 1 - i; j++) {
+                if(comparator.compare(dados[j], dados[j+1]) > 0) {
+                    troca(j, j+1);
+                    trocou = true;
+                }
+            }
+            if (!trocou) break;
         }
     }
 }
