@@ -3,6 +3,8 @@ package com.acsousa.lista;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Comparator;
+
 import static org.junit.Assert.assertThrows;
 
 public class ListaEncadeadaTest {
@@ -108,5 +110,20 @@ public class ListaEncadeadaTest {
         }
 
         assertThrows(IndexOutOfBoundsException.class, () -> listaEncadeada.remover(100));
+    }
+
+    @Test
+    public void deveOrdernarAListaComSelectionShort() {
+        ListaEncadeada<Integer> listaEncadeada = new ListaEncadeada<>();
+
+        for (int i = 0; i < 10; i++) {
+            int numero = (int) (Math.random() * 100);
+            listaEncadeada.adicionar(numero);
+        }
+
+        listaEncadeada.selectionSort(Comparator.naturalOrder());
+
+        Assert.assertTrue(listaEncadeada.get(0) < listaEncadeada.get(5));
+        Assert.assertTrue(listaEncadeada.get(5) < listaEncadeada.get(9));
     }
 }

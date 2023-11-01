@@ -1,5 +1,6 @@
 package com.acsousa.lista;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Objects;
 
@@ -196,16 +197,26 @@ public class ListaEncadeada<T> implements Lista<T>{
         }
     }
 
-    public void imprimir() {
-        if (isVazia()) {
-            System.out.println("Lista vazia");
-        } else {
+    public void selectionSort(Comparator<? super T> comparator) {
+        var primeiro = this.base;
 
-            for (T t : this) {
-                System.out.print(t + " ");
+        while(primeiro != null) {
+            var proximo = primeiro.proximo;
+            var menor = primeiro;
+            var elemento = primeiro.proximo;
+
+            while(elemento != null) {
+                if(comparator.compare(menor.dado, elemento.dado) > 0) {
+                    menor = elemento;
+                }
+                elemento = elemento.proximo;
             }
-        }
 
-        System.out.println(" ");
+            var tmp = primeiro.dado;
+            primeiro.dado = menor.dado;
+            menor.dado = tmp;
+
+            primeiro = proximo;
+        }
     }
 }
