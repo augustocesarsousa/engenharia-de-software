@@ -219,4 +219,32 @@ public class ListaEncadeada<T> implements Lista<T>{
             primeiro = proximo;
         }
     }
+
+    public void quickSort(Comparator<? super T> comparator) {
+        if (getTamanho() < 2) return;
+
+        var menores = new ListaEncadeada<T>();
+        var iguais = new ListaEncadeada<T>();
+        var maiores = new ListaEncadeada<T>();
+        var pivo = topo.dado;
+
+        for (var dado : this) {
+            var cmp = comparator.compare(dado, pivo);
+            if (cmp < 0) {
+                menores.adicionar(dado);
+            } else if (cmp == 0) {
+                iguais.adicionar(dado);
+            } else {
+                maiores.adicionar(dado);
+            }
+        }
+
+        menores.quickSort(comparator);
+        maiores.quickSort(comparator);
+
+        limpar();
+        adicionarTodos(menores);
+        adicionarTodos(iguais);
+        adicionarTodos(maiores);
+    }
 }

@@ -126,4 +126,19 @@ public class ListaEncadeadaTest {
         Assert.assertTrue(listaEncadeada.get(0) < listaEncadeada.get(5));
         Assert.assertTrue(listaEncadeada.get(5) < listaEncadeada.get(9));
     }
+
+    @Test
+    public void deveOrdernarAListaComQuickShort() {
+        ListaEncadeada<Integer> listaEncadeada = new ListaEncadeada<>();
+
+        for (int i = 0; i < 100; i++) {
+            int numero = (int) (Math.random() * 100);
+            listaEncadeada.adicionar(numero);
+        }
+
+        listaEncadeada.quickSort(Comparator.naturalOrder());
+
+        Assert.assertTrue(listaEncadeada.get(0) < listaEncadeada.get(50));
+        Assert.assertTrue(listaEncadeada.get(50) < listaEncadeada.get(99));
+    }
 }
