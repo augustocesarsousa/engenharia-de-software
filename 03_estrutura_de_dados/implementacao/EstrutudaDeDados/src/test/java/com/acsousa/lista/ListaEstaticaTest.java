@@ -142,7 +142,7 @@ public class ListaEstaticaTest {
     }
 
     @Test
-    public void deveOrdernarAListaComBubleShort() {
+    public void deveOrdernarAListaComBubbleShort() {
         ListaEstatica<Integer> listaEstatica = new ListaEstatica<>(10);
 
         for (int i = 0; i < 10; i++) {
@@ -151,6 +151,21 @@ public class ListaEstaticaTest {
         }
 
         listaEstatica.bubbleSort(Comparator.naturalOrder());
+
+        Assert.assertTrue(listaEstatica.get(0) < listaEstatica.get(5));
+        Assert.assertTrue(listaEstatica.get(5) < listaEstatica.get(9));
+    }
+
+    @Test
+    public void deveOrdernarAListaComSelectionShort() {
+        ListaEstatica<Integer> listaEstatica = new ListaEstatica<>(10);
+
+        for (int i = 0; i < 10; i++) {
+            int numero = (int) (Math.random() * 100);
+            listaEstatica.adicionar(numero);
+        }
+
+        listaEstatica.selectionSort(Comparator.naturalOrder());
 
         Assert.assertTrue(listaEstatica.get(0) < listaEstatica.get(5));
         Assert.assertTrue(listaEstatica.get(5) < listaEstatica.get(9));

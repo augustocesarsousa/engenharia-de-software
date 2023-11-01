@@ -165,4 +165,16 @@ public class ListaEstatica<T> implements Lista<T> {
             if (!trocou) break;
         }
     }
+
+    public void selectionSort(Comparator<? super T> comparator) {
+        for (int i = 0; i < getTamanho()-1; i++) {
+            int menor = i;
+            for (int j = i+1; j < getTamanho(); j++) {
+                if (comparator.compare(dados[menor], dados[j]) > 0) {
+                    menor = j;
+                }
+            }
+            troca(i, menor);
+        }
+    }
 }
