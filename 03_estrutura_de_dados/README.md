@@ -319,3 +319,18 @@
 - Carga: razão entre a quantidade real de elementos (tamanho) e a quantidade de buckets;
 - O Java considera-se que um fator de carga de 0,75 como um bom compromisso entre os dois lados (ORACLE, 2019a);
 - Rehash: quando um mapa dinâmico altera de tamanho e redistribui os objetos sempre que precisar.
+
+#### A função hashCode
+
+- A função hashCode deve retornar um número inteiro com código hash de dois objetos (SIERRA; BATES, 2010);
+- Estratégia proposta por Bloch (2019):
+  1. Comece por um valor constante armazenado em uma variável chamada _result_, por exemplo, o valor 79;
+  2. Para cada campo f utilizado no método equals em seu objeto, calcule o valor c com base nas seguintes regras:
+     a. Se o campo for booleano, calcule: f ? 1 : 0;
+     b. Se o campo for dos tipos byte, char, short ou int, seu valor será diretamente: (int) f;
+     c. Se o campo for do tipo long, calcule: (int) (f ^ (f >>> 32)). Isso fará com que os 32 bits iniciais do long sejam combinados com os 32 bits finais, resultando em um valor inteiro de 32 bits;
+     d. Caso o valor seja um float, utilize a função Float.floatToIntBits. Essa função retorna o valor dos bits da variável diretamente, na forma de um número inteiro;
+     e. Caso o número seja um double, utilize a função Double.doubleToLongBits e aplique ao resultado a fórmula descrita em 2c;
+     f. Caso o dado seja um objeto, use: f == null ? 0 : f.hashCode(). Não será necessário testar se f é nulo caso o campo não admita esse campo;
+     g. Caso o elemento seja um vetor, trate-o como se cada valor dentro do vetor fosse um campo separado aplicando a ele as regras descritas anteriormente.
+  3. Combine o valor c, calculado nos campos da etapa 2, dentro da variável result por meio da fórmula: result = p \* result + c, em que p é um número primo qualquer (como o valor 31).
