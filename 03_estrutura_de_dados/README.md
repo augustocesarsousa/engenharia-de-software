@@ -350,3 +350,10 @@
 - Diferentemente do que ocorre em um vetor, cuja chave está limitada a um índice, um mapa permitirá que suas chaves tenham descontinuidades ou não sejam sequer numéricas (ORACLE, 2019a);
 - O mapa insere, em cada valor da tabela hash, uma estrutura conhecida como entrada, que nada mais é do que um par de valores relacionados (LAFORE, 2004);
 - Um dos valores é a chave, que identifica o objeto, onde faremos todas as operações hash e buscas já descritas, e o outro valor é o objeto associado a essa chave.
+
+#### Interface Conjunto
+
+- Os conjuntos possuem uma estrutura mais simples. Eles são unicamente uma coleção que não permite elementos duplicados (ORACLE,
+  2019b);
+- Além de todos os métodos de coleção, os conjuntos possuirão os métodos contem, remover e getTamanho;
+- Os conjuntos podem ser facilmente implementados na forma de mapas, em que os elementos associados às chaves são todos nulos.
