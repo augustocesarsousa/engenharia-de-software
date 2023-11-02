@@ -177,4 +177,39 @@ public class ListaEstatica<T> implements Lista<T> {
             troca(i, menor);
         }
     }
+
+    public int buscaBinaria(Comparator<? super T> comparator, T dado) {
+        int inicio = 0;
+        int fim = getTamanho()-1;
+
+        while (inicio <= fim) {
+            int meio = (inicio + fim) / 2;
+            T dadoDoMeio = dados[meio];
+            int cmp = comparator.compare(dadoDoMeio, dado);
+
+            if (cmp == 0) {
+                return meio; //Encontrado
+            } else if (cmp < 0) {
+                inicio = meio + 1; //Descarta a esquerda
+            } else if (cmp > 0) {
+                fim = meio - 1; //Descarta a direita
+            }
+        }
+
+        return -(inicio+1); //Não encontrado
+    }
+
+    public boolean adicionarEmOrdem(Comparator<? super T> comparator, T dado) {
+        int ind = buscaBinaria(comparator, dado);
+
+        //Elemento duplicado
+        if (ind > 0) {
+            return false;
+        }
+
+        //Insere o elemento
+        int ponto = -(ind+1);
+        adicionar(ponto, dado);
+        return true;
+    }
 }

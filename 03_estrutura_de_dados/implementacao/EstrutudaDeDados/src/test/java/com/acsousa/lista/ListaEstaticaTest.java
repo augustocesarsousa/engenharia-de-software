@@ -170,4 +170,19 @@ public class ListaEstaticaTest {
         Assert.assertTrue(listaEstatica.get(0) < listaEstatica.get(5));
         Assert.assertTrue(listaEstatica.get(5) < listaEstatica.get(9));
     }
+
+    @Test
+    public void deveAdicionarElementoEmOrdem() {
+        ListaEstatica<Integer> listaEstatica = new ListaEstatica<>(10);
+
+        for (int i = 0; i < 10; i++) {
+            int numero = (int) (Math.random() * 10);
+            listaEstatica.adicionar(numero);
+        }
+
+        listaEstatica.selectionSort(Comparator.naturalOrder());
+        boolean adicionou = listaEstatica.adicionarEmOrdem(Comparator.naturalOrder(), 12);
+
+        Assert.assertTrue(adicionou);
+    }
 }
