@@ -307,3 +307,15 @@
 - Espalhamento também é conhecido como dispersão ou hashing;
 - O conceito de espalhamento pode ser definido como a divisão de uma coleção em _grupos_ a fim de facilitar e busca de elementos;
 - Podemos utilizar o conceito de _gaveteiro_ onde colocamos os grupos em _gavetas_, podemos fazer isso por meio de tabelas e funções de espalhamento.
+
+#### Tabelas de espalhamento
+
+- Na computação, essa estratégia do gaveteiro é conhecida como tabela de espalhamento. Com ela, podemos implementar duas estruturas de dados:
+  - mapas: nos permitem associar dois objetos entre si, como o número da matrícula (chave) ao objeto que representa um funcionário (valor);
+  - conjuntos: contém uma sequência sem repetição de objetos. Eles nos permitem, por exemplo, gerar uma lista contendo todos os remetentes de um grupo grande de e-mails, sem repeti-los.
+- Tabela hash: vetor de listas contendo objetos;
+- Função de espalhamento ou função hash: tem como objetivo converter um conjunto qualquer de valores em um outro valor, chamado código hash, que estará dentro de um intervalo numérico conhecido (LAFORE, 2005).
+- Bucket: nome dado as listas em uma tabela hash;
+- Carga: razão entre a quantidade real de elementos (tamanho) e a quantidade de buckets;
+- O Java considera-se que um fator de carga de 0,75 como um bom compromisso entre os dois lados (ORACLE, 2019a);
+- Rehash: quando um mapa dinâmico altera de tamanho e redistribui os objetos sempre que precisar.
