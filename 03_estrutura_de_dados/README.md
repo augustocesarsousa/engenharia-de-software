@@ -334,3 +334,19 @@
      f. Caso o dado seja um objeto, use: f == null ? 0 : f.hashCode(). Não será necessário testar se f é nulo caso o campo não admita esse campo;
      g. Caso o elemento seja um vetor, trate-o como se cada valor dentro do vetor fosse um campo separado aplicando a ele as regras descritas anteriormente.
   3. Combine o valor c, calculado nos campos da etapa 2, dentro da variável result por meio da fórmula: result = p \* result + c, em que p é um número primo qualquer (como o valor 31).
+
+#### Endereçamento aberto
+
+- Endereçamento aberto: é a estratégia em que tentamos manter todos os dados apenas no vetor principal (LAFORE, 2004);
+- Endereçamento duplo: estratégia em que utilizamos duas funções hash. Aplicamos a primeira função e, caso uma colisão ocorra, utilizamos a função secundária. Caso haja colisão novamente, podemos fazer o rehash, ampliando o vetor principal;
+- Outra opção é procurar um índice livre do vetor linearmente. Para isso, fazemos o cálculo com a função hash e, caso o índice já esteja
+  ocupado, verificamos o seu vizinho. Caso continue ocupado, passamos para o próximo índice, até que um índice livre seja encontrado;
+- Esses tipos de uso só se justificam em dispositivos que a quantidade de memória é criticamente baixa (MAIN; SAVITCH, 2005). Afinal, o overhead provocado por uma lista encadeada em cada item não é tão grande ao ponto de justificar uma implementação mais complexa.
+
+#### Interface Mapa
+
+- Uma chave é um valor sem repetição que permite identificar unicamente o elemento que queremos buscar (GOODRICH; TAMASSIA, 2013);
+- As estruturas associativas, como os vetores e os mapas, permitem que, de posse de uma chave, um objeto seja rapidamente localizado;
+- Diferentemente do que ocorre em um vetor, cuja chave está limitada a um índice, um mapa permitirá que suas chaves tenham descontinuidades ou não sejam sequer numéricas (ORACLE, 2019a);
+- O mapa insere, em cada valor da tabela hash, uma estrutura conhecida como entrada, que nada mais é do que um par de valores relacionados (LAFORE, 2004);
+- Um dos valores é a chave, que identifica o objeto, onde faremos todas as operações hash e buscas já descritas, e o outro valor é o objeto associado a essa chave.
