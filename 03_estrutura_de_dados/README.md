@@ -339,8 +339,7 @@
 
 - Endereçamento aberto: é a estratégia em que tentamos manter todos os dados apenas no vetor principal (LAFORE, 2004);
 - Endereçamento duplo: estratégia em que utilizamos duas funções hash. Aplicamos a primeira função e, caso uma colisão ocorra, utilizamos a função secundária. Caso haja colisão novamente, podemos fazer o rehash, ampliando o vetor principal;
-- Outra opção é procurar um índice livre do vetor linearmente. Para isso, fazemos o cálculo com a função hash e, caso o índice já esteja
-  ocupado, verificamos o seu vizinho. Caso continue ocupado, passamos para o próximo índice, até que um índice livre seja encontrado;
+- Outra opção é procurar um índice livre do vetor linearmente. Para isso, fazemos o cálculo com a função hash e, caso o índice já esteja ocupado, verificamos o seu vizinho. Caso continue ocupado, passamos para o próximo índice, até que um índice livre seja encontrado;
 - Esses tipos de uso só se justificam em dispositivos que a quantidade de memória é criticamente baixa (MAIN; SAVITCH, 2005). Afinal, o overhead provocado por uma lista encadeada em cada item não é tão grande ao ponto de justificar uma implementação mais complexa.
 
 #### Interface Mapa
@@ -353,7 +352,48 @@
 
 #### Interface Conjunto
 
-- Os conjuntos possuem uma estrutura mais simples. Eles são unicamente uma coleção que não permite elementos duplicados (ORACLE,
-  2019b);
+- Os conjuntos possuem uma estrutura mais simples. Eles são unicamente uma coleção que não permite elementos duplicados (ORACLE, 2019b);
 - Além de todos os métodos de coleção, os conjuntos possuirão os métodos contem, remover e getTamanho;
 - Os conjuntos podem ser facilmente implementados na forma de mapas, em que os elementos associados às chaves são todos nulos.
+
+## Implementação do mapa não ordenado
+
+- Para criar a implementação, primeiro precisamos de três variáveis:
+  1.  O vetor buckets: cada bucket nada mais é do que uma lista encadeada de objetos da classe Mapa.Par;
+  2.  A variável tamanho: representa a quantidade de elementos efetivamente inseridos no mapa;
+  3.  fatorCarga: representa a carga máxima suportada pelo mapa antes que uma operação de rehash seja feita.
+- Forneceremos dois construtores para a classe: um que permite especificar os valores tanto do fator de carga quanto do número inicial de buckets; e um segundo, mais conveniente, que usa os valores padrão 0,75 e 16 (valores que também são usados na API Java).
+
+### Informações do mapa
+
+- Todos os mapas fornecem seu tamanho e indicam se está vazio ou não, como informações básicas;
+- Além dessas duas informações, os mapas com base em hash também informam a sua carga atual, definida pela divisão da quantidade de elementos pela quantidade de buckets.
+
+### Localizando itens
+
+- Um fator crítico em praticamente todos os métodos do mapa está em localizar o item na tabela hash;
+- Para tanto, vamos criar uma estrutura auxiliar chamada Localizacao, que nos indica:
+  - o bucket onde o item está, ou deveria estar;
+  - um iterador, já posicionado sobre o elemento encontrado;
+  - uma estrutura Par, contendo a chave e o valor encontrados.
+- Caso o elemento não esteja no mapa, tanto o iterador quanto a estrutura do par chave/valor serão nulos.
+
+### Adição de elementos
+
+- Adicionamos um elemento fornecendo a chave e o valor para o qual aquela chave será mapeada;
+- Caso uma chave seja fornecida mais de uma vez, o valor mapeado será substituído e retornado pelo método adicionar;
+- Para realizar essa operação, precisaremos pesquisar se já não há um valor mapeado para aquela chave e:
+  1.  Caso não encontremos:
+      a. adicionamos o valor à lista e testamos se o mapa agora não excede o fator de carga máximo permitido;
+      b. caso exceda, precisaremos fazer o rehash. Em ambos os casos, o método retorna nulo, já que não havia valor mapeado para aquela chave.
+  2.  Caso encontremos, basta substituir o valor pelo fornecido, retornando o valor antigo. Note que o método setValor das classes Par e Localizacao já se comportam dessa forma.
+
+### Removendo elementos
+
+- A operação de limpeza de um mapa é bastante simples. Basta percorrer o buckets limpando todas as listas ali presentes;
+- Para remover um único elemento, basta chamar o método remove do iterador do bucket em que ele foi localizado (essa é exatamente a implementação do método remover da classe Localizacao) e, em seguida, reduzir o tamanho do mapa em um. Caso o elemento não esteja no mapa, o método de exclusão simplesmente retornará nulo.
+
+### Acesso direto a valores
+
+- O acesso direto a valores é feito por meio do método get, que é implementado diretamente com a função acharNo. O mesmo vale para a função contem;
+- A função contem é a única forma inequívoca de testar se uma chave está realmente presente no mapa.
