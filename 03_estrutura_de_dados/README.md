@@ -397,3 +397,8 @@
 
 - O acesso direto a valores é feito por meio do método get, que é implementado diretamente com a função acharNo. O mesmo vale para a função contem;
 - A função contem é a única forma inequívoca de testar se uma chave está realmente presente no mapa.
+
+## Implementação dos conjuntos
+
+- Um conjunto é um grupo de elementos sem repetição;
+- Muitas bibliotecas, inclusive a do Java, optam por implementar conjuntos por meio de mapas cujos valores sempre serão mapeados para nulo.
