@@ -398,7 +398,21 @@
 - O acesso direto a valores é feito por meio do método get, que é implementado diretamente com a função acharNo. O mesmo vale para a função contem;
 - A função contem é a única forma inequívoca de testar se uma chave está realmente presente no mapa.
 
-## Implementação dos conjuntos
+### Implementação dos conjuntos
 
 - Um conjunto é um grupo de elementos sem repetição;
 - Muitas bibliotecas, inclusive a do Java, optam por implementar conjuntos por meio de mapas cujos valores sempre serão mapeados para nulo.
+
+## Árvores binárias
+
+### Conceitos
+
+- Árvore é o nome dado a organização onde os dados são ordenados de maneira hierárquica, isto é, de modo que um elemento esteja associado a um conjunto de elementos subordinados (GOODRICH; TAMASSIA, 2013);
+- Um exemplo bastante conhecido dessa estrutura é a estrutura de pastas, presentes no disco;
+- Cada item nessa estrutura é chamado de nó;
+- Cada item pode ter um conjunto de nós filhos, que estão diretamente associados a ele, mas cada um deles deve conter um único nó pai;
+- Um dado não pode estar simultaneamente em duas pastas. Além disso, não pode conter ciclos, com um nó filho apontando para qualquer um de seus nós ascendentes, como pai, avô etc. (LAFORE, 2005);
+- O nó inicial é denominado nó rais, os nós sem filhos, são denominados nós folhas;
+- Dois conceitos importantes em uma árvore são os conceitos de profundidade e altura de um nó (MAIN; SAVITCH, 2005):
+  - Profundidade: é a quantidade de nós entre o nó atual e a raiz, que tem profundidade 0;
+  - Altura: é a quantidade de nós entre o nó sendo analisado e a folha, considerando o caminho mais longo possível. A altura do nó raiz é considerada a altura da árvore, que também é igual à profundidade do nó mais profundo.
