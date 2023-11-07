@@ -416,3 +416,14 @@
 - Dois conceitos importantes em uma árvore são os conceitos de profundidade e altura de um nó (MAIN; SAVITCH, 2005):
   - Profundidade: é a quantidade de nós entre o nó atual e a raiz, que tem profundidade 0;
   - Altura: é a quantidade de nós entre o nó sendo analisado e a folha, considerando o caminho mais longo possível. A altura do nó raiz é considerada a altura da árvore, que também é igual à profundidade do nó mais profundo.
+
+### Implementando um mapa ordenado
+
+- Mapas são estruturas de dados que associam chaves a valores (ORACLE, 2019a);
+- No caso de um mapa ordenado, as chaves serão únicas e ordenadas, de acordo com um critério de comparação definido;
+- **Árvore binária de busca**, trata-se de uma árvore com as seguintes limitações (LAFORE, 2005):
+  - Cada nó pode conter apenas dois nós filhos, que chamaremos de nó esquerdo e nó direito;
+  - Valores menores ou iguais ao nó atual devem ser inseridos ao lado esquerdo. Já os maiores, à direita.
+- Essa organização tem por objetivo reduzir o tempo de busca;
+- Os dados “se dividem” de maneira similar ao que ocorre na busca binária;
+- De fato, uma árvore em que os nós se encontrem perfeitamente distribuídos terá um tempo de busca logarítmico. Entretanto, a disposição dos nós é diretamente dependente da ordem de inserção dos dados (GOODRICH; TAMASSIA, 2013).

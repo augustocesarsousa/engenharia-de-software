@@ -21,7 +21,7 @@ public interface Mapa<C, V> {
             return valor;
         }
 
-        protected V setValor(V valor) {
+        public V setValor(V valor) {
             var antigo = this.valor;
             this.valor = valor;
             return antigo;
