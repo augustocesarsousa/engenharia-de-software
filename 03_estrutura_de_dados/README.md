@@ -427,3 +427,28 @@
 - Essa organização tem por objetivo reduzir o tempo de busca;
 - Os dados “se dividem” de maneira similar ao que ocorre na busca binária;
 - De fato, uma árvore em que os nós se encontrem perfeitamente distribuídos terá um tempo de busca logarítmico. Entretanto, a disposição dos nós é diretamente dependente da ordem de inserção dos dados (GOODRICH; TAMASSIA, 2013).
+
+### Outros tipos de árvore
+
+#### Árvores-AVL
+
+- Um dos problemas com as árvores binárias de busca é que, muitas vezes, elas crescem apenas para um lado, dependendo da ordem que os elementos são inseridos;
+- Inserir elementos em ordem, seja ela crescente, seja decrescente, gera o seu pior caso: a árvore se comporta de maneira praticamente igual a uma lista encadeada (LAFORE, 2005);
+- Isso ocorre porque a árvore perdeu seu balanceamento, isto é, porque não há uma boa distribuição de nós (GOODRICH; TAMASSIA, 2013);
+- Para resolver esse problema, os pesquisadores Adelson-Velsky e Landis criaram um processo de balanceamento automático. Nele, considera-se que cada nó possui um fator de balanceamento com base na altura de seus nós filhos. Esse fator é dado por (LAFORE, 2005):
+  - _fatorBalanceamento(n) = altura(esquerda(n)) – altura(direita(n))_.
+- Todo nó em que o fator de balanceamento não possui os valores -1, 0 ou 1 deve ser rebalanceado. Isso é feito realizando uma de quatro rotações possíveis: esquerda, direita, esquerda-direita e direita-esquerda.
+
+#### Árvores rubro-negras
+
+- Árvores rubro-negras ou árvores vermelho e preto são outra estratégia para tentar manter o balanceamento de árvores binárias;
+- Nelas, associam-se as cores vermelha ou preta a cada nó, tentando respeitar quatro regras (LAFORE, 2005):
+  1. A raiz da árvore é sempre preta;
+  2. Os valores nulos ao lado esquerdo e direito das folhas são considerados pretos;
+  3. Todos os filhos de um nó vermelho são pretos;
+  4. Todo caminho de um nó até qualquer uma de suas folhas terá o mesmo número de nós pretos.
+
+#### Árvores m-ways
+
+- Árvores m-ways têm como objetivo criar uma árvore de busca de modo que utilizemos até m nós (LAFORE, 2005);
+- Um exemplo de m-way bastante utilizado em aplicações gráficas, como jogos ou mapas, é a quadtree (4-way).
