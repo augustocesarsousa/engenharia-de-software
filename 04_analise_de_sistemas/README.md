@@ -78,3 +78,30 @@
   - Requisitos estão relacionados a necessidades: um usuário necessita que o sistema resolva seu problema ou o ajude a alcançar seu objetivo;
   - Requisitos estão relacionados a propriedades: um usuário deve possuir a condição dada pelo sistema para satisfazer um contrato, padrão, especificação ou outro documento formalmente imposto;
   - Requisitos possuem uma especificação: uma representação documentada de uma condição ou capacidade como nas duas primeiras definições.
+
+#### Tipos de Requisitos
+
+- Requisitos Funcionais:
+  - Descrevem o comportamento que o software deve ter em termos de serviços para o negócio do usuário. Têm como objetivo as necessidades do assunto de que trata o sistema do cliente;
+  - Os Requisitos Funcionais se referem às funções relacionadas com o negócio do cliente, com as funções que atendam diretamente às suas necessidades. Definem o que o sistema fará para atender ao pedido do cliente;
+  - Exemplos:
+    - O sistema deve cadastrar médicos profissionais;
+    - O sistema deve emitir um relatório de clientes;
+    - Executar a baixa dos boletos de contas a receber.
+  - Quando um Requisito Funcional estiver escrito em um nível macro, passando uma ideia ampla, ele é chamado de Requisito Funcional Agregador;
+  - Por exemplo: o Requisito Funcional Sacar dinheiro em um caixa eletrônico teria três subfunções:
+    1. validar senha;
+    2. verificar saldo;
+    3. debitar conta.
+- Requisitos não Funcionais:
+  - Representam limitações ou determinações impostas aos Requisitos Funcionais;
+  - Falam das condições do ambiente no qual o software será executado e como esse ambiente pode afetar ou restringir a perfeita realização dos Requisitos Funcionais;
+  - Descrevem como o sistema deve funcionar. Entre outros aspectos, falam sobre:
+    - O ambiente – segurança, comunicação etc;
+    - A organização – locais de operação, tipos de hardware etc;
+    - A implementação – linguagem de programação, Banco de Dados e arquitetura;
+    - A qualidade – tempo de resposta, facilidade de uso, eficiência e facilidade de manutenção.
+  - Exemplos:
+    - Tempo de resposta on-line: todas as solicitações on-line feitas no sistema devem ter a resposta num tempo inferior a 15 segundos;
+    - Disponibilidade do sistema: sistema deve estar disponível ao usuário 24 horas/dia permitindo paradas de até 5 minutos nos dias úteis e 1 hora em dias não úteis;
+    - Autenticação dos usuários: todos os usuários devem ser autenticados ao ingressar no sistema e suas senhas devem estar criptografadas.
