@@ -105,3 +105,37 @@
     - Tempo de resposta on-line: todas as solicitações on-line feitas no sistema devem ter a resposta num tempo inferior a 15 segundos;
     - Disponibilidade do sistema: sistema deve estar disponível ao usuário 24 horas/dia permitindo paradas de até 5 minutos nos dias úteis e 1 hora em dias não úteis;
     - Autenticação dos usuários: todos os usuários devem ser autenticados ao ingressar no sistema e suas senhas devem estar criptografadas.
+
+#### Elicitação de Requisitos
+
+- Elicitação de Requisitos é a ação de aplicar as técnicas para o Levantamento dos Requisitos (VASQUEZ, 2016);
+- Técnicas utilizadas no levantamento de requisitos:
+  - Entrevistas e reuniões:
+    - Uma entrevista ou reunião, no âmbito do Levantamento de Requisitos, consiste no processo de ouvir e registrar as necessidades e os desejos dos clientes;
+    - O objetivo é deixar o cliente descrever seu problema, apontar possíveis soluções e, principalmente, demonstrar o funcionamento e as regras do seu negócio;
+    - Primeiramente uma entrevista ou reunião deve ser guiada por uma pauta de perguntas muito bem elaboradas pelo analista de requisitos;
+    - Para o bom andamento do encontro, algumas atitudes devem ser **evitadas**:
+      1. Julgar/criticar as informações emitidas pelo outro;
+      2. Completar frases ou cortar a fala;
+      3. Ser arrogante ou deixar a impressão de que sabe mais do que o outro;
+      4. Corrigir, seja informação técnica ou gramática;
+      5. Dar a solução antes de ouvir o problema;
+      6. Falta de cortesia, pontualidade e simpatia ou visual inapropriado;
+      7. Local, hora ou duração inadequada;
+      8. Vocabulário impróprio;
+      9. Demonstrar despreparo sobre o assunto.
+    - Uma entrevista ou reunião pode ter questões abertas e/ou fechadas, dependendo da necessidade de entendimento do assunto:
+      - Questões abertas: Nesse tipo de questão, é possível investigar os detalhes, as opiniões e as preferências do cliente. Numa resposta textual, a tendência é que o cliente consiga explicar melhor o assunto;
+      - Questões fechadas: Essas questões têm um conjunto de respostas predefinidas. Ele serve para delimitar o assunto em questão e restringir aquilo que se tem interesse em descobrir. A criação dessas questões deve ser muito bem estudada e organizada.
+    - As questões de uma entrevista ou reunião (abertas ou fechadas) podem ter as seguintes estruturas:
+      - Pirâmide: Nessa estrutura, inicia-se o encontro com questões fechadas e, dependendo das respostas, questões abertas podem ser inseridas para o detalhamento dessas respostas. É uma estrutura que permite o foco em subtópicos e facilita a organização do analista;
+      - Funil: Ao contrário da anterior, inicia-se o encontro com questões abertas, e as fechadas são inseridas para tentar organizar ou detalhar as respostas das questões abertas;
+      - Diamante: É uma combinação das anteriores. Inicia-se com questões fechadas e, em seguida, são inseridas questões abertas, podendo-se voltar às fechadas. Essa estrutura é mais dinâmica, porém a tendência é que o encontro fique mais longo.
+      - 5W+2H:
+        - What - o que será feito?
+        - Why - por que será feito?
+        - Where - onde será feito?
+        - When - quando será feito?
+        - Who - quem fará?
+        - How - como será feito?
+        - How much - quanto custará?
