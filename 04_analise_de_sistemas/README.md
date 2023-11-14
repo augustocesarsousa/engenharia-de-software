@@ -163,3 +163,62 @@
   - Diagrama de Atividades: permite demonstrar os fluxos de um processo. Pode ser usado para mostrar vários tipos de processos: um simples algoritmo, um caso de uso, um conjunto de casos de uso ou para mapeamento de processos;
   - Diagrama de Transição de Estado: permite demonstrar a mudança dos possíveis estados de um Objeto e as condições para que isso ocorra;
   - Diagrama de Pacotes: Permite a visualização dos pacotes de classes ou funções.
+
+### Métodos Ágeis aplicados ao desenvolvimento de sistemas
+
+- Os métodos de desenvolvimento ágil de software surgiram no início de 2000;
+- Seu foco central era que os processos de produção de software deveriam se concentrar em indivíduos e interações sobre os processos e, principalmente, no produto final, ou seja, no software funcionando (COHN, 2011);
+- A indústria de produção de software tornou-se extremamente burocrática e um grande esforço era dedicado à produção de documentos, diagramas e artefatos de modelagem que, em tese, deveriam ser úteis para melhorar a qualidade do produto final;
+- O resultado, quase sempre, era o atraso na entrega do sistema, um alto custo e a equipe insatisfeita com a metodologia de trabalho;
+- Segundo Prikladnicki, Willi e Milani (2014, p. XIV), “a única constante no desenvolvimento de software é a mudança, portanto criar mecanismos para adaptar-se a ela é mais eficaz do que tentar combatê-la”;
+- Os Métodos Ágeis surgiram então com o objetivo de adotar práticas eficientes em todo o processo de desenvolvimento;
+- Segundo Cohn (2011), os Métodos Ágeis se justificam por algumas razões:
+  - Maior produtividade e menores custos;
+  - Maior engajamento e satisfação no trabalho por parte da equipe de desenvolvimento;
+  - Atendimento rápido às demandas do mercado;
+  - Maior qualidade;
+  - E, principalmente, maior satisfação do cliente.
+
+#### Princípios e valores do Manifesto Ágil
+
+- Os Métodos Ágeis surgiram então como uma filosofia de trabalho, uma forma de se estruturar equipes, uma nova maneira de se realizar as atividades;
+- Essa filosofia foi materializada no que foi chamado de Manifesto Ágil (BECK et al., 2001), um documento que serviu de base para as organizações implantarem essa filosofia nas suas equipes de trabalho;
+- Os quatro valores do Manifesto Ágil, assim como aparecem em Beck et al. (2001), são:
+  1. Indivíduos e interações mais importantes que processos e ferramentas;
+  2. Software funcionando mais que documentação abrangente;
+  3. Colaboração com o cliente mais que negociação de contrato;
+  4. Responder a mudanças mais que seguir um plano.
+- Os 12 princípios do Manifesto (BECK et al., 2001):
+  1. A maior prioridade é satisfazer o cliente por meio da entrega contínua e adiantada de software com valor agregado;
+  2. Mudanças nos Requisitos são bem-vindas, mesmo tardiamente no desenvolvimento. Processos ágeis tiram vantagem das mudanças visando à vantagem competitiva para o cliente;
+  3. Software deve ser entregue funcionando frequentemente, de poucas semanas a poucos meses, com preferência com menor escala de tempo;
+  4. Pessoas de negócio e desenvolvedores devem trabalhar diariamente em conjunto durante todo o projeto;
+  5. Projetos devem ser construídos em torno de indivíduos motivados. Eles devem ter o ambiente e o suporte necessário e receber confiança para fazerem o trabalho;
+  6. O método mais eficiente e eficaz de transmitir informações para e entre uma equipe de desenvolvimento é a conversa face a face;
+  7. Software funcionando é a medida primária de progresso;
+  8. Os processos ágeis promovem desenvolvimento sustentável. Os patrocinadores, desenvolvedores e usuários devem ser capazes de manter um ritmo constante indefinidamente;
+  9. Contínua atenção à excelência técnica e bom design aumentam a agilidade;
+  10. Simplicidade: a arte de maximizar a quantidade de trabalho não realizado é essencial;
+  11. As melhores arquiteturas, Requisitos e designs emergem de equipes auto-organizáveis;
+  12. Em intervalos regulares, a equipe reflete sobre como se tornar mais eficaz e, então, refina e ajusta seu comportamento.
+
+#### Introdução ao Scrum
+
+- Scrum é uma ferramenta (comumente chamada de framework) usada para implementar o desenvolvimento ágil (COHN, 2011);
+- O conceito básico do Scrum é a Sprint (nome dado para os ciclos do projeto);
+- Para entendermos esse conceito, temos de conhecer os termos incremental e iterativo:
+  - O desenvolvimento de um software de maneira incremental envolve a construção “pedaço por pedaço”: primeiro uma parte é desenvolvida, depois a próxima parte e assim por diante;
+  - Por outro lado, o desenvolvimento iterativo aceita a possibilidade de retrabalho, de construir novamente aquilo que já foi feito, porém com um incremento de qualidade nessa nova construção;
+- Uma Sprint do Scrum, então, combina as melhores características das duas abordagens, incremental e iterativa. Com isso, o cliente recebe entregas rápidas do
+  produto e vai contribuindo para a sua melhoria;
+- Os benefícios de se trabalhar com Sprints são:
+  - O software funcionando encoraja o feedback do cliente;
+  - O software funcionando ajuda a equipe a avaliar seu progresso;
+  - O software funcionando permite que o produto seja entregue antes do desejado.
+- É consenso na área de desenvolvimento de software que uma Sprint não deve demorar mais do que duas semanas (apesar de se admitir Sprints de até 30 dias);
+- Além do conceito de Sprint, o Scrum define algumas práticas para serem seguidas (COHN, 2011; SUTHERLAND, 2019):
+  - Reuniões diárias, rápidas e objetivas de apenas 15 minutos com a equipe de desenvolvimento;
+  - Mostrar o trabalho visualmente usando o quadro (conhecido como Kanban);
+  - Ter equipes enxutas com até dez pessoas;
+  - Nada de títulos de função: estudos demonstram que quando não são criados títulos para as pessoas que possam limitar o entendimento de seu papel dentro de uma equipe, elas trabalham melhor;
+  - Priorização: quando várias coisas são prioridade, nada é uma prioridade. Então, para que algo realmente seja feito, a metodologia Scrum propõe que as atividades devem ser priorizadas.
