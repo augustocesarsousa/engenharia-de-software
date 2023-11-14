@@ -139,3 +139,27 @@
         - Who - quem fará?
         - How - como será feito?
         - How much - quanto custará?
+
+### Análise Orientada a Objetos (UML)
+
+- No ciclo de desenvolvimento, a fase de Elaboração é a responsável pelo projeto de solução do sistema;
+- Nela são produzidos artefatos (documentos e diagramas) que irão balizar a construção do software.
+
+#### Conceitos
+
+- O termo Unified Modeling Language ou linguagem de modelagem unificada (UML) surgiu da necessidade de se padronizar a linguagem de modelagem da Análise Orientada a Objetos e possibilitou a unificação da escrita dos diversos diagramas previstos na técnica;
+- Com o tempo, esse termo passou a ser quase um sinônimo da Análise Orientada a Objetos (BOOCH; RUMBAUGH; JACOBSON, 2012);
+- O conceito básico nessa teoria é o de Objeto, no qual os componentes de software foram considerados como objetos (do mundo real) com suas características e funções;
+- Um Objeto tem encapsulado seus dados e operações responsáveis por manipular esses dados;
+- Uma operação de um determinado Objeto não tem autorização (ou acesso) para manipular dados de outro Objeto se não pela solicitação ao Objeto
+  responsável por esse dado.
+
+#### Artefatos da UML
+
+- Para a modelagem do sistema e representação da solução informatizada, a UML dispõe de diversos diagramas;
+  - Digrama de caso de uso: apresenta graficamente todos os Requisitos do sistema, bem como a interação com as entidades externas;
+  - Diagrama de Classes: é utilizado para modelar as classes de objetos, seus atributos, suas operações e relacionamento com outras classes;
+  - Diagrama de Sequência: determina a sequência de mensagens que devem ser trocadas entre os objetos do sistema para que um caso de uso realize completamente sua função;
+  - Diagrama de Atividades: permite demonstrar os fluxos de um processo. Pode ser usado para mostrar vários tipos de processos: um simples algoritmo, um caso de uso, um conjunto de casos de uso ou para mapeamento de processos;
+  - Diagrama de Transição de Estado: permite demonstrar a mudança dos possíveis estados de um Objeto e as condições para que isso ocorra;
+  - Diagrama de Pacotes: Permite a visualização dos pacotes de classes ou funções.
