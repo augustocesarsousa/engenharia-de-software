@@ -254,5 +254,22 @@
   1. Ligação: as ligações são feitas entre atores e casos de uso para indicar exatamente com quais casos de uso cada ator irá interagir. A ligação é representada por uma linha simples, sem setas e nem legendas;
   2. Herança de atores: o conceito de herança é uma das bases da Análise Orientada a Objetos. Ele é aplicado não só para atores, mas para casos de uso e, principalmente, para as classes. A herança é representada por uma linha com uma seta vazada saindo dos atores mais específicos e apontando para o ator mais geral;
   3. Herança de casos de uso: Assim como temos herança de atores, podemos ter herança de casos de uso seguindo o mesmo conceito;
-  4. Include (ou uso): O relacionamento de Include (ou uso) é exclusivo para ser utilizado entre casos de uso. Quando queremos separar uma parte dos procedimentos de um caso de uso criando um novo caso de uso com essa parte, esses dois casos de uso devem ficar ligados por meio de um Include. O símbolo de Include no Diagrama de Caso de Uso é uma seta pontilhada apontada para o caso de uso chamado e com a legenda <<include>> na linha;
-  5. Extend (ou extensão): o relacionamento de Extend (ou extensão) também é exclusivo para ser usado entre casos de uso. Seu funcionamento é muito parecido com o Include, ou seja, existe a chamada de um caso de uso por outro para que se realize um determinado procedimento e retorne ao caso de uso original. O símbolo de Extend no Diagrama de Caso de Uso é uma seta pontilhada apontada para o caso de uso chamador (é o contrário do relacionamento de Include) e com a legenda <<extend>> na linha.
+  4. Include (ou uso): O relacionamento de Include (ou uso) é exclusivo para ser utilizado entre casos de uso. Quando queremos separar uma parte dos procedimentos de um caso de uso criando um novo caso de uso com essa parte, esses dois casos de uso devem ficar ligados por meio de um Include. O símbolo de Include no Diagrama de Caso de Uso é uma seta pontilhada apontada para o caso de uso chamado e com a legenda <\<include>> na linha;
+  5. Extend (ou extensão): o relacionamento de Extend (ou extensão) também é exclusivo para ser usado entre casos de uso. Seu funcionamento é muito parecido com o Include, ou seja, existe a chamada de um caso de uso por outro para que se realize um determinado procedimento e retorne ao caso de uso original. O símbolo de Extend no Diagrama de Caso de Uso é uma seta pontilhada apontada para o caso de uso chamador (é o contrário do relacionamento de Include) e com a legenda <\<extend>> na linha.
+
+### Níveis do Diagrama de Caso de Uso
+
+- Os Métodos Ágeis nos mostram a necessidade de se construir os artefatos da análise (diagramas ou documentos) na medida em que tenham utilidade no processo de desenvolvimento;
+- Dependendo dessa utilidade, o Diagrama de Caso de Uso pode ser construído em dois níveis: o nível 1, mais geral, e o nível 2,
+  mais detalhado.
+
+#### Nível 1 do Diagrama de Caso de Uso
+
+- Nesse nível, não devemos utilizar os relacionamentos de herança de atores ou casos de uso, Include e Extend;
+- A ideia desse nível é que se tenha uma visão mais geral, sem muito detalhamento;
+- Nele, os casos de uso não necessitam corresponder a uma tela.
+
+#### Nível 2 do Diagrama de Caso de Uso
+
+- O objetivo desse nível é fazer um detalhamento dos casos de uso, em que cada um irá corresponder a uma tela física;
+- Para isso, pode-se utilizar todos os cinco tipos de relacionamentos do diagrama;
