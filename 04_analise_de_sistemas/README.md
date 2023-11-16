@@ -222,3 +222,37 @@
   - Ter equipes enxutas com até dez pessoas;
   - Nada de títulos de função: estudos demonstram que quando não são criados títulos para as pessoas que possam limitar o entendimento de seu papel dentro de uma equipe, elas trabalham melhor;
   - Priorização: quando várias coisas são prioridade, nada é uma prioridade. Então, para que algo realmente seja feito, a metodologia Scrum propõe que as atividades devem ser priorizadas.
+
+## Casos de Uso e Histórias de Usuário
+
+### Diagrama de Caso de Uso
+
+- O Diagrama de Caso de Uso tem como objetivo apresentar uma visão geral das funcionalidades do sistema, demostrando as entidades externas que terão acesso ao sistema e com quais funcionalidades cada entidade irá interagir (GUEDES, 2018; MELO, 2011);
+- Segundo Booch, Rumbaugh e Jacobson (2012, p. 263), “os diagramas de caso de uso são importantes para visualizar, especificar e documentar o comportamento de um sistema”;
+
+#### Conceitos
+
+- Um Diagrama de Caso de Uso é composto de três elementos básicos: ator, caso de uso e relacionamento.
+
+##### Ator
+
+- Os atores representam entidades externas ao sistema e que interagem com ele (DEBONI, 2003);
+- Existem três tipos de atores:
+- Pessoas: são os atores mais fáceis de serem identificados. São as pessoas que irão manipular as telas, receber relatórios e fazer consultas aos dados;
+- Órgãos de uma organização: em uma organização (empresa, indústria, loja, escritório, clube, dentre outros), um determinado órgão pode ser considerado um ator quando todas as pessoas desse órgão interagirem com o sistema;
+- Outros sistemas informatizados: esse é o ator mais difícil de ser identificado. Quando construímos um software, é comum que ele tenha ligação com softwares externos, pertencentes ou não à mesma organização.
+
+##### Caso de uso
+
+- Um caso de uso representa um determinado Requisito, é uma funcionalidade completa conforme percebida pelo ator. Ele fornece um resultado observável ao ator e contribui para que o ator atinja seu objetivo;
+- Os casos de uso derivam da Lista de Requisitos;
+
+##### Relacionamento
+
+- Os relacionamentos têm por objetivo fazer as ligações entre os atores e casos de uso;
+- Existem cinco tipos de relacionamentos que podem ser utilizados em um Diagrama de Caso de Uso:
+  1. Ligação: as ligações são feitas entre atores e casos de uso para indicar exatamente com quais casos de uso cada ator irá interagir. A ligação é representada por uma linha simples, sem setas e nem legendas;
+  2. Herança de atores: o conceito de herança é uma das bases da Análise Orientada a Objetos. Ele é aplicado não só para atores, mas para casos de uso e, principalmente, para as classes. A herança é representada por uma linha com uma seta vazada saindo dos atores mais específicos e apontando para o ator mais geral;
+  3. Herança de casos de uso: Assim como temos herança de atores, podemos ter herança de casos de uso seguindo o mesmo conceito;
+  4. Include (ou uso): O relacionamento de Include (ou uso) é exclusivo para ser utilizado entre casos de uso. Quando queremos separar uma parte dos procedimentos de um caso de uso criando um novo caso de uso com essa parte, esses dois casos de uso devem ficar ligados por meio de um Include. O símbolo de Include no Diagrama de Caso de Uso é uma seta pontilhada apontada para o caso de uso chamado e com a legenda <<include>> na linha;
+  5. Extend (ou extensão): o relacionamento de Extend (ou extensão) também é exclusivo para ser usado entre casos de uso. Seu funcionamento é muito parecido com o Include, ou seja, existe a chamada de um caso de uso por outro para que se realize um determinado procedimento e retorne ao caso de uso original. O símbolo de Extend no Diagrama de Caso de Uso é uma seta pontilhada apontada para o caso de uso chamador (é o contrário do relacionamento de Include) e com a legenda <<extend>> na linha.
