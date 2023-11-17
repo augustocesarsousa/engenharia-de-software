@@ -272,4 +272,28 @@
 #### Nível 2 do Diagrama de Caso de Uso
 
 - O objetivo desse nível é fazer um detalhamento dos casos de uso, em que cada um irá corresponder a uma tela física;
-- Para isso, pode-se utilizar todos os cinco tipos de relacionamentos do diagrama;
+- Para isso, pode-se utilizar todos os cinco tipos de relacionamentos do diagrama.
+
+### Prototipação de telas
+
+- Criar protótipos de telas significa desenhar os esboços que serão efetivamente construídos usando as linguagens de programação;
+- Os protótipos de telas são criados pelos analistas de sistemas que participaram da fase de Levantamento de Requisitos e têm ampla visão do negócio e da solução informatizada que será dada ao problema;
+- Fazer protótipos das telas do sistema torna muito fácil a avaliação por parte do cliente.
+
+#### Componentes de um protótipo de tela
+
+- Existem diversos componentes que podem ser utilizados na construção de telas, cada um com uma finalidade específica;
+- Esses componentes também ajudam na estruturação da tela e na facilitação de seu uso;
+- Os principais são:
+  - Label: esse componente é o mais simples e é utilizado quando se deseja escrever um texto na tela, seja em títulos e textos quaisquer ou para legenda de campos de entrada;
+  - Text field: o campo de entrada é utilizado quando se deseja que o usuário digite um determinado conteúdo de texto ou número no campo da tela;
+  - Button: são botões disponíveis na tela para o usuário pressionar levando o sistema a realizar alguma ação;
+  - Grid: é utilizado quando se deseja mostrar dados em forma de tabelas;
+  - Calendar: é utilizado quando se deseja o calendário de meses, inclusive com navegação entre as datas;
+  - Check box: é utilizado quando se deseja apresentar uma lista de valores para que o usuário selecione uma ou mais opções;
+  - Combo box: é utilizado quando se deseja apresentar uma lista de valores para que o usuário selecione apenas uma opção. Normalmente a primeira opção fica
+    visível como primeira da lista e, ao pressionar uma seta no componente, a lista é aberta e apresenta-se as demais opções;
+  - Date chooser: é utilizado quando se deseja a entrada de uma data na tela, porém com a opção de apresentação de um calendário e a possibilidade de escolha dessa data;
+  - Text area: assim como o text field, é utilizado quando se deseja que o usuário digite um determinado conteúdo de texto, porém, nesse componente, é possível
+    escrever um texto com várias linhas, inclusive dando a possibilidade de dimensionar a área;
+  - Menu bar: é utilizado quando se deseja montar menus de opções para escolha do usuário que remetem a outras telas.
