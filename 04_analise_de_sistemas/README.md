@@ -297,3 +297,75 @@
   - Text area: assim como o text field, é utilizado quando se deseja que o usuário digite um determinado conteúdo de texto, porém, nesse componente, é possível
     escrever um texto com várias linhas, inclusive dando a possibilidade de dimensionar a área;
   - Menu bar: é utilizado quando se deseja montar menus de opções para escolha do usuário que remetem a outras telas.
+
+### Histórias de Usuário
+
+- O desafio do analista de sistemas é fazer com que o programador entenda exatamente o que deve ser programado, tanto o funcionamento da tela quanto as regras de negócio que devem ser verificadas para que o Requisito seja entregue exatamente como foi solicitado;
+- As Histórias de Usuário, então, entram nessa fase como um instrumento de detalhamento de cada um dos casos de uso (telas) para que o documento seja repassado ao programador e transformado num programa de software;
+- Assim, o próximo passo do processo de modelagem é escrever Histórias de Usuário para que sejam repassadas aos programadores da equipe;
+- Para cada caso de uso do Diagrama de Caso de Uso de nível 2 (ou de nível 1 caso só tenha sido feito esse), o analista deve fazer o seu detalhamento por meio de uma História de Usuário.
+
+#### Construção de uma História de Usuário
+
+- Nome e descrição:
+  - O nome da História deve ser o mesmo nome do caso de uso do Diagrama de Caso de Uso de nível 2 (ou nível 1);
+  - Ele deve iniciar com a sigla HU seguida de um número sequencial;
+  - Exemplo:
+    - HU000 – Nome da História de Usuário.
+  - Em seguida, devemos fazer uma descrição no seguinte formato:
+    - Sendo: (ator) <- Quem quer;
+    - Quero: (funcionalidade) <- O que quer;
+    - Para: (benefício) <- Por que quer.
+  - Exemplo:
+    - Sendo: um aluno da escola;
+    - Quero: realizar matrícula;
+    - Para: estar regularizado e iniciar a atividade escolhida.
+- Desenho da tela:
+  - Nesse tópico deve ser colocado o desenho da tela conforme o protótipo que foi feito para ela.
+- Critérios de aceitação:
+  - Os critérios de aceitação são verificações que o sistema deve fazer para considerar que a História está atendendo aos Requisitos do cliente;
+  - A História é considerada pronta somente após todos os critérios serem verificados;
+  - Exemplo:
+    - Critério: não deve aceitar CPF em branco ou inválido.
+- Critérios de aceitação – detalhamento:
+  - Após a escrita da lista de critérios de aceitação, deve-se fazer um detalhamento de cada um deles;
+  - O detalhamento dos critérios deve ter o seguinte formato:
+    - Critério: (Descrição);
+    - Dado que: (precondição);
+    - Quando: (ação);
+    - Então: (reação).
+  - Exemplo:
+    - Critério: não deve aceitar CPF em branco ou inválido;
+    - Dado que: foi informado um CPF Inválido;
+    - Quando: o aluno pressiona o botão "Efetivar Matrícula";
+    - Então: o sistema apresenta a mensagem "CPF Inválido";
+    - E: o sistema não efetiva a matrícula.
+- Regras de negócio:
+  - As regras de negócio explicam a maneira de realizar certos procedimentos;
+  - É uma explicação de **como** deve ser realizada uma determinada ação;
+  - As regras de negócio devem ser listadas da seguinte maneira:
+    - Rn: Descrição da Regra de Negócio (Onde **n** é um número sequencial da regra).
+  - Exemplo:
+    - R1: A consistência do Dígito Verificador do CPF deve ser feita utilizando a rotina módulo 11 da Receita Federal.
+- Outros artefatos:
+  - Deve-se relacionar nesse tópico os artefatos da UML que possam ajudar o programador na implementação da História;
+  - Exemplos:
+    - Clique aqui para acessar o Diagrama de Classes;
+    - Clique aqui para acessar o Diagrama de Sequência.
+- Observações técnicas:
+  - Deve-se relacionar nesse tópico as observações que achar pertinente relacionadas às ferramentas tecnológicas que serão usadas na programação da História;
+  - Exemplo:
+    - Usar componentes de JavaScript na saída dos campos da tela;
+- Histórias relacionadas:
+  - Caso a História que está sendo escrita tenha relação com outras Histórias importantes que o programador conheça, podemos citá-las aqui;
+  - Exemplos:
+    - HU002 – Pesquisar Alunos;
+- Critérios de aceitação para testes:
+  - O objetivo desse tópico é balizar os testes da História, ou seja, devemos prover a equipe de testes do sistema com recursos para que a História seja estada após sua implementação;
+  - Nesse tópico, devemos então repetir todos os critérios de aceitação, com a diferença de que aqui deve ser colocado valores reais nas entradas de campos da tela ou consistências necessárias;
+  - Exemplo:
+    - Critério: não deve aceitar CPF em branco ou inválido;
+    - Dado que: foi informado o CPF J98.188.888 (inválido por causa da letra J no início);
+    - Quando: o aluno pressiona o botão "Efetivar Matrícula";
+    - Então: o sistema apresenta a mensagem "CPF Inválido";
+    - E: o sistema não efetiva a matrícula.
