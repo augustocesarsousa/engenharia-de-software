@@ -369,3 +369,143 @@
     - Quando: o aluno pressiona o botão "Efetivar Matrícula";
     - Então: o sistema apresenta a mensagem "CPF Inválido";
     - E: o sistema não efetiva a matrícula.
+
+## Objetos e Classes
+
+- A grande inovação trazida pela Análise Orientada a Objetos foi justamente o conceito de objeto;
+- A organização da solução, em termos de objetos, fez com que os sistemas tivessem uma melhor estrutura;
+- Dentre todas as tarefas de modelagem de um sistema, a organização dos objetos é a de maior importância. Construir um sistema em torno de objetos é mais
+  importante do que em torno de suas funções, pois são mais adaptáveis a modificações (RUMBAUGH et al., 1994).
+
+### Objetos
+
+- Segundo Rumbaugh et al. (1994, p. 31), “definimos um objeto como um conceito, uma abstração, algo com limites definidos e significado em relação ao problema”;
+- Um objeto, para efeitos de estruturação do sistema, possui três elementos, são eles:
+  - Identificação:
+    - Cada objeto é único e deve ter uma identificação que não pode ser usada em outros objetos;
+    - Por exemplo, uma pessoa pode ser identificada por seu CPF, pois esse número, pelo menos em termos legais, é único, ou seja, não existem duas pessoas com o mesmo número de CPF.
+  - Atributos:
+    - São as características ou propriedades de um objeto;
+    - Eles identificam um determinado estado do objeto, pois um atributo pode ter um determinado valor que pode mudar no decorrer do tempo;
+    - Os atributos representam peculiaridades que costumam variar de um objeto para outro e permitem diferenciar um objeto de outro (GUEDES, 2018).
+  - Métodos:
+    - Consistem no que o objeto consegue produzir; são as suas ações, suas operações, seu comportamento ou suas funções;
+    - Eles representam uma atividade que o objeto consegue executar (GUEDES, 2018);
+    - Um método pode ou não alterar o valor de um ou mais atributos;
+    - É a implementação de algum serviço que pode ser solicitado por algum objeto para mudar um ou mais comportamentos (BOOCH; RUMBAUGH; JACOBSON, 2012);
+    - A UML se refere aos métodos com o termo operações, porém o termo mais comumente utilizado na modelagem, e também na programação, é método.
+- Exemplo de um objeto **carro**:
+  - Identificação:
+    - Carro placa ABC-1234.
+  - Atributos:
+    - Marca: VW;
+    - Ano: 2023;
+    - Modelo: Golf;
+    - Cor: Vermelho.
+  - Métodos:
+    - Andar;
+    - Frear;
+    - Buzinar.
+- Pelo fato de os atributos e métodos estarem juntos no objeto, dizemos que eles estão encapsulados no objeto;
+- Encapsulamento é um importante conceito da Análise Orientada a Objetos; sua função é que os métodos “protejam” os atributos do acesso descontrolado, ou seja, o acesso aos atributos é realizado por intermédio de seus métodos;
+
+### Classes
+
+- Uma classe é um modelo, um protótipo usado para criar vários objetos com características semelhantes;
+- Para Rumbaugh et al. (1994, p. 32), "uma classe de objetos descreve um grupo de objetos com propriedades semelhantes (atributos), o mesmo comportamento (operações), os mesmos relacionamentos com outros objetos e mesma semântica";
+- As classes são meras descrições dos objetos que as compõem, são especificações que descrevem os seus objetos;
+- Podemos também imaginar uma classe como uma receita de bolo. A receita não é o bolo, mas a descrição de como fazer um bolo. Quando usamos essa receita para efetivamente fazer um bolo, criamos um objeto (o bolo) dessa classe.
+- Uma classe terá atributos e métodos, porém, como é uma mera descrição dos diversos objetos que serão criados por meio de sua especificação, nas classes não
+  serão atribuídos os valores aos atributos (já que não se tem esses valores);
+- Ela será representada por um retângulo com três compartimentos. No primeiro, temos o nome da classe, no segundo a sua relação de atributos, e no terceiro a
+  relação de métodos da classe;
+- Exemplo:
+
+```mermaid
+ classDiagram
+      class Carro{
+          placa
+          marca
+          ano
+          modelo
+          cor
+          andar()
+          frear()
+          buzinar()
+      }
+```
+
+### Mensagens
+
+- Uma mensagem é a invocação de um método de determinada classe para que um método de outra classe seja executado;
+- É comum que em um determinado processo um objeto necessite buscar os valores de atributos de outro objeto ou mesmo fazer alterações nesse valor;
+- Devido ao conceito de encapsulamento, esse objeto não tem permissão para acessar diretamente atributos de outros objetos, então a forma de se comunicar é por meio de mensagens entre objetos.
+
+### Herança
+
+- O termo _herança_ é bastante forte na Análise Orientada a Objetos; na verdade, esse conceito nasceu com essa teoria;
+- Ele também pode ser utilizado entre atores e casos de uso;
+- A herança entre classes é a capacidade de uma classe (chamada de filha) herdar as características (atributos e métodos) de outra classe (chamada de mãe);
+- A classe filha terá todas as suas características e mais as características da classe mãe;
+- Uma classe mãe pode ter uma ou mais filhas. Em outras palavras, usamos herança quando existem diversos tipos de uma determinada classe;
+- Exemplo de herança da classe _Pessoa_:
+
+```mermaid
+ classDiagram
+      Pessoa <|-- PessoaFisica
+      Pessoa <|-- PessoaJuridica
+      class Pessoa{
+          -String: endereco
+          -String: telefone
+      }
+      class PessoaFisica{
+          -String: cpf
+          -String: nome
+          -String: email
+      }
+      class PessoaJuridica{
+          -String: cnpf
+          -String: razaoSocial
+          -String: site
+      }
+```
+
+### Padrões
+
+- Os nomes de classes, atributos e métodos devem ser escritos em um determinado padrão;
+- Isso facilita o entendimento e a comunicação entre os membros da equipe de desenvolvimento e irá balizar a implementação em uma linguagem de programação, já que é a etapa seguinte no processo de desenvolvimento do sistema;
+- Padrão para nomes de classes:
+  - Utilizar nomes no singular;
+  - Evitar abreviaturas;
+  - Não utilizar hifens, tracinhos ou espaços;
+  - Não usar acentuação ou cedilha;
+  - Não usar preposições (de, para, do, com, entre outras);
+  - Não usar palavras desgastadas (Tabelas, Cadastro);
+  - A primeira letra do nome deve ser maiúscula e as demais, minúsculas.
+- Exemplos de nomes de classes no padrão:
+  - Cliente;
+  - PessoaFisica;
+  - ContaPoupanca.
+- Padrão para nomes de atributos:
+  - Não utilizar hifens, tracinhos ou espaços;
+  - Não usar acentuação ou cedilha;
+  - Não usar preposições (de, para, do, com, entre outras);
+  - É possível usar abreviaturas;
+  - É possível usar palavras no plural;
+  - Usar letras minúsculas. Caso haja vários nomes, o primeiro inicia com minúscula, e a partir do segundo a primeira letra deve ser maiúscula.
+- Exemplos de nomes de atributos no padrão:
+  - idade;
+  - nomeCliente;
+  - qtdAlunosMatriculados (quantidade de alunos matriculados).
+- Padrão para nomes de métodos:
+  - Não utilizar hifens, tracinhos ou espaços;
+  - Não usar acentuação ou cedilha;
+  - Não usar preposições (de, para, do, com, entre outras);
+  - É possível usar abreviaturas;
+  - É possível usar palavras no plural;
+  - Usar letras minúsculas. Caso haja vários nomes, o primeiro inicia com minúscula, e a partir do segundo a primeira letra deve ser maiúscula.
+  - Como um método é uma ação, a primeira palavra deve ser um verbo no infinitivo (verbo na forma natural), ou seja, somente a leitura do nome do método já deve indicar a sua ação.
+- Exemplos de nomes de métodos no padrão:
+  - calcularSaldoDevedor;
+  - imprimirBoleto;
+  - incluirCliente.
