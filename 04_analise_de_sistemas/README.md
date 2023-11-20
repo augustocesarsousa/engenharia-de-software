@@ -509,3 +509,78 @@
   - calcularSaldoDevedor;
   - imprimirBoleto;
   - incluirCliente.
+
+### Relacionamentos entre as classes
+
+- Normalmente, uma classe não está isolada em um sistema. É bem comum que seus objetos estejam relacionados aos objetos de outras classes;
+- Ao identificarmos e organizarmos as classes, descobriremos que dificilmente elas trabalharão sozinhas. A maioria das classes colaboram umas com as outras e
+  seus objetos se relacionam entre si (BOOCH; RUMBAUGH; JACOBSON, 2012). Para essa relação, damos o nome de relacionamento entre as classes;
+
+#### Associação
+
+- O relacionamento de associação representa a existência de alguma conexão entre os objetos das classes, de modo que um objeto de uma classe deve manter alguma referência ao objeto da outra;
+- A associação faz com que uma classe colabore com a organização de outra classe (MELO, 2010);
+- Associações simples são representadas na forma de uma linha cheia conectando as duas classes;
+- As associações são bidirecionais, pois um objeto de uma classe está ligado a um objeto de outra classe e vice-versa, que são definidas, na maioria das vezes, pelas regras de negócio do sistema (RUMBAUGH et al.,1994);
+- Por conta disso, as associações devem possuir o que chamamos de multiplicidade, para indicar com qual quantidade de objetos uma classe está associada a outra (nos dois sentidos);
+- Exemplos:
+
+| Notação | Significado        |
+| ------- | ------------------ |
+| \*      | Muitos             |
+| 0..\*   | Zero, um ou muitos |
+| 1..\*   | Um ou Muitos       |
+| 1..6    | De um até seis     |
+
+- Quando associamos duas classes, na qual um objeto da primeira classe está associado com muitos da outra classe, comumente chamamos essa associação de **1-para-muitos**;
+- Quando muitos objetos de uma classe se associam com muitos de outra classe, chamamos essa associação de **muitos-para-muitos**;
+- Finalmente, quando somente um objeto de uma classe está associado a somente um de outra classe, chamamos de associação **1-para-1**.
+
+#### Agregação
+
+- Uma agregação entre duas classes denota que uma delas possui as características do todo do objeto e a outra corresponde às suas partes. Ela é um tipo especial de associação;
+- Nas agregações, as duas classes devem ter a característica de **todo-parte**, na qual uma das classes representa o todo e a outra representa as partes desse todo;
+- A notação para o relacionamento de agregação é uma linha com um **losango vazado** na extremidade, que representa a classe "todo".
+- Exemplo:
+
+```mermaid
+ classDiagram
+      Playlist o-- Musica
+```
+
+- Uma agregação permite que um objeto na classe que representa o todo não esteja relacionado com nenhuma parte.
+
+#### Composição
+
+- A composição é um tipo especial de agregação, ou seja, também tem a característica todo-parte, porém, nesse caso, uma parte deve pertencer a um único todo;
+- Na composição, o tempo de vida do todo e das partes coincidem. Uma vez criados os objetos de ambas as classes, eles nascem e morrem juntos (BOOCH; RUMBAUGH; JACOBSON, 2012);
+- A notação para o relacionamento de composição também é uma linha com um **losango** na extremidade, que representa a classe “todo”, porém, nesse caso, esse losango é preenchido;
+- Exemplo:
+
+```mermaid
+ classDiagram
+      Livro *-- Capitulo
+```
+
+#### Classe de associação
+
+- Pode ocorrer de uma associação entre duas classes necessitar de um atributo;
+- Quando isso ocorre, uma classe de associação deve ser colocada entre duas classes com associação **muitos-para-muitos**;
+- Para acomodar então esse atributo, podemos criar o que chamamos de classe de associação;
+- Exemplo:
+
+```mermaid
+ classDiagram
+      Receita -- IngredienteReceita
+      IngredienteReceita -- Ingrediente
+      class Receita {
+        -String: nome
+        -String: modoPreparo
+      }
+      class IngredienteReceita {
+        -Integer: quantidade
+      }
+      class Ingrediente {
+        -String: nome
+      }
+```
