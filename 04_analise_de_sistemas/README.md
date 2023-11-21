@@ -455,18 +455,18 @@
       Pessoa <|-- PessoaFisica
       Pessoa <|-- PessoaJuridica
       class Pessoa{
-          -String: endereco
-          -String: telefone
+          - endereco: texto
+          - telefone: texto
       }
       class PessoaFisica{
-          -String: cpf
-          -String: nome
-          -String: email
+          - cpf: texto
+          - nome: texto
+          - email: texto
       }
       class PessoaJuridica{
-          -String: cnpf
-          -String: razaoSocial
-          -String: site
+          - cnpf: texto
+          - razaoSocial: texto
+          - site: textos
       }
 ```
 
@@ -574,13 +574,30 @@
       Receita -- IngredienteReceita
       IngredienteReceita -- Ingrediente
       class Receita {
-        -String: nome
-        -String: modoPreparo
+        - nome: texto
+        - modoPreparo: texto
       }
       class IngredienteReceita {
-        -Integer: quantidade
+        - quantidade: numero
       }
       class Ingrediente {
-        -String: nome
+        - nome: texto
       }
 ```
+
+### Diagrama de Classes
+
+- Depois de conhecermos todos os principais conceitos de objetos, classes e seus relacionamentos, devemos construir um diagrama, no qual serão colocadas todas
+  as classes de um determinado sistema, com seus atributos, métodos e relacionamentos. Fazemos isso construindo o Diagrama de Classes;
+
+#### Diagrama de Classes de nível 1
+
+- No Diagrama de Classes de nível 1, colocamos as classes do sistema, seus atributos próprios e seus relacionamentos com outras classes;
+- Nessa etapa, não colocaremos os métodos das classes, pois o melhor momento para se identificar os métodos é a construção do Diagrama de Sequência;
+- O Diagrama de Classes é construído à partir da Lista de Requisitos;
+- Passos para a construção do Diagrama de Classes de nível 1:
+  1. Identificação das classes e seus atributos: de posse da Lista de requisitos, devemos identificar as classes que irão compor o diagrama;
+  2. Colocação dos relacionamentos entre as classes: nesse passo, analisamos as classes para verificar quais relacionamentos devemos colocar entre elas.
+- Diagrama de Classes de nível 2:
+  - O Diagrama de Classes de nível 2 é uma expansão do nível 1, no qual são detalhados os atributos advindos das associações. Esses atributos são chamados de atributos associados ou _atributos de ligação_ (RUMBAUGH et al., 1994);
+  - Na construção do Diagrama de Classe não são colocados os métodos das classes, o melhor momento para colocá-los é após a confecção dos Diagramas de Sequência.
