@@ -601,3 +601,21 @@
 - Diagrama de Classes de nível 2:
   - O Diagrama de Classes de nível 2 é uma expansão do nível 1, no qual são detalhados os atributos advindos das associações. Esses atributos são chamados de atributos associados ou _atributos de ligação_ (RUMBAUGH et al., 1994);
   - Na construção do Diagrama de Classe não são colocados os métodos das classes, o melhor momento para colocá-los é após a confecção dos Diagramas de Sequência.
+
+### Diagrama de Objetos
+
+- O Diagrama de Objetos tem por objetivo a visualização de alguns objetos nas classes;
+- Com ele é possível verificar se foram identificados todos os atributos necessários para as classes, se algum deles está na classe errada, e ter uma visão geral de como serão os objetos das classes quando o sistema for efetivamente usado;
+- Esse diagrama está amplamente associado ao Diagrama de Classes e pode ser considerado seu complemento, pois fornece uma visão dos valores armazenados pelos objetos em um determinado momento (GUEDES, 2018);
+- A construção desse diagrama tem como base o Diagrama de Classes de nível 1, em que cada classe é colocada e são atribuídos valores aos atributos ao lado de cada um deles (após os dois pontos, depois do nome do atributo e entre aspas);
+- Exemplo:
+
+```mermaid
+ classDiagram
+      class Carro {
+        - placa: ABC-1234
+        - modelo: Golf
+        - marca: VW
+        - cor: Vermelho
+      }
+```
