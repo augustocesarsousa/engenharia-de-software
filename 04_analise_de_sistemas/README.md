@@ -619,3 +619,65 @@
         - cor: Vermelho
       }
 ```
+
+## Diagrama de Sequência
+
+- A modelagem de um sistema usando a UML se baseia em três pilares:
+  1. O primeiro deles corresponde à visão dos processos, da organização dos Requisitos, das funções do sistema. Para a modelagem desses quesitos, trabalhamos com o Diagrama de Caso de Uso, a Prototipação de telas e as Histórias de Usuário;
+  2. O segundo pilar é voltado à visão dos objetos e das classes, na qual, além de listar todos os objetos envolvidos no problema, identificamos seus atributos e o relacionamento entre essas classes;
+  3. O terceiro pilar da UML é justamente a ligação desses dois primeiros por meio do Diagrama de Sequência.
+
+### Elementos do Diagrama de Sequência
+
+- Um Diagrama de Sequência é construído partindo das Histórias de Usuário e do Diagrama de Classes;
+- Construímos esse diagrama olhando tanto para a visão de processos (Casos de Uso e Histórias de Usuário) quanto para a visão de objetos e classes (Diagrama de Classes);
+- O Diagrama de Sequência procura determinar quais métodos de quais classes devem ser invocados e em qual ordem (sequência), para a realização completa dos eventos da tela;
+- Basicamente, esse diagrama "dá ênfase à ordenação temporal das mensagens" entre os objetos (BOOCH; RUMBAUGH; JACOBSON, 2012, p. 276);
+- Pela troca de mensagens entre os objetos, esse diagrama fornece uma visão dinâmica do processo, diferentemente dos Diagramas de Caso de Uso e de classes, que dão uma visão estática (DEBONI, 2003).
+
+#### Ator
+
+- Os atores utilizados em um Diagrama de Sequência são os mesmos que constam no Diagrama de Caso de Uso;
+- Os atores solicitam serviços ao sistema e iniciam e/ou finalizam um determinado processo (GUEDES, 2018);
+- Os atores serão representados por um boneco magro, tal qual no Diagrama de Caso de Uso, porém aqui o ator terá uma linha da vida;
+- A linha da vida indica os momentos em que o ator está interagindo com a tela:
+  - Se ela estiver pontilhada, indica que o ator não está manipulando a tela;
+  - Caso a linha esteja no formato de um retângulo fino, indica que ele está informando ou recebendo dados da tela, ou realizando alguma ação;
+  - Também dizemos que o ator está ativo/inativo quanto ao manuseio da tela.
+
+#### Objeto
+
+- No Diagrama de Sequência, usamos os objetos das classes envolvidas no processo;
+- Eles são representados com um retângulo e também contam com uma linha da vida;
+  - Esta representa o tempo em que um objeto existiu durante um processo, ou seja, os momentos em que seus métodos foram executados.
+- A linha da vida do objeto também é pontilhada, assim como a do ator;
+- No momento em que algum método da sua classe for invocado, a linha se transforma em um retângulo fino, indicando que ela ficou ativa;
+- Primeiramente é colocado o nome do objeto, depois o sinal de dois pontos e, finalmente, o nome da classe;
+- O nome do objeto é opcional, então é comum que ele seja representado com dois pontos no início seguidos do nome da classe.
+- É importante ressaltar que os objetos usados no diagrama devem ser os mesmos das classes do Diagrama de Classes.
+
+#### Estereótipo boundary
+
+- Um estereótipo boundary é um objeto especial que representa uma tela a ser manipulada pelo usuário;
+- Ele começa com o ator, que sempre interage com a tela e, em seguida, com os demais objetos das classes do sistema envolvidos no processo da tela.
+
+#### Mensagens
+
+- As mensagens são utilizadas para invocar um método de uma classe;
+- Como esse diagrama tem o objetivo de representar a sequência de chamadas dos métodos das classes, para que uma tela realize completamente sua função, usamos as mensagens nessa representação;
+- Basicamente, as mensagens são enviadas de um objeto para outro, da linha da vida de um objeto até a linha da vida de outro objeto (MELO, 2010);
+- Elas serão representadas por setas que saem do ator ou dos objetos e apontam para outros objetos;
+
+#### Autochamadas
+
+- Também denominadas _autodelegações_, as autochamadas são mensagens que um objeto passa para si mesmo;
+- São usadas quando se deseja invocar um método da própria classe;
+- Elas são representadas por setas que apontam para o próprio objeto;
+- As autochamadas também são utilizadas para representar a chamada de outras Histórias de Usuário.
+
+#### Retorno
+
+- Após a invocação de um método de uma classe, é possível fazer o retorno ao objeto que o chamou;
+- É comum que todas as chamadas (setas) tenham um retorno até chegarem ao ator que iniciou a sequência de chamadas;
+- Esse retorno ao ator indica que o controle da tela foi devolvido para ele, ou seja, a tela foi novamente apresentada para que a próxima ação seja realizada;
+- O retorno é representado por uma seta pontilhada com ou sem uma legenda.
