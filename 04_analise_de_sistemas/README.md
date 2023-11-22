@@ -733,3 +733,28 @@
   - Para representar os estados acontecendo ao mesmo tempo, podemos utilizar a barra de sincronização;
   - Ela faz com que uma transição permita que várias outras se dirijam a estados que irão ocorrer de maneira simultânea;
   - Após essa ocorrência, a barra também faz com que o processo volte a ser sequencial.
+
+### Diagrama de Atividades
+
+- Esse tipo de diagrama procura modelar um determinado processo, atividade, ou até mesmo um algoritmo, detalhando o passo a passo da execução;
+- É um diagrama utilizado não só na modelagem UML como também em quaisquer áreas que necessitam representar seus processos de negócio;
+- Nas teorias de análise mais antigas, esse diagrama era muito difundido e utilizado e tinha o nome de _Fluxograma_;
+- Trata-se de um diagrama que mostra a sequência de ações e condições para coordenar comportamento de baixo nível e dá ênfase aos detalhes de um processo (GUEDES, 2018);
+
+#### Elementos:
+
+- **Ação**:
+  - Uma ação representa um dos passos da atividade do diagrama;
+  - É uma parte do processo que deve ser realizada, normalmente nomeada com um verbo no infinitivo e um sujeito;
+  - O símbolo desse elemento é um retângulo com bordas arredondadas.
+- **Fluxo**:
+  - Representa a ligação entre duas ações, a passagem de uma ação para outra;
+  - o Fluxo é representado por uma seta.
+- **Nó de decisão**:
+  - Representa uma bifurcação na sequência de ações que pode levar a diversas opções (alternativas) dependendo de certas condições;
+- **Barra de sincronização**:
+  - Assim como no Diagrama de Transição de Estados, nesse diagrama também podemos utilizar a barra de sincronização quando desejamos que duas ações sejam realizadas ao mesmo tempo;
+  - Sua representação é a mesma, ou seja, uma barra de onde podem sair diversos fluxos apontando para as ações que precisam ser executadas de maneira simultânea.
+- **Colunas**:
+  - O Diagrama de Atividades pode ser construído com colunas onde em cada uma delas pode ser colocado um ator que faz parte do processo;
+  - Essas colunas, também conhecidas como raias de uma piscina, são importantes para que cada ação esteja colocada na respectiva coluna do ator responsável por ela;
