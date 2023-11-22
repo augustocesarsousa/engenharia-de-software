@@ -757,4 +757,24 @@
   - Sua representação é a mesma, ou seja, uma barra de onde podem sair diversos fluxos apontando para as ações que precisam ser executadas de maneira simultânea.
 - **Colunas**:
   - O Diagrama de Atividades pode ser construído com colunas onde em cada uma delas pode ser colocado um ator que faz parte do processo;
-  - Essas colunas, também conhecidas como raias de uma piscina, são importantes para que cada ação esteja colocada na respectiva coluna do ator responsável por ela;
+  - Essas colunas, também conhecidas como raias de uma piscina, são importantes para que cada ação esteja colocada na respectiva coluna do ator responsável por ela.
+
+### Diagrama de Pacotes
+
+- O Diagrama de Pacotes tem por objetivo organizar os elementos de um modelo e demonstrar as dependências entre eles (GUEDES, 2018);
+- Com esse diagrama, é possível segmentar os diagramas em funções e subfunções, sistemas e subsistemas, ou até mesmo em partições, conforme o ambiente em que um determinado componente irá atuar;
+- Segundo Guedes (2018), o Diagrama de Pacotes pode também representar:
+  - um conjunto de sistemas integrados;
+  - submódulos de um único sistema;
+  - a arquitetura de uma linguagem de programação;
+  - a arquitetura de um processo em desenvolvimento.
+- O Diagrama de Pacotes serve de auxílio a outros diagramas para melhorar a visualização da modelagem.
+
+#### Elementos
+
+- **Pacote**:
+  - O elemento básico desse diagrama é, obviamente, o pacote;
+  - É representado por um retângulo em que, no topo, é colocado o nome do pacote. Esse nome deve apresentar uma boa referência sobre os componentes que estão sendo empacotados.
+- **Dependência**:
+  - O elemento dependência faz a ligação entre os pacotes para indicar a relação que existe entre eles tanto na passagem de informações quanto das suas funções;
+  - Para essa ligação, usa-se uma seta pontilhada.
