@@ -700,3 +700,36 @@
   - Esse operador tem o objetivo de oferecer uma alternativa ao diagrama;
   - ALT corresponde à abreviatura do termo em inglês alternative;
   - Esse operador é muito parecido com o operador OPT, com a diferença de que, se a condição de guarda for falsa, é possível escrever algum procedimento no diagrama.
+
+## Diagramas suplementares da UML
+
+- A UML é dotada de outros diagramas que colaboram na modelagem da solução informatizada;
+- Tais diagramas, que são opcionais ou suplementares, são construídos com o objetivo de melhorar a visão dos processos e o funcionamento de certos aspectos complexos da modelagem.
+
+### Diagrama de Transição de Estados
+
+- O Diagrama de Transição de Estados (ou simplesmente Diagrama de Estados) demonstra graficamente a mudança de estado de um ou mais elementos ou objetos de um sistema por meio de um conjunto de transições (GUEDES, 2018);
+- O objetivo desse diagrama, então, é mostrar graficamente não só todos os estados que um objeto pode assumir, mas também de qual estado e para qual estado ele pode passar e em que condições isso ocorre.
+
+#### Elementos
+
+- **Estado**:
+  - Representa um estado em que o objeto se encontra em um determinado momento e quais as ações que são tomadas durante a passagem por esse estado;
+  - Um estado é representado por um retângulo com bordas arredondadas e com dois compartimentos:
+    - No primeiro compartimento deve ser colocado o nome do estado e na parte de baixo as ações que devem ser tomadas na passagem do objeto por esse estado.
+  - Essas ações podem ser explícitas, mostrando exatamente o que deve ser feito, ou pode ser mostrado somente o nome de um método da classe do objeto em questão;
+  - A palavra _do_ é opcional no compartimento da ação, ela indica que é a ação principal do estado;
+  - O nome do estado (primeiro compartimento) deve ser escrito no seguinte padrão (verbo no gerúndio + nome do objeto);
+  - O segundo compartimento do símbolo de estado pode conter ações de três tipos:
+    - entry: realizada quando o objeto assume o estado;
+    - do: executada enquanto o objeto se encontra no estado;
+    - exit: executada antes de o objeto mudar de estado.
+- **Transição**:
+  - É a passagem, de um determinado objeto, de um estado para outro;
+  - O símbolo para o elemento de transição é uma seta partindo de um estado para o próximo;
+  - Nela pode-se colocar uma legenda indicando qual será o próximo passo do processo ou o resultado do estado anterior.
+- **Barra de sincronização**:
+  - Em certos processos, é possível que dois estados tenham que acontecer ao mesmo tempo;
+  - Para representar os estados acontecendo ao mesmo tempo, podemos utilizar a barra de sincronização;
+  - Ela faz com que uma transição permita que várias outras se dirijam a estados que irão ocorrer de maneira simultânea;
+  - Após essa ocorrência, a barra também faz com que o processo volte a ser sequencial.
