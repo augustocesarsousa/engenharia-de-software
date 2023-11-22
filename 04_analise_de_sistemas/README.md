@@ -681,3 +681,22 @@
 - É comum que todas as chamadas (setas) tenham um retorno até chegarem ao ator que iniciou a sequência de chamadas;
 - Esse retorno ao ator indica que o controle da tela foi devolvido para ele, ou seja, a tela foi novamente apresentada para que a próxima ação seja realizada;
 - O retorno é representado por uma seta pontilhada com ou sem uma legenda.
+
+### Operadores do Diagrama de Sequência
+
+- Operador REF:
+  - Esse operador tem por objetivo fazer uma referência a uma parte de outro Diagrama de Sequência;
+  - REF corresponde à abreviatura do termo em inglês _reference_;
+  - É utilizado quando uma parte do diagrama se repete em vários Diagramas de Sequência;
+  - Em vez de repetir essa parte nos diversos diagramas, ela é construída somente uma vez, e os diagramas que necessitarem realizar o mesmo procedimento podem somente fazer uma referência a essa parte.
+- Operador OPT:
+  - Esse operador tem por objetivo mostrar que uma parte do Diagrama de Sequência é opcional;
+  - OPT corresponde à abreviatura do termo em inglês optional;
+  - Utilizamos uma condição de guarda, na qual a parte só será realizada se a condição for verdadeira.
+- Operador LOOP:
+  - O operador LOOP indica que uma determinada parte do Diagrama de Sequência será executada repetidas vezes, enquanto uma condição de guarda for verdadeira;
+  - Caso a condição nunca seja verdadeira, uma condição de break (quebra) pode ser colocada, ou seja, uma saída forçada da repetição.
+- Operador ALT:
+  - Esse operador tem o objetivo de oferecer uma alternativa ao diagrama;
+  - ALT corresponde à abreviatura do termo em inglês alternative;
+  - Esse operador é muito parecido com o operador OPT, com a diferença de que, se a condição de guarda for falsa, é possível escrever algum procedimento no diagrama.
