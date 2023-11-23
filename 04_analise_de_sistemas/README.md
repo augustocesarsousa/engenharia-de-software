@@ -778,3 +778,36 @@
 - **Dependência**:
   - O elemento dependência faz a ligação entre os pacotes para indicar a relação que existe entre eles tanto na passagem de informações quanto das suas funções;
   - Para essa ligação, usa-se uma seta pontilhada.
+
+## ATIVIDADES
+
+1. A Análise Estruturada foi um avanço no processo de modelagem de um sistema, com a introdução de diagramas como Fluxograma, DFD e Modelo de Dados. Esses diagramas ajudavam o analista no entendimento e mapeamento da solução dos problemas de negócio. Porém, essa estrutura não evitava completamente os problemas nos softwares produzidos. Explique o principal problema dessa teoria no funcionamento dos softwares.
+   R: Os programas conseguiam acessar os dados que estavam foram do seu escopo.
+2. Explique qual é o propósito dos Diagramas de Caso de Uso, de Classes e de Sequência da UML.
+   R: O Diagrama de Caso de Uso apresenta todos os Requisitos do sistema, bem como a interação com as entidades externas. O Diagrama de Classes modela as classes dos objetos, seus atributos, suas operações e relacionamento com outras classes. Por fim, o Diagrama de Sequência determina a sequência de troca de mensagens que devem ser trocadas entre os objetos do sistema para que um caso de uso realize completamente sua função.
+3. Quais foram as motivações para que os Métodos Ágeis se tornassem padrão da indústria de desenvolvimento de software?
+   R: A produção de um software era muito burocrática e tornava o processo muito engessado, onde na maioria dos casos acarretava em atrasos nas entregas, os Métodos Ágeis surgiram com o objetivo de adotar práticas eficientes em todo o processo de desenvolvimento, tornando o processo mais dinâmico.
+4. A História de Usuário é um importante artefato para o detalhamento de como deve ser implementado um caso de uso. Quais são os objetivos dos critérios de aceitação?
+   R: Atender os Requisitos do cliente por meio de verificações que o sistema deve fazer, dizer o que a História deve fazer, quais o procedimentos da tela para que se atinja o seu objetivo e também o que não deve ser feito.
+5. Cite e explique os elementos de um Diagrama de Caso de Uso.
+   R: Ator: representa as entidades externas ao sistema e que interagem com ele; Caso de Uso: representa um determinado requisito; Relacionamento: tem o objetivo de fazer as ligações entre os atores e casos de uso.
+6. Quais são os objetivos de se fazer protótipos das telas do sistema?
+   R: Tem o objetivo de tornar o sistema mais fácil para avaliação do cliente, possibilitando ajustes no decorrer do desenvolvimento.
+7. Explique o que é uma classe.
+   R: Uma classe é um modelo, uma espécie de "forma", onde através dela podemos criar objetos com características semelhantes.
+8. Quais são os cinco tipos de relacionamentos entre classes?
+   R: Associação, agregação, composição, classe de associação e herança.
+9. Qual é o objetivo de um Diagrama de Objetos?
+   R: Tem o objetivo a visualização de alguns objetos nas classes.
+10. Qual é o objetivo do Diagrama de Sequência?
+    R: Tem o objetivo de identificar a ordem em que os eventos ocorrem e determinar os métodos que serão chamados para atender a esses eventos, refletindo assim a interação entre os objetos envolvidos em um determinado processo.
+11. Cite os três elementos básicos de um Diagrama de Sequência.
+    R: Ator: possui os mesmos conceitos do Diagrama de Caso de Uso; Objeto: é o objeto da classe envolvido no processo; Estereótipo boundary: é um objeto especial que representa uma tela a ser manipulada pelo usuário.
+12. Cite quatro operadores que podem ser utilizados em um Diagrama de Sequência.
+    R: REF: tem por objetivo fazer uma referência a uma parte de outro Diagrama de Sequência; OPT: tem por objetivo mostrar que uma parte do Diagrama de Sequência é opcional; LOOP: indica que uma determinada parte do Diagrama de Sequência será executada repetidas vezes; ALT: tem o objetivo de oferecer uma alternativa ao diagrama.
+13. Qual é o objetivo do Diagrama de Transição de Estados?
+    R: Mostrar graficamente não só todos os estados que um objeto pode assumir, mas também de qual estado e para qual estado ele pode passar e em que condições isso ocorre.
+14. Quais são os quatro elementos básicos de um Diagrama de Atividades?
+    R: Ação: representa um dos passos da atividade do diagrama; Fluxo: representa a ligação entre duas ações, a passagem de uma ação para outra; Nó de decisão: representa uma bifurcação na sequência de ações que pode levar a diversas opções (alternativas); Barra de sincronização: é usado quando desejamos que duas ações sejam realizadas ao mesmo tempo.
+15. Quais são as aplicações de um Diagrama de Pacotes?
+    R: Pode ser aplicado em um conjunto de sistemas integrados, submódulos de um único sistema, a arquitetura de uma linguagem de programação e a arquitetura de um processo em desenvolvimento.
