@@ -24,3 +24,21 @@
 - A informação depende dos dados de que se dispõe e de outras informações relacionadas para ter um significado;
 - Cunha (2008) define conhecimento como o conteúdo, a informação ou a experiência que pode estar contida em documentos ou outras mídias bem como na vivência de cada pessoa;
 - Diferente dos dados e da informação, o conhecimento não pode ser descrito e registrado, pois depende da interpretação e das vivências pessoais e individuais.
+
+### Informação e sua importância nas organizações
+
+- Para Macedo e Caetano (2017), a competência pode ser definida como a capacidade de mobilizar saberes, habilidades, conhecimentos e informações de modo interdisciplinar, dentro de um contexto específico;
+- As competências não são apenas técnicas ou cognitivas, relacionadas a aprendizados sobre conceitos, informações e dados;
+- As competências técnicas e socioemocionais estão ligadas ao indivíduo, pois refletem conhecimentos e experiências internalizadas e aprendidas no decorrer de sua vida;
+- Estrutura para competências cognitivas e socioemocionais:
+  - Cognitivas:
+    - Capacidade mental para adquirir conhecimentos, ideias e experiências;
+    - Interpretar, refletir e extrapolar, com base no conhecimento adquirido.
+  - Socioemocionais:
+    - Capacidades individuais que:
+      - São manifestadas em padrões consistentes e comportamentos;
+      - Podem ser desenvolvidas mediante experiências de aprendizagem formal e informal;
+      - Influenciam importantes resultados socioeconômicos ao longo da vida da pessoa.
+- Para Fleury e Fleury (2001), o que permite à empresa competir no mercado não são seus produtos, mas as competências de seus colaboradores;
+- Para Kobashi, Tálamo e Smith (2004), não é possível armazenar conhecimento em um sistema digital;
+- A gestão de informações de uma empresa pode ser realizada sem o uso de ferramentas de computação ou de tecnologia da informação (TI).
