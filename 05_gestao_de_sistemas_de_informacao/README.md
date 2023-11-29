@@ -42,3 +42,15 @@
 - Para Fleury e Fleury (2001), o que permite à empresa competir no mercado não são seus produtos, mas as competências de seus colaboradores;
 - Para Kobashi, Tálamo e Smith (2004), não é possível armazenar conhecimento em um sistema digital;
 - A gestão de informações de uma empresa pode ser realizada sem o uso de ferramentas de computação ou de tecnologia da informação (TI).
+
+### Informação descentralizada e seus problemas
+
+- Um dos maiores desafios na gestão da informação no contexto empresarial é definir exatamente quais dados devem ser coletados;
+- A era da informação representa o momento em que a posse e utilização da informação passa a ter um papel central na organização social e econômica da sociedade;
+- Segundo o International Data Corporation (IDC), no ano de 2020 foram gerados 35 trilhões de gigabytes de dados (35 zettabytes) e o universo digital já armazena 500 quatrilhões de dados (YEZHKOVA; NADKARNI; STOLARSKI, 2020);
+- Os dados são armazenados digitalmente, em computadores e na internet, na forma de impulsos elétricos positivos (representados pelo dígito 1) e negativos (representados pelo dígito 0) que representam a menor quantidade de dados que pode ser armazenada ou transmitida digitalmente;
+- A essa unidade é dado o nome de bit (do termo em inglês Binary Digit, traduzido como Dígito Binário, por sua característica de só ser representada por dois dígitos: 0 ou 1);
+- No contexto atual os dados considerados úteis para a estratégia da empresa podem ter origem em diversas fontes e podem ser capturados de diversas maneiras e em formatos e mídias diferentes;
+- Segundo Viana, Dutra e Frazzon (2016), bilhões de dólares são gastos globalmente com a coleta e tratamento de dados inúteis, que, além do custo inerente a seu próprio processamento, podem também gerar decisões estratégicas equivocadas e causar enormes prejuízos por desperdício de tempo e investimento;
+- Com o desenvolvimento dos meios eletrônicos de comunicação e, principalmente, com as redes sociais, a comunicação entre empresa e consumidores se tornou muito mais complexa;
+- Assim, para que possa capturar todos esses dados, o sistema de informações da empresa precisa estar preparado para interagir com todos esses canais de comunicação, de modo a não perder oportunidades e solucionar problemas;
