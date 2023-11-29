@@ -53,4 +53,18 @@
 - No contexto atual os dados considerados úteis para a estratégia da empresa podem ter origem em diversas fontes e podem ser capturados de diversas maneiras e em formatos e mídias diferentes;
 - Segundo Viana, Dutra e Frazzon (2016), bilhões de dólares são gastos globalmente com a coleta e tratamento de dados inúteis, que, além do custo inerente a seu próprio processamento, podem também gerar decisões estratégicas equivocadas e causar enormes prejuízos por desperdício de tempo e investimento;
 - Com o desenvolvimento dos meios eletrônicos de comunicação e, principalmente, com as redes sociais, a comunicação entre empresa e consumidores se tornou muito mais complexa;
-- Assim, para que possa capturar todos esses dados, o sistema de informações da empresa precisa estar preparado para interagir com todos esses canais de comunicação, de modo a não perder oportunidades e solucionar problemas;
+- Assim, para que possa capturar todos esses dados, o sistema de informações da empresa precisa estar preparado para interagir com todos esses canais de comunicação, de modo a não perder oportunidades e solucionar problemas.
+
+### Desafios da gestão da informação
+
+- **Big Data**: termo criado para se referir a enorme quantidade de dados com os quais as empresas lidam;
+- **Internet das Coisas (IOT)**: segundo Carrion e Quaresma (2019), a IOT pode ser entendida como um ecossistema formado por sensores (smartphones, dispositivos vestíveis, como relógios digitais, roteadores) que fazem medições no ambiente em que estão, captam dados e os enviam para centros de processamento virtual (computação em nuvem), onde são armazenados, processados e analisados;
+- **Inteligência Artificial**: é uma área da ciência da computação que busca desenvolver sistemas inteligentes que são baseados na forma como o cérebro humano se organiza e lida com as tarefas complexas;
+- **7 Vs do Big Data**:
+  - Volume: é a característica mais relacionada ao conceito de Big Data. A cada dia são gerados cada vez mais dados, que são disponibilizados nas mais variadas fontes e formatos;
+  - Variedade: dados são gerados em formatos diferentes, como vídeo, áudio, textos relatório, fotografia etc. Contudo, a variedade também tem a ver com a falta de padronização do dado mesmo que esteja em um mesmo formato;
+  - Velocidade: o desenvolvimento das tecnologias de comunicação, notadamente a internet, trouxe rapidez para a coleta e tratamento de dados, mas também gerou uma maior pressão para que os processamentos possam fornecer respostas cada vez mais imediatas, em tempo real;
+  - Veracidade: essa talvez seja a característica mais difícil de ser analisada e uma das mais discutidas atualmente, principalmente quando se relaciona com a divulgação de notícias falsas (fake news). Uma informação inverídica ou que não pode ter sua veracidade confirmada gera análises incorretas e leva a decisões erradas;
+  - Valor: nem todos os dados coletados geram informações que podem trazer valor significativo para a empresa ou que cobrem os custos inerentes ao próprio processo de coleta e tratamento;
+  - Variabilidade: alguns tipos de dados apresentam alto grau de variabilidade, ou seja, mudam rapidamente, por exemplo, os dados meteorológicos, os dados de uma pesquisa de intenção de votos, a quantidade de visualizações de um vídeo ou de uma postagem, ou os valores de ações listadas na bolsa de valores (GANDOMI; HAIDER, 2015);
+  - Visualização: para que a grande massa de dados gerados, processados e transformados possa ser rapidamente analisada, é necessário que sejam desenvolvidas formas de rápida visualização, com o uso de ferramentas visuais (gráficos e painéis), que mostrem a informação de maneira clara e objetiva.
