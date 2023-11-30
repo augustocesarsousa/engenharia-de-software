@@ -68,3 +68,15 @@
   - Valor: nem todos os dados coletados geram informações que podem trazer valor significativo para a empresa ou que cobrem os custos inerentes ao próprio processo de coleta e tratamento;
   - Variabilidade: alguns tipos de dados apresentam alto grau de variabilidade, ou seja, mudam rapidamente, por exemplo, os dados meteorológicos, os dados de uma pesquisa de intenção de votos, a quantidade de visualizações de um vídeo ou de uma postagem, ou os valores de ações listadas na bolsa de valores (GANDOMI; HAIDER, 2015);
   - Visualização: para que a grande massa de dados gerados, processados e transformados possa ser rapidamente analisada, é necessário que sejam desenvolvidas formas de rápida visualização, com o uso de ferramentas visuais (gráficos e painéis), que mostrem a informação de maneira clara e objetiva.
+
+## Sistemas de informação e suas características
+
+### Sistemas de informação e suas características
+
+- No contexto da gestão empresarial, os sistemas podem ser classificados como **fechados** ou **abertos**;
+  - Para Padoveze (2010), o sistema fechado pode ser entendido como aquele que não interage com o ambiente externo, ou não depende de recursos ou informações provenientes do ambiente externo para que suas atividades sejam realizadas;
+  - Já o sistema aberto, segundo Padoveze (2010), interage, influencia e é influenciado pelo ambiente externo.
+- À medida que os modelos de gestão, em especial a gestão da produção, foram se desenvolvendo, o uso das informações na busca pela melhoria dos resultados e o aumento da produtividade foram se tornando cada vez mais presentes;
+- Um momento fundamental no desenvolvimento dos sistemas de informação no contexto empresarial foi o início da utilização de computadores no planejamento dos processos produtivos;
+- Os programas de planejamento das requisições de material (MRP – Material Requirements Planning) foram os primeiros sistemas informatizados de coleta, organização e gestão de dados;
+- Sistemas utilizados na gestão dos processos de produção e nas indústrias deram origem a sistemas ainda mais complexos, como o planejamento dos recursos empresariais (ERP – Enterprise Resources Planning).
