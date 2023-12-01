@@ -71,7 +71,7 @@
 
 ## Sistemas de informação e suas características
 
-### Sistemas de informação e suas características
+### Sistemas de informação na gestão das organizações
 
 - No contexto da gestão empresarial, os sistemas podem ser classificados como **fechados** ou **abertos**;
   - Para Padoveze (2010), o sistema fechado pode ser entendido como aquele que não interage com o ambiente externo, ou não depende de recursos ou informações provenientes do ambiente externo para que suas atividades sejam realizadas;
@@ -80,3 +80,17 @@
 - Um momento fundamental no desenvolvimento dos sistemas de informação no contexto empresarial foi o início da utilização de computadores no planejamento dos processos produtivos;
 - Os programas de planejamento das requisições de material (MRP – Material Requirements Planning) foram os primeiros sistemas informatizados de coleta, organização e gestão de dados;
 - Sistemas utilizados na gestão dos processos de produção e nas indústrias deram origem a sistemas ainda mais complexos, como o planejamento dos recursos empresariais (ERP – Enterprise Resources Planning).
+
+### Sistemas de informação: conceitos gerais
+
+- Os sistemas de informação, segundo Gil (2012), são formados por diversos tipos de recursos, como humanos (pessoas), materiais (equipamentos e máquinas) e tecnológicos (conhecimentos, programas e aplicativos e financeiros), com o objetivo de traduzir os dados em informações que possam ser usadas pela gestão;
+- Um importante componente dos sistemas de informação é a retroalimentação (feedback), pois as respostas externas aos outputs gerados podem dar origem a novas entradas no sistema (STAIR, 2015; BAZZOTI; GARCIA, 2007);
+- Para Foina (2013), a tecnologia da informação pode ser conceituada como ferramentas e métodos que possibilitam a coleta, a organização e o tratamento de dados e informação, que podem utilizar tecnologias manuais, mecânicas ou digitais;
+- A tecnologia da informação deve ser confiável e versátil, para lidar com a diversidade das variáveis que podem impactar o resultado da empresa;
+- Os sistemas de informação utilizados pelas empresas para gerenciar suas operações são compostos de diversos componentes interligados (O’BRIEN; MARAKAS, 2012; REZENDE, 2013);
+- São eles: hardware, software, dados, telecomunicações e pessoas;
+  - Hardware: são todos os componentes físicos necessários para coletar e processar dados, analisar e processar informações;
+  - Software: está relacionado aos sistemas, aplicativos, programas e processos que são utilizados na coleta e processamento dos dados;
+  - Telecomunicações: têm o objetivo de interligar os diversos hardwares e softwares utilizados pela empresa;
+  - Pessoas: incluem tanto os profissionais envolvidos na coleta e no processamento dos dados quanto os usuários finais das informações geradas;
+- As informações e os conhecimentos gerados pelos sistemas de informação também auxiliam a empresa a se manter atual e competitiva, aumentando os lucros e a competitividade e, consequentemente, a perenidade da empresa.
