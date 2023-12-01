@@ -94,3 +94,17 @@
   - Telecomunicações: têm o objetivo de interligar os diversos hardwares e softwares utilizados pela empresa;
   - Pessoas: incluem tanto os profissionais envolvidos na coleta e no processamento dos dados quanto os usuários finais das informações geradas;
 - As informações e os conhecimentos gerados pelos sistemas de informação também auxiliam a empresa a se manter atual e competitiva, aumentando os lucros e a competitividade e, consequentemente, a perenidade da empresa.
+
+### Principais sistemas de informação utilizados pelas organizações
+
+- Os sistemas podem ser classificados de acordo com a sua forma de utilização, o nível hierárquico a que se destinam e o tipo de retorno dado ao processo de tomada de decisões;
+- O sistema de informações de cada área da empresa precisa ser adequado às suas necessidades;
+- Os sistemas podem funcionar de maneira independente, mas, em geral, trabalham de maneira interligada com os demais sistemas das outras áreas funcionais;
+- Tipo de sistemas:
+  - Sistemas de Processamento de Transações (SPT): são os mais simples e têm como principal função automatizar os processos e transações realizadas no cotidiano da empresa;
+  - Sistemas de Automação de Escritórios (SAE): têm a função de possibilitar a coleta e manipulação de dados gerados na operação, para que sejam organizados e analisados;
+  - Sistema de Apoio a Decisões (SAD): submetem os dados coletados a ferramentas de análise e de modelagem para gerar informações utilizadas na solução de problemas, apoiando os gestores na tomada de decisão de modo rápido e seguro;
+  - Sistemas de Gestão do Conhecimento (KMS – Knowledge Management Systems): têm o objetivo de armazenar e organizar os conhecimentos desenvolvidos em todos os níveis organizacionais e possibilitar o compartilhamento de informações, análises, aprendizados e experiências;
+  - Sistemas de Suporte Executivo (SSE): apoiam as decisões estratégicas das empresas, tomadas pelos diretores e gestores de alto nível hierárquico, especialmente em relação à determinação de objetivos de longo prazo;
+  - Sistemas de Informação Gerencial (SIG): integram os diversos tipos de sistemas especialistas, possibilitando a gestão da empresa de maneira integrada;
+  - Enterprise Resource Planning (ERP): estão entre os mais utilizados nas empresas por serem um sistema integrado, que pode ser usado na gestão de cada uma das áreas da empresa, mas que por sua característica modular podem ser implantados separadamente em cada departamento.
