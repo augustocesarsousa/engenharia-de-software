@@ -108,3 +108,27 @@
   - Sistemas de Suporte Executivo (SSE): apoiam as decisões estratégicas das empresas, tomadas pelos diretores e gestores de alto nível hierárquico, especialmente em relação à determinação de objetivos de longo prazo;
   - Sistemas de Informação Gerencial (SIG): integram os diversos tipos de sistemas especialistas, possibilitando a gestão da empresa de maneira integrada;
   - Enterprise Resource Planning (ERP): estão entre os mais utilizados nas empresas por serem um sistema integrado, que pode ser usado na gestão de cada uma das áreas da empresa, mas que por sua característica modular podem ser implantados separadamente em cada departamento.
+
+### Benefícios dos sistemas de informação
+
+- Os sistemas de informação auxiliam a empresa a lidar tanto com os desafios externos quanto com os internos;
+- Para Uwizeyemungu e Raymond (2012), os sistemas ERP possuem três diferentes dimensões complementares e integradas:
+  - Técnica: adaptação e abertura;
+  - Organizacional: integração, completude, homogeneização, transversalidade e melhores práticas;
+  - Informacional: tempo real e simulação.
+- A dimensão **técnica** está relacionada à capacidade de a empresa adaptar seus processos e procedimentos para ajustá-los às características do sistema ERP;
+- A dimensão **organizacional** está ligada à capacidade de o sistema integrar, homogeneizar e padronizar os dados oriundos das diversas áreas da empresa;
+- A dimensão **informacional** está relacionada à rapidez, à qualidade e à utilidade das informações geradas pelo ERP.
+- Para lidar com toda a diversidade de dados, informações, análises e resultados que a empresa busca obter, é necessário utilizar sistemas de informação específicos para cada atividade ou área da empresa;
+- Com o desenvolvimento das tecnologias da informação, a quantidade de dados disponíveis que podem ser utilizados pelos diversos sistemas da empresa para gerar informações cresceu de modo vertiginoso nos últimos anos (PINTO; ELIAS; VIANNA, 2014);
+- Benefícios operacionais:
+  - Possibilidade de reduzir os custos totais das operações da empresa, ajudando a identificar os desperdícios e os processos que não agregam valor;
+  - Aumentar a produtividade, ao identificar os processos que não estão sendo realizados de modo eficiente;
+  - melhorar a qualidade final dos produtos e serviços da empresa, identificando os motivos que levam a defeitos ou problemas.
+- Benefícios táticos:
+  - Melhor o acesso a informações para os gerentes, trazendo mais rapidez e precisão às decisões e às ações da gestão;
+  - Incentiva a interação entre os gestores, descentralizando a tomada de decisão e melhorando o fluxo de informações dentro da estrutura organizacional.
+- Benefícios estratégicos:
+  - Ajuda os diretores a entender melhor as mudanças externas e auxiliam na adaptação da estratégia empresaria, por oferecer uma visão mais completa dos efeitos de cada decisão estratégica sobre os resultados e os planos da empresa.
+- Porém, o simples fato de investir na implantação de sistemas de informação não garante que todos esses benefícios sejam observados na operação da organização;
+- O sistema escolhido precisa ter uma relação custo-benefício adequada. Se as informações geradas não trouxerem ganhos estratégicos, táticos e operacionais, o uso dos sistemas de informação não terá sentido.
