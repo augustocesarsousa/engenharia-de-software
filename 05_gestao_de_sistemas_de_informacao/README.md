@@ -132,3 +132,25 @@
   - Ajuda os diretores a entender melhor as mudanças externas e auxiliam na adaptação da estratégia empresaria, por oferecer uma visão mais completa dos efeitos de cada decisão estratégica sobre os resultados e os planos da empresa.
 - Porém, o simples fato de investir na implantação de sistemas de informação não garante que todos esses benefícios sejam observados na operação da organização;
 - O sistema escolhido precisa ter uma relação custo-benefício adequada. Se as informações geradas não trouxerem ganhos estratégicos, táticos e operacionais, o uso dos sistemas de informação não terá sentido.
+
+## Sistemas de informação para cada nível organizacional
+
+### Sistemas de gestão da produção
+
+- A área de produção das indústrias foi a primeira a utilizar os sistemas de informação de maneira intensiva;
+- Sistemas de Planejamento e Controle da Produção (PCP): sistemas dedicados à gestão dos processos produtivos;
+- Os módulos de gestão dos sistemas PCP controlam os resultados obtidos, avaliam a qualidade e a quantidade de produtos produzidos, bem como os prazos e as datas planejadas, e realizam o replanejamento dos cronogramas de produção.
+
+#### Sistemas MRP e MRP II
+
+- Os sistemas PCP têm como origem os processos de planejamento baseados no conceito _Material Requirement Planning_ (MRP);
+- Os MRP foram os primeiros sistemas de informação desenvolvidos especificamente para o uso empresarial, por volta da década de 1960, após a criação dos primeiros computadores de uso comercial (CORRÊA; CORRÊA, 2011);
+- Para Martins (2015), a qualidade de dados e informações que alimentam os sistemas de informação é uma das principais preocupações da gestão;
+- Os sistemas MRP podem ser customizados para as necessidades e especificidades do processo de produção da empresa;
+- Com a evolução dos sistemas MRP, foram desenvolvidas melhorias e novos módulos que, ao serem integrados, deram origem a um sistema de planejamento e controle da produção bem mais complexo e completo: o Manufacturing Resources Planning (MRP II), ou planejamento de recursos de manufatura;
+- Além das listas de matérias-primas, partes e componentes geradas no sistema MRP, os sistemas MRP II também calculam as necessidades e realizam o planejamento das necessidades de equipamentos, mão de obra e demais recursos indispensáveis para o processo produtivo (MOREIRA, 2008; MARTINS, 2015);
+- Entre os principais módulos que compõem os sistemas MRP II, podem ser citados:
+  - Production Planning (PP): planejamento da produção, que é responsável por determinar os planos de longo prazo;
+  - Master Production Schedule (MPS): planejamento mestre da produção, que realiza o primeiro nível de desdobramento dos planos de longo prazo e determina os níveis de produção e estoque de cada produto;
+  - Capacity Requirements Planning (CRP): planejamento das necessidades de capacidade, realiza o desdobramento dos planos do MPS para cada unidade de produção, cada equipamento, cada linha de produção e cada posto de trabalho;
+  - Shop Floor Control (SFC): controle de fábrica, coleta dados e informações sobre cada um dos postos de trabalho e dos resultados da produção, retroalimentando o sistema;
