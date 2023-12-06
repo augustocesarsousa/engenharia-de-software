@@ -154,3 +154,33 @@
   - Master Production Schedule (MPS): planejamento mestre da produção, que realiza o primeiro nível de desdobramento dos planos de longo prazo e determina os níveis de produção e estoque de cada produto;
   - Capacity Requirements Planning (CRP): planejamento das necessidades de capacidade, realiza o desdobramento dos planos do MPS para cada unidade de produção, cada equipamento, cada linha de produção e cada posto de trabalho;
   - Shop Floor Control (SFC): controle de fábrica, coleta dados e informações sobre cada um dos postos de trabalho e dos resultados da produção, retroalimentando o sistema;
+
+### Sistemas de gestão da logística
+
+- O Council of Logistics Management (CLM), ou Conselho de Gestão Logística, entidade mundial que reúne profissionais e pesquisadores que se dedicam ao tema, define logística como:
+  - O processo de planejar, implementar e controlar eficientemente o custo correto, o fluxo e armazenagem de matérias-primas, estoques durante a produção e produtos acabados, e as informações relativas a essas atividades, desde o ponto de origem até o ponto de consumo, com o propósito de atender os requisitos do cliente. (CSCMP, 2021);
+- O principal tipo de sistema de informação utilizado nas atividades relacionadas à armazenagem é o _Warehouse Management System_ (WMS), ou _Sistema de Gestão de Armazéns_ (SGA), que planeja e controla os processos realizados nos armazéns, depósitos e centros de distribuição da empresa (COSTA; GOBBO, 2008; ZHOU; FEI, 2016);
+- Tarefas do SGA:
+  - Gerenciamento dos níveis de estoques;
+  - Expedição dos pedidos;
+  - Roteamento da expedição;
+  - Atribuições e carga de trabalho do encarregado da expedição;
+  - Estimativa da disponibilidade dos produtos.
+- Sistemas de gerenciamento de transportes (SGT): envolve os transporte e a roteirização de entrega;
+- Tarefas do SGT:
+  - Consolidação dos embarques;
+  - Roteamento dos veículos;
+  - Seleção do modo de transporte;
+  - Reclamações;
+  - Rastreamento;
+  - Pagamento de contas;
+  - Auditoria das contas dos fretes.
+- A roteirização das entregas é um dos processos mais complexos desenvolvidos pelos sistemas de informação devido à diversidade de variáveis envolvidas (COSTA et al., 2017);
+- Veículos Urbanos de Carga (VUC): caminhões leves e semileves, podem circular entre as 6 e as 10h da manhã;
+- Sistemas de Gestão de Pedidos (SGP): fazem a relação entre o setor logístico, o setor comercial e o setor financeiro e realizam o faturamento das notas fiscais;
+- Tarefas do SGP:
+  - Disponibilidade de estoque;
+  - Verificação de crédito;
+  - Faturamento;
+  - Alocação do produto aos clientes;
+  - Local do preenchimento.
