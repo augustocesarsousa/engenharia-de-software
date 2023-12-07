@@ -184,3 +184,30 @@
   - Faturamento;
   - Alocação do produto aos clientes;
   - Local do preenchimento.
+
+### Sistemas de marketing, sistemas comerciais e CRM
+
+- As áreas comercial e de marketing de uma empresa, apesar de relacionadas, desenvolvem atividades diferentes;
+- Segundo Kotler e Keller (2019, p. 30), marketing pode ser definido como “o processo de planejar e executar a concepção, a determinação de preços, a promoção e a distribuição de ideias, bens e serviços para criar negociações que satisfaçam metas individuais e organizacionais”;
+- Os sistemas de informação utilizados nas áreas comercial e de marketing precisam estar interligados e lidar com uma enorme quantidade de dados oriundos das mais variadas fontes internas e externas;
+
+#### Sistemas de informação de marketing (SIM)
+
+- Os sistemas de informação de marketing (SIM) são estruturados para monitorar constantemente diversas fontes de dados externas e internas sobre essas variáveis que podem trazer impactos negativos ou positivos, identificando ameaças e oportunidades para a empresa, seja no longo, médio ou curto prazo;
+- Para Mattar et al. (2009), os SIM são compostos de diferentes sistemas interdependentes e relacionados, que têm como objetivo coletar dados sobre o ambiente externo, os concorrentes, o mercado e a empresa, processar esses dados e, por meio deles, gerar informações para que as diversas áreas da empresa possam tomar decisões;
+- O conceito de _Inteligência Competitiva_ (IC) é a base sobre a qual os SIM são desenvolvidos;
+- Sistemas de pesquisas de marketing (SPM): têm o objetivo de realizar levantamento, painéis ou pesquisas que possam ser realizados em um determinado período ou de modo constante, com o objetivo de coletar dados, percepções e sentimentos de clientes sobre uma determinada situação específica;
+- Sistemas de informações competitivas (SIC): têm o objetivo de monitorar as ações das empresas concorrentes.
+
+#### Sistemas de gestão comercial
+
+- Sistemas de informações internas (SII): têm o objetivo de tratar todos os dados gerados nas atividades realizadas pelas diversas áreas da empresa durante seus processos diários;
+- As análises desenvolvidas pelos SII permitem que tanto gestores da área de marketing quanto da área comercial possam monitorar uma série de indicadores sobre o trabalho e os resultados obtidos por meio das estratégias comerciais e de marketing;
+- Os indicadores de desempenho, também conhecidos pelo termo _Key Performance Indicators_ (KPI), são índices ou valores que servem de referência ou como forma de medir o desempenho de uma determinada atividade ou parâmetro em relação a uma meta definida (CAXITO, 2020).
+
+#### CRM – Customer Relationship Management
+
+- Entre os sistemas de informação em marketing, um dos utilizados na área comercial são os sistemas de gestão do relacionamento com os clientes, mais conhecidos pela sigla CRM (Customer Relationship Management);
+- O CRM reúne as informações sobre os clientes, sendo elas provenientes de diversas fontes de dados diferentes para que a empresa possa aumentar a satisfação do cliente com os produtos e serviços prestados, gerando lealdade e fidelidade, reduzindo os custos de localização, aquisição e conquista de clientes (SCUSSEL et al., 2017; SOUSA JÚNIOR, 2019);
+- Além dos ganhos comerciais, o uso de sistemas de CRM influencia toda a estratégia de negócios (GREENBERG, 2001);
+- O CRM identifica motivos e possibilita que sejam tomadas ações corretivas nos casos em que o cliente se sentir insatisfeito (DEMO et al., 2015; LAUDON; LAUDON, 2014).
