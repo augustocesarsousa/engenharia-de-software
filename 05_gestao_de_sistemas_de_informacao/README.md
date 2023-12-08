@@ -225,3 +225,43 @@
 - O SPED é um sistema digital que tem por objetivo recepcionar e validar os livros e documentos contábeis e fiscais das empresas;
 - Devido à importância e confiabilidade das informações geradas pelos sistemas de informação para atender às exigências do SPED, elas podem ser usadas pela gestão das empresas na tomada de decisão estratégica;
 - Os relatórios contábeis e fiscais, tais como balancetes, balanços e demonstrativos de resultado do exercício (DRE), são desenvolvidos pelos SIC de acordo com os padrões exigidos pela legislação.
+
+### Sistemas de gestão de Recursos Humanos
+
+- Recursos Humanos (RH): responsável pela gestão de pessoas;
+- Departamento de Pessoal (DP): responsável pelos aspectos burocráticos e legais;
+- Na maioria das organizações, esses dois setores atuam em conjunto e, muitas vezes, algumas das suas atividades são realizadas pelos mesmos profissionais;
+
+#### Departamento de Pessoal
+
+- As atividades desenvolvidas pelo DP estão ligadas ao relacionamento legal que se estabelece entre a empresa e seus empregados;
+- O principal papel do DP é garantir que todos os direitos e deveres do empregado, estabelecidos na Consolidação das Leis do Trabalho (CLT), sejam cumpridos;
+- Os sistemas de informação utilizados no DP precisam levar em consideração as exigências legais que regem a relação de trabalho;
+- A partir do ano de 2014, com a promulgação do Decreto n. 8.373 (BRASIL, 2014), as empresas passaram a ter a obrigação legal de enviar mensalmente os dados sobre seus empregados para o Sistema de Escrituração Fiscal Digital das Obrigações Fiscais Previdenciárias e Trabalhistas, mais conhecido como eSocia;
+- Entre as informações geradas pelos sistemas da empresa e transmitidas ao eSocial, estão incluídos (BRASIL, 2014):
+  - Cadastro Geral de Empregados e Desempregados (CAGED);
+  - Guia de Recolhimento do FGTS e de Informações à Previdência Social (GFIP);
+  - Carteira de Trabalho e Previdência Social (CTPS);
+  - Comunicação de Acidente de Trabalho (CAT);
+  - Livro de Registro de Empregados (LRE);
+  - Relação Anual de Informações Sociais (RAIS);
+  - Comunicação de Dispensa (CD);
+  - Perfil Profissiográfico Previdenciário (PPP);
+  - Declaração do Imposto de Renda Retido na Fonte (DIRF);
+  - Quadro de Horário de Trabalho (QHT);
+  - Guia da Previdência Social (GPS);
+  - Guia de Recolhimento do FGTS (GRF);
+  - Folha de pagamento;
+  - Declaração de Débitos e Créditos Tributários Federais (DCTF).
+- O objetivo do eSocial é reunir, em uma só plataforma, todos os dados relativos aos empregados legalmente contratados por pessoas físicas e jurídicas e informações sobre as obrigações originadas por esse contrato de trabalho, sejam elas trabalhistas, previdenciárias ou tributárias.
+
+#### Departamento de Recursos Humanos
+
+- A área de RH tem como objetivo principal fazer a gestão das pessoas quanto aos aspectos profissionais, de desenvolvimento, crescimento e carreira;
+- Chiavenato (2020) divide a atuação dessa área em seis atividades ou processos principais:
+  - Processo de agregar pessoas: é responsável por recrutar e selecionar pessoas;
+  - Processo de aplicar pessoas: o desenho da estrutura hierárquica da empresa e seu organograma, a descrição das atividades de cada cargo e os indicadores de trabalho cobrados de cada funcionário são funções desse processo;
+  - Processo de desenvolver pessoas: está ligado à gestão do conhecimento, ao treinamento e desenvolvimento das pessoas e da empresa;
+  - Processo de manter pessoas: está relacionado à segurança no trabalho e à manutenção da qualidade de vida do trabalhador, em especial em relação aos impactos do trabalho sobre a saúde;
+  - Processo de recompensar pessoas: está relacionado à remuneração dos funcionários;
+  - Processo de monitorar pessoas: é responsável por registrar e gerenciar o banco de dados com todos os registros referentes à atuação do funcionário na empresa, o que inclui tanto seus resultados quanto seu histórico disciplinar e todos os registros legais relacionados ao contrato de trabalho.
