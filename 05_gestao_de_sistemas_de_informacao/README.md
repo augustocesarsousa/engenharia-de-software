@@ -211,3 +211,17 @@
 - O CRM reúne as informações sobre os clientes, sendo elas provenientes de diversas fontes de dados diferentes para que a empresa possa aumentar a satisfação do cliente com os produtos e serviços prestados, gerando lealdade e fidelidade, reduzindo os custos de localização, aquisição e conquista de clientes (SCUSSEL et al., 2017; SOUSA JÚNIOR, 2019);
 - Além dos ganhos comerciais, o uso de sistemas de CRM influencia toda a estratégia de negócios (GREENBERG, 2001);
 - O CRM identifica motivos e possibilita que sejam tomadas ações corretivas nos casos em que o cliente se sentir insatisfeito (DEMO et al., 2015; LAUDON; LAUDON, 2014).
+
+### Sistemas da área fiscal, financeira e contábil
+
+- Os departamentos que lidam com a gestão e o registro das atividades econômicas e financeiras da empresa são os que mais utilizam os sistemas de gestão da informação;
+- Para lidar com a grande quantidade de dados gerados, os setores de finanças e contabilidade utilizam sistemas de informação específicos (ALBERTIN; ALBERTIN, 2012);
+- Sistemas de informação em finanças (SIF):
+  - Administração de caixa;
+  - Administração de investimentos;
+  - Orçamentos de capital;
+  - Planejamento financeiro.
+- A implantação, pelo governo federal, do Sistema Público de Escrituração Digital (SPED), por meio do Decreto n. 6.022/2007, trouxe uma série de exigências que levaram as empresas a investir em sistemas de informação contábeis, para garantir a fidelidade e a confiança dos dados fiscais enviados mensalmente para o sistema governamental;
+- O SPED é um sistema digital que tem por objetivo recepcionar e validar os livros e documentos contábeis e fiscais das empresas;
+- Devido à importância e confiabilidade das informações geradas pelos sistemas de informação para atender às exigências do SPED, elas podem ser usadas pela gestão das empresas na tomada de decisão estratégica;
+- Os relatórios contábeis e fiscais, tais como balancetes, balanços e demonstrativos de resultado do exercício (DRE), são desenvolvidos pelos SIC de acordo com os padrões exigidos pela legislação.
