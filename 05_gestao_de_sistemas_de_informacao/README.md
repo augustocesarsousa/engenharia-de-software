@@ -297,3 +297,14 @@
 - Continuidade: mede a capacidade de o sistema operar sem paradas ou falhas que comprometam as atividades e os processos realizados pelos usuários;
 - Tempestividade: é a medida da rapidez com que o sistema processa as informações e as disponibiliza para o usuário – a necessidade de rapidez é diferente para cada usuário e para cada processo;
 - Satisfação do usuário: é medida pela percepção final dos usuários em relação a todos os aspectos que compõem a sua experiência na utilização dos sistemas de informação.
+
+### Inovação e sistemas de informação
+
+- Um dos temas mais relevantes e presentes nas discussões sobre estratégia nas empresas contemporâneas é a inovação;
+- No contexto empresarial, a inovação pode ser entendida como o desenvolvimento de novos processos, atividades, modelos de negócios, produtos e serviços que tragam melhorias significativas para a empresa, aumentando sua competitividade e sua eficiência (FERNANDES; FERREIRA; RAPOSO, 2013);
+- Caxito (2020, p. 54) afirma que: “não só as empresas inovam constantemente, como a própria sociedade passa por processos de inovação, invenção e reinvenção. Muitas das inovações implantadas pelas empresas surgem exatamente das mudanças sociais, culturais e demográficas da população;
+- A interação entre empresa e mercado – necessária para que a empresa colete dados e informações relevantes, a fim de que o processo de inovação possa ocorrer é mediada pelos SI, em especial os sistemas de informação em marketing e os de inteligência competitiva organizacional (ICO), que realizam o monitoramento e a coleta constante do meio ambiente tecnológico, cultural, político, social e demográfico;
+- No contexto da inovação, os sistemas de informação auxiliam a empresa em três importantes momentos sequenciais e inter-relacionados (CHOO, 2006);
+  1. Envolve a parte operacional da coleta, do tratamento e da análise de dados externos, que pode ser feita com a utilização de diversas ferramentas, como o monitoramento de redes sociais, a realização de pesquisas de mercado, a aquisição de bases de dados, criadas por empresas especializadas, ou a participação em redes de conhecimento;
+  2. Internalização dessas informações e sua combinação com os conhecimentos anteriores e as competências internas da organização, com o objetivo de gerar novos conhecimentos e aprendizados, além de insights, ideias e projetos, e, ainda, aproveitar as oportunidades de lançamento de produtos, serviços ou novos modelos de negócios inovadores;
+  3. O sistema de informação apoia a inovação nas empresas, é a tomada de decisão sobre quais ideias e projetos têm maior potencial para serem desenvolvidos e implantados. Os sistemas de apoio à decisão e os de informações internas são alguns dos tipos de sistemas relacionados com esse momento (ALETTA; SILVA; SANTOS, 2017).
