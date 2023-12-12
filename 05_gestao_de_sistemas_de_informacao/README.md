@@ -265,3 +265,35 @@
   - Processo de manter pessoas: está relacionado à segurança no trabalho e à manutenção da qualidade de vida do trabalhador, em especial em relação aos impactos do trabalho sobre a saúde;
   - Processo de recompensar pessoas: está relacionado à remuneração dos funcionários;
   - Processo de monitorar pessoas: é responsável por registrar e gerenciar o banco de dados com todos os registros referentes à atuação do funcionário na empresa, o que inclui tanto seus resultados quanto seu histórico disciplinar e todos os registros legais relacionados ao contrato de trabalho.
+
+## Controle, monitoramento e segurança
+
+### Gestão dos sistemas de informação
+
+- Diversas são as variáveis que podem ser medidas para acompanhar o desempenho dos SI utilizados em cada uma das áreas da empresa (CÔRTES, 2017);
+- Dias (2002) sugere que o foco principal deve ser a satisfação das necessidades dos usuários do sistema, bem como o aumento da eficiência dos processos empresariais, pois o motivo que justifica os investimentos na escolha, aquisição, implantação e gestão de um sistema de informação é a melhoria da qualidade das atividades e das decisões tomadas na empresa;
+- Dias (2002) propõe um modelo com diversas métricas para a gestão de sistemas de informação, que leva em consideração diferentes dimensões técnicas e comportamentais que influenciam a percepção de satisfação do usuário. Com base no ponto de vista do usuário final, o modelo avalia quatro dimensões dos SI:
+  - Valor adicionado;
+  - Uso, que abrange características relacionadas aos princípios de utilidade e usabilidade;
+  - Custo, também associado ao princípio da usabilidade;
+  - Confiabilidade, referente ao princípio da qualidade.
+
+#### Princípio da utilidade
+
+- Abrangência: mede a capacidade do sistema de realizar todas as rotinas e atividades para as quais foi parametrizado;
+- Funcionalidade: relaciona-se à capacidade do sistema de atender às necessidades e realizar as atividades do usuário final;
+- Em alguns casos, os processos do usuário precisam ser adaptados para que possam ser realizados pelo sistema. Outras vezes, é o sistema que precisa ser ajustado para fazer a atividade da maneira requerida;
+- Para Colangelo Filho (2009), durante o desenvolvimento do projeto de implantação do sistema, definir os objetivos e resultados esperados é um passo importante, pois informações ou análises que não serão utilizadas pelos usuários finais são características não funcionais do sistema, podendo representar custos desnecessários relacionados à coleta e ao processamento dos dados.
+
+#### Princípio da usabilidade
+
+- Interface com o usuário: pode ser entendida como a forma pela qual o usuário se relaciona com o sistema;
+- Operacionalidade do sistema: segundo aspecto do princípio da usabilidade, estando ligada ao desempenho e à confiabilidade do sistema;
+- Flexibilidade do sistema: a capacidade do sistema de se adaptar ou, ainda, a facilidade com que os parâmetros do sistema podem ser ajustados para atender às necessidades dos usuários.
+
+#### Princípio da qualidade
+
+- Eficiência: pode ser medida por uma série de indicadores, como consistência, continuidade, correção e precisão;
+- Continuidade: mede a capacidade de o sistema operar sem paradas ou falhas que comprometam as atividades e os processos realizados pelos usuários;
+- Tempestividade: é a medida da rapidez com que o sistema processa as informações e as disponibiliza para o usuário – a necessidade de rapidez é diferente para cada usuário e para cada processo;
+- Satisfação do usuário: é medida pela percepção final dos usuários em relação a todos os aspectos que compõem a sua experiência na utilização dos sistemas de informação.
