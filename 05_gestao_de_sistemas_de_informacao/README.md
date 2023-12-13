@@ -336,3 +336,13 @@
   - Princípio da responsabilização e prestação de contas: as empresas responsáveis pelos bancos de dados e pelas informações devem prestar conta aos órgãos competentes sobre as medidas técnicas e processuais tomadas, para que todos os princípios acima citados sejam respeitados;
   - Princípio da não discriminação: os dados coletados não podem ser usados pela empresa ou por quaisquer outras pessoas e organizações que tenham acesso a eles para discriminar, segregar ou constranger o indivíduo por característica de qualquer natureza, seja ela racial, étnica, de gênero, dorientação sexual, condição de saúde ou deficiência, ou por suas crenças ou convicções políticas, religiosas, esportivas ou culturais;
 - Para garantir que a LGPD seja colocada em prática de maneira efetiva, a lei também criou a Autoridade Nacional de Proteção de Dados (ANPD), responsável por realizar o acompanhamento, o controle e a auditoria de todas as situações que se enquadrem na lei (BRASIL, 2018).
+
+## Business Intelligence, Big Data e Inteligência Artificial
+
+### Business Intelligence
+
+- O uso de informações para gerar análises e criar valor por meio do atendimento de necessidades e desejos dos clientes ganhou dimensões tão importantes em nossa sociedade que é considerado um novo momento na história da economia em nossa civilização;
+- A centralidade da informação como principal fonte de geração de valor econômico é confirmada pela valorização das empresas ligadas à área de tecnologia e informação;
+- A empresa precisa contar com ferramentas e conhecimentos que permitam que as informações e os dados possam ser rapidamente analisados para subsidiar a tomada de decisões, apoiar a implantação das estratégias e gerenciar a execução destas;
+- Os sistemas de informação precisam estar preparados para lidar com a multiplicidade de informações e realizar análises utilizando conceitos matemáticos e estatísticos que possibilitem identificar conexões e relações. Esse processo de análise é conhecido como _Business Intelligence_ (BI);
+- É importante entender que o BI não é um sistema de informações, software, aplicativo nem uma ferramenta específica, mas um processo que tem como finalidade gerar informações e conhecimentos que podem ajudar a empresa a atingir seus objetivos.
