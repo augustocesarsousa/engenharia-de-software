@@ -360,3 +360,15 @@
 - Uma das tecnologias utilizadas pelos sistemas Big Data é o Hadoop, uma plataforma de fonte aberta, desenvolvida pela Apache Software, que conta com a colaboração de milhares de desenvolvedores voluntários. Segundo Syed (2013), a plataforma é especializada no tratamento de dados não estruturados e está preparada para lidar simultaneamente com enormes quantidades de dados (medidos em petabytes – o equivalente a 1.125.899.906.842.624 bytes);
 - O Hadoop foi desenvolvido com base nas tecnologias de análise de dados desenvolvidas pela empresa Google, conhecidas como MapReduce, criadas para organizar informações não estruturadas e identificar padrões em textos e postagens. O MapReduce é uma das tecnologias utilizadas nos algoritmos de classificação da ferramenta de pesquisa do Google;
 - As empresas que já utilizam tecnologias de Big Data têm conseguido se destacar no ambiente concorrencial pela rapidez com que conseguem tomar decisões e implementar ações.
+
+### Inteligência Artificial
+
+- Para compreender a Inteligência Artificial, é preciso antes entender o conceito de machine learning (aprendizado de máquinas);
+- O processo pelo qual os softwares aprendem a tomar decisões é embasado no processo de aprendizado humano;
+- O aprendizado de máquina pode ser entendido como a forma pela qual os computadores aprendem a analisar as informações disponíveis dentro de um determinado contexto e a tomar decisões, recolher dados de feedback e aprender com os acertos e erros cometidos;
+- Com base nesses aprendizados, os softwares também mudam seu “comportamento” ao tomar decisões;
+- Os softwares de inteligência podem usar três diferentes estratégias ou abordagens para realizar o processo de aprendizagem:
+  - Aprendizado supervisionado: o sistema analisa um conjunto de dados coletados e tenta identificar padrões previamente estabelecidos nos quais eles podem ser organizados e classificados. Após a identificação e o aprendizado desses padrões, o sistema pode ser utilizado para classificar novos dados. Esse tipo de aprendizado é utilizado quando o sistema precisa lidar com dados estruturados;
+  - Aprendizado não supervisionado: o software inicia o processo de aprendizagem sem ter nenhum sistema de classificação ou padrões previamente estabelecidos. O próprio sistema analisa os dados disponíveis e tenta identificar possíveis formas de classificá-los. Esse tipo de aprendizado de máquina é usado quando é preciso lidar com uma enorme quantidade de dados não estruturados;
+  - Aprendizado por reforço: usa como estratégia de aprendizagem a tentativa e o erro. O software aprende pela realização de milhares de simulações e por meio dos resultados obtidos. O aprendizado por reforço é usado principalmente no desenvolvimento de inteligências artificiais utilizadas em robôs.
+- A abordagem conhecida como _deep learning_ (aprendizagem profunda) utiliza o conceito das redes neurais, baseado na forma como o cérebro humano aprende. O aprendizado acontece pela criação de relações entre os dados, produzindo redes interconectadas compostas de milhões de nós (que podem ser comparados aos neurônios do cérebro humano).
