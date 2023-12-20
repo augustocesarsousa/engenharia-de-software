@@ -15,3 +15,17 @@
 - Conforme dados da ABES (Associação Brasileira de Empresas de Software), o Brasil está em 1º lugar na América Latina em investimentos na área de software, e em 9º lugar mundialmente;
 - O engenheiro de software é o responsável pela gestão consciente de recursos humanos, de materiais financeiros e tecnológicos necessários para o desenvolvimento do software e de processos de desenvolvimento, desde a coleta de requisitos até a entrega do software em sua versão final;
 - A atividade do engenheiro de software está sendo regulamentada pela Resolução n. 1.100 do CONFEA (Conselho Federal de Engenharia e Agronomia), a qual defende que esse profissional integra o grupo dos engenheiros eletricistas, tendo direitos e deveres de um engenheiro conforme a legislação em vigor (CONFEA, 2018).
+
+### A prática da engenharia de software
+
+- O engenheiro de software é um profissional de inovação e um projetista;
+- A inovação em engenharia de software pode acontecer de diferentes formas:
+  - A primeira, mais frequente, é denominada **inovação incremental** ou melhoria contínua;
+  - A segunda, denominada **inovação radical**, consiste na criação de algo totalmente novo, do "zero".
+- Métodos do desenvolvimento de software:
+  - **Engenharia de requisitos**: consiste na definição, com a participação do cliente ou usuário, do que o software necessita ter em termos de funcionalidade, requisitos de segurança, aparência das telas, botões, menus, compatibilidade com sistemas operacionais específicos, dentre outros;
+  - **Planejamento**: é a fase criativa do desenvolvimento de software. Envolve definir a sua arquitetura; criar esboços das telas; definir os diagramas básicos (diagramas de classes e atividades, por exemplo) e as linguagens de programação a serem utilizadas para cada funcionalidade do software;
+  - **Desenvolvimento ou codificação do software**: é a fase de desenvolvimento do software, durante o processo de desenvolvimento, podem surgir incidentes ou problemas, forçando o projeto a ser modificado, ou erros podem passar despercebidos e somente aparecer quando o software estiver concluído;
+  - **Fase de testes**: após desenvolvido e codificado, o software deve ser testado – atividade que deve ser repetida sempre que necessária. Isso se deve porque erros – mais conhecidos como bugs – podem custar caro, principalmente se o software já estiver em fase de lançamento;
+  - **Manutenção e melhorias**: após o software ser desenvolvido e lançado, é necessária a realização de manutenção e melhorias contínuas.
+- Além dos cinco métodos descritos, é importante ressaltar que, como em toda profissão, a prática de engenharia de software deve se ater a princípios éticos, de modo que os resultados do trabalho do profissional não prejudiquem a si e a organização ou o cliente.
