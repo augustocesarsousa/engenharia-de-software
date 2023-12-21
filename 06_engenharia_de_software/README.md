@@ -29,3 +29,18 @@
   - **Fase de testes**: após desenvolvido e codificado, o software deve ser testado – atividade que deve ser repetida sempre que necessária. Isso se deve porque erros – mais conhecidos como bugs – podem custar caro, principalmente se o software já estiver em fase de lançamento;
   - **Manutenção e melhorias**: após o software ser desenvolvido e lançado, é necessária a realização de manutenção e melhorias contínuas.
 - Além dos cinco métodos descritos, é importante ressaltar que, como em toda profissão, a prática de engenharia de software deve se ater a princípios éticos, de modo que os resultados do trabalho do profissional não prejudiquem a si e a organização ou o cliente.
+
+### O engenheiro de software e outros profissionais
+
+- Em uma organização, o engenheiro de software pode assumir várias funções, atuando no desenvolvimento de software, na gestão de equipes ou mesmo como consultor;
+- O engenheiro de software é um profissional que trabalha com equipes de diferentes áreas do conhecimento;
+- Constantine (1993 apud PRESSMAN; MAXIM, 2016) enumera paradigmas, ou padrões, para a formação de equipes de desenvolvimento:
+  - **Paradigma fechado**: a principal característica é a existência de uma hierarquia formal entre gestores e colaboradores, em que se predomina a ordem. Porém, essa estrutura pode não ser ideal quando se necessita desenvolver a criatividade e a inovação nas equipes de trabalho, uma vez que a comunicação entre os membros, nesse paradigma, tende a ser mais restrita;
+  - **Paradigma randômico**: o que predomina é a iniciativa individual dos membros da equipe. Opostamente ao paradigma fechado, esse é mais adequado para o desenvolvimento de inovações. Porém, por depender de decisões individuais, podem surgir conflitos, caso seja preciso agir de modo mais ordenado, uma vez que nesse paradigma a possibilidade de surgirem divergências de opiniões é maior;
+  - **Paradigma sincronizado**: o problema é segmentado de modo que os membros da equipe organizem-se para que cada um trabalhe em uma parte. Porém, a comunicação entre os membros, nesse caso, é prejudicada, uma vez que cada equipe, desenvolvendo apenas uma parte do software, terá conhecimento somente da parte que desenvolve, tendo pouco ou nenhum conhecimento das demais partes;
+  - **Paradigma aberto**: predominam-se a colaboração, a comunicação e o consenso nas decisões. Para projetos inovadores e mais complexos, equipes estruturadas nesse paradigma tendem a se destacar;
+- Sommerville (2011) enumera quatro fatores essenciais no gerenciamento de equipes:
+  - **Consistência**: diz respeito à valorização por igual de cada membro da equipe, considerando que as pessoas não devem sentir que seu trabalho é desvalorizado ou subvalorizado;
+  - **Inclusão**: é derivada da consistência. Uma vez que o trabalho de um profissional deve ser valorizado, as propostas apresentadas por este devem ser levadas em consideração, independentemente do cargo ou do tempo de trabalho na organização;
+  - **Honestidade**: deve permear toda a equipe. O engenheiro de software deve estar consciente do seu nível técnico e ser honesto com os demais membros da equipe, não supervalorizando ou subvalorizando as suas habilidades;
+  - **Respeito**: essencial em uma equipe multidisciplinar, na qual cada profissional deve ter consciência das diferenças do outro na maneira de pensar e de trabalhar, sem atribuir conclusões precipitadas em relação à competência deste em realizar as atividades do projeto.
