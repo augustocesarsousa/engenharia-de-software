@@ -91,3 +91,29 @@
     - Na fase de construção, efetuam-se a construção ou codificação do sistema e os testes de unidades para cada componente desse sistema;
     - Na fase de transição, efetua-se a entrega do sistema ao cliente e coloca-se esse sistema para funcionar em um ambiente real;
   - Esse modelo é recomendado para projetos em que a estabilidade dos processos de desenvolvimento seja importante, já que o modelo sendo estruturado, ao ser aplicado, tende a reduzir os riscos de desenvolvimento de software;
+
+### Modelos ágeis de desenvolvimento
+
+- Os modelos ágeis têm origem em princípios estabelecidos pelo Manifesto para o Desenvolvimento Ágil de Software, desenvolvido por Kent Beck – criador do modelo XP (Extreme Programming) – e mais 16 desenvolvedores;
+- De acordo com esse manifesto, no processo de desenvolvimento de software é importante valorizar os seguintes aspectos: as interações entre os indivíduos acima de processos e sistemas; o software operacional acima da documentação completa; a colaboração com os clientes acima de negociação contratual; e as respostas às mudanças acima de seguir um plano;
+- **Modelo XP**:
+  - É um modelo ágil que considera o desenvolvimento de software sob uma perspectiva diferente dos demais modelos;
+  - Para essa metodologia, a definição de requisitos é feita considerando cenários ou histórias de clientes; os programadores trabalham sempre em pares e o código é escrito em definitivo apenas após a realização de testes;
+  - O projeto na XP segue o princípio KISS (Keep It Simple Stupid); sendo assim, é melhor um projeto simples com múltiplos incrementos posteriores do que projetos mais complexos logo de início;
+  - Desse modo, quando concluído, cada projeto é integrado ao sistema e todos os testes, após essa integração, devem apresentar sucesso.
+- **Modelo Scrum**:
+  - Esse modelo tem caráter cíclico, cujo nome diz respeito a uma jogada no esporte rugby, na qual os atletas se encontram corpo a corpo;
+  - Nesse modelo, as atividades de desenvolvimento ocorrem em um ciclo denominado _sprint_;
+  - O ciclo de trabalho no scrum consiste na realização de tarefas de desenvolvimento, definidas em uma lista de prioridades de requisitos, chamada de _backlog_;
+  - É realizada uma reunião inicial, denominada _sprint planning meeting_, em que são feitas as definições de planejamento das atividades que serão desenvolvidas;
+  - Após a realização das sprints, a equipe apresenta as funcionalidades do software implantadas e, então, um novo ciclo de desenvolvimento se inicia.
+- **Modelo AUP**:
+  - Trata-se de uma variante do Processo Unificado voltada para o desenvolvimento ágil;
+  - Esse processo adota as atividades clássicas do RUP – concepção, elaboração, construção e transição –, porém com ciclos repetitivos para tornar o modelo mais ágil.
+  - Cada iteração adota as seguintes atividades:
+    1. Modelagem: elaboração de modelos, preferencialmente com o uso da UML (Unified Modeling Language);
+    2. Implementação: transformação dos modelos em código;
+    3. Testes: realização de testes para a descoberta de erros e oportunidades de melhoria no código;
+    4. Entrega: entrega de um incremento do código e feedback dos usuários;
+    5. Configuração e gerenciamento do projeto: gerenciamento de configurações, alterações, riscos e controle;
+    6. Gerenciamento do ambiente: gerenciamento de processos, padrões, ferramentas e tecnologias de suporte.
