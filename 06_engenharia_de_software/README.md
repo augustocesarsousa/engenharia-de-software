@@ -44,3 +44,15 @@
   - **Inclusão**: é derivada da consistência. Uma vez que o trabalho de um profissional deve ser valorizado, as propostas apresentadas por este devem ser levadas em consideração, independentemente do cargo ou do tempo de trabalho na organização;
   - **Honestidade**: deve permear toda a equipe. O engenheiro de software deve estar consciente do seu nível técnico e ser honesto com os demais membros da equipe, não supervalorizando ou subvalorizando as suas habilidades;
   - **Respeito**: essencial em uma equipe multidisciplinar, na qual cada profissional deve ter consciência das diferenças do outro na maneira de pensar e de trabalhar, sem atribuir conclusões precipitadas em relação à competência deste em realizar as atividades do projeto.
+
+## Planejamento e processo de software
+
+### Estrutura básica do desenvolvimento de software
+
+- Todo modelo de desenvolvimento de software, seja tradicional ou ágil, segue uma metodologia genérica composta de cinco etapas: comunicação, planejamento, modelagem, construção e entrega (PRESSMAN; MAXIM, 2016);
+- **Comunicação**: é realizado o contato com as partes interessadas para tratar de procedimentos do início do projeto (contratos, termos de abertura, dentre outros) e levantamento dos requisitos funcionais (relacionados à funcionalidade do sistema) e não funcionais (relacionados à segurança e às configurações do sistema);
+- **Planejamento**: é definido o cronograma de atividades dos profissionais envolvidos, as estimativas de utilização de recursos (humanos, materiais, financeiros e tecnológicos) e como será realizado o acompanhamento do projeto (a definição de métricas de desempenho, por exemplo);
+- **Modelagem**: também conhecida como implementação e teste unitário, são realizadas as atividades de desenvolvimento do software propriamente dito. É nessa fase que o projeto do software começa a ganhar forma, com os primeiros diagramas e fluxogramas (diagramas UML, por exemplo);
+- **Construção**: os requisitos são traduzidos em linhas de código, as quais formam os programas componentes do conjunto de software;
+- **Entrega**: o cliente deverá testar o software e verificar se os requisitos foram atendidos;
+- Essas cinco etapas dizem respeito à estrutura básica de desenvolvimento de um software; ela é aplicada, de modo direto ou com adaptações, nos modelos tradicionais e ágeis.
