@@ -56,3 +56,38 @@
 - **Construção**: os requisitos são traduzidos em linhas de código, as quais formam os programas componentes do conjunto de software;
 - **Entrega**: o cliente deverá testar o software e verificar se os requisitos foram atendidos;
 - Essas cinco etapas dizem respeito à estrutura básica de desenvolvimento de um software; ela é aplicada, de modo direto ou com adaptações, nos modelos tradicionais e ágeis.
+
+### Modelos tradicionais de desenvolvimento
+
+- **Modelo em cascata**:
+  - É o modelo mais antigo de desenvolvimento em engenharia de software;
+  - De acordo com Sommerville (2011, p. 20), é "um processo dirigido a planos – em princípio, você deve planejar e programar todas as atividades do processo antes de começar a trabalhar nelas" (SOMMERVILLE, 2011, p. 20);
+  - Nesse modelo, a estrutura básica de desenvolvimento é aplicada de modo sequencial, ou seja, com uma atividade precedendo a outra;
+  - Para passar de uma atividade a outra, é necessária a aprovação do responsável pelo desenvolvimento, geralmente por meio de um documento assinado;
+  - Nenhuma atividade pode ser iniciada até que a anterior esteja concluída, e o software é colocado em uso somente na etapa final (entrega);
+  - O modelo em cascata é adequado para ambientes de desenvolvimento estável, com pouca ou nenhuma alteração de requisitos, pois se trata de um modelo inflexível.
+- **Modelo em espiral**:
+  - As etapas de comunicação, planejamento, modelagem, construção e entrega se repetem com sucessivas versões cada vez mais sofisticadas do sistema;
+  - À medida que se efetua cada entrega, uma nova fase de comunicação se inicia por meio da revisão dos requisitos, sucedendo para uma nova sessão de planejamento, modelagem etc;
+  - Esse modelo, em espiral, é adequado para o desenvolvimento de software em larga escala e para ambientes com mais incerteza em relação aos requisitos, uma vez que permite a revisão desses sempre que uma nova entrega é efetuada;
+  - É adequado para software de desenvolvimento contínuo, no qual novas versões podem ser lançadas a cada entrega.
+- **Modelo em V**:
+  - Esse modelo é uma variação dos modelos em cascata e espiral;
+  - Esse modelo divide o processo de desenvolvimento em duas macroetapas mutuamente relacionadas, uma de projeto e codificação, e outra de testes, visando à garantia da qualidade do software;
+    - Na primeira etapa é realizada a modelagem de requisitos do sistema; depois efetua-se o projeto de arquitetura do sistema como um todo e, ainda, dos seus componentes, partindo para o fim da etapa, em que se gera o código do programa conforme a arquitetura planejada;
+    - Na segunda etapa realizam-se os testes para validar as atividades realizadas na macroetapa anterior. Dessa forma, há primeiramente os testes dos códigos desenvolvidos; em seguida, acontecem os testes de integração da arquitetura do sistema e de seus componentes, partindo para o teste do sistema como um todo e, finalmente, para o teste de aceitação por parte do cliente, tendo como base os requisitos definidos para o programa.
+  - O modelo em V é indicado quando a realização de múltiplos testes seja necessária, pois possibilita melhor detecção de erros em cada etapa de realização;
+- **Modelo cíclico**:
+  - Esse modelo tem formato cíclico, como o de espiral, porém enfatiza a rápida execução das etapas de planejamento e modelagem, adicionando uma etapa de construção de protótipos;
+  - Assim como os demais modelos, o de prototipação inicia-se com a etapa de comunicação, a qual é uma das mais importantes;
+  - Nessa fase, uma reunião é feita com as partes interessadas no projeto (clientes, desenvolvedores, dentre outras) para definir os objetivos e os requisitos necessários para o desenvolvimento do software;
+  - Em seguida, as etapas de planejamento e modelagem são executadas no formato de um projeto rápido, em que se constrói um protótipo do software;
+  - Depois de entregue o software e recebido o feedback, o protótipo é discutido em uma nova etapa de comunicação, na qual os requisitos do projeto são refinados, e assim sucessivamente.
+- **Modelo RUP**:
+  - O modelo RUP (Rational Unified Process), também conhecido como Processo Unificado (PU), "reúne elementos de todos os modelos de processo genéricos, ilustra boas práticas de especificação e no projeto e apoia a prototipação e a entrega incremental" (SOMMERVILLE, 2011, p. 34);
+  - A organização do RUP acontece em quatro fases:
+    - Na fase de concepção, realizam-se a comunicação e o planejamento com o cliente, tendo como objetivo estabelecer um estudo de caso para o negócio a ser desenvolvido;
+    - Na segunda fase, a de elaboração, realiza-se a modelagem de uma arquitetura do sistema;
+    - Na fase de construção, efetuam-se a construção ou codificação do sistema e os testes de unidades para cada componente desse sistema;
+    - Na fase de transição, efetua-se a entrega do sistema ao cliente e coloca-se esse sistema para funcionar em um ambiente real;
+  - Esse modelo é recomendado para projetos em que a estabilidade dos processos de desenvolvimento seja importante, já que o modelo sendo estruturado, ao ser aplicado, tende a reduzir os riscos de desenvolvimento de software;
