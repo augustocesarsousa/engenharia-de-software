@@ -185,3 +185,19 @@
   - **Requisitos de recursos**: dizem respeito a materiais, pessoas, tecnologias, dentre outros, necessários para o adequado funcionamento do sistema;
   - **Requisitos de segurança**: dizem respeito às políticas de acesso ao sistema, bem como à gestão de dados e informações, principalmente, dos usuários e demais _stakeholders_;
   - **Requisitos de garantia da qualidade**: abrangem, por sua vez, questões básicas de qualidade do sistema, como confiabilidade, disponibilidade, manutenibilidade, capacidade, prevenção a falhas e defeitos, correção de erros, indicadores de desempenho, dentre outros.
+
+### Especificação e apresentação de requisitos
+
+- Uma forma de se documentar os requisitos, tanto do usuário quanto do sistema, é por meio da especificação de requisitos de software (SRS). Esse documento detalha todos os aspectos do software que deverão ser considerados no processo de construção. Pressman (2011) sugere o seguinte conteúdo para esse documento:
+  - **Introdução**: apresentam-se o documento, suas convenções, seu público-alvo, sugestões de leitura, o escopo do projeto de software e as referências utilizadas;
+  - **Descrição geral**: detalha-se o software a ser desenvolvido, contemplando características, restrições de projeto, ambiente operacional, dentre outros;
+  - **Características do sistema**: detalham-se os requisitos funcionais do sistema e suas características essenciais;
+  - **Requisitos de interfaces externas**: detalham-se os requisitos referentes às interfaces de usuário, software, hardware e comunicação;
+  - **Requisitos não funcionais**: apresentam-se requisitos considerados não funcionais, como de desempenho, segurança, proteção e qualidade;
+  - **Outros requisitos**: descrevem-se requisitos não mencionados nos itens anteriores, porém, importantes para o projeto.
+- As especificação de requisitos pode ser feita de diferentes formas. Sommerville (2011) descreve algumas:
+  - **Sentenças em linguagem natural**: os requisitos são escritos na linguagem natural – sugere-se uma frase para expressar cada requisito;
+  - **Linguagem natural estruturada**: descrevem-se os requisitos em linguagem natural, porém em um formulário estruturado (template);
+  - **Linguagem de descrição de projeto**: os requisitos são escritos com o uso de uma linguagem similar à de programação, mas com características mais abstratas;
+  - **Notações gráficas**: utilizam-se notações gráficas para a descrição dos requisitos, como a linguagem UML;
+  - **Especificações matemáticas**: utilizam-se notações matemáticas para a expressão dos requisitos (conjuntos, por exemplo) – deve-se observar que a maioria das pessoas pode não compreender os requisitos escritos dessa maneira.
