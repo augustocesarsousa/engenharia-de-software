@@ -117,3 +117,25 @@
     4. Entrega: entrega de um incremento do código e feedback dos usuários;
     5. Configuração e gerenciamento do projeto: gerenciamento de configurações, alterações, riscos e controle;
     6. Gerenciamento do ambiente: gerenciamento de processos, padrões, ferramentas e tecnologias de suporte.
+
+## Engenharia de requisitos
+
+### Métodos para a coleta de requisitos
+
+- Segundo Paula Filho (2009), os requisitos de um software devem atender a determinadas características:
+  - **Correção**: prevê que o requisito do software seja corretamente descrito e que ele seja realmente o do software a ser construído;
+  - **Precisão**: trata da descrição do requisito, não permitindo interpretações ambíguas em relação ao que deve ser feito;
+  - **Completeza**: diz respeito ao requisito abranger, de modo completo, aspectos relativos a funcionalidade, desempenho, interfaces, restrições e aspectos de qualidade, sem cláusulas de pendências;
+  - **Consistência**: possibilita que o requisito não apresente conflitos com outros requisitos, de modo lógico ou temporal;
+  - **Priorização**: caracteriza-se pelo requisito poder ser classificado, em conjunto com outros requisitos, conforme sua importância (essencial, desejável ou opcional, por exemplo);
+  - **Verificabilidade**: trata do requisito ser verificável quanto à sua conformidade com o produto final desenvolvido;
+  - **Modificabilidade**: permite que o requisito seja modificável quando necessário;
+  - **Rastreabilidade**: diz respeito ao requisito poder ser rastreável quanto aos seus antecedentes e consequências, podendo ser relacionada à origem do requisito (para trás) ou aos resultados obtidos (para frente).
+- Fases da engenharia de requisitos:
+  - **Concepção**: são previstos os problemas que serão solucionados pelo software e são identificadas as partes interessadas;
+  - **Levantamento**: informações necessárias para a elaboração dos requisitos, que acontece por meio de técnicas, como entrevistas e etnografia, aplicadas junto às partes interessadas;
+  - **Elaboração**: informações obtidas são analisadas, o que permite descrever como os usuários interagirão com o sistema e, assim, construir um modelo de requisitos para ser apresentado;
+  - **Negociação**: são discutidos possíveis conflitos relacionados ao que as partes interessadas desejam e ao que pode ser desenvolvido até se chegar a um consenso;
+  - **Especificação**: ou SRS (Software Requirements Specification) –, documento contendo a descrição detalhada dos requisitos do sistema a ser desenvolvido;
+  - **Validação**: detecção e corrição prováveis inconsistências, omissões e erros;
+  - **Gestão**: uma vez validada, a especificação de requisitos de software é acompanhada durante o processo de desenvolvimento de modo que, caso necessário, correções e mudanças possam ser feitas.
