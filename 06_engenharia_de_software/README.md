@@ -139,3 +139,49 @@
   - **Especificação**: ou SRS (Software Requirements Specification) –, documento contendo a descrição detalhada dos requisitos do sistema a ser desenvolvido;
   - **Validação**: detecção e corrição prováveis inconsistências, omissões e erros;
   - **Gestão**: uma vez validada, a especificação de requisitos de software é acompanhada durante o processo de desenvolvimento de modo que, caso necessário, correções e mudanças possam ser feitas.
+- Entrevistas:
+  - A entrevista é uma das técnicas primárias para a descoberta de requisitos;
+  - Em um ambiente formal, ou informal, realizam-se perguntas para saber a opinião das partes interessadas sobre quais seriam os requisitos do sistema para o usuário;
+  - As entrevistas podem ser de dois tipos, abertas ou fechadas:
+    - Abertas: não há um roteiro definido de perguntas – inicia-se com uma pergunta inicial e a entrevista evolui conforme as respostas dos _stakeholders_;
+    - Fechadas: as perguntas são previamente definidas e os stakeholders se atêm apenas a responder às perguntas realizadas.
+- Análise de cenários:
+  - Segundo Sommerville (2011, p. 73), "as pessoas geralmente acham mais fácil se relacionar com exemplos da vida real do que com descrições abstratas. Elas podem compreender e criticar um cenário de como elas podem interagir com um sistema de software";
+  - Essa técnica, conforme o nome sugere, está relacionada à montagem e simulação de cenários hipotéticos para a utilização do software, como a criação de histórias no método Extreme Programming;
+  - Elementos básicos para a análise de cenários:
+    - Suposição inicial: expõe-se a situação na qual o software será utilizado, o cenário-base;
+    - Situação normal de utilização: descreve-se o processo de utilização do software, passo a passo, considerando o papel de cada usuário nesse processo;
+    - O que pode dar errado: descreve-se, a partir da situação normal de utilização, os possíveis erros que podem acontecer durante a utilização do software;
+    - Outras atividades: verificam-se outras atividades ou restrições com relação ao uso do software, as quais não se encontram na situação normal de utilização;
+    - Estado do sistema na conclusão: abordam-se os processos relativos à finalização do uso do sistema e como a sua utilização é concluída.
+- Etnografia:
+  - Essa possível técnica para o levantamento de requisitos considera que o uso do software é realizado em um contexto social e organizacional, ou seja, é considerado parte de uma cultura;
+  - A etnografia consiste na observação do uso de um artefato em seu ambiente pelos usuários;
+  - Um observador se introduz nesse ambiente e realiza anotações a respeito do uso desse software – da forma como o sistema é utilizado, o porquê de determinadas funcionalidades serem usadas ou não e as interações dos usuários com a interface do sistema.
+- Coleta colaborativa:
+  - A coleta colaborativa de requisitos é uma técnica em que se realizam reuniões com a participação das partes interessadas e dos engenheiros de software;
+  - Nessas reuniões, identificam-se os problemas, propõem-se as soluções e definem-se diferentes abordagens para definir um conjunto preliminar de requisitos.
+
+### Classificação de requisitos
+
+- Classificação de requisitos de acordo com Pfleeger (2004):
+  - **Totalmente satisfeitos**: pode-se citar as funcionalidades básicas de um sistema, por exemplo, um sistema comercial deve possibilitar a emissão de notas fiscais;
+  - **Desejáveis**: dizem respeito a funcionalidades acessórias que seriam muito úteis para o usuário desempenhar suas tarefas, mas que podem ser dispensadas em uma versão básica do sistema;
+  - **Possíveis**: dizem respeito a adições ao sistema que podem ser consideradas em determinado momento, porém podem ser dispensadas se necessário.
+- Classificação de requisitos de acordo com Pressman (2011):
+  - **Normais**: são estabelecidos com base em objetivos e metas definidos junto às partes interessadas, utilizando técnicas de levantamento de requisitos;
+  - **Esperados**: que nem sempre são declarados pelas partes interessadas, podem ser tão fundamentais quanto os requisitos normais, e sua ausência causará insatisfações;
+  - **Fascinantes**: caso estiverem presentes, ocasionarão, além das expectativas das partes interessadas, extrema satisfação, constituindo-se em uma surpresa.
+- Requisitos com base na funcionalidade:
+  - **Funcionais**: funcionalidades básicas de determinado sistema, descrevendo o que este deverá executar em cada situação. O cumprimento desses requisitos garante que o sistema funcione conforme o esperado;
+  - **Não funcionais**: restrições do sistema, ou seja, não descrevem o que o sistema deverá executar, mas sim como ele se comportará durante a execução.
+- Requisitos conforme os componentes do sistema e seus processos de desenvolvimento, Pfleeger (2004):
+  - **Requisitos de ambiente físico**: dizem respeito ao local físico de instalação e funcionamento do sistema ou hardware, bem como possíveis restrições de funcionamento, como temperatura, ruídos, vibrações, interferência magnética, dentre outras;
+  - **Requisitos de interface**: tratam da interação de um sistema com outros sistemas, abrangendo aspectos como a formatação de dados, entradas e saídas, dentre outros;
+  - **Requisitos de usuários e fatores humanos**: abrangem a forma com a qual o usuário interage com o sistema e sua interface, e consideram diferentes níveis de competências, conhecimentos, habilidades e atitudes, bem como a necessidade de treinamento para o seu melhoramento;
+  - **Requisitos de funcionalidade**: dizem respeito às funções do sistema, seus modos de operação, necessidades de aprimoramento e limitações;
+  - **Requisitos de documentação**: tratam da necessidade de documentação para o sistema, bem como do formato, se é on-line, em papel (físico) ou ambos;
+  - **Requisitos de dados**: tratam da formatação dos dados, da frequência de envio e recebimento, da precisão, do fluxo e da forma de armazenagem e manutenção desses dados no sistema;
+  - **Requisitos de recursos**: dizem respeito a materiais, pessoas, tecnologias, dentre outros, necessários para o adequado funcionamento do sistema;
+  - **Requisitos de segurança**: dizem respeito às políticas de acesso ao sistema, bem como à gestão de dados e informações, principalmente, dos usuários e demais _stakeholders_;
+  - **Requisitos de garantia da qualidade**: abrangem, por sua vez, questões básicas de qualidade do sistema, como confiabilidade, disponibilidade, manutenibilidade, capacidade, prevenção a falhas e defeitos, correção de erros, indicadores de desempenho, dentre outros.
