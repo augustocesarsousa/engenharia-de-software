@@ -233,3 +233,34 @@
   - **Dependência**: relacionamento de dependência entre dois elementos, com um independente e outro dependente – a alteração do elemento independente resulta, necessariamente, na alteração do dependente;
   - **Generalização**: relacionamento de especialização e generalização, no qual os elementos especializados herdam características dos elementos generalizados;
   - **Realização**: relacionamento no qual um elemento especifica as regras que o outro elemento deve executar.
+
+### Diagramas comportamentais
+
+- Diagrama de caso de uso:
+  - Foi um dos primeiros diagramas elaborados no processo de modelagem de software e é amplamente utilizado para a definição de requisitos funcionais e não funcionais;
+  - O diagrama de caso de uso apresenta as possíveis situações de uso do sistema por parte do usuário;
+  - Os usuários são representados como atores e interagem com o sistema por meio de suas funcionalidades (caso de uso), representadas por frases escritas dentro de uma figura no formato de elipse;
+  - Cada caso de uso tem um relacionamento com o ator que o realiza, seja usuário ou sistema;
+  - O relacionamento de **extensão** consiste na adição das características de um caso de uso em um segundo caso de uso e é representado por uma flecha tracejada com a palavra "<\<extend>>" na parte superior, apontada para o caso de uso estendido
+  - O relacionamento de inclusão significa que o primeiro caso de uso também conterá características do segundo, denominado caso de uso de inclusão, e é representado por uma flecha tracejada com a palavra "<\<include>>" na parte superior, apontada para o caso de uso incluído;
+  - O relacionamento de generalização, por sua vez, indica que o primeiro caso de uso consiste em uma especialização do caso de uso ou ator e é representado por uma seta em linha sólida apontando para o caso de uso ou ator mais geral.
+- Diagrama de sequência:
+  - Esse diagrama descreve a sequência de execução do sistema, dando ênfase à troca de mensagens entre atores, interfaces e sistema;
+  - Nesse diagrama, o usuário (ou ator) e os demais elementos da UML são representados na parte superior do diagrama. Porém, há uma linha tracejada vertical (linha de vida) abaixo deles, que representa a existência e a atuação desses objetos de acordo com o tempo (quanto mais para baixo, mais tempo passou);
+  - Há retângulos sobre cada linha vertical, que representam o momento em que o ator, interface ou componente do sistema é chamado e executa uma atividade;
+  - As flechas horizontais representam as trocas de mensagens ocorridas entre os objetos, as quais partem da origem até o destinatário;
+  - Quando essa flecha é de espessura fina, a mensagem é assíncrona, ou seja, não necessariamente possuirá uma mensagem de retorno correspondente, já quando a flecha é de espessura maior com linha triangular cheia, a mensagem é síncrona, ou seja, possuirá uma mensagem correspondente de retorno (por exemplo, uma chamada).
+- Diagrama de comunicação:
+  - Um diagrama de comunicação enfatiza a participação e a interação entre os elementos de um sistema, bem como as comunicações existentes e as mensagens trocadas entre esses objetos;
+  - Primeiramente, inserem-se nesse diagrama os elementos participantes dessa interação;
+  - Depois, conectam-se os elementos por meio de linhas cheias e flechas representando as mensagens trocadas entre esses elementos;
+  - Cada mensagem é sequenciada por meio de um número (por exemplo, 1, 2, 3...).
+- Diagrama de gráfico de estados:
+  - Esse diagrama exibe uma máquina de estados, ou seja, apresenta os estados de atividades de um sistema, assim como os fluxos entre um estado e outro;
+  - Esses estados são representados por retângulos com bordas arredondadas, podendo estar inseridos dentro de um estado aninhado (representado da mesma forma, só que no formato de um retângulo maior que inclui os demais);
+  - O estado inicial é representado por um círculo e as setas representam a evolução entre um estado e outro, bem como as mensagens e condições para a transição entre os estados acontecer;
+- Diagrama de atividades:
+  - Esse diagrama mostra a sequência de atividades realizadas pelo sistema, abrangendo condições para a realização de uma atividade ou outra (representadas no diagrama por losangos), atividades realizadas em paralelo (representadas por barras horizontais de cor escura), dentre outras;
+  - Similarmente ao diagrama de gráfico de estados, as atividades também são representadas por retângulos com bordas arredondadas, o início das atividades por um círculo e a sequência das atividades por flechas;
+  - Há a possibilidade de inclusão de condições para que determinada atividade, ou outra, seja realizada por meio de losangos contendo cada condição;
+  - Ao mesmo tempo, há a possibilidade da representação de atividades sendo realizadas em paralelo, por meio de uma barra horizontal inserida no local onde o paralelismo inicia.
