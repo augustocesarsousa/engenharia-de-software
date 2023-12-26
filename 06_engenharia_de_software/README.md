@@ -264,3 +264,17 @@
   - Similarmente ao diagrama de gráfico de estados, as atividades também são representadas por retângulos com bordas arredondadas, o início das atividades por um círculo e a sequência das atividades por flechas;
   - Há a possibilidade de inclusão de condições para que determinada atividade, ou outra, seja realizada por meio de losangos contendo cada condição;
   - Ao mesmo tempo, há a possibilidade da representação de atividades sendo realizadas em paralelo, por meio de uma barra horizontal inserida no local onde o paralelismo inicia.
+
+### Diagramas estruturais
+
+- Os diagramas estruturais “existem para visualizar, especificar, construir e documentar os aspectos estáticos de um sistema” (BOOCH, RUMBAUGH; JACOBSON, 2005, p. 96), ou seja, enfatizam os aspectos estruturais e técnicos de um sistema, como classes, interfaces, componentes, dentre outros;
+- Diagramas de classes:
+  - Esses diagramas são “encontrados com maior frequência na modelagem de sistemas orientados a objetos” (BOOCH, RUMBAUGH; JACOBSON, 2005, p. 107);
+  - As associações entre classes, ou entre objetos, são feitas por flechas de relacionamentos, a representação de uma classe é feita por um retângulo segmentado em três partes por meio de uma linha horizontal;
+  - A parte superior contém o nome, ou identificação, da classe, e a parte inferior, por sua vez, contém os métodos ou funções executadas pela classe.
+- Diagrama de componentes:
+  - Esses diagramas visam a representação de componentes ou partes segmentáveis de um sistema;
+  - Um componente é um segmento de um sistema que possibilita interações e trocas de serviços e mensagens com outra parte do sistema;
+  - Os componentes interagem entre si e com as classes por meio de relacionamentos ou por interfaces;
+  - Interface “é uma coleção de operações utilizadas para especificar um serviço de uma classe ou de um componente” (BOOCH et al., 2005, p. 197);
+  - Desse modo, interfaces podem ser fornecidas por componentes e requeridas por outros, que ao receberem-nas podem entrar em funcionamento;
