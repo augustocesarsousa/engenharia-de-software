@@ -201,3 +201,35 @@
   - **Linguagem de descrição de projeto**: os requisitos são escritos com o uso de uma linguagem similar à de programação, mas com características mais abstratas;
   - **Notações gráficas**: utilizam-se notações gráficas para a descrição dos requisitos, como a linguagem UML;
   - **Especificações matemáticas**: utilizam-se notações matemáticas para a expressão dos requisitos (conjuntos, por exemplo) – deve-se observar que a maioria das pessoas pode não compreender os requisitos escritos dessa maneira.
+
+## Modelagem de software com a UML
+
+### O que é a UML e por que utilizá-la?
+
+- A UML é uma linguagem de modelagem que tem como objetivo auxiliar os engenheiros de software na definição de características, requisitos, comportamentos, estruturas lógicas, dinâmicas de processos e necessidades físicas do equipamento para o qual o sistema será implantado (GUEDES, 2011, p. 19);
+- A UML originou-se para “ser um padrão que resolva as necessidades práticas da comunidade de desenvolvimento de software” (PENDER, 2004, p. 7);
+- Segundo Blaha e Rumbaugh (2006), os modelos de software apresentam algumas finalidades, como:
+  - Testar uma entidade física antes de construí-la: os modelos possibilitam simular o funcionamento de um software, verificando como irá se comportar em determinadas situações e corrigindo erros antes de gastar tempo e recursos em programação;
+  - Comunicar as partes interessadas: os modelos permitem estabelecer um canal de comunicação efetivo com os clientes durante a definição de requisitos e o processo de desenvolvimento do software;
+  - Visualizar: os modelos, sendo representações do software, facilitam um entendimento comum entre clientes e desenvolvedores;
+  - Reduzir a complexidade: os modelos promovem a representação e a visualização holística (como um todo) de sistemas que são complexos para um formato de fácil compreensão.
+- Sendo um processo característico da Engenharia de software, a modelagem tem uma série de atividades que devem ser executadas, segundo Guedes (2011), as atividades que compõem a modelagem são:
+  - **Levantamento e análise de requisitos**: definem-se o que o software deverá realizar (requisitos funcionais) e as diferentes formas como será executado (requisitos não funcionais);
+  - **Prototipação**: elabora-se uma versão primária do sistema que será desenvolvido, abrangendo como será o fluxo de informações desse sistema, seus componentes principais, dentre outros;
+  - **Definição de prazos e custos**: determinam-se os recursos humanos e materiais que serão utilizados no projeto, bem como o cronograma e a duração das atividades;
+  - **Projeto**: desenvolve-se a arquitetura do sistema (o projeto detalhado) e o protótipo é transformado em um modelo que descreve o modo que cada componente será aplicado no sistema e quais resultados deverão ser obtidos;
+  - **Manutenção**: como será a política de manutenção e como se pode reduzir a necessidade de manutenções nele;
+  - **Documentação histórica**: documentação de todo o projeto de software de modo que, caso haja mudança das equipes de desenvolvimento, o projeto tenha continuidade.
+- Itens da UML:
+  - **Classes**: itens que descrevem um conjunto de objetos com as mesmas características;
+  - **Interface**: item que retrata o comportamento externo de uma classe ou componente;
+  - **Caso de uso**: diagrama que descreve as ações realizadas pelo usuário e pelo sistema, de modo a visualizar as interações feitas por esse sistema;
+  - **Ator**: elemento que interage com o sistema, como um usuário;
+  - **Componentes**: elementos que modulam o sistema;
+  - **Nós**: elementos físicos que contêm memória e capacidade de processamento;
+  - **Máquinas de estado**: comportamentos que representam sequências de estados de um sistema.
+- Relacionamentos da UML:
+  - **Associação**: relacionamento simples entre dois elementos, conectando-os entre si e demonstrando qual parte de um elemento se relaciona com o elemento de outra parte;
+  - **Dependência**: relacionamento de dependência entre dois elementos, com um independente e outro dependente – a alteração do elemento independente resulta, necessariamente, na alteração do dependente;
+  - **Generalização**: relacionamento de especialização e generalização, no qual os elementos especializados herdam características dos elementos generalizados;
+  - **Realização**: relacionamento no qual um elemento especifica as regras que o outro elemento deve executar.
