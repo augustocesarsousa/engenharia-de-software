@@ -277,4 +277,59 @@
   - Um componente é um segmento de um sistema que possibilita interações e trocas de serviços e mensagens com outra parte do sistema;
   - Os componentes interagem entre si e com as classes por meio de relacionamentos ou por interfaces;
   - Interface “é uma coleção de operações utilizadas para especificar um serviço de uma classe ou de um componente” (BOOCH et al., 2005, p. 197);
-  - Desse modo, interfaces podem ser fornecidas por componentes e requeridas por outros, que ao receberem-nas podem entrar em funcionamento;
+  - Desse modo, interfaces podem ser fornecidas por componentes e requeridas por outros, que ao receberem-nas podem entrar em funcionamento.
+- Diagrama de artefatos:
+  - Esse diagrama permite a representação de aspectos físicos de um sistema, como arquivos, páginas de internet e bancos de dados;
+  - Esses diagramas são úteis para a visualização das relações entre o sistema e os componentes físicos – por exemplo, quais arquivos ou bibliotecas se relacionam entre si e em qual linguagem (ou extensão), ou a relação entre as diferentes tabelas de um banco de dados entre si e com outras partes do sistema.
+- Diagrama de implantação:
+  - Esse diagrama representa os aspectos de implantação de um sistema após ser desenvolvido, contemplando comunicação de rede, estrutura de hardware e nós de processamento;
+  - Assim como em outros diagramas, é possível inserir relacionamentos, como dependência e associação, entre os elementos desse diagrama;
+
+## Gestão de projetos de software
+
+### Projeto de software: elementos básicos
+
+- Desenvolver um software significa administrar e realizar projetos;
+- De acordo com o PMBOK (Project Management Body of Knowledge) – uma das principais referências em gestão de projetos –, um projeto é “um esforço temporário empreendido para criar um produto, serviço ou resultado único. A natureza temporária dos projetos indica que eles têm um início e um término definidos” (PMI, 2014, p. 26);
+
+#### Escopo
+
+- O escopo consiste na definição de como será realizado um projeto;
+- No caso de um software, o escopo define, portanto, as funcionalidades que serão ou não implantadas e os requisitos funcionais e não funcionais desse projeto;
+- Para a definição do escopo de um projeto, pode-se utilizar várias técnicas, como a realização de entrevistas com as partes interessadas, de modo a identificar as necessidades de desenvolvimento e os requisitos;
+- Estrutura Analítica do Projeto (EAP): uma das formas de documentar o escopo de um projeto e seus requisitos funcionais e não funcionais, consiste em dividir as entregas do projeto em subentregas, de modo que possam ser gerenciadas em partes, o que facilita o desenvolvimento do projeto como um todo;
+- Para estabelecer o tamanho de um sistema, pode-se utilizar a técnica denominada contagem de pontos de função, mediante a qual o tamanho do projeto é calculado com base na “complexidade de fluxo de dados através das interfaces e funções de um produto, por meio de regras padronizadas” (PAULA FILHO, 2009, p. 515);
+- Entradas externas: processo pelo qual os dados se integram no sistema de fora para dentro;
+- Consultas externas: recuperações de dados de um ou mais arquivos lógicos;
+- Saídas externas: processo pelo qual os dados derivados se apresentam ao usuário, ou seja, cruzam o sistema de dentro para fora;
+- Arquivos lógicos internos: dados logicamente correlatos, possíveis de identificação pelo usuário, que se encontram dentro de um aplicativo e mantido por meio de entradas externas;
+- Arquivos de interface externa: dados logicamente correlatos, possíveis de identificação pelo usuário, mas consultados apenas pelo sistema, sendo mantidos por outros aplicativos;
+
+#### Tempo
+
+- Desenvolver um software é uma atividade com início, meio e fim. Sendo assim, é preciso considerar os impactos relacionados ao tempo necessário para realizar esse desenvolvimento;
+- Um dos meios mais eficazes de realizar a gestão do tempo de um projeto de software é a elaboração de um cronograma, que, segundo o PMI (2014), pode ser de diferentes formas:
+  - Consulta a opiniões de especialistas para verificar o tempo de duração estimado para cada atividade;
+  - Uso de técnicas analíticas, como estudos, para verificar o tempo de desempenho de cada tarefa;
+  - Realização de reuniões com a equipe de desenvolvimento para discutir esse cronograma.
+- Sugere-se que a elaboração do cronograma seja feita com base nas entregas e subentregas propostas na EAP. Cada subentrega deve ser realizada conforme determinado prazo, com marcos sinalizando a data final de cada entrega.
+
+#### Custos
+
+- O gerenciamento dos custos, é possível a contar do momento em que se sabe o que precisa ser desenvolvido (o escopo) e a quantidade de tempo disponível a ser alocada;
+- Os analistas de desenvolvimento de software, por exemplo, geralmente são profissionais que têm seus custos mensurados por tempo, ou seja, por horas, meses e anos;
+- O mesmo vale para serviços como hospedagem na nuvem, licenças de software e aluguel de equipamentos;
+- Dessa forma, preferencialmente antes de se executar um projeto, ou uma fase dele, torna-se necessária a realização de uma estimativa de custos tanto fixos (que não dependam de tempo de desenvolvimento) quanto variáveis (que dependem da quantidade de tempo), que possam impactar o desenvolvimento do projeto.
+
+#### Qualidade
+
+- A qualidade de um projeto de software diz respeito à sua adequabilidade aos requisitos e aos interesses das partes envolvidas, a qual pode ser mensurada por métricas ou indicadores de qualidade;
+- Alguns exemplos de métricas em projetos de software são:
+  - Tempo dispendido por funcionalidade desenvolvida;
+  - Quantidade de linhas de código desenvolvidas por hora;
+  - Custo total do projeto por mês;
+  - Aquisições efetuadas por mês;
+  - Probabilidade de determinado risco ocorrer no projeto.
+- Outra forma de avaliar a qualidade de um projeto é por meio da realização de auditorias da qualidade;
+- Essas auditorias podem ser realizadas pelo pessoal interno do projeto (primeira parte), por fornecedores (segunda parte) ou por um organismo de certificação (terceira parte);
+- Os resultados das auditorias são geralmente descritos em um relatório, em que se evidencia as conformidades e não conformidades do processo auditado.
