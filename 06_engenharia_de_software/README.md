@@ -371,3 +371,24 @@
 - A integração envolve as atividades de abertura, planejamento, mudanças e encerramento do projeto, abrangendo os demais componentes do projeto, como escopo, custos, tempo, qualidade, riscos, comunicação, recursos humanos e aquisições, desde o início até o final;
 - O termo de abertura é um dos documentos mais relevantes, pois autoriza o início do projeto e descreve seus itens como responsabilidades, requisitos, entregas, premissas e restrições;
 - Outro documento relevante é o plano de gerenciamento do projeto, que descreve as diretrizes necessárias para gerenciar o projeto como um todo, servindo de base para o planejamento das demais partes componentes.
+
+### Projetos de arquiteturas de software
+
+- De acordo com Sommerville (2011), as arquiteturas de software podem ser de pequena ou grande escala:
+  - Arquitetura de pequena escala: projeto de arquiteturas de software individuais, ou seja, de como cada programa é dividido em seus componentes menores;
+  - Arquitetura de grande escala: sistemas de maior complexidade, geralmente distribuídos em mais de um computador.
+- Por descrever o modo de funcionamento de um sistema, a arquitetura pode ser reaproveitada para o projeto de sistemas com finalidades semelhantes, sem que se tenha que gastar tempo e recursos com o desenvolvimento de funcionalidades;
+- Arquitetura centralizada em dados:
+  - Conforme o nome sugere, insere-se um repositório de armazenamento de dados em seu centro, sendo acessado por softwares ou componentes clientes que transitam ao seu redor e "que atualizam, acrescentam, eliminam ou modificam de alguma maneira os dados contidos no repositório" (PRESSMAN; MAXIM, 2016, p. 259);
+  - Uma vantagem desse tipo de arquitetura reside nos softwares clientes, que podem ser alterados de modo independente, tendo em vista que dependem apenas do repositório de dados.
+- Arquitetura de fluxo de dados:
+  - É utilizada quando é necessária a visualização das entradas e saídas de dados de um sistema ou entre seus componentes;
+  - Utiliza-se um padrão denominado tubos-e-filtro, no qual os componentes do sistema representam filtros de dados, e o fluxo de dados entre um componente e outro é denominado tubo.
+- Arquitetura de programa principal e subprograma:
+  - Estabelece uma hierarquia em que um programa principal administra componentes controladores, que por sua vez administram aplicações;
+  - De acordo com Pressman e Maxim (2016), esse tipo de arquitetura permite uma fácil atualização do sistema como um todo e dos seus componentes, bem como uma fácil ampliação desse sistema;
+  - Cada subprograma de aplicação executa uma funcionalidade do sistema como um todo, sendo controlados pelos subprogramas controladores.
+- Arquitetura em camadas:
+  - Consiste na segmentação dos componentes de software em diferentes camadas de operações, sendo que, quanto mais próximo à camada central, mais próximas as informações se tornam de um conjunto de instruções de máquina;
+  - Quanto mais externa for a camada, mais próxima ela se aproxima da interface do usuário, que é a parte do sistema que interage com a pessoa que o utiliza;
+  - Um exemplo de aplicação desse tipo de arquitetura é o padrão MVC (Model-View-Controller).
