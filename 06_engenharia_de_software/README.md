@@ -333,3 +333,41 @@
 - Outra forma de avaliar a qualidade de um projeto é por meio da realização de auditorias da qualidade;
 - Essas auditorias podem ser realizadas pelo pessoal interno do projeto (primeira parte), por fornecedores (segunda parte) ou por um organismo de certificação (terceira parte);
 - Os resultados das auditorias são geralmente descritos em um relatório, em que se evidencia as conformidades e não conformidades do processo auditado.
+
+### Projeto de software: elementos acessórios
+
+#### Riscos
+
+- Além de escopo, custo, tempo e qualidade, existem outros componentes que devem ser considerados na elaboração, realização e análise de um projeto de software;
+- Um software ou sistema apresenta riscos no processo de desenvolvimento, os quais geralmente são mensurados por meio de duas variáveis básicas, probabilidade e impacto:
+  - Probabilidade: diz respeito às possibilidades quantitativas de o risco se transformar no acontecimento de fato e geralmente é mensurada em termos de porcentagem: quanto maior for a porcentagem, maiores serão as chances de o risco se concretizar;
+  - Impacto: diz respeito aos possíveis acontecimentos que impactarão positiva ou negativamente o projeto como um todo. São exemplos de impactos: perdas materiais ou financeiras, atrasos no cronograma do projeto, problemas na equipe de trabalho, entre outros.
+
+#### Comunicação
+
+- A comunicação é essencial em um projeto de software, principalmente quando há múltiplas equipes de desenvolvimento;
+- A comunicação pode ser feita por meio de reuniões, dispositivos de comunicação (chats, por exemplo), redes sociais, newsletters (informativos), murais, veículos de comunicação de massa etc;
+- Dentre o que necessita ser comunicado em um projeto, encontram-se a sua situação atual, informações essenciais para o desenvolvimento, necessidades de recursos, potenciais riscos que possam surgir durante o desenvolvimento, dentre outros;
+- Murais Kanban, se tornam essenciais para que todas as equipes saibam, mutuamente, em que estágio cada uma está no desenvolvimento de seu componente;
+- Outro exemplo do uso da comunicação é no método de desenvolvimento scrum.
+
+#### Recursos humanos
+
+- A gestão de pessoas também é relevante para o sucesso de um projeto de software, principalmente devido à possibilidade de haver equipes multidisciplinares – equipes com profissionais de diferentes áreas do conhecimento e origens culturais;
+- Para que os recursos humanos do projeto sejam aproveitados, algumas atividades são necessárias:
+  - A primeira é a mobilização da equipe do projeto, que consiste na contratação dos membros do projeto;
+  - Outra atividade é o desenvolvimento, que se relaciona com as iniciativas de treinamento e a capacitação das equipes do projeto.
+
+#### Aquisições
+
+- Em relação as aquisições, vale destacar a necessidade de compras de ativos, como servidores, computadores, dispositivos de comunicação móvel, serviços de telecomunicações, hospedagem de conteúdo na nuvem, entre outros;
+- O gerenciamento das aquisições em um projeto é realizado por meio de três etapas essenciais:
+  - Planejamento: planeja-se o que se pretende adquirir, com a análise e avaliação de propostas e a realização de negociações com os fornecedores conforme necessário;
+  - Condução: realizam-se a aquisição e o pagamento dos recursos adquiridos, além do acompanhamento da aquisição para verificar se o recurso adquirido chegará com sucesso ao local da entrega;
+  - Controle: controlam-se as aquisições e realizam-se inspeções e auditorias para verificar se o conteúdo recebido corresponde ao que foi solicitado e, caso necessário, são feitas reivindicações com o fornecedor.
+
+#### Integração
+
+- A integração envolve as atividades de abertura, planejamento, mudanças e encerramento do projeto, abrangendo os demais componentes do projeto, como escopo, custos, tempo, qualidade, riscos, comunicação, recursos humanos e aquisições, desde o início até o final;
+- O termo de abertura é um dos documentos mais relevantes, pois autoriza o início do projeto e descreve seus itens como responsabilidades, requisitos, entregas, premissas e restrições;
+- Outro documento relevante é o plano de gerenciamento do projeto, que descreve as diretrizes necessárias para gerenciar o projeto como um todo, servindo de base para o planejamento das demais partes componentes.
