@@ -392,3 +392,19 @@
   - Consiste na segmentação dos componentes de software em diferentes camadas de operações, sendo que, quanto mais próximo à camada central, mais próximas as informações se tornam de um conjunto de instruções de máquina;
   - Quanto mais externa for a camada, mais próxima ela se aproxima da interface do usuário, que é a parte do sistema que interage com a pessoa que o utiliza;
   - Um exemplo de aplicação desse tipo de arquitetura é o padrão MVC (Model-View-Controller).
+
+## Gestão da qualidade em engenharia de software
+
+### Normas de qualidade
+
+- As normas de qualidade têm como propósito fornecer os subsídios necessários para a gestão e o controle adequados das atividades de desenvolvimento de software, para que toda entrega atenda aos requisitos esperados;
+- A norma mais básica de gestão da qualidade para softwares ou demais produtos e serviços é a NBR ISO 9000:2015, a qual estabelece que a qualidade consiste em um conjunto de características que satisfaçam os requisitos (ABNT, 2015a);
+- A norma NBR ISO 9001:2015 (ABNT, 2015b) é a versão mais atual da série ISO 9000 e contempla, ao todo, 10 capítulos;
+- **Contexto da organização (Capítulo 4)**: este capítulo trata das necessidades e expectativas das partes interessadas e do escopo do sistema de gestão, ou seja, define o que a organização entrega de produtos e serviços às partes interessadas;
+- **Liderança (Capítulo 5)**: este capítulo trata do papel da alta direção e das lideranças na promoção do sistema de gestão da qualidade, sobre o
+  desenvolvimento de uma política de qualidade e de papéis, responsabilidades e autoridades organizacionais;
+- **Planejamento (Capítulo 6)**: este capítulo aborda a necessidade de planejamento organizacional para administrar os riscos e as oportunidades inerentes à atividade que a organização desempenha, bem como os objetivos da qualidade e as mudanças a serem realizadas na organização;
+- **Apoio (Capítulo 7)**: este capítulo aborda a gestão de recursos materiais e humanos, bem como a infraestrutura necessária para a execução das atividades. Além disso, trata do ambiente operacional, que deve ser adequado social, psicologica e fisicamente;
+- **Operação (Capítulo 8)**: este capítulo aborda as ações que viabilizam a atividade operacional nas organizações, bem como o planejamento e controle operacional e os controles de processos. Quanto aos produtos e serviços, trata da definição de seus requisitos, do projeto e do desenvolvimento deles, daqueles fornecidos por uma entidade externa, da atividade produtiva e da liberação deles ao cliente;
+- **Avaliação de desempenho (Capítulo 9)**: este capítulo trata dos instrumentos de avaliação do desempenho dos serviços de uma organização, que pode ser por meio da satisfação do cliente, da auditoria interna e da análise crítica pela direção;
+- **Melhoria (Capítulo 10)**: este capítulo enfatiza que a organização deve adotar ações para a promoção da melhoria contínua dos seus processos, corrigindo, prevenindo ou reduzindo quaisquer efeitos indesejados.
