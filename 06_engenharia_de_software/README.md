@@ -430,3 +430,14 @@
   - **Eficiência**: quantidade de recursos computacionais (memória RAM, uso de processador e espaço em HD, por exemplo) necessários para a execução;
   - **Integridade**: segurança do software, ou seja, a prevenção ao acesso por parte de pessoas não autorizadas;
   - **Usabilidade**: esforços necessários para aprender a utilizar o software corretamente.
+
+### Garantia de qualidade em software
+
+- Para a garantia da qualidade, faz-se necessária, na engenharia de software, a implementação de processos, desde o início do desenvolvimento do código até a entrega do software ou sistema finalizado, para que, uma vez entregue ao cliente, funcione corretamente;
+- A garantia da qualidade é obtida por meio da padronização dos processos de desenvolvimento, que segue algumas normas, como as definidas pelos organismos internacionais IEEE e ISO;
+- No processo de desenvolvimento de software, é importante a realização periódica de revisões de código em busca de erros;
+- Outra ferramenta relevante para a garantia de qualidade consiste na realização de auditorias periódicas no projeto, que podem ser feitas por membros da própria equipe de desenvolvimento ou por pessoas externas;
+- Em conjunto à execução de revisões e auditorias, a realização de testes permite a detecção de não conformidades nos processos de desenvolvimento, bem como a detecção de erros no projeto;
+- Além de erros e defeitos no projeto, outra questão a se considerar é a segurança dos dados que estão sendo processados ou que o software, uma vez acabado, irá processar;
+- A garantia da qualidade também contempla ações de verificação de potenciais erros ou defeitos que possam causar danos, principalmente no caso de softwares direcionados às indústrias altamente sensíveis, como a automobilística e a aeronáutica;
+- A garantia deve acontecer durante todo o processo de desenvolvimento de um software. A realização de revisões e conferências periódicas aumenta a segurança do código e contribui para a sua segurança e adequação aos requisitos funcionais e não funcionais.
