@@ -441,3 +441,36 @@
 - Além de erros e defeitos no projeto, outra questão a se considerar é a segurança dos dados que estão sendo processados ou que o software, uma vez acabado, irá processar;
 - A garantia da qualidade também contempla ações de verificação de potenciais erros ou defeitos que possam causar danos, principalmente no caso de softwares direcionados às indústrias altamente sensíveis, como a automobilística e a aeronáutica;
 - A garantia deve acontecer durante todo o processo de desenvolvimento de um software. A realização de revisões e conferências periódicas aumenta a segurança do código e contribui para a sua segurança e adequação aos requisitos funcionais e não funcionais.
+
+### Melhorias em software
+
+- Um dos principais motivos para a adoção de práticas de gestão da qualidade nas organizações, incluindo as de desenvolvimento de software, é a realização de melhorias contínuas nos processos dessas organizações;
+- **Abordagem de maturidade de processo**: "se centra em melhorar o gerenciamento de processos e projetos e em introduzir boas práticas de engenharia de software em uma organização" (SOMMERVILLE, 2011, p. 493). O foco consiste no desenvolvimento de processos maduros, estruturados e previsíveis, de modo a garantir maior segurança no desenvolvimento de software, bem como na realização de mudanças e melhorias;
+- **Abordagem ágil**: "se centra no desenvolvimento iterativo e na redução de overheads gerais no processo de software" (SOMMERVILLE, 2011, p. 493, grifo do original). O foco consiste na realização de entregas rápidas de funcionalidades, ou seja, as mudanças e melhorias nos processos de desenvolvimento são efetuadas rapidamente de acordo com as mudanças de requisitos fornecidas pelo cliente.
+
+#### Roteiro para a melhoria dos processos de desenvolvimento de software
+
+- Ciclo de melhorias de processos:
+  - Medir: medir o seu processo atual e a qualidade dos produtos e serviços desenvolvidos;
+  - Analisar: analisar o processo atual e verificar a existência de pontos fracos;
+  - Mudar: implantar mudanças para a solução dos problemas e, então, o ciclo se reinicia.
+- Pressman e Maxim (2016) sugerem um roteiro (sequência de atividades) composto de cinco atividades:
+  1. **Avaliação e análise de lacunas**: levantam-se os pontos fortes e fracos do processo atual de desenvolvimento de software utilizado. Verificam-se se os processos de desenvolvimento têm objetivos claramente definidos, se os critérios de entrada e saída foram adequadamente definidos, se há métricas estabelecidas para a atividade e se o processo é executado de maneira uniforme para todos os projetos de software;
+  2. **Realização de ações de educação e treinamento**: antes de se realizar mudanças no processo de desenvolvimento de software, recomenda-se que os colaboradores envolvidos sejam conscientizados sobre a necessidade de um processo eficaz e organizado;
+  3. **Seleção e justificação**: com base na avaliação e análise de lacunas, deve-se optar por manter o processo atual de desenvolvimento de software ou adotar um que se torne mais adequado para a equipe de desenvolvimento;
+  4. **Instalação e migração**: etapa na qual a organização desenvolve um processo inteiramente novo ou implanta a mudança de processo selecionada na etapa anterior;
+  5. **Mensuração**: deve ser realizada durante todas as etapas de desenvolvimento, por meio de fatores qualitativos e indicadores quantitativos, para verificar se o processo de mudança atende às necessidades da organização.
+
+#### Atributos de processo de software para a melhoria contínua
+
+- Sobre a melhoria em processos de desenvolvimento, Sommerville (2011) enumera alguns atributos de processo que devem ser considerados:
+  - **Compreensibilidade**: verifica-se o quanto o processo é definido de modo explícito, bem como sua compreensão por parte da equipe de desenvolvimento;
+  - **Padronização**: observa-se o quanto o processo se assemelha a um processo genérico padrão e se esse mesmo processo é utilizado em todas as equipes de desenvolvimento;
+  - **Visibilidade**: avalia-se se as atividades do processo resultam em produtos e serviços claramente definidos e se, quando o processo é aplicado, seu progresso é claramente percebido;
+  - **Capacidade de medição**: analisa-se se existe a coleta de dados necessária para a estruturação de indicadores quantitativos para a avaliação eficaz do desempenho do processo;
+  - **Capacidade de apoio**: confere-se se as ferramentas de software, atualmente usadas, são capazes de apoiar as atividades desempenhadas pelo processo;
+  - **Aceitabilidade**: comprova-se se o processo é aceito pelas equipes de desenvolvimento, sendo plenamente utilizado pelos engenheiros de software;
+  - **Confiabilidade**: constata-se se o processo é projetado de modo que erros sejam evitados, visto que, se ignorados, podem ser transmitidos para o produto final, prejudicando a sua qualidade;
+  - **Robustez**: examina-se se o processo resiste a incidentes ou problemas, mantendo a sua continuidade;
+  - **Manutenibilidade**: confirma-se a capacidade de evolução do processo para reagir a mudanças nas necessidades da organização ou dos clientes;
+  - **Rapidez**: investiga-se a rapidez do processo na realização de entregas de software, ou seja, a sua conclusão após a entrega de uma determinada especificação de software.
