@@ -408,3 +408,25 @@
 - **Operação (Capítulo 8)**: este capítulo aborda as ações que viabilizam a atividade operacional nas organizações, bem como o planejamento e controle operacional e os controles de processos. Quanto aos produtos e serviços, trata da definição de seus requisitos, do projeto e do desenvolvimento deles, daqueles fornecidos por uma entidade externa, da atividade produtiva e da liberação deles ao cliente;
 - **Avaliação de desempenho (Capítulo 9)**: este capítulo trata dos instrumentos de avaliação do desempenho dos serviços de uma organização, que pode ser por meio da satisfação do cliente, da auditoria interna e da análise crítica pela direção;
 - **Melhoria (Capítulo 10)**: este capítulo enfatiza que a organização deve adotar ações para a promoção da melhoria contínua dos seus processos, corrigindo, prevenindo ou reduzindo quaisquer efeitos indesejados.
+
+### Qualidade em software
+
+- Devido à complexidade de muitos sistemas, existe a possibilidade de ocorrerem falhas ou operações indesejadas, prejudicando o desempenho do sistema como um todo e impactando negativamente na organização-cliente do sistema. Assim, é necessário que a qualidade seja adequadamente planejada, gerenciada e controlada, de modo que, no projeto do software, os requisitos sejam plenamente atendidos e o produto ou serviço final entregues estejam adequados às necessidades da organização-cliente.
+
+#### Fatores de qualidade em um produto de software
+
+- McCall, Richards e Walters (1977 apud PRESSMAN; MAXIM, 2016) definem uma série de fatores que devem ser considerados para a avaliação da qualidade em um produto de software;
+- Grupo **revisão do produto**:
+  - **Facilidade de manutenção**: quantidade de recursos e esforços necessários para encontrar e corrigir erros;
+  - **Flexibilidade**: recursos e esforços necessários para modificar um software em desenvolvimento ou acabado;
+  - **Testabilidade**: esforços necessários para a realização de testes, verificando se o software atende às necessidades e aos requisitos.
+- Grupo **transição do produto**:
+  - **Portabilidade**: recursos necessários para a transferência de um software de um hardware a outro;
+  - **Reusabilidade**: o quanto um software (ou partes do código) pode ser reaproveitado para o desenvolvimento de outros sistemas;
+  - **Interoperabilidade**: capacidade de integração do software com outros softwares e hardwares, formando um sistema integrado.
+- Grupo **operação de produto**:
+  - **Correção**: o quanto um software é correto, ou seja, o quanto atende às especificações e requisitos definidos;
+  - **Confiabilidade**: o quão preciso é o software para o cumprimento de suas funções, sem a ocorrência de erros ou falhas;
+  - **Eficiência**: quantidade de recursos computacionais (memória RAM, uso de processador e espaço em HD, por exemplo) necessários para a execução;
+  - **Integridade**: segurança do software, ou seja, a prevenção ao acesso por parte de pessoas não autorizadas;
+  - **Usabilidade**: esforços necessários para aprender a utilizar o software corretamente.
