@@ -474,3 +474,28 @@
   - **Robustez**: examina-se se o processo resiste a incidentes ou problemas, mantendo a sua continuidade;
   - **Manutenibilidade**: confirma-se a capacidade de evolução do processo para reagir a mudanças nas necessidades da organização ou dos clientes;
   - **Rapidez**: investiga-se a rapidez do processo na realização de entregas de software, ou seja, a sua conclusão após a entrega de uma determinada especificação de software.
+
+## Testes e engenharia reversa em software
+
+- Um software, como qualquer produto, necessita passar por testes em todo o processo de desenvolvimento, e não apenas quando está “finalizado”, ou seja, deve ser testado desde o projeto, passando pela modelagem, até a construção e entrega ao cliente.
+
+### Modalidades de testes em software
+
+- Quando efetuado de modo adequado, um teste pode expor vários tipos de defeitos que, ao serem prontamente corrigidos, provavelmente, resultarão em economia de esforços e recursos financeiros;
+- Pfleeger (2004) enumera algumas ocorrências de defeitos possíveis em um sistema:
+  - **Algoritmo**: ocorrem quando a lógica de um código criado resulta em uma saída indesejada ao testá-lo;
+  - **Computação e precisão**: pode acontecer, por exemplo, quando o computador não calcula determinada fórmula com o grau de precisão requerido pelo software, resultando em saídas imprecisas;
+  - **Documentação**: quando a documentação elaborada para o software não corresponde ao que o produto de fato desempenha;
+  - **Capacidade**: quando o software não atende à capacidade de processamento à qual deveria;
+  - **Defeitos de recuperação**: quando ocorre falha no funcionamento de um software, como quando um sistema operacional “trava”, a tendência é que seu pleno funcionamento seja recuperado ao ser reativado, o que não acontece com sistemas que apresentam defeitos de recuperação.
+- Paula Filho (2009), Pfleeger (2004) e Sommerville (2011) sugerem, cada qual com seu ponto de vista, vários testes que podem ser adotados para a detecção de falhas:
+  - **Teste de unidade**: é um dos testes com maior nível de detalhamento durante o desenvolvimento do software, que, segundo Sommerville (2011, p. 148), é o “processo de testar os componentes de programa, como métodos ou classes de objeto”, ou seja, possibilita testar cada parte de um componente;
+  - **Teste de desenvolvimento**: similarmente ao de unidade, o teste de desenvolvimento é recomendado durante todas as etapas de desenvolvimento de um software ou componente, assegurando que determinado componente, quando concluído, consequentemente passe no teste de unidade e funcione adequadamente na conclusão do software como um todo;
+  - **Teste de qualificação**: normalmente, é realizado quando o software, ou o seu componente, acaba de ser desenvolvido, para verificar se está de acordo com o projeto;
+  - **Teste funcional**: permite verificar as funcionalidades de um sistema ou componente antes de ser colocado em ambiente de operação e é realizado “para avaliar a conformidade de um sistema ou componente com os requisitos funcionais especificados” (PAULA FILHO, 2009, p. 352);
+  - **Teste operacional**: após concluído, o software deve ser testado sob condições realistas, por meio de simulações, de modo que seus componentes sejam colocados à prova e, assim, seja possível verificar precisamente se esse produto é capaz de atender aos requisitos funcionais e não funcionais definidos ou se será necessária a realização de ajustes;
+  - **Teste de regressão**: consiste na análise comparativa de duas versões do software: antes e depois da realização de alterações e melhorias;
+  - **Teste de integração**: o teste de integração é importante para verificar, além do funcionamento dos componentes do sistema isoladamente, a interação dos algoritmos ou códigos entre eles, bem como compatibilidade, intercâmbio de dados e saídas geradas entre esses componentes para o software como um todo;
+  - **Teste de sistema**: de modo similar ao de integração, o teste de sistema envolve a interação e a troca de informações entre componentes. No entanto, o foco é a verificação do funcionamento do sistema como um todo, em uma versão funcional;
+  - **Testes de usuário**: possivelmente, um dos mais relevantes, podendo permear os demais testes realizados para o software. Coletam-se informações de feedback do cliente com relação ao sistema, aos componentes, ao código, às funcionalidades, às compatibilidades, dentre outros fatores;
+  - **Teste de aceitação**: esse teste permite ao usuário verificar se o software atende às suas necessidades, avaliando todos os aspectos de desenvolvimento e se existe algum defeito (de algoritmo, de computação e precisão ou de documentação).
