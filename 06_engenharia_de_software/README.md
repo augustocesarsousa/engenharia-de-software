@@ -499,3 +499,13 @@
   - **Teste de sistema**: de modo similar ao de integração, o teste de sistema envolve a interação e a troca de informações entre componentes. No entanto, o foco é a verificação do funcionamento do sistema como um todo, em uma versão funcional;
   - **Testes de usuário**: possivelmente, um dos mais relevantes, podendo permear os demais testes realizados para o software. Coletam-se informações de feedback do cliente com relação ao sistema, aos componentes, ao código, às funcionalidades, às compatibilidades, dentre outros fatores;
   - **Teste de aceitação**: esse teste permite ao usuário verificar se o software atende às suas necessidades, avaliando todos os aspectos de desenvolvimento e se existe algum defeito (de algoritmo, de computação e precisão ou de documentação).
+
+### Realização de testes
+
+- Há três modalidades de testes de acordo com o nível de transparência:
+  - **Teste de caixa branca**: é a modalidade mais detalhada, que abrange o sistema e o funcionamento de todos os seus componentes e, portanto, “leva em conta os mecanismos internos de um sistema ou componente” (PAULA FILHO, 2009, p. 353);
+  - **Teste de caixa cinza**: são considerados apenas a interação dos componentes em um sistema e o funcionamento do software como um todo, desprezando o funcionamento detalhado de um componente;
+  - **Teste de caixa preta**: é a modalidade mais superficial e é utilizada para avaliar o cumprimento dos requisitos funcionais e não funcionais e verificar a compatibilidade do software com outros sistemas, uma vez que se ignora, nesse processo, a interação dos componentes internos do sistema;
+- **Teste bottom-up**: aborda a realização de testes em cada componente isoladamente e, depois, nos componentes integrados entre si, até finalizar com um último teste no sistema integrado;
+- **Teste top-down**: consiste na realização de testes primeiramente com o sistema como um todo, em seu nível de abstração mais elevado e, depois, com seus componentes isoladamente;
+- **Teste top-down modificado**: testam-se os componentes e, em seguida, o sistema como um todo, após isso, o sistema passa novamente por testagem de seus componentes e, então, uma nova configuração de componentes integrados é testada;
