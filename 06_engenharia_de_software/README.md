@@ -508,4 +508,27 @@
   - **Teste de caixa preta**: é a modalidade mais superficial e é utilizada para avaliar o cumprimento dos requisitos funcionais e não funcionais e verificar a compatibilidade do software com outros sistemas, uma vez que se ignora, nesse processo, a interação dos componentes internos do sistema;
 - **Teste bottom-up**: aborda a realização de testes em cada componente isoladamente e, depois, nos componentes integrados entre si, até finalizar com um último teste no sistema integrado;
 - **Teste top-down**: consiste na realização de testes primeiramente com o sistema como um todo, em seu nível de abstração mais elevado e, depois, com seus componentes isoladamente;
-- **Teste top-down modificado**: testam-se os componentes e, em seguida, o sistema como um todo, após isso, o sistema passa novamente por testagem de seus componentes e, então, uma nova configuração de componentes integrados é testada;
+- **Teste top-down modificado**: testam-se os componentes e, em seguida, o sistema como um todo, após isso, o sistema passa novamente por testagem de seus componentes e, então, uma nova configuração de componentes integrados é testada.
+
+### Manutenções e reengenharia
+
+- Engenharia reversa, ou reengenharia, de software, consiste na reconstrução de um software a partir de uma solução já existente;
+- Uma das vantagens desse processo é a redução de custos e esforços, à medida que o código existente já está desenvolvido;
+- Outra vantagem consiste na diminuição de riscos, visto que os componentes do código desenvolvido já demonstraram, em algum momento, a funcionalidade desejada.
+
+#### Modalidades de reengenharia de software
+
+- **Engenharia reversa de informações**: o software é analisado como um todo e as suas informações – como código-fonte, interações entre componentes, bancos de dados, funcionalidades etc. – são extraídas para futura codificação;
+- **Tradução de código-fonte**: o código-fonte do software é convertido de uma versão mais antiga para uma atual;
+- **Melhoria de estrutura de programa**: modifica-se a estrutura do software e seus controles de modo a melhorar sua legibilidade;
+- **Modularização de programa ou eliminação de redundâncias**: agrupam-se partes do software que possuam alguma relação entre si, e as redundâncias são removidas;
+- **Adaptação dos dados processados pelo software à nova estrutura**: redefinem-se esquemas de bancos de dados e convertem-se bancos de dados existentes.
+
+#### Processo de reengenharia de software
+
+- **Análise do inventário**: levantamento das principais informações sobre os sistemas operacionais atualmente utilizados pela empresa, como idade, tamanho, funcionalidades, relações com outros softwares, dentre outras relevantes para se detectar possíveis softwares candidatos à reengenharia;
+- **Reestruturação do código-fonte**: utilizando interfaces de desenvolvimento (IDEs) de modo a atualizar o código e torná-lo mais "limpo";
+- **Engenharia reversa**: analisar o software para desenvolver sua representação de modo mais abstrato do que seu código-fonte;
+- **Reestruturação da documentação**: desenvolvimento de uma documentação inteiramente nova;
+- **Reestruturação dos dados**: abrange a recuperação da base de dados armazenada no software para que possa ser reaproveitada na nova versão desse software;
+- **Engenharia direta**: o próprio projeto do software é utilizado como base para sua melhoria, recriando-se funcionalidades do sistema existente e acrescentando-se novas funções.
