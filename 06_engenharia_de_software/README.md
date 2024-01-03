@@ -532,3 +532,43 @@
 - **Reestruturação da documentação**: desenvolvimento de uma documentação inteiramente nova;
 - **Reestruturação dos dados**: abrange a recuperação da base de dados armazenada no software para que possa ser reaproveitada na nova versão desse software;
 - **Engenharia direta**: o próprio projeto do software é utilizado como base para sua melhoria, recriando-se funcionalidades do sistema existente e acrescentando-se novas funções.
+
+## Práticas de engenharia de software
+
+### Design de interação
+
+- O design de interação diz respeito ao "design de produtos interativos que fornecem suporte às atividades cotidianas das pessoas, seja no lar ou no trabalho" (PREECE; ROGERS; SHARP, 2005, p. 28), sendo assim, consiste em projetar produtos e serviços que sejam, ao mesmo tempo, úteis e fáceis de serem manuseados ou manipulados pelas pessoas.
+
+#### Aspectos cognitivos do usuário
+
+- O projeto de um software deve considerar, tanto visual quanto funcionalmente, os processos cognitivos por meio dos quais o usuário utilizará esse software;
+- Preece; Rogers; Sharp (2005, p. 94), destaca uma série de processos cognitivos que são relevantes no momento de se projetar a interação de um usuário em um produto, inclusive software:
+  - **Atenção**: consiste em "selecionar coisas em que se concentrar, num certo momento, dentre a variedade de possibilidades disponível" (PREECE; ROGERS; SHARP, 2005, p. 95);
+  - **Percepção e reconhecimento**: "refere-se a como a informação é adquirida do ambiente pelos diferentes órgãos sensitivos (por exemplo, olhos, ouvidos, dedos) e transformada em experiências com objetos, eventos, sons e gostos" (PREECE; ROGERS; SHARP, 2005, p. 97);
+  - **Memória**: processo que "implica recordar vários tipos de conhecimentos que nos permitem agir adequadamente" (PREECE; ROGERS; SHARP, 2005, p. 98);
+  - **Leitura, fala e audição**: esses processos também devem ser considerados em um projeto, pois são utilizados pelo usuário para a percepção das informações contidas em um software, especialmente, para pessoas portadoras de deficiência;
+  - **Resolução de problemas, planejamento, raciocínio e tomada de decisão**: "envolvem cognição reflexiva. Implicam pensar sobre o que fazer, quais são as opções e quais podem ser as consequências de se realizar uma dada ação" (PREECE; ROGERS; SHARP, 2005, p. 108).
+
+#### Projeto de interfaces
+
+- As interfaces consistem nos meios pelos quais o usuário interage com o sistema, como telas, botões, dispositivos (mouse e teclado), dentre outros;
+- O projeto de um software deve contemplar a forma pela qual as interfaces serão utilizadas, uma vez que é por meio destas que o usuário fornecerá as entradas necessárias para o sistema;
+- Mandel (1997, apud Pressman; Maxim, 2016) determina, assim, o que se denomina Regras de Ouro no projeto de interfaces:
+  - **Regra 1: Usuário no comando**:
+    - O usuário deve ter o controle total de suas ações em um software;
+    - O software não pode, por exemplo, fazer com que o usuário realize ações indesejadas ou desnecessárias para ele conseguir o que quer e deve permitir interrupções de ações por parte deste;
+    - A interação deve ser simplificada de acordo com o grau de aprendizagem do usuário, e detalhes técnicos de funcionamento devem ser ocultados do usuário iniciante, permitindo a personalização desses detalhes no caso de usuários avançados;
+    - O projeto de um software deve ser feito de modo que o usuário interaja diretamente com os objetos de uma tela.
+  - **Regra 2: Redução da carga de memória para o usuário**:
+    - É importante que o usuário, ao utilizar um software, consiga detectar padrões, como formas e funcionalidades, tenha acesso a atalhos intuitivos, que as informações sejam reveladas progressivamente, e não todas de uma vez, para não confundir o usuário, e que o layout da interface, na medida do possível, aproxime-se das características do mundo real (MANDEL, 1997 apud PRESSMAN; MAXIM, 2016);
+    - Por exemplo, um sistema de pagamento de boletos bancários ter o layout e a disposição de informações similares aos de um boleto bancário físico.
+  - **Regra 3: Consistência da interface**:
+    - O software deve “fornecer indicadores (por exemplo, títulos para as janelas, ícones gráficos, sistema de cores padronizado) que possibilitem ao usuário saber o contexto do trabalho em mãos” (MANDEL, 1997, apud PRESSMAN; MAXIM, 2016, p. 320-321);
+    - A interface deve estar consistente com a tarefa a qual será realizada pelo usuário e tal consistência deve ser mantida no caso de uma linha de produtos (ou seja, softwares de uma mesma família), de modo que o usuário já tenha familiaridade com sua utilização.
+
+#### Prototipação
+
+- A prototipação é uma técnica na qual, por meio de um dispositivo, processo ou objeto similar ao que seria o resultado final de um projeto, simula-se a utilização de um produto ou serviço;
+- Assim, na engenharia de software, o uso de protótipos, interfaces ou componentes é útil para a discussão de ideias e possibilidades de abordagem em um projeto entre desenvolvedores e clientes;
+- Prototipação de **baixa fidelidade**: consiste na construção de protótipos com pouca similaridade ao produto acabado. Esses protótipos possuem custo mais baixo de desenvolvimento, mas contam com limitações de uso e de verificação de erros tendo em vista a menor relação com o produto final;
+- Protótipo de **alta fidelidade**: um protótipo de alta fidelidade em software, seria, por exemplo, uma simulação do software em formato digital contendo telas leiautadas como seria na realidade, podendo este protótipo ser acessado por smartphone ou por PC, e o usuário podendo interagir com esse protótipo como se fosse o software real.
