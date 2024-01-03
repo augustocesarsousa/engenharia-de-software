@@ -572,3 +572,66 @@
 - Assim, na engenharia de software, o uso de protótipos, interfaces ou componentes é útil para a discussão de ideias e possibilidades de abordagem em um projeto entre desenvolvedores e clientes;
 - Prototipação de **baixa fidelidade**: consiste na construção de protótipos com pouca similaridade ao produto acabado. Esses protótipos possuem custo mais baixo de desenvolvimento, mas contam com limitações de uso e de verificação de erros tendo em vista a menor relação com o produto final;
 - Protótipo de **alta fidelidade**: um protótipo de alta fidelidade em software, seria, por exemplo, uma simulação do software em formato digital contendo telas leiautadas como seria na realidade, podendo este protótipo ser acessado por smartphone ou por PC, e o usuário podendo interagir com esse protótipo como se fosse o software real.
+
+### Jogos digitais
+
+#### Ideia
+
+- Uma ideia de jogo digital, para se tornar viável, deve considerar, além de aspectos técnicos de desenvolvimento, aspectos relativos ao principal componente de um jogo: o jogador;
+- Para Schell (2011), é necessário, na idealização e no desenvolvimento de jogo, pensar no que é valioso para os jogadores, em como tornar o jogo mais valioso e nas relações entre o valor do jogo e as motivações do jogador;
+- Outra questão de relevância na idealização de um jogo é a solução de problemas;
+- De acordo com Schell (2011), no processo de idealização, é necessário pensar em quais desafios (inclusive ocultos) o jogo solicita para o jogador solucionar e como pode gerar novos desafios para que ele sempre volte a jogá-lo.
+
+#### Narrativa
+
+- A narrativa também é um componente essencial na criação de jogos. É por meio das narrativas, ou histórias, que o jogador se situa no universo do jogo e se identifica com cenário, personagens, dentre outros elementos;
+- Conforme Schell (2011), recomenda-se que o jogo possibilite a personalização da história a ser contada por parte do jogador, personalizando cenários e personagens;
+- Ainda de acordo com Schell (2011, p. 310), pensar em narrativa é proporcionar diferentes escolhas aos jogadores a respeito de como atingir seus objetivos, além de proporcionar conflitos a serem resolvidos pelo jogador;
+- Uma boa história somente pode ser contada com a ajuda de personagens, os quais também devem ser desenvolvidos tanto em termos de aparência quanto de movimentação, ações que podem desempenhar, dentre outros atributos;
+- Sendo assim, desenvolver narrativas e personagens em um jogo digital também significa pensar em engenharia de software. A partir do momento em que se definem a história a ser contada e os personagens que participarão dela, cada personagem ou parte da história representa linhas de código a serem desenvolvidas.
+
+#### Mecânica
+
+- Conforme Schell (2011), existem seis mecânicas possíveis que devem ser consideradas no desenvolvimento de jogos, inclusive digitais:
+  - **Espaço**:
+    - A primeira mecânica exposta por Schell é o espaço, que, segundo o autor, "define os vários lugares que podem existir em um jogo, e como esses lugares estão relacionados entre si" (SCHELL, 2011, p. 130);
+    - O espaço em um jogo digital é como um tabuleiro em um jogo analógico: define os limites físicos do jogo e da movimentação dos personagens;
+    - Um espaço de jogo é matematicamente dimensionado e, quanto maior for, maior será a variedade de cenários possíveis de serem inseridos, o que demandará mais quantidade de horas de desenvolvimento por parte de designers e programadores.
+  - **Objetos**:
+    - O segundo elemento de mecânica a ser considerado são os objetos presentes no jogo, bem como seus atributos (características) e estados (isto é, com qual característica o objeto se encontra no atual momento);
+    - Um objeto (por exemplo, um personagem) tem atributos (altura, peso, aparência, dentre outras) e estados (dormindo, acordado, inconsciente, invisível, visível, dentre outros);
+    - Cada objeto, seus atributos e estados devem ser programados de modo a refletir sobre as ações que deverão desempenhar em determinado momento do jogo.
+  - **Ações**:
+    - O terceiro tipo de mecânica em um jogo digital são as ações, ou seja, o que o jogador, amigos e oponentes poderão realizar;
+    - As ações significam os verbos desempenhados em um jogo, como correr, pular, lançar, esconder, dentre outras;
+    - Ações operacionais consistem nas ações mais básicas de um jogador, como os movimentos básicos das peças em um jogo de xadrez;
+    - Ações resultantes são as ações especiais que podem ser tomadas por um jogador, como o sacrifício de uma peça em determinada casa para enganar o adversário – ao comer a peça, o adversário é surpreendido por outra ação que come também sua peça de maior valor.
+  - **Habilidades**:
+    - A quarta mecânica – habilidades de um jogador – deve ser considerada tendo-se em vista que um jogo e suas mecânicas dependerão dessas habilidades para serem realizados;
+    - Schell (2011) recomenda que desenvolvedores, quando estão projetando um jogo, façam uma lista das habilidades que deverão, necessariamente, ser desempenhadas pelo jogador;
+    - As habilidades a serem desenvolvidas podem ser físicas (como força, destreza e coordenação motora), mentais (como memória, observação e solução de problemas) ou sociais (como interpretação do que pensa um adversário e coordenação de equipes de jogadores).
+  - **Probabilidade**:
+    - A probabilidade, quando usada adequadamente em um jogo, significa proporcionar, a cada partida, uma sequência de acontecimentos diferentes para cada jogador;
+    - Desenvolvedores de jogos devem, entretanto, considerar a probabilidade com cautela, pois quanto maior a sua presença em jogos, menor o controle por parte do jogador, o que significa menor envolvimento por parte deste no jogo.
+  - **Regras**:
+    - As regras, segundo Schell (2011, p. 144), consistem na mecânica mais fundamental de um jogo, pois "definem o espaço, os objetos, as ações, as consequências das ações, as restrições sobre as ações e os objetivos. Em outras palavras, tornam possível toda a mecânica que vimos até agora e adicionam a coisa fundamental que define um jogo – objetivos";
+    - Resumidamente, as regras são os elementos que estruturam um jogo, o fazem ser compreensível e definem ao jogador as ações que devem ser realizadas para ganhar o jogo, sendo, portanto, o principal elemento norteador.
+
+#### Interfaces em jogos
+
+- No caso de jogos digitais, o projeto da interface deve considerar, especificamente, aspectos relativos ao relacionamento do jogador com o jogo, de modo que este se envolva com a narrativa contada; e as ações e demais mecânicas do jogo possam ser adequadamente realizadas;
+- Segundo Schell (2011, p. 222), um jogo digital possui dois tipos de interfaces que devem ser projetadas:
+  - **Interface física**: a possibilidade da utilização de formas de dispositivos que possam transformar a experiência de jogo em um formato similar ao mundo real, como dispositivos de toque para realidade virtual;
+  - **Interface virtual**: não podem atrapalhar o desempenho do jogador no jogo (por exemplo, obstruindo o seu campo de visão) e, quando possível, a interface pode interagir com os demais elementos no mundo do jogo (por exemplo, a partir de uma janela pop-up);
+  - Desenvolvedores de jogos, ao projetar interfaces, devem considerar que botões, por exemplo, podem ser apertados tanto em um controle quanto na tela do jogo, e cada ação proporcionará uma experiência de jogo diferenciada.
+
+#### Documentação
+
+- O projeto de um jogo, para viabilizar a comunicação entre clientes, designers e desenvolvedores, deve contemplar a elaboração de uma documentação precisa e detalhada;
+- Como qualquer software, um jogo necessita da documentação de seus requisitos, componentes e estrutura, de modo que possa ser desenvolvido e, posteriormente, testado com relação ao cumprimento de requisitos;
+- Schell (2011), enumera cinco tipos de documentos essenciais a serem desenvolvidos no caso de jogos:
+  - **Design**: diz respeito aos detalhamentos relativos ao design de um jogo, contemplando ideias, mecânicas, personagens, narrativa e interfaces do jogo;
+  - **Programação**: diz respeito aos aspectos técnicos de desenvolvimento do jogo, como aspectos relativos à programação e integração da programação com os aspectos artísticos do jogo;
+  - **Gerenciamento**: trata de questões como cronograma, orçamentação e demais aspectos relativos à gestão do projeto do jogo;
+  - **Escrita**: trata de aspectos como narrativa, roteiro, tutorial e manual do jogo, ou seja, a parte escrita de um jogo;
+  - **Jogadores**: trata do passo a passo de um jogo, sendo inclusive um documento interativo – jogadores podem complementá-lo com dicas, opiniões, dentre outros.
