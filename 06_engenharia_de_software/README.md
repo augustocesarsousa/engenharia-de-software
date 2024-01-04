@@ -635,3 +635,47 @@
   - **Gerenciamento**: trata de questões como cronograma, orçamentação e demais aspectos relativos à gestão do projeto do jogo;
   - **Escrita**: trata de aspectos como narrativa, roteiro, tutorial e manual do jogo, ou seja, a parte escrita de um jogo;
   - **Jogadores**: trata do passo a passo de um jogo, sendo inclusive um documento interativo – jogadores podem complementá-lo com dicas, opiniões, dentre outros.
+
+### Projeto de WebApps e aplicativos móveis
+
+#### Requisitos para o projeto de aplicativos baseados na web
+
+- Pressman e Maxim (2016) elaboraram o que se denomina Árvore de requisitos de qualidade:
+  - Usabilidade:
+    - Facilidade de compreensão geral do site;
+    - Feedback on-line e recursos de ajuda;
+    - Características estéticas e de interface;
+    - Características especiais.
+  - Funcionalidade:
+    - Capacidade de busca e recuperação;
+    - Características de navegação e leitura de documentos;
+    - Características relacionadas ao domínio da aplicação.
+  - Confiabilidade:
+    - Processamento correto dos links;
+    - Recuperação de erros;
+    - Validação e recuperação dos dados de entrada dos usuários.
+  - Eficiência:
+    - Desempenho do tempo da resposta;
+    - Velocidade de geração de páginas;
+    - Velocidade de geração de imagens.
+  - Facilidade de manutenção:
+    - Facilidade de correção;
+    - Adaptabilidade;
+    - Extensibilidade.
+
+#### Projeto de interfaces para aplicativos móveis
+
+- Segundo Pressman e Maxim (2016), alguns elementos adicionais devem ser considerados para o desenvolvimento de interfaces:
+  1. Princípio da antecipação: aplicações de internet devem ser desenvolvidas tendo em vista enfatizar, na interface, as funcionalidades mais básicas ou de uso mais frequentes;
+  2. Princípio da comunicação: o usuário deve ser comunicado e entender em qual parte da interface se encontra;
+  3. Princípio da consistência: a quantidade desses itens deve ser suficiente para a compreensão por parte do usuário da interface, não sendo essa quantidade excessiva;
+  4. Princípio da autonomia controlada: a navegação do usuário deve ser precisa e fácil, porém seguindo as regras de design convencionadas para o aplicativo;
+  5. Princípio da eficiência: o foco no desenvolvimento de uma interface é o usuário, e o desenvolvedor deve, no momento de projetá-la, pensar nas necessidades e características desse usuário;
+  6. Princípio da flexibilidade: a interface deve proporcionar ao usuário uma navegação, ao mesmo tempo, precisa e exploratória. Quem deseja realizar tarefas deve encontrar precisão e facilidade. Quem deseja explorar as funcionalidades do aplicativo, deve encontrar opções para tal;
+  7. Princípio do foco: a tarefa de um aplicativo deverá ser prontamente atendida;
+  8. Princípio da redução da latência: na internet, é comum a realização de multitarefas, e um aplicativo deve possibilitar que o usuário as realize enquanto este aplicativo se encontrar ocupado realizando outra tarefa;
+  9. Princípio da facilidade de aprendizagem: simplicidade é característica essencial em interfaces para internet, principalmente em aplicativos para dispositivos móveis, em que o tamanho das telas tende a ser menor;
+  10. Princípio da legibilidade: uma interface, antes de operada, deve ser percebida pelo usuário, essa percepção também deve ser rápida e objetiva, razão pela qual o uso de fontes e cores deve ser planejado com cautela;
+  11. Princípio de acompanhar o estado da interação: demonstra eficiência por parte do software, pois este facilita ao usuário o cumprimento de suas tarefas e seus objetivos;
+  12. Princípio da navegação visível: uma interface deve proporcionar ao usuário praticidade na navegação, não forçando-o a ler grandes quantidades de texto, não dependendo de funções do navegador de internet para auxiliar na navegação da página (as funções devem estar na própria interface ou página de internet), dentre outras.
+- Assim, projetar interfaces para aplicativos web significa, antes de tudo, pensar no usuário que fará o seu uso. A disposição das informações, layout, botões, links, dentre outros elementos em uma interface deve considerar, além dos princípios básicos descritos acima, as características cognitivas do usuário que realizará o uso dessa interface;
