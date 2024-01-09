@@ -76,3 +76,15 @@
 - Processo de software para times – TSP: utilizando um modelo de ciclo de vida em espiral, esse processo é uma sequência do PSP. O TSP cobre a área de gestão de requisitos, planejamento e controle de projetos, garantia da qualidade e gestão de configurações não cobertas pelo PSP;
 - Processo unificado: esse processo, centrado na arquitetura, é dirigido a casos de uso, sendo iterativo e incremental, e usa a UML (Unified Modeling Language) como notação para os modelos que o compõem, centrado na arquitetura. Ele utiliza um modelo de ciclo de vida em espiral e é dividido em fases e fluxos de trabalho. Cada fase representa um marco gerencial do projeto e cada fluxo de trabalho trata de um tema técnico específico. O RUP (Rational Unified Process) e o EUP (Enterprise Unified Process) são baseados no processo unificado;
 - Práxis: é um processo com fins didáticos e baseado em tecnologia de orientação a objetos e sua notação de análise e projeto também é UML. Apresenta elementos do processo unificado, mas com influência do PSP e do TSP. Da mesma forma que o processo unificado, o práxis abrange fases e fluxos: uma fase é dividida em uma ou mais iterações, e um fluxo é dividido em uma ou mais atividades.
+
+## Normas e padrões
+
+### Normas e seus organismos normativos
+
+- Normalização é o processo de desenvolvimento, implementação e melhoria dos padrões que se aplicam a ordens científica, industrial e econômica diferentes, para organizar suas atividades;
+- A ISO (International Organization for Standardization) desenvolve normas internacionais para diversos campos da tecnologia, exceto o eletrotécnico, coberto pela IEC (International Electrotechnical Comission), e as telecomunicações, abrangidas pela UIT (União Internacional de Telecomunicações);
+- A normalização envolve um conjunto de regras convencionais destinadas a simplificar, unificar e especificar produtos (WAZLAWICK, 2013):
+  - Simplificar: procura manter apenas o estritamente necessário, seja em documentos, processos, orientações etc. As próprias normas também são simplificadas para serem facilmente assimiladas;
+  - Unificar: a ideia é criar um padrão para os produtos, utilizado em todas as partes do mundo para permitir trocas internacionais;
+  - Especificar: procura, por meio de uma linguagem clara e precisa, identificar os produtos, definindo-os, categorizando-os, catalogando-os e detalhando suas características, de modo a orientar o consumidor.
+- Em relação às normas técnicas, é importante conhecer os Organismos Nacionais de Normalização (NSB, do inglês National Standards Body) dos países de interesse, que, em geral, possuem um centro de informação sobre normas. No Brasil, o organismo responsável pela elaboração de normas técnicas é a Associação Brasileira de Normas Técnicas (ABNT).
