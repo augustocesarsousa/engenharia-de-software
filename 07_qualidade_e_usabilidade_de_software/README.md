@@ -229,3 +229,24 @@
 - Existem, ainda, dificuldades para quantificá-los, uma vez que cada conjunto de requisitos é específico para cada projeto, e cada requisito tem propriedades únicas que incluem áreas funcionais específicas;
 - Um requisito pode mudar ao longo do ciclo de desenvolvimento, sendo necessário rever o projeto como um todo, devido à integração de requisitos;
 - Também há os requisitos que estão na expectativa do usuário, porém não estão documentados. Esses requisitos são chamados de _requisitos implícitos_ , são totalmente indesejados, porém podem ser minimizados por meio de uma boa especificação – ou seja, detalhando-se bem os requisitos explícitos e normativos (VALERIANO, 2005).
+
+### Qualidade de requisitos de software
+
+- A ISO 9001:2008 especifica requisitos para um sistema de gestão da qualidade, quando uma organização (CYBIS et al., 2015):
+  a. Precisa demonstrar sua capacidade de fornecer de forma consistente produtos que atendam aos requisitos do cliente e requisitos regulamentares aplicáveis;
+  b. Pretende aumentar a satisfação do cliente por meio da aplicação eficaz do sistema, incluindo processos para sua melhoria contínua e a garantia de conformidade com os requisitos do cliente;
+- Os requisitos são o primeiro passo para se atingir a qualidade e serão avaliados durante os testes, nos quais é possível verificar se estão sendo atendidos ou não;
+- Embora a qualidade possa ser avaliada durante a fase de testes, é um equívoco concentrar os esforços para obtenção da qualidade apenas nessa fase do projeto, tendo em vista que a qualidade deve percorrer todas as etapas de desenvolvimento. Se isso não for feito desde o início, os erros tendem a migrar de uma etapa para a outra, onerando todo o processo;
+- Garantia da qualidade de software em todo o ciclo de desenvolvimento:
+  - Modelo de negócios;
+  - Requisitos;
+  - Análise e modelagem;
+  - Implementação;
+  - Testes de software;
+  - Disponibilização.
+
+#### Requisitos de qualidade
+
+- Definir com precisão os requisitos de um software permite que todos os recursos da empresa e a energia da equipe de desenvolvimento sejam direcionados a um fim claro. Sem uma definição precisa daquilo que se pretende construir, perde-se tempo, mais erros são cometidos e a qualidade do produto final é incerta. (KOSCIANSKI; SOARES, 2007, p. 172);
+- Os requisitos de qualidade de software, segundo Wazlawick (2013), devem fazer parte da própria especificação do produto;
+- A qualidade também tem um custo, e o investimento compensa quando ela baixa os custos com falhas. Isso não significa que a qualidade deixará de ser uma meta em todas as etapas do processo, mas é preciso considerar que existem níveis de qualidade e que qualidade não é sinônimo de perfeição, mas de algo que atende às necessidades do cliente/usuário de forma satisfatória.
