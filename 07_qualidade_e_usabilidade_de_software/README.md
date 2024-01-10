@@ -151,3 +151,43 @@
 #### Eliminação dos defeitos
 
 - É o entendimento dos principais defeitos presentes nos projetos de software – como erros na gestão, prazos curtos, erros de código –, com o objetivo de avaliá-los e eliminá-los, de modo a garantir o controle de qualidade em todas as atividades do processo (MARSHALL JR. et al., 2012).
+
+## Influência dos requisitos na qualidade do software
+
+- Engenharia de requisitos é o processo de análise e verificação das necessidades de um cliente/usuário para o desenvolvimento de um sistema;
+- O objetivo da engenharia de requisitos é entregar um software correto e completo, de acordo com especificações predeterminadas;
+- Os requisitos são a peça fundamental para um projeto de desenvolvimento de software com qualidade, que exige planejamento e recursos;
+- Os líderes do projeto utilizam os requisitos de base para estimar os recursos necessários à criação de um software.
+
+### Processos de negócio
+
+- Um processo de negócio consiste em um conjunto de tarefas ou atividades que são executadas de acordo com certas regras relacionadas a determinados objetivos. Trata-se de uma série de tarefas individuais, e cada uma delas é executada em uma ordem específica.
+
+#### Requisitos de software
+
+- De acordo com a definição do glossário do IEEE, os requisitos do software são (VASQUEZ; SIMÕES, 2016, p. 18):
+  1. Uma condição ou capacidade do sistema, solicitada por um usuário, para resolver um problema ou atingir um objetivo;
+  2. Uma condição ou capacidade que deve ser atendida por uma solução para satisfazer um contrato, especificação, padrão ou quaisquer outros documentos formais impostos;
+  3. Documentação da representação das condições ou capacidades apresentadas nos dois itens anteriores;
+  4. Uma condição ou capacidade que deve ser alcançada ou possuída por um sistema, produto, serviço, resultado ou componente para satisfazer um contrato, padrão, especificação ou outro documento formalmente imposto.
+- Os requisitos devem apresentar uma série de características, tanto individualmente como em grupos. Estas são as características mais importantes dos requisitos de software (VALERIANO, 2005):
+  - Necessário: um requisito deve ser necessário. A sua omissão causa uma deficiência no sistema, afetando a sua capacidade, suas características físicas. Quando o cliente/usuário aponta a necessidade de um requisito, é preciso verificar quão necessário ele realmente é ao software. Se for um elemento apenas estético, por exemplo, não se trata de um requisito;
+  - Conciso: um requisito é conciso se é fácil de ler e compreender. A sua redação deve ser simples e clara para aqueles que vão consultá-lo, sejam os clientes ou outros desenvolvedores, no futuro. Um documento muito extenso acaba dificultando o processo, pois sua leitura e interpretação demandam mais tempo;
+  - Completo: um requisito é completo quando não necessita de mais detalhes na sua formulação, ou seja, a informação disponibilizada é suficiente para sua compreensão e para o desenvolvimento do software;
+  - Consistente: os dados apresentados devem ser confiáveis e seguros, possíveis de serem realizados e integrados de forma consistente, ou seja, um requisito não pode contradizer outro nem se propor a fazer a mesma coisa;
+  - Inequívoco: os requisitos devem ser claros e não permitir mais de uma interpretação (não podem ser ambíguos), pois isso poderia acarretar diversos erros no sistema;
+  - Verificável: um requisito é verificável quando ele é palpável, pode ser construído, testado, rastreado e homologado; não é apenas uma ideia que só pode existir no papel.
+
+#### Engenharia de requisitos
+
+- O processo de análise e levantamento das necessidades dos clientes é conhecido como parte integrante da engenharia de requisitos;
+- O objetivo dessa área da engenharia de software é desenvolver e manter um sistema documentado de especificação de requisitos que contemple todas as informações necessárias, de forma concisa, clara e descritiva (VALERIANO, 2005);
+- A engenharia de requisitos facilita a interação com o cliente/usuário em termos de identificar e entender o que ele necessita e na obtenção de um acordo acerca da solução que será entregue;
+- O desenvolvimento dos requisitos geralmente passa pelas seguintes fases (MARSHALL JR. et al., 2012):
+  - Análise de problemas: identificar stakeholders, obter concordância em relação ao problema que eles possuem, identificar fronteiras e restrições ao sistema e elaborar o documento de visão;
+  - Avaliação e negociação: processo de avaliação e negociação de melhorias com o cliente ou stakeholder;
+  - Especificação: processo que tem como objetivo obter produtos de software de melhor qualidade, que satisfaçam às reais necessidades dos clientes dentro de prazo e orçamento adequados;
+  - Validação: processo que tem como objetivo a validação da consistência e do contexto dos requisitos levantados no processo de identificação;
+  - Evolução: processo em que se compreende a situação inicial do problema, os requisitos iniciais, o entendimento do problema modificado e os requisitos que são alterados ao longo do tempo do projeto;
+  - Princípios de especificação: processo de representação dos requisitos do cliente, especificando a funcionalidade da implementação, identificando o comportamento desejado do sistema e o modo pelo qual outros componentes do sistema interagem com o software.
+- Essas fases não seguem com rigor essa ordem e uma mesma fase pode se repetir algumas vezes durante o projeto, mas todas estão presentes quando se trata de desenvolvimento de requisitos de software.
