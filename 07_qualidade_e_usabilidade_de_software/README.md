@@ -191,3 +191,41 @@
   - Evolução: processo em que se compreende a situação inicial do problema, os requisitos iniciais, o entendimento do problema modificado e os requisitos que são alterados ao longo do tempo do projeto;
   - Princípios de especificação: processo de representação dos requisitos do cliente, especificando a funcionalidade da implementação, identificando o comportamento desejado do sistema e o modo pelo qual outros componentes do sistema interagem com o software.
 - Essas fases não seguem com rigor essa ordem e uma mesma fase pode se repetir algumas vezes durante o projeto, mas todas estão presentes quando se trata de desenvolvimento de requisitos de software.
+
+### Os requisitos e a comunicação
+
+- As necessidades dos clientes evoluem com o tempo, e toda mudança envolve um custo. Por isso é necessário ter uma cópia da documentação do sistema original e de cada revisão ou alterações feitas nesse documento;
+- Como todas as necessidades são tratadas de forma diferente, é necessário classificá-las para saber qual delas vai ser satisfeita pelo software ou algum outro produto do sistema (PFLEEGER, 2004);
+- A especificação de requisitos de software é a atividade em que o documento é gerado com um nome específico, contendo uma descrição completa das necessidades e capacidades do sistema que será desenvolvido. Esse documento descreve o escopo do sistema e como serão suas funções, como, por exemplo, definir os requisitos funcionais e não funcionais (PRESSMAN; MAXIM, 2016).
+
+#### Especificação de requisitos
+
+- Segundo Vasquez e Simões (2016, p. 18), "a especificação de requisitos é um contrato entre
+  clientes e equipe de desenvolvimento. Ela deve esclarecer aos clientes o que será entregue como
+  produto do trabalho da equipe de desenvolvimento";
+- Com base na especificação, os clientes/usuários devem ser capazes de entender o projeto e apontar falhas nele para que sejam corrigidas imediatamente, antes que o produto comece a ser produzido com defeitos;
+- São objetivos da especificação de requisitos (VASQUEZ; SIMÕES, 2016):
+  - Documentar de forma correta e fidedigna todas as necessidades do cliente/usuário;
+  - Obter aprovação (aceite) sobre tudo o que está sendo proposto para se entregar em termos de produto;
+  - Ajudar a equipe de desenvolvimento a compreender exatamente o que os clientes/usuários desejam;
+  - Servir de base para o trabalho de manutenção futura no sistema.
+- Segundo Vasquez e Simões (2016), uma especificação de requisitos geralmente apresenta:
+  - Visão geral: em que se apresenta os objetivos do projeto, as partes interessadas e o escopo preliminar com as funções descritas brevemente;
+  - Glossário: definição dos termos técnicos e de siglas usados no documento;
+  - Modelos de sistema: em que se mostra o relacionamento entre os componentes do sistema;
+  - Lista de requisitos funcionais: em que se descreve as tarefas executadas pelo sistema e as interfaces externas do software;
+  - Lista de requisitos não funcionais: em que se descreve as restrições impostas sobre o software, relacionando-as aos requisitos funcionais;
+  - Especificação detalhada de requisitos: detalhamento dos requisitos funcionais.
+- É importante reforçar que a especificação de requisitos é o resultado final das atividades de análise e avaliação de requisitos; desse modo, o documento resultante será usado como fonte básica de comunicação entre clientes, usuários finais, analistas de sistemas, testadores e todos os envolvidos na implementação do sistema (PFLEEGER, 2004).
+
+#### Dificuldades na definição de requisitos
+
+- Segundo Pressman e Maxim (2016), entre as dificuldades na definição de requisitos, estão:
+  - Suas exigências não são óbvias e podem vir de várias fontes;
+  - Os requisitos são difíceis de expressar em palavras (a linguagem é ambígua);
+  - Não são muitos os tipos de requisitos e há diferentes níveis de detalhe;
+  - O número de requisitos em um projeto pode ser difícil de manusear;
+  - E eles nunca são iguais – alguns são mais difíceis, mais arriscados, mais importantes ou mais estáveis do que outros.
+- Existem, ainda, dificuldades para quantificá-los, uma vez que cada conjunto de requisitos é específico para cada projeto, e cada requisito tem propriedades únicas que incluem áreas funcionais específicas;
+- Um requisito pode mudar ao longo do ciclo de desenvolvimento, sendo necessário rever o projeto como um todo, devido à integração de requisitos;
+- Também há os requisitos que estão na expectativa do usuário, porém não estão documentados. Esses requisitos são chamados de _requisitos implícitos_ , são totalmente indesejados, porém podem ser minimizados por meio de uma boa especificação – ou seja, detalhando-se bem os requisitos explícitos e normativos (VALERIANO, 2005).
