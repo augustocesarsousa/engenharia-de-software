@@ -130,3 +130,24 @@
   - Nível 3 – Definido: é uma adaptação do conjunto de normas da organização, de acordo com as diretrizes da empresa, e fornece dispositivos, medidas e outras informações para melhorar os ativos da organização;
   - Nível 4 – Manejado (gerenciado) quantitativamente: é controlado usando-se técnicas quantitativas estatísticas e outras. Metas quantitativas para a qualidade e o desempenho do processo são estabelecidas e utilizadas como critérios para sua gestão;
   - Nível 5 – Otimizado: otimização é a melhoria contínua do processo, com base no entendimento de causas comuns de variação de processo. Esse processo é realizado por meio de perfeiçoamentos incrementais e usando-se a inovação tecnológica.
+
+### Métricas de qualidade de software
+
+#### Resumo dos fatores que afetam a qualidade
+
+- Marshall Jr. et al. (2012), define um conjunto de fatores de qualidade que avaliam o software sob três pontos de vista diferentes:
+  - operação do produto (usá-lo);
+  - revisão do produto (alterando-o);
+  - transição do produto (modificando-o para trabalhar em um ambiente diferente).
+
+#### Medida de qualidade
+
+- Segundo Marshall Jr. et al. (2012), as medidas de qualidade que fornecem indicadores úteis para a equipe do projeto, são:
+  - Exatidão: é o grau em que o software executa a sua função;
+  - Manutenção: é a facilidade com que um programa pode ser corrigido se um erro de sistema, seja de código ou de requisitos, for encontrado;
+  - Integridade: mede a capacidade de um sistema para resistir a ataques (acidentais e intencionais) à sua segurança. Os ataques podem ser executados em qualquer um dos três componentes de software – programa, dados e documentos. Para medir a integridade, é preciso definir dois atributos adicionais: ameaça e segurança. Ameaça é a probabilidade de que um ataque dê certo em determinado momento. Já a segurança é a probabilidade que o sistema tem de repelir um ataque de certo tipo;
+  - Facilidade de uso: é uma tentativa de quantificar o quão amigável pode ser o programa para o usuário.
+
+#### Eliminação dos defeitos
+
+- É o entendimento dos principais defeitos presentes nos projetos de software – como erros na gestão, prazos curtos, erros de código –, com o objetivo de avaliá-los e eliminá-los, de modo a garantir o controle de qualidade em todas as atividades do processo (MARSHALL JR. et al., 2012).
