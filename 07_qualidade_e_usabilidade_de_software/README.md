@@ -88,3 +88,45 @@
   - Unificar: a ideia é criar um padrão para os produtos, utilizado em todas as partes do mundo para permitir trocas internacionais;
   - Especificar: procura, por meio de uma linguagem clara e precisa, identificar os produtos, definindo-os, categorizando-os, catalogando-os e detalhando suas características, de modo a orientar o consumidor.
 - Em relação às normas técnicas, é importante conhecer os Organismos Nacionais de Normalização (NSB, do inglês National Standards Body) dos países de interesse, que, em geral, possuem um centro de informação sobre normas. No Brasil, o organismo responsável pela elaboração de normas técnicas é a Associação Brasileira de Normas Técnicas (ABNT).
+
+### Normas ISO e modelos CMMI
+
+#### ISO
+
+- A International Organization for Standardization, ou ISO, é uma organização não governamental, uma federação de organismos nacionais de normalização de todas as regiões do mundo, incluindo países desenvolvidos e países em desenvolvimento (MARSHALL JR. et al., 2012);
+- Cada membro da ISO possui uma agência principal de normalização em seu próprio país. Os países-membros propõem as novas normas, envolvem-se em seu desenvolvimento e prestam apoio, divididos em grupos técnicos, em conjunto com a Secretaria Geral da ISO, localizada em Genebra, na Suíça (PRESSMAN; MAXIM, 2016);
+- Em 27 de fevereiro de 1947, a ISO foi finalmente oficializada e iniciaram-se suas operações. Naquele ano, mais de 19.500 normas foram criadas para todos os setores de produção, incluindo o setor da saúde, a indústria de alimentos, a de tecnologia etc. (PRESSMAN; MAXIM, 2016);
+- Em 1987, surge a norma ISO 9000, com a finalidade básica de facilitar ainda mais o comércio global. Para chegar a um consenso sobre essa legislação, foi necessário o apoio de 75% dos países que a compõem. Essa política baseia-se em dois pilares: melhoria e desempenho, enraizada em princípios, incluindo mercados, regulação, melhorias, responsabilidade, desenvolvimento do intelecto etc;
+- A partir de 1994, foi implementada a versão ISO 9001, quando ela se tornou mais interessante para as empresas (CAIÇARA JR., 2007);
+- A versão atual do padrão é datada de 2015 – a ISO 9001:2015 (ABNT, 2015), um aperfeiçoamento de sua edição anterior, de 2008 – ISO 9001:2008 (ABNT, 2008);
+- A fim de validar a implementação dessa norma, faz-se necessária uma auditoria de certificação e aplicação das regras de qualidade, e, se a conformidade for constatada, é emitido um certificado à empresa (MARSHALL JR. et al., 2012);
+- Em relação à engenharia de software, a NBR ISO/IEC 9126-1 é a atual padronização mundial de qualidade de produtos, propondo métricas e atributos para os produtos de software (ABNT, 2003).
+
+#### CMMI
+
+- O Capability Maturity Model Integration (CMMI) foi criado pelo SEI (Software Engineering Institute), um órgão de pesquisa da universidade norte-americana Carnegie Mellon, e consiste em um modelo de garantia de qualidade com enfoque voltado para a capacidade de maturidade de processos de software nas empresas;
+- SW-CMM pode ser usado para dois fins (CAIÇARA JR., 2007):
+  - Melhorar os processos relacionados com a produção e manutenção de software;
+  - Definir critérios para a determinação do nível de maturidade de uma organização que produz e mantém software.
+- O modelo CMMI busca a melhoria contínua dos processos organizacionais, por meio da análise e redesign, fornecendo, de acordo com Caiçara Júnior (2007):
+  - Uma maneira de integrar os elementos funcionais de uma organização;
+  - Um conjunto de melhores práticas com base em histórias de sucesso, comprovadas por organizações com experiência em práticas de melhoria de processos;
+  - Uma ajuda para identificação de metas e prioridades para a melhoria dos processos, dependendo dos pontos fortes e fracos da organização, obtidos por um método de avaliação;
+  - Um suporte às empresas em atividades produtivas complexas para coordenar as suas atividades;
+  - Uma referência para avaliar os processos atuais da organização.
+
+###### Níveis de maturidade e capacidade
+
+- O CMMI está dividido em cinco níveis de maturidade, que atestam o grau de evolução de uma organização em determinado momento e tem como objetivo principal guiar a melhoria de processos das empresas. Com ele é possível gerenciar o desenvolvimento e a produção de software, com base em prazos e custos estabelecidos e com mais qualidade:
+  1. Inicial: Processo imprevisível e sem controle, a maioria dos processos são ad-hoc e caóticos e a organização geralmente não fornece um ambiente estável para apoiá-los.;
+  2. Repetível: Processo disciplinado, o caos passa a ser ordenado, e as organizações se concentram em tarefas diárias relacionadas com a administração;
+  3. Definido: Processo consistente e padronizado, os processos são descritos em normas, procedimentos, ferramentas e métodos;
+  4. Gerenciado: Processo previsível e controlado, a organização e os projetos estabelecem metas quantitativas para medir a qualidade e o desempenho dos processos, as quais são utilizadas como critérios na gestão;
+  5. Otimizado: Processo continuamente melhorado, uma organização melhora continuamente seus processos com base no conhecimento das causas comuns de variação inerente a processos.
+- Nos processos de representação contínua, os níveis de capacidade são delimitados da seguinte forma:
+  - Nível 0 – Incompleto: um processo é chamado de incompleto quando um ou mais objetivos da área de processo não estão em conformidade;
+  - Nível 1 – Realizado: é chamado de feito ou realizado o processo que satisfaz todas as metas específicas da área de processo;
+  - Nível 2 – Manejado (produzido): é designado processo de gestão quando o projeto apresenta a infraestrutura para suportá-lo. O processo é planejado e executado de acordo com a política da empresa, envolvendo as partes interessadas, e emprega pessoas qualificadas que tenham recursos adequados para produzir saídas controladas. É monitorado, controlado, revisto e avaliado de acordo com sua descrição específica;
+  - Nível 3 – Definido: é uma adaptação do conjunto de normas da organização, de acordo com as diretrizes da empresa, e fornece dispositivos, medidas e outras informações para melhorar os ativos da organização;
+  - Nível 4 – Manejado (gerenciado) quantitativamente: é controlado usando-se técnicas quantitativas estatísticas e outras. Metas quantitativas para a qualidade e o desempenho do processo são estabelecidas e utilizadas como critérios para sua gestão;
+  - Nível 5 – Otimizado: otimização é a melhoria contínua do processo, com base no entendimento de causas comuns de variação de processo. Esse processo é realizado por meio de perfeiçoamentos incrementais e usando-se a inovação tecnológica.
