@@ -332,3 +332,29 @@
 - Sua desvantagem é a necessidade de um projeto robusto para que a estrutura do produto permaneça confiável ao longo das liberações programadas (CYBIS et al., 2015);
 - O objetivo da entrega evolutiva é obter o máximo de feedback do cliente sobre o que foi entregue, de modo que a próxima entrega seja planejada de acordo com esse feedback recebido, garantindo mais agilidade e qualidade ao produto;
 - Segue-se o mesmo ciclo da prototipagem evolutiva, com a diferença que as entregas referem-se a partes do software ou sistema.
+
+### Garantia da qualidade do software
+
+- A garantia de qualidade do software é obtida por meio de processos de engenharia de software de monitorização e aplicação de métodos de qualidade, que ocorrem por meio de intervenções da gestão de qualidade no sistema de software que está sendo criado. Essas intervenções são apoiadas por uma ou mais normas, geralmente a ISO 9000 (WAZLAWICK, 2003);
+- Qualidade é sinônimo de eficiência, flexibilidade, precisão, confiabilidade, facilidade de manutenção, portabilidade, usabilidade, segurança e integridade;
+- A qualidade do software é, portanto, mensurável e varia de um sistema para outro ou de um programa para outro;
+- Como afirma Valeriano (2005, p. 88), “a qualidade do software é o grau em que um sistema, componente ou processo atende aos requisitos especificados e às necessidades e expectativas do cliente ou do usuário”;
+- O Software Quality Assurance, ou SQA, é um conjunto de atividades sistemáticas e planejadas para garantir que os processos de software e produtos cumpram com os requisitos, as normas e os procedimentos de processo de produtos, design de software, documentação de codificação, suporte de teste e manutenção (SOMMERVILLE, 2011);
+- Com o SQA, a qualidade não é apenas responsabilidade da equipe de desenvolvimento do projeto, mas é medida por uma série de testes de qualidade. Esses testes foram inicialmente desenvolvidos pela indústria militar durante a década de 1970, nos Estados Unidos, e foram se difundindo e aprimorando até se tornar o SQA (PRESSMAN; MAXIM, 2016);
+- O processo de verificar se as normas estão sendo aplicadas corretamente pode ser feito pela equipe de desenvolvimento, no caso de pequenos projetos, mas, nos grandes projetos, um grupo específico deve se dedicar a essa função (ISNARD, 2012).
+
+#### Vantagens do SQA
+
+- Um plano SQA pode tomar uma série de caminhos, testando-se diferentes capacidades e análises de execução, dependendo das exigências do projeto, dos usuários e do software;
+- Sobre a metodologia do SQA, ressalta-se que o teste de software é considerado uma arte e uma ciência que requer a adoção de aplicações complexas para o desenvolvimento de diferentes sistemas operacionais;
+- Várias aplicações de software requerem diferentes abordagens quando estão na fase de teste, mas algumas das tarefas mais comuns de controle de qualidade incluem os passos a seguir:
+  - Validação do teste: o teste de validação é realizado para checar se há algum erro;
+  - Comparação: compara a saída de um uso específico com um sistema de dados previamente criado com os mesmos parâmetros;
+  - Testes de usabilidade: usuários que não estão familiarizados com o software fornecem feedback para os desenvolvedores sobre o que eles acharam difícil de fazer. Essa é a melhor forma de realizar melhorias em uma interface.
+- A ISO/IEC 9126 define as características principais da qualidade do produto da seguinte maneira (PFLEEGER, 2004):
+  - Funcionalidade: trata-se de um conjunto de atributos que evidenciam a existência de funções e suas propriedades especificadas. As funções devem satisfazer as necessidades explícitas e implícitas para que o software seja considerado funcional;
+  - Usabilidade: refere-se ao conjunto de atributos que evidenciam o esforço necessário para se poder usar o software, assim como o julgamento individual desse uso, por um conjunto explícito ou implícito de usuários. Nesse sentido, o software apresenta usabilidade se faz com que o usuário tenha sucesso na execução das tarefas propostas pelo sistema;
+  - Confiabilidade: é o conjunto de atributos que evidenciam a capacidade do software de manter seu nível de desempenho, sem que ocorram falhas ou interrupções, sob condições estabelecidas durante certo período de tempo;
+  - Eficiência: trata-se de um conjunto de atributos que evidenciam o relacionamento entre o nível de desempenho do software e a quantidade de recursos usados, sob condições estabelecidas. Um software é eficiente quando atende seu objetivo sem ser complicado, de forma simples e objetiva;
+  - Manutenibilidade: é o conjunto de atributos que evidenciam o esforço necessário para fazer modificações especificadas no software. Ele deve possibilitar correções e alterações sempre que for preciso, mesmo depois de entregue ao cliente;
+  - Portabilidade: diz respeito ao conjunto de atributos que evidenciam a capacidade do software de ser transferido de um ambiente para outro, sem haver a necessidade de criação de um programa semelhante para ser usado em outra plataforma.
