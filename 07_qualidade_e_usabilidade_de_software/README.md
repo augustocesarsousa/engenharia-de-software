@@ -358,3 +358,44 @@
   - Eficiência: trata-se de um conjunto de atributos que evidenciam o relacionamento entre o nível de desempenho do software e a quantidade de recursos usados, sob condições estabelecidas. Um software é eficiente quando atende seu objetivo sem ser complicado, de forma simples e objetiva;
   - Manutenibilidade: é o conjunto de atributos que evidenciam o esforço necessário para fazer modificações especificadas no software. Ele deve possibilitar correções e alterações sempre que for preciso, mesmo depois de entregue ao cliente;
   - Portabilidade: diz respeito ao conjunto de atributos que evidenciam a capacidade do software de ser transferido de um ambiente para outro, sem haver a necessidade de criação de um programa semelhante para ser usado em outra plataforma.
+
+### Métodos ágeis, validações e indicadores
+
+#### Métodos ágeis
+
+- O desenvolvimento ágil de software envolve uma abordagem para a tomada de decisões em projetos da área, a qual se refere a métodos de engenharia de software;
+- Essa abordagem diz respeito a um grupo de metodologias utilizadas na criação de programas que baseia o seu desenvolvimento em um ciclo iterativo, no qual os requisitos e as soluções evoluem
+  por meio da colaboração entre diferentes equipes envolvidas no projeto;
+- O trabalho é feito por colaboração, sendo auto-organizado por equipes multidisciplinares, envolvidas em um processo de tomada de decisão compartilhada no curto prazo (PFLEEGER, 2004);
+- A metodologia ágil engloba, segundo Sommerville (2011):
+  - Valorização das pessoas e suas interações sobre processos e ferramentas – processos de qualidade com bons relacionamentos trazem bons resultados;
+  - Avaliação da documentação: a documentação é necessária porque permite a transferência de conhecimento, mas sua redação deve ser limitada ao que contribui ao valor direto do produto/serviço;
+  - Taxa de colaboração com o cliente sobre negociação de contrato – embora sejam necessários, os contratos não acrescentam valor aos produtos/serviços. Metodologias ágeis ao cliente integram e mantêm o projeto com o objetivo de proporcionar o maior valor possível em cada iteração;
+- As características básicas de projetos geridos com metodologias ágeis são as seguintes (SOMMERVILLE, 2011):
+  - Incerteza: indica a necessidade estratégica da previsão de riscos no desenvolvimento;
+  - Equipes auto-organizadas: não existem funções especializadas na equipe;
+  - Autonomia: liberdade para a tomada de decisão;
+  - Autoaperfeiçoamento: periodicamente, o produto tem de ser desenvolvido e avaliado;
+  - Autoenriquecimento: conhecimento e transferência de conhecimento;
+  - Fases de desenvolvimento que se sobrepõem: as fases não existem como tal, mas as tarefas/atividades são realizadas de acordo com a evolução das necessidades ao longo do projeto. Na verdade, muitas vezes não é possível fazer um projeto técnico detalhado antes de se começar a desenvolvê-lo e ver alguns resultados. Além disso, as fases tradicionais, realizadas por pessoas diferentes, não promovem o trabalho em equipe e podem gerar mais desvantagens do que vantagens (por exemplo, um atraso de fase afeta todo o projeto);
+  - Controle sutil: pontos de controle local para monitorar adequadamente sem limitar a liberdade e a criatividade da equipe.
+
+###### Scrum
+
+- O Scrum é uma metodologia cujas práticas são aplicadas em um processo iterativo e incremental;
+- Assume-se que os projetos em que o Scrum se insere são complexos e imprevisíveis, no quais não é possível prever tudo que irá acontecer. Por essa razão, ele oferece um conjunto de práticas que torna tudo isso visível (SCHWABER, 2004), como um ciclo de vida específico;
+- A estrutura de processo do Scrum inicia-se com uma visão do produto que será desenvolvido, com a apresentação das características definidas pelo cliente, das premissas e restrições;
+- Em seguida, é criado o product backlog, a lista contendo todos os requisitos conhecidos do produto;
+- O product backlog é então priorizado e dividido em releases, e cada um deles contém um conjunto de requisitos, denominado sprint backlog, que será desenvolvido em uma iteração, chamada de Sprint (MARÇAL et al., 2007);
+- Na execução do Sprint, diariamente a equipe faz reuniões de 15 minutos (Daily Scrum Meeting) para acompanhar o andamento do projeto;
+- Ao final do Sprint, é realizado o Sprint Review Meeting, de modo que o time apresente o resultado alcançado ao Product Owner (representante do cliente);
+- Em seguida, o Scrum Master, o gestor do projeto, conduz o Sprint Retrospective Meeting, com o objetivo de melhorar a equipe, o processo ou o produto para o próximo Sprint.
+
+#### Validações e indicadores
+
+- Para a determinação da qualidade do software a partir da perspectiva de produto acabado, é necessária a avaliação de um conjunto de indicadores que respondam a diferentes critérios e fatores consistentes com a estrutura da ISO 9126;
+- Uma vez que o processo de avaliação foi concluído, de acordo com diferentes fatores e critérios, os principais indicadores da qualidade do software podem ser elencados como descrito a seguir (PFLEEGER, 2004):
+  - A funcionalidade pode ser definida como o conjunto de critérios e indicadores correspondentes relacionados com as propriedades específicas que atendem às necessidades do cliente;
+  - A confiabilidade é definida como um grupo de critérios e indicadores correspondentes relacionados com a capacidade de manter o seu nível de desempenho sob condições estabelecidas por um período determinado (SOMMERVILLE, 2011);
+  - A usabilidade é o conjunto de critérios e indicadores relacionados com o esforço necessário para o uso do software e a avaliação individual de tal utilização, por um grupo declarado ou implícito de usuários;
+  - Por fim, a eficiência é definida como um conjunto de critérios e indicadores correspondentes que dizem respeito ao desempenho da quantidade de recursos necessários sob condições estabelecidas (SOMMERVILLE, 2011).
