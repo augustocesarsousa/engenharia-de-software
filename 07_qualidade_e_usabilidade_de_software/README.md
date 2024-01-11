@@ -250,3 +250,85 @@
 - Definir com precisão os requisitos de um software permite que todos os recursos da empresa e a energia da equipe de desenvolvimento sejam direcionados a um fim claro. Sem uma definição precisa daquilo que se pretende construir, perde-se tempo, mais erros são cometidos e a qualidade do produto final é incerta. (KOSCIANSKI; SOARES, 2007, p. 172);
 - Os requisitos de qualidade de software, segundo Wazlawick (2013), devem fazer parte da própria especificação do produto;
 - A qualidade também tem um custo, e o investimento compensa quando ela baixa os custos com falhas. Isso não significa que a qualidade deixará de ser uma meta em todas as etapas do processo, mas é preciso considerar que existem níveis de qualidade e que qualidade não é sinônimo de perfeição, mas de algo que atende às necessidades do cliente/usuário de forma satisfatória.
+
+## Processo de desenvolvimento de software
+
+- Desenvolvimento de software contempla todo o processo de programação de computadores, documentação, testes, correção de bugs e de erros envolvidos na criação e na manutenção de aplicativos e estruturas, resultando em um produto de software, que deve seguir as especificações documentadas;
+- Esse processo pode incluir pesquisa, desenvolvimento, prototipagem, modificação, reutilização, reengenharia, manutenção e demais atividades que resultem na produção do software.
+
+### Ciclo de desenvolvimento de software
+
+- O desenvolvimento de software, também chamado de ciclo de vida de desenvolvimento de software, é aplicado especificamente para produtos de estrutura de software (WEBER, 2006);
+- O ciclo de desenvolvimento apresentado por Yourdon (1989 apud REZENDE, 2005, p. 42) é dividido em etapas, a fim de projetar e desenvolver um produto de software de forma eficiente;
+  - Estudo de viabilidade: identifica as deficiências atuais, estabelece objetivos do novo sistema; gera cenários aceitáveis; prepara encargos de projeto;
+  - Análise de sistemas: desenvolve o modelo ambiental; desenvolve o modelo comportamental; estabelece os limites homem-máquina; executa a análise custo-benefício; seleciona opção; restringe o sistema; faz a especificação do pacote;
+  - Projeto: aloca especificações para os processadores; aloca especificações às tarefas; deriva o diagrama estrutural; avalia o diagrama estrutural; projeta módulos; projeta banco de dados; faz o empacotamento do projeto;
+  - Implementação: soluciona o próximo módulo; codifica o módulo; testa o esqueleto do sistema;
+  - Geração do teste do aceite: gera plano de teste; prepara testes de performance; prepara testes de vias normais; prepara testes de vias de erro; empacota os testes;
+  - Garantia da qualidade: faz o teste final ou teste de aceite, comparando o produto ao projeto de implementação;
+  - Descrição dos procedimentos: faz descrições das atividades operacionais do cliente ou usuário;
+  - Conversão de banco de dados: pode envolver mais trabalho e planejamento do que desenvolvimento de programas para o novo sistema e, em outros casos, pode não haver uma base de dados para ser convertida;
+  - Instalação: atividade final; suas entradas são o manual do usuário, o banco de dados convertido e o sistema de aceite.
+
+#### Codifica-remenda ou codificar-e-corrigir
+
+- Segundo Schach (2010), infelizmente, ainda muitos produtos são desenvolvidos seguindo esse ciclo de vida. É o modelo menos profissional de todos, em que o software vai sendo desenvolvido sem que haja um projeto nem o levantamento das necessidades do cliente/usuário e das especificações;
+- Nesse modelo, a equipe de desenvolvimento faz o software da forma como acredita que deve ser feito e depois o retrabalha quantas vezes forem necessárias até que o cliente fique satisfeito (SHACH, 2010);
+- Ainda segundo Shach (2010), esse ciclo de vida até pode vir a funcionar bem em programas menores e mais simples, mas é inviável para programas maiores, pois seu custo e seu tempo de desenvolvimento aumentam consideravelmente, além de exaurir a equipe e o cliente em testes sem fim.
+
+#### Cascata
+
+- Esse modelo de ciclo de vida, também chamado de clássico ou linear, foi proposto por Winston Royce, no ano de 1970. É um ciclo de vida que eventualmente suporta iterações; contudo, basicamente é um modelo pouco flexível, com muitas restrições. Isso porque se caracteriza por progredir de forma sequencial entre uma fase e a seguinte, e essa sequencialidade acaba causando diversos problemas ao desenvolvimento do software e afetando sua qualidade;
+- O modelo de ciclo de vida cascata tem a vantagem de possuir pontos de controle que permitem demarcar as fases do processo, facilitando a gestão do projeto e a manutenção do software depois de pronto, devido ao controle da documentação;
+- Porém, ele é rígido e burocrático, porque não permite a correção de erros nas fases anteriores e possui baixa visibilidade para o cliente, pois este não recebe feedback nos pontos de controle existentes; assim, o único resultado que o cliente vê é o final;
+- Exemplo de passos do modelo cascata:
+  1. Requerimentos: etapa na qual se estabelecem os requisitos do produto que se deseja desenvolver, os serviços a serem fornecidos, limitações e objetivos do software. Essa etapa pode ser vista como a etapa de concepção de um produto ou software;
+  2. Desenvolvimento: é o processo de passos do projeto que representa os requisitos de uma forma que permita a codificação do produto. É o projeto documentado para que se transforme em software;
+  3. Implementação: é a etapa em que são criados os programas;
+  4. Verificação: é a etapa de testes do sistema. Após a codificação concluída, começa a fase de testes e verificação do sistema. Essa fase examina se foram solucionados os erros de software e assegura que as entradas produzam resultados reais conforme os requisitos que foram descritos;
+  5. Produção: etapa de aprovação para que o sistema entre em produção; para isso, todas as fases e testes devem ter sido realizados e a coleta de aprovações dos usuários e envolvidos no projeto deve ser feita para se colocar o sistema em produção.
+
+#### Modelo V
+
+- Esse modelo de ciclo de vida foi concebido por Alan Davis e contém as mesmas etapas do ciclo de vida em cascata, sendo considerado uma variação deste;
+- Exemplo de passos do modelo V:
+  1. Modelagem de requisitos;
+  2. Projeto da arquitetura;
+  3. Projeto de componente;
+  4. Geração de código;
+  5. Teste de unidade;
+  6. Teste de integração;
+  7. Teste de sistema;
+  8. Teste de aceitação.
+- O projeto segue de forma sequencial e linear até a geração de códigos (até o passo 4) e, a partir daí, a equipe passa para o outro lado do V (passo 5 am diante), realizando testes que validam cada fase do lado esquerdo. Segundo Pressman e Maxim (2016, p. 42), “não há nenhuma diferença fundamental entre o ciclo de vida clássico e o modelo V”.
+
+#### Espiral
+
+- Modelo de ciclo de vida em que um produto é desenvolvido em diversas iterações. Uma iteração nova representa uma volta na espiral. Sua vantagem é que permite a construção de produtos com prazos curtos e a sua desvantagem é que ele é mais difícil de ser gerido (WAZLAWICK, 2003);
+- No modelo em espiral, as atividades são realizadas no sentido horário, partindo do centro da espiral e passando por quatro quadrantes:
+  1. A fase 1 corresponde à determinação dos objetivos e soluções alternativas, além das restrições do sistema;
+  2. Na fase 2, devem ser analisados os riscos das decisões da fase anterior, quando podem ser construídos protótipos e realizadas simulações do software;
+  3. Na fase 3, de desenvolvimento de testes, estão as atividades de desenvolvimento, incluindo design, especificação, codificação e verificação. A principal característica dessa fase é que cada especificação vai ressurgindo a cada ciclo – especificação de requisitos, do software, da arquitetura, da interface de usuário e algoritmos, devendo ser feita a verificação correta;
+  4. Na fase 4, de planejar a próxima iteração, estão as revisões das etapas anteriores e o planejamento da próxima fase. Nessa etapa, dependendo dos resultados obtidos nas fases anteriores, pode-se optar por seguir o desenvolvimento no modelo cascata, por exemplo, ou optar pela construção de novos protótipos.
+
+#### Prototipagem evolutiva
+
+- Também chamada de prototipação, utiliza o modelo de ciclo de vida em espiral para construir o produto em protótipos, que cobrem progressivamente os requisitos até a finalização do produto;
+- Sua vantagem é que possui visibilidade, permitindo a verificação antecipada do produto final e a correção dos problemas detectados;
+- Apresenta alta flexibilidade, por permitir ajustes durante o desenvolvimento do produto;
+- Como desvantagens, esse método precisa de equipes disciplinadas e experientes, o projeto deve ser bem realizado para que a estrutura do produto permaneça confiável ao longo dos protótipos e ele é mais difícil de ser gerido (WAZLAWICK, 2003).
+- Passos do modelo prototipagem evolutiva:
+  1. Comunicação;
+  2. Planejamento rápido;
+  3. Modelagem projeto rápido;
+  4. Construção do protótipo;
+  5. Entrega e feedback.
+- Segundo Pressman e Maxim (2016), esse modelo funciona bem quando o cliente não tem claros os requisitos e os detalhes do software de que necessita.
+
+#### Entrega evolutiva
+
+- Esse modelo de ciclo de vida é uma combinação dos modelos cascata e prototipagem evolutiva;
+- Apresenta a vantagem de ter alta visibilidade para os clientes e facilidade de gestão, por possuir pontos de controle bem definidos;
+- Sua desvantagem é a necessidade de um projeto robusto para que a estrutura do produto permaneça confiável ao longo das liberações programadas (CYBIS et al., 2015);
+- O objetivo da entrega evolutiva é obter o máximo de feedback do cliente sobre o que foi entregue, de modo que a próxima entrega seja planejada de acordo com esse feedback recebido, garantindo mais agilidade e qualidade ao produto;
+- Segue-se o mesmo ciclo da prototipagem evolutiva, com a diferença que as entregas referem-se a partes do software ou sistema.
