@@ -427,3 +427,26 @@
 - Atendimento: essa dimensão diz respeito aos fatores do produto ou serviço que podem afetar a percepção do cliente;
 - Estética: é a dimensão subjetiva que indica a impressão que o usuário tem em relação a um produto. As propriedades estéticas de um produto contribuem para a identidade de uma empresa ou marca, e falhas ou defeitos que o diminuem, mesmo quando não reduzem ou alteram outras dimensões de qualidade, são muitas vezes causa de rejeição;
 - Qualidade percebida: é a qualidade atribuída a um bem ou serviço baseada em medidas indiretas. A percepção nem sempre reflete a realidade, pois os consumidores muitas vezes possuem informações incompletas sobre os atributos de um produto/serviço.
+
+### Planejamento e controle da qualidade do software
+
+- O planejamento e o controle da qualidade do software surgem da necessidade de se produzir um produto de alta qualidade, e isso implica a garantia de proteção de software ao longo de todo o seu processo de engenharia;
+- O controle de qualidade abrange uma série de avaliações e testes utilizados para todo o ciclo de desenvolvimento de produto, a fim de garantir que cada software atenda aos requisitos que lhe foram atribuídos.
+
+#### Detecção e controle de erros
+
+- O principal objetivo das revisões técnicas formais é encontrar erros durante o processo de desenvolvimento do software, impedindo que eles se propaguem em etapas posteriores e que se tornem defeitos após a entrega do produto;
+- Estudos indicam que as atividades de design introduzem entre 50% e 65% de todos os erros (e, finalmente, todos os defeitos) durante o desenvolvimento do software. No entanto, as inspeções dessas atividades são eficazes em 75% dos casos (SOMMERVILLE, 2011);
+- De acordo com Cybis et al. (2015), um processo de inspeção adequado consiste de seis passos:
+  1. Planejamento: quando o desenvolvedor conclui um “produto de trabalho”, uma equipe de inspeção é formada e um moderador é designado. O moderador assegura que o produto de trabalho satisfaça os critérios de inspeção. Ele atribui papéis diferentes para os membros da equipe de inspeção, bem como estabelece o tempo de planejamento e os recursos;
+  2. Resumo: se os inspetores não estão familiarizados com o projeto de desenvolvimento, é necessário dar a eles uma visão geral do processo. Esse é um passo opcional, mas não menos importante, porque nessa fase será dado aos inspetores o contexto a ser coberto por meio das inspeções;
+  3. Preparação: os inspetores são preparados individualmente para avaliação na reunião, estudando os produtos de trabalho e materiais relacionados. Nessa fase, é aconselhável a utilização de listas de verificação para ajudar a encontrar defeitos comuns;
+  4. Comentário: nessa fase, os inspetores se reúnem para discutirem juntos cada trabalho individual. O moderador deve assegurar que todos estejam suficientemente preparados. A pessoa designada como leitor apresenta o "produto do trabalho", interpretando-o, enquanto cada participante se atenta para possíveis defeitos. Após a conclusão da reunião, o grupo determina se o produto será aceito ou se deve ser reformulado para inspeção posterior;
+  5. Retrabalho: o desenvolvedor corrige todos os defeitos encontrados pelos inspetores;
+  6. Follow-up (acompanhamento): o moderador verifica as correções feitas pelo desenvolvedor. Se o moderador está satisfeito, a inspeção é formalmente completa e o “produto de trabalho” é colocado sob controle de configuração.
+- Para cumprir essas seis etapas, surge a necessidade do estabelecimento dos objetivos da inspeção, dos participantes e de que papéis eles terão, dos produtos de trabalho a serem inspecionados e do que deve ser o resultado das reuniões de inspeção (CYBIS et al., 2015):
+  - Objetivos: o objetivo principal é encontrar defeitos no "produto de trabalho", e, para isso, é preciso definir quais serão as metas a serem alcançadas. O estabelecimento dessas metas está diretamente relacionado com o tipo de projeto, as metodologias e os instrumentos utilizados;
+  - Grupos de inspeção: é recomendado que se formem grupos de três a seis indivíduos (IEEE, 1997), incluindo neles o autor/desenvolvedor dos produtos de trabalho;
+  - Funções: além do autor, devem ser definidos: o moderador, que liderará a inspeção e que deve ter mais experiência do que o resto do grupo; o leitor, que apresenta os produtos de trabalho nas reuniões; e o escriba, que documenta a descrição e a localização dos defeitos encontrados;
+  - Os produtos funcionam: o processo de inspeção pode ser aplicado a diferentes tipos de produtos de trabalho encontrados em um desenvolvimento de software, incluindo requisitos, projeto, código, testes, guia de usuário e outras documentações. O padrão IEEE – Práticas Recomendadas para Especificação de Requisitos de Software (IEEE, 1998) – não especifica um tamanho, mas os produtos de trabalho têm, normalmente, 10 a 20 folhas de especificação de requisitos, com 200 ou 250 linhas de código cada;
+  - Resultado de reuniões de inspeção: os dois principais resultados devem ser a lista de defeitos a serem corrigidos e um relatório de inspeção, que descreve o que foi inspecionado, quem inspecionou e o número de defeitos encontrados.
