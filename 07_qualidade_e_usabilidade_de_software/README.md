@@ -399,3 +399,31 @@
   - A confiabilidade é definida como um grupo de critérios e indicadores correspondentes relacionados com a capacidade de manter o seu nível de desempenho sob condições estabelecidas por um período determinado (SOMMERVILLE, 2011);
   - A usabilidade é o conjunto de critérios e indicadores relacionados com o esforço necessário para o uso do software e a avaliação individual de tal utilização, por um grupo declarado ou implícito de usuários;
   - Por fim, a eficiência é definida como um conjunto de critérios e indicadores correspondentes que dizem respeito ao desempenho da quantidade de recursos necessários sob condições estabelecidas (SOMMERVILLE, 2011).
+
+## Gerência da qualidade de software
+
+- A gerência da qualidade do software garante que o nível de qualidade exigido pelo cliente seja alcançado por meio de melhorias no processo de desenvolvimento do produto;
+- Um gerenciamento de qualidade de software inclui o Software Quality Assurance (SQA), ou Garantia de Qualidade de Software, que visa desenvolver procedimentos e padrões em nível organizacional.
+
+### Dimensões da qualidade do processo e do produto
+
+#### Dimensões da qualidade do processo
+
+- Segundo Parasuraman, Zeithaml e Berry (2005), são cinco as dimensões que avaliam a qualidade no desenvolvimento de serviços:
+  1. Tangibilidade, entendida como a aparência das instalações físicas, dos equipamentos e do material de comunicação;
+  2. Confiabilidade, que é a capacidade de executar o serviço prometido com precisão e formalidade. No que se refere a essa dimensão, Boulding et al. (1993) argumentam que, embora a qualidade do serviço seja multidimensional, a confiabilidade é fundamental na determinação global da qualidade percebida do serviço. Ou seja, no modelo dinâmico de qualidade de serviço, a confiabilidade é o principal manipulador da percepção geral de serviço ao cliente;
+  3. Sensibilidade, definida como a vontade de ajudar os clientes e fornecer um serviço rapidamente. Sobre essa dimensão, Parasuraman, Zeithaml e Berry (2005) relatam que ter sensibilidade significa servir os clientes de forma ágil e responder rapidamente às suas solicitações ou reclamações. Outro aspecto da sensibilidade diz respeito à pontualidade no serviço de campo e ao tempo de reparação técnica;
+  4. Garantia, que compreende o conhecimento e a cortesia dos funcionários e sua capacidade de inspirar confiança;
+  5. Empatia, que envolve os cuidados e o atendimento individualizado que a empresa oferece aos seus clientes.
+
+#### Dimensões da qualidade segundo Garvin
+
+- Desempenho: refere-se às principais características operacionais de um produto ou serviço. Essa dimensão de qualidade abrange atributos mensuráveis, de modo que as empresas geralmente podem ser classificadas objetivamente em aspectos individuais de desempenho;
+- Recursos: são as características adicionais que realçam o apelo do produto ou serviço ao usuário. Pensamento semelhante pode ser aplicado às características, que muitas vezes são um aspecto secundário do desempenho (GARVIN, 2015);
+- Confiabilidade: é a probabilidade de um produto não falhar em um período de tempo específico, sendo um elemento-chave para os usuários que precisam dele. Entre as medidas mais comuns de confiabilidade estão: o tempo médio até a primeira falha, o tempo médio entre falhas e a taxa de falha por unidade de tempo;
+- Conformidade: é a precisão com que o produto ou serviço atende aos padrões especificados. A dimensão da conformidade descreve até que ponto o projeto de um produto e suas características
+  operacionais atendem aos padrões estabelecidos e se tais características se devem mais a abordagens tradicionais do que a qualidades pioneiras;
+- Durabilidade: mede a duração da vida de um produto. Quando o produto pode ser reparado, estimar sua durabilidade é mais complicado, pois o item será usado até que não seja mais economicamente viável operá-lo. Isso acontece quando a taxa de reparo e os custos associados aumentam significativamente;
+- Atendimento: essa dimensão diz respeito aos fatores do produto ou serviço que podem afetar a percepção do cliente;
+- Estética: é a dimensão subjetiva que indica a impressão que o usuário tem em relação a um produto. As propriedades estéticas de um produto contribuem para a identidade de uma empresa ou marca, e falhas ou defeitos que o diminuem, mesmo quando não reduzem ou alteram outras dimensões de qualidade, são muitas vezes causa de rejeição;
+- Qualidade percebida: é a qualidade atribuída a um bem ou serviço baseada em medidas indiretas. A percepção nem sempre reflete a realidade, pois os consumidores muitas vezes possuem informações incompletas sobre os atributos de um produto/serviço.
