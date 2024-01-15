@@ -450,3 +450,25 @@
   - Funções: além do autor, devem ser definidos: o moderador, que liderará a inspeção e que deve ter mais experiência do que o resto do grupo; o leitor, que apresenta os produtos de trabalho nas reuniões; e o escriba, que documenta a descrição e a localização dos defeitos encontrados;
   - Os produtos funcionam: o processo de inspeção pode ser aplicado a diferentes tipos de produtos de trabalho encontrados em um desenvolvimento de software, incluindo requisitos, projeto, código, testes, guia de usuário e outras documentações. O padrão IEEE – Práticas Recomendadas para Especificação de Requisitos de Software (IEEE, 1998) – não especifica um tamanho, mas os produtos de trabalho têm, normalmente, 10 a 20 folhas de especificação de requisitos, com 200 ou 250 linhas de código cada;
   - Resultado de reuniões de inspeção: os dois principais resultados devem ser a lista de defeitos a serem corrigidos e um relatório de inspeção, que descreve o que foi inspecionado, quem inspecionou e o número de defeitos encontrados.
+
+### Gerência dos testes de software
+
+- A gerência de testes do software segundo (PRESSMAN; MAXIM, 2016), que pode ser entendida como "um conjunto de atividades de apoio que permite a absorção ordenada das mudanças inerentes ao desenvolvimento de software, mantendo a integridade e a estabilidade durante a evolução do projeto" (ARANTES; FIDELIS; AZEVEDO, 2017, p. 1);
+- As atividades da gestão de testes de software envolvem (CYBIS et al., 2015):
+  - Controlar e acompanhar mudanças (controle de mudança);
+  - Registrar a evolução do projeto (controle de versão);
+  - Estabelecer a integridade do sistema (integração contínua).
+- Tipos de testes:
+  - Teste de funcionalidade: nele são avaliados campos, navegação entre as telas, botões, links, interface e funcionalidade geral do sistema. Os requisitos iniciais solicitados pelo cliente devem ser testados e aprovados nesse teste;
+  - Teste de desempenho: é avaliado o desempenho do sistema, se ele está atendendo aos requisitos preestabelecidos, e o tempo que cada aplicação demora para dar respostas a determinada ação;
+  - Teste unitário: são avaliadas pequenas unidades de software, uma parte do código construído, como as rotinas, com o objetivo de verificar funções diferentes dentro do sistema;
+  - Teste de bugs: é avaliada a existência de bugs, erros de programação e funcionamento do sistema, erros de construção de código ou da própria aplicação;
+  - Teste de integração: nele são avaliados vários componentes do software, combinados e testados em grupo;
+  - Teste operacional: nele é verificado se a aplicação responde ao tempo de execução do sistema;
+  - Teste de regressão: é realizado logo após a alteração de um código e, assim, toda a aplicação deve ser testada novamente;
+  - Teste de caixa branca: todas as entradas e saídas desejadas do sistema são testadas e é observado o resultado esperado;
+  - Teste de configuração: nele se avalia se a aplicação funciona corretamente em diferentes configurações de hardware e software;
+  - Teste de interface: é avaliada a navegabilidade e se cada componente responde conforme especificado pelo usuário;
+  - Teste de carga: teste em que se avalia o funcionamento da aplicação com simulação de entrada de dados simultâneos em grande quantidade, verificando-se a resposta do sistema;
+  - Teste de aprovação do usuário: nele o usuário realiza os testes operacionais e se sua aplicação é funcional;
+  - Teste de estresse: caminhos diferentes de uso são avaliados, tentando simular um erro ou uma ação inesperada, submetendo o software a situações extremas.
