@@ -510,3 +510,16 @@
   - Diálogos: diálogos estão associados às formas com que os objetivos práticos dos usuários se efetivam nas interações com o sistema;
   - Objetos de interação: são objetos de software que geram imagens que devem ser apresentadas ao usuário com o qual haverá uma interação;
   - Sistemas de significados: A engenharia semiótica estuda a relação do design e da interação no processo comunicativo entre o designer (emissor da mensagem) e o usuário (receptor). Esse processo comunicativo entre designer e usuário faz parte do processo de design. A engenharia semiótica está presente no processo de design quando o designer busca adequar a mensagem por meio de signos que o usuário compreenda, ou seja, ele precisa “traduzir” a linguagem de programação em signos que fazem sentido para o usuário.
+
+### Interação das atividades de IHC com a engenharia de software
+
+- Para otimizar a interação das atividades de IHC no desenvolvimento do software, recomenda-se a adoção de (WEBER, 2012):
+  - Teoria da atividade: é usada para definir o contexto no qual a interação entre pessoas e computadores ocorre. A teoria da atividade procura compreender como se dá a interação entre o usuário e a tecnologia, fornecendo informações aos desenvolvedores para projetar o design de interação;
+  - Design centrado no usuário: sua filosofia é a ideia de que o usuário é o centro do projeto em qualquer sistema de computador. Usuários, designers e equipe técnica trabalham em conjunto com o objetivo de articular o que é desejado;
+  - Princípios de design de interface: deve-se considerar em todos os momentos, ao se projetar a interface para o usuário:
+    - a simplicidade (deve ser de fácil utilização);
+    - a visibilidade (deve ser visível para facilitar a usabilidade);
+    - a viabilidade (deve ter design projetado com orçamento adequado);
+    - a coerência (deve ser feito em conformidade com o requerido pelos usuários);
+    - a estrutura (deve ter uma estrutura que permita a navegabilidade);
+    - e o feedback (deve possibilitar o contato entre usuários e desenvolvedor).
