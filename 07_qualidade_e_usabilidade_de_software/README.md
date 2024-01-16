@@ -472,3 +472,41 @@
   - Teste de carga: teste em que se avalia o funcionamento da aplicação com simulação de entrada de dados simultâneos em grande quantidade, verificando-se a resposta do sistema;
   - Teste de aprovação do usuário: nele o usuário realiza os testes operacionais e se sua aplicação é funcional;
   - Teste de estresse: caminhos diferentes de uso são avaliados, tentando simular um erro ou uma ação inesperada, submetendo o software a situações extremas.
+
+## Fundamentos da interação homem-computador (IHC)
+
+### Abordagens técnicas da IHC
+
+- A IHC investiga e aborda todos os aspectos relacionados à concepção e à implementação de interfaces entre seres humanos e computadores;
+- Disciplinas relacionadas à IHC:
+  - Antropologia;
+  - Ciência da computação;
+  - Design;
+  - Engenharia;
+  - Ergonomia;
+  - Filosofia;
+  - Inteligência artificial;
+  - Linguística;
+  - Psicologia cognitiva;
+  - Psicologia social e organizacional.
+
+#### Evolução da IHC
+
+- Estudos sobre IHC remontam ao ano de 1963, quando Ivan Sutherland criou um sistema para manipular objetos gráficos utilizando uma caneta, que permitia pegar objetos, mover e redimensioná-los. No mesmo ano, Elgerbart projetou o primeiro mouse. Em 1968, o MIT Lincoln Labs criou um modelo para interfaces incluindo janelas, menus, ícones, botões etc. Foi o prelúdio para as interfaces que hoje conhecemos, como as utilizadas na manipulação direta de dispositivos;
+- Experiência do usuário _honeycomb_;
+  - Acessibilidade: assim como os edifícios e calçadas são pensados para atender pessoas com deficiência (mais de 10% da população), os sites e softwares também devem ter essa preocupação, apresentando soluções que ampliem a acessibilidade das pessoas com deficiência, além de crianças e idosos;
+  - Credibilidade: um dos pontos fortes do software é a reputação de ser confiável. Isso significa que ele deve funcionar perfeitamente, sem travar ou dar mensagens de erro;
+  - Desejo: o usuário precisa sentir-se bem ao interagir com ele, por isso é importante cuidar da organização visual do software, buscando trabalhar em conjunto com webdesigners, para que a experiência do usuário seja gratificante;
+  - Encontrabilidade: os conteúdos devem ser facilmente localizáveis para que o usuário encontre rapidamente o que precisa;
+  - Usabilidade: a facilidade de uso é essencial, porém uma interface focada apenas na boa interação homem-computador não atende a todas as necessidades do usuário;
+  - Utilidade: é importante ver o produto do ponto de vista do cliente/usuário, buscando verificar a real necessidade dele e se o software atende a essa necessidade;
+  - Valor: o software deve dar um retorno real ao cliente/usuário, deve ser uma experiência marcante, que traga soluções e faça, efetivamente, a diferença.
+
+#### Componentes básicos do sistema de IHC
+
+- Segundo Weber (2012), os componentes básicos do sistema de IHC são:
+  - Usuário: o ser humano tem uma capacidade limitada para processar informações (WEBER, 2012), e saber disso é muito importante na elaboração do design de um software;
+  - Computador: os dispositivos computacionais utilizados podem afetar de diferentes maneiras o usuário. Os dispositivos permitem a inserção de texto, como no caso do teclado do computador, do tablet e do smartphone, seja um discurso oral ou um manuscrito, de desenho, seleções na tela com o mouse ou as mãos etc;
+  - Diálogos: diálogos estão associados às formas com que os objetivos práticos dos usuários se efetivam nas interações com o sistema;
+  - Objetos de interação: são objetos de software que geram imagens que devem ser apresentadas ao usuário com o qual haverá uma interação;
+  - Sistemas de significados: A engenharia semiótica estuda a relação do design e da interação no processo comunicativo entre o designer (emissor da mensagem) e o usuário (receptor). Esse processo comunicativo entre designer e usuário faz parte do processo de design. A engenharia semiótica está presente no processo de design quando o designer busca adequar a mensagem por meio de signos que o usuário compreenda, ou seja, ele precisa “traduzir” a linguagem de programação em signos que fazem sentido para o usuário.
