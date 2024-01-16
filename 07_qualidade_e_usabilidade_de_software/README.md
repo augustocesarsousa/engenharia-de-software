@@ -523,3 +523,15 @@
     - a coerência (deve ser feito em conformidade com o requerido pelos usuários);
     - a estrutura (deve ter uma estrutura que permita a navegabilidade);
     - e o feedback (deve possibilitar o contato entre usuários e desenvolvedor).
+
+### O computador, o homem e os limites do sistema
+
+- A interação homem-computador ocorre por uma alternância de controle da situação, ora pelo usuário, ora pelo computador, em três fases: ler-examinar, pensar e responder, como demonstrado abaixo:
+  - Homem:
+    - Ler-examinar: Reconhecimento e interpretação da informação apresentada pelo computador;
+    - Pensar: Tomada de decisões (o que fazer com a resposta recebida do computador);
+    - Responder: Ação do usuário gerando input para o computador.
+  - Computador:
+    - Ler-examinar: Reconhecimento e interpretação dos inputs do usuário;
+    - Pensar: Processamento de input de acordo com os algoritmos;
+    - Responder: Resposta do computador enviada ao usuário.
