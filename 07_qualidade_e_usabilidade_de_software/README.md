@@ -535,3 +535,16 @@
     - Ler-examinar: Reconhecimento e interpretação dos inputs do usuário;
     - Pensar: Processamento de input de acordo com os algoritmos;
     - Responder: Resposta do computador enviada ao usuário.
+
+## Usabilidade de software
+
+- A usabilidade é considerada um atributo de qualidade que avalia a facilidade com que uma interface gráfica de software é utilizada. Ela também se refere à aplicação de métodos, durante um processo de design, para melhorar essa utilização (NIELSEN, 1993).
+
+### Definições de usabilidade do software
+
+- A capacidade com que as pessoas podem utilizar uma ferramenta é chamada de usabilidade, que também pode se referir ao estudo dos princípios da eficácia percebida de um objeto. Esse modelo conceitual engloba o desenvolvimento de um produto focado no usuário;
+- Princípios de usabilidade:
+  - Facilidade de uso: facilidade com que o usuário faz uso da ferramenta, com menos etapas para chegar a seu objetivo proposto, estando relacionada à eficiência da ferramenta;
+  - Facilidade de aprendizado: facilidade com que novos usuários desenvolvem uma interação com o sistema ou produto, relacionada com a familiaridade e a previsibilidade;
+  - Flexibilidade: relacionada à diversidade de formas de executar uma determinada tarefa e otimização entre usuário e sistema;
+  - Robustez: Facilidade e nível de serviço oferecido de suporte para cumprir os objetivos, estando relacionado com a recuperação de informações e o ajuste de tarefas do usuário.
