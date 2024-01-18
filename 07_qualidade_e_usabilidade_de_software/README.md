@@ -607,3 +607,20 @@
   - Conceito de Camadas: Representa o uso adequado das tecnologias, ou seja, cada tecnologia deve ser utilizada com o propósito único ao qual foi criada. Por exemplo, o HTML é utilizado apenas para a criação de conteúdo, enquanto a apresentação visual é criada através do CSS. Já o comportamento é definido pelas linguagens de script;
   - Conceito Tableless: As tabelas devem ser usadas apenas para dados tabulares e não para fins de layout. Esse conceito surgiu devido ao uso excessivo de tabelas para apresentação visual do site. O uso de tabelas para a estruturação da página prejudica a apresentação da página em determinadas resoluções de tela, deixa a página mais pesada, tem como consequência um código de difícil manutenção, além de causar problemas de acessibilidade;
   - Conceito de Semântica: Representa o uso correto das tags HTML, pois cada tag possui um objetivo específico e para tal deve ser utilizado. Após a criação do site seguindo-se esses conceitos, o desenvolvedor deve validar todas as páginas do site no validador do W3C. Essa validação encontrará os erros de concordância entre o código criado e as recomendações e fornecerá ao desenvolvedor a forma de corrigi-lo.
+
+### A inclusão digital
+
+- Segundo Pedro Demo (2007), a inclusão digital deve ser entendida como uma política social do conhecimento e relevante alavanca contra a desigualdade social. As novas tecnologias influenciam de forma marcante as transformações na sociedade;
+- Exclusão digital é o termo usado para se referir à consequência direta do abismo tecnológico que existe entre as comunidades que têm acesso à tecnologia da informação e aquelas que são excluídas desse processo. As diferenças entre elas podem ser socioeconômicas ou em relação à capacidade de usar a tecnologia da informação de forma eficaz, devido aos níveis distintos de alfabetização e disponibilidade de recursos.
+
+#### Inclusão digital na sociedade
+
+- A universalização do uso da tecnologia digital, assim, permite uma inclusão dos indivíduos na realidade atual, visto que as principais atividades econômicas e boa parte da produção cultural e das ações governamentais estão migrando para a web (SILVEIRA, 2008);
+- Ao tratar de políticas específicas para inclusão nessa sociedade em rede, Bonilla e Pretto (2011) alegam que o mais adequado seria colocar em prática iniciativas que proporcionem "a inclusão de cidadãos, não como meros consumidores, seja de produtos ou de informações, mas como sujeitos plenos que participam do mundo contemporâneo enquanto seres éticos, autônomos e com poder de decisão";
+- A disponibilização, pelo governo, de cursos básicos de informática para a população de baixa renda seria uma medida básica para garantir o acesso digital a um número cada vez maior de pessoas, assim como programas para aquisição de equipamentos a preços mais baixos/subsidiados.
+
+#### Inclusão digital e educação
+
+- No contexto educacional brasileiro, muitos professores ainda utilizam métodos tradicionais de ensino por não saberem lidar com as novas tecnologias;
+- A soma dos métodos tradicionais aos novos promove a adequação necessária para um bom desenvolvimento da prática pedagógica, tendo como suporte as ferramentas inovadoras que apoiam a pesquisa, o conteúdo pedagógico, a dinâmica do professor e os demais componentes do ambiente educacional;
+- Assim como o domínio do professor e a apropriação dos alunos das novas técnicas pedagógicas, é indispensável também que a escola possua uma boa estrutura física e material, possibilitando o uso desses equipamentos durante as aulas.
