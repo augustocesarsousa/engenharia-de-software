@@ -585,3 +585,25 @@
   - Princípio de design: como lembretes do que fornecer e do que evitar durante o design da interface (p. ex: "que tipo de feedback você vai fornecer na interface?");
   - Princípio de usabilidade: Avaliar aceitabilidade das interfaces, utilizadas durante a avaliação heurística (p. ex: "O sistema oferece saídas claramente indicadas?");
   - Regras: determinar se uma interface adere a uma regra específica, quando está sendo projetada e avaliada (p. ex: "Sempre oferecer um botão backward e forward em um navegador?").
+
+## Acessibilidade e inclusão digital
+
+- Em relação à acessibilidade na web, ela diz respeito a uma prática inclusiva no desenvolvimento de websites que possam ser utilizados por todas as pessoas, independentemente de elas terem ou não alguma necessidade especial;
+- Quando os sites são corretamente concebidos, desenvolvidos e editados, todos os usuários podem ter igual acesso à informação e à funcionalidade.
+
+### A acessibilidade digital
+
+- Acessibilidade refere-se à facilidade de acesso a um lugar, uma pessoa, um conhecimento ou um objeto/bem;
+- O Decreto n. 5.296 do governo federal define a acessibilidade como “condição para utilização, com segurança e autonomia, total ou assistida, dos espaços, mobiliários e equipamentos urbanos, das edificações, dos serviços de transporte e dos dispositivos, sistemas e meios de comunicação e informação, por pessoa portadora de deficiência ou com mobilidade reduzida” (BRASIL, 2004);
+- No caso da internet em geral, a acessibilidade se refere ao conjunto de elementos que facilitam o acesso à informação a todas as pessoas, de modo igualitário, usando a tecnologia (computadores, tablets, telefones móveis, entre outros) independentemente das necessidades especiais dos usuários (físicas, mentais, sensoriais e outras) (NIELSEN; TAHIR, 2002).
+
+### Acessibilidade para todos
+
+- Na busca pela acessibilidade na web, o Consórcio World Wide Web (W3C) é uma instituição que realiza um esforço para melhorar a acessibilidade à web para pessoas com deficiência. Pessoas com necessidades especiais podem encontrar dificuldades ao usar computadores em geral e acessar conteúdos na grande rede.
+- O Consórcio disponibiliza informações, diretrizes, relatórios técnicos, materiais educacionais e outros documentos que se relacionam aos diversos componentes de acessibilidade da web. Esses componentes incluem conteúdo da web, navegadores e players de mídia, ferramentas de autoria e ferramentas de avaliação;
+- As diretrizes e técnicas desenvolvidas pelo W3C apontam para a necessidade de se fazer um website levando em conta fatores como o tipo de conteúdo, o tamanho e a complexidade do site, bem como as ferramentas de desenvolvimento e meio ambiente. Muitos dos recursos acessíveis de um site podem ser facilmente implementados se forem planejados desde o início de seu desenvolvimento ou de sua reformulação. Modificar sites com recursos de baixa acessibilidade pode exigir um esforço significativo, especialmente aqueles que não são “rotulados” adequadamente com marcação XHTML padrão e locais com determinados tipos de conteúdo, tais como multimídia (NIELSEN; TAHIR, 2002);
+- De acordo com o Portal Brasil (2017, p. 1) "Quando falamos em Web acessível, é preciso ter em mente que o mais importante para a acessibilidade é o código HTML – HyperText Markup Language. O leitor de tela e outros recursos de Tecnologia Assistiva interpretam o código HTML, seus elementos e semântica. Por isso, o primeiro passo para garantir acessibilidade ao conteúdo Web é utilizar código semanticamente correto, ou seja, cada elemento para o seu propósito, seguindo-se os Padrões Web ou Web Standards do W3C";
+- Alguns conceitos devem ser considerados no desenvolvimento de sites acessíveis (PORTAL BRASIL, 2017, p. 1):
+  - Conceito de Camadas: Representa o uso adequado das tecnologias, ou seja, cada tecnologia deve ser utilizada com o propósito único ao qual foi criada. Por exemplo, o HTML é utilizado apenas para a criação de conteúdo, enquanto a apresentação visual é criada através do CSS. Já o comportamento é definido pelas linguagens de script;
+  - Conceito Tableless: As tabelas devem ser usadas apenas para dados tabulares e não para fins de layout. Esse conceito surgiu devido ao uso excessivo de tabelas para apresentação visual do site. O uso de tabelas para a estruturação da página prejudica a apresentação da página em determinadas resoluções de tela, deixa a página mais pesada, tem como consequência um código de difícil manutenção, além de causar problemas de acessibilidade;
+  - Conceito de Semântica: Representa o uso correto das tags HTML, pois cada tag possui um objetivo específico e para tal deve ser utilizado. Após a criação do site seguindo-se esses conceitos, o desenvolvedor deve validar todas as páginas do site no validador do W3C. Essa validação encontrará os erros de concordância entre o código criado e as recomendações e fornecerá ao desenvolvedor a forma de corrigi-lo.
