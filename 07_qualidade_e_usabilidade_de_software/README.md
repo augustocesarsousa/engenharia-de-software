@@ -624,3 +624,30 @@
 - No contexto educacional brasileiro, muitos professores ainda utilizam métodos tradicionais de ensino por não saberem lidar com as novas tecnologias;
 - A soma dos métodos tradicionais aos novos promove a adequação necessária para um bom desenvolvimento da prática pedagógica, tendo como suporte as ferramentas inovadoras que apoiam a pesquisa, o conteúdo pedagógico, a dinâmica do professor e os demais componentes do ambiente educacional;
 - Assim como o domínio do professor e a apropriação dos alunos das novas técnicas pedagógicas, é indispensável também que a escola possua uma boa estrutura física e material, possibilitando o uso desses equipamentos durante as aulas.
+
+### Projetos de inclusão digital
+
+- No contexto de inclusão e acesso às tecnologias, muitos softwares livres foram criados ou desenvolvidos para facilitar o uso e a experiência por parte das pessoas com deficiência.
+
+#### Deficiência visual
+
+- Orca: é um leitor de tela para o software livre flexível e extensível, desenvolvido pelo projeto Gnome para pessoas cegas ou com deficiência visual. Pelo uso combinado de voz e/ou braile, o Orca fornece acesso a aplicativos e ferramentas que suportam provedores de interface de tecnologia assistiva AT-SPI (por exemplo, Gnome aplicações, OpenOffice, Mozilla Firefox/Thunderbird, entre outros);
+- Lazarus: é uma distribuição Linux para pessoas com deficiência visual, que incorpora várias ferramentas e aplicativos para facilitar seu acesso. Pode ser baixado por meio da imagem do "Live CD", e, por isso, não é necessário instalá-lo no disco rígido do computador para usá-lo;
+- Linaccess-Knoppix: é uma distribuição Linux particularmente útil para pessoas com deficiência visual, desenvolvida no âmbito do projeto Linacess;
+- O navegador de internet Mozilla Firefox é um popular programa de software livre processado em Windows, Linux e outras plataformas, incluindo recursos de acessibilidade importantes que facilitam o uso por pessoas com deficiências visuais;
+- Brltty: é um processador de computador interativo que roda em segundo plano e permite ao usuário se conectar e usar um teclado em braile para a porta serial e no console de texto, para os sistemas operacionais Linux e Unix;
+- Festival: é um sintetizador de voz que reproduz textos em inglês e espanhol, disponíveis em diferentes distribuições. Ele inclui documentação completa e ferramentas para construir novas vozes, disponíveis por meio do Projeto Festvox de Carnegie Mellon;
+- Gnome-Speech: é uma biblioteca geral API simples que faz a programação de software com base em bibliotecas Gnome, com funções para produzir voz por meio de texto. Ele suporta várias interfaces, mas atualmente só está ativa nesse pacote a interface Festival, exigindo Java ou outro software proprietário para sua utilização;
+- Gnopernicus: permite aos usuários com visão limitada, ou nenhuma visão, usar o desktop Gnome e suas aplicações. Fornece um pacote de utilidade que consiste de um ampliador de tela, tela de leitura de voz utilizando o sintetizador Festival e o uso de um teclado em braile para exibir o texto de saída;
+- Kmagnifier: é um ampliador de tela para Linux, que funciona como uma lupa que amplia uma parte da tela. Ele é usado por pessoas com deficiência visual, além de indivíduos que trabalham no campo da análise de imagem, de desenvolvimento web etc;
+- XZOOM: é uma lupa de aumento disponível para qualquer distribuição com servidor gráfico, que atualiza continuamente a área ampliada. É rápido o suficiente para exibir pequenas animações;
+- O SVGATextMode redimensiona linhas de texto em cartões console SVGA para Linux em modo texto. Modifica o tamanho da fonte, o cursor, a sincronização horizontal e vertical etc.
+
+#### Deficiência motora
+
+- Dasher: é um software que permite a realização de uma gravação escrita por meio de uma previsão baseada no movimento do ponteiro do mouse, que possibilita a substituição da escrita do teclado pelo movimento do mouse, usando a inteligência artificial;
+- GOK: é um teclado alfanumérico virtual que permite aos usuários controlar computadores sem um teclado ou mouse padrão. Os usuários especificam teclados e métodos de acesso em XML, o que lhes permite modificar métodos existentes e criar novos, definindo a largura, a altura e o espaçamento das teclas, bem como o feedback visual e auditivo sobre realce e seleção;
+- Xvoice: possibilita que o usuário utilize a sua própria voz para controlar o uso de aplicativos. Ele reconhece a voz do usuário e permite tanto executar ordens como controlar os comandos por meio de algumas aplicações do servidor gráfico;
+- OpenMindSpeech: é um aplicativo de reconhecimento de voz que pretende ser compatível com KDE, Gnome e todas as aplicações existentes para Linux;
+- Clic: é um software educativo que conta com diversas atividades como caça-palavras, palavras-cruzadas, exercícios de texto etc. Esse software possibilita que atividades sejam propostas também para o público que possui necessidades especiais;
+- Hawking Toolbar é um plug-in de código aberto gratuito para o navegador Firefox. Ele adiciona uma barra de ferramentas que torna as páginas da web acessíveis a usuários com limitações motoras, por meio do uso de um ou mais switches de comando (comutadores).
