@@ -107,3 +107,35 @@
   - Planos de recuperação e contingência para falhas no BD;
   - Rotinas de compactação de dados (para redução do espaço em disco);
   - Rotinas de criação e recriação de índices (melhoria de performance).
+
+### Tipos de bancos de dados
+
+#### Banco de dados hierárquico
+
+- Foram os primeiros modelos de implementação de BDs derivados das estruturas de arquivos indexados;
+- Já agregavam o conceito de reunir de modo único diferentes coleções de dados;
+- Tinha grandes restrições para implementar todo tipo de relacionamento entre diferentes conjuntos de dados;
+- Só era capaz de implementar hierarquias, isto é, estruturas em árvore;
+- A estrutura de agregação dos dados era realizada por meio de ponteiros;
+- Já trazia uma linguagem própria e unificada para manipulação dos dados, permitia o compartilhamento e unificava a administração dos dados.
+
+#### Banco de dados em rede
+
+- No modelo em rede (muito similar ao hierárquico), pode-se ter um conjunto de dados participando de mais de um relacionamento com diferentes conjuntos;
+- Assim como os modelos hierárquicos, que utilizavam ponteiros para fazer a associação entre os registros, o modelo rede acabava por criar uma estrutura muito rígida de relacionamento entre os conjuntos de dados.
+
+#### Banco de dados relacional
+
+- O banco de dados com abordagem relacional surgiu para trazer maior flexibilidade às estruturas de dados dos BDs;
+- Permitia que novas colunas (campos de dados) fossem agregadas facilmente a um registro já existente, bem como que novos relacionamentos pudessem ser agregados entre esse e outros registros, sem que isso impactasse o armazenamento físico do banco de dados;
+- No BD relacional, deixou-se de ter ponteiros para associar registros – pois eles eram campos "artificiais", usados somente com finalidade associativa – e passou-se a utilizar, então, associações feitas por meio de campos naturais;
+- Essa nova abordagem relacional veio atender de modo bastante completo todas as restrições que existiam, além de resolvê-las utilizando uma abordagem já amplamente validada: a teoria dos conjuntos (oriunda da matemática básica);
+
+#### Banco de dados pós-relacionais
+
+- Com o desenvolvimento de sistemas orientados a objetos, muitos passaram a se questionar se também os bancos de dados não deveriam usar uma abordagem orientada a objetos para armazenamento dos dados;
+- Esses BDs não se estabeleceram no mercado, alguns serviram para projetos muito específicos (normalmente em áreas científicas), mas sem uma representatividade numérica quanto aos profissionais que os conhecem e os utilizam;
+- NoSQL (Not only SQL): termo genérico adotado para representar os bancos de dados não relacionais;
+- Os BDs não relacionais utilizam os recursos do ambiente relacional (SQL), mas agregam outras facilidades típicas dos modelos orientados a objetos, bem como outras para gerenciamento de distribuição de dados em grandes volumes;
+- Em 2003 o Google criou uma iniciativa de um software livre de banco de dados chamado Hadoop, que manuseia grandes volumes de dados estruturados e não estruturados. Essa plataforma hoje é um dos grandes exemplos de soluções NoSQL;
+- A denominação NoSQL não implica que esse tipo de BD não utilizará o SQL, mas que implementará outros recursos além dele.
