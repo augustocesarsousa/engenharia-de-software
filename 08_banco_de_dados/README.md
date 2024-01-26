@@ -57,3 +57,53 @@
   - Perda de autonomia sobre os dados: quando tratamos de centralização, seja de dados, de processos, de pessoas, de equipamentos, temos naturalmente a perda de autonomia sobre esses mesmos itens. Quando determinado dado é definido, criado, atualizado ou excluído e compartilhado com outras aplicações, é necessário realizar essas operações ciente de que outras pessoas podem vir a ser impactadas;
   - Interdependência entre os dados: a interdependência criada pela centralização dos dados também poderá afetar, de certo modo, determinada aplicação ou a aplicação de terceiros. No caso de somente um arquivo próprio, com os dados que o sistema requer, talvez esse arquivo nunca fosse impactado por outro sistema que resolvesse inserir utras 200 mil pessoas em um cadastro que tinha somente mil;
   - Sincronização dos dados no tempo: é importante lembrar que os dados não são mais individuais e estar preparado para as situações em que a sincronização dos dados entre diferentes aplicações será dependente do tempo, ou de quando for feita.
+
+### Criação e manutenção de bancos de dados
+
+- O processo de criação de um banco de dados que será disponibilizado por meio de um SGBD, para uma ou mais aplicações, requer um formalismo para que tenha as três características citadas por Navathe e Elmasri (2005): porção do mundo real, logicamente coerentes e finalidade específica.
+
+#### Mapeamento dos dados
+
+- A primeira etapa na criação de um BD é identificar os dados envolvidos;
+- O administrador de dados, é quem conhece os dados da empresa. Esse profissional sabe onde os dados são gerados, quem é o responsável por sua atualização, o que esses dados representam e qual padrão deve seguir;
+- A criação de um banco de dados pode começar muito antes do surgimento da necessidade de um novo sistema ou de um novo aplicativo.
+
+#### Modelagem conceitual
+
+- Segundo Heuser (2009), modelagem conceitual é um processo de criação de uma representação gráfica e textual de basicamente dois elementos: as entidades e os relacionamentos;
+- Esse processo identifica os objetos ou fatos do mundo real a serem mapeados (as entidades) e os relacionamentos que existem entre esses objetos (por meio de regras).
+
+#### Modelagem lógica
+
+- Segundo Heuser (2009), a modelagem lógica captura e incorpora os requisitos do SGBD escolhido para a criação do BD;
+- Se a arquitetura escolhida é a de um BD relacional, o modelo conceitual deverá ser adaptado aos requisitos do modelo relacional. Esse será um modelo lógico que praticamente servirá para qualquer SGBD relacional do mercado, com pequenas mudanças em relação a particularidades ou outras questões que um fornecedor apresente.
+
+#### Modelagem física
+
+- A modelagem física, também chamada de projeto do banco de dados;
+- Segundo Heuser (2009), como em todo projeto, é nesse momento que detalhes, mecanismos de otimização, cálculos de ocupação de espaços, mecanismos de segurança, ente outros elementos são agregados;
+- Todas essas características precisam ser analisadas para que se crie uma estrutura física (realmente alocando espaço em disco em um servidor) para o banco de dados. Aqui, ele deixa de ser um modelo e passa a ser um repositório de dados.
+
+#### Dicionário de dados
+
+- Todas as informações sobre o modelo de dados conceitual (lógico e físico) deverão ser registradas em um repositório que chamamos de dicionário de dados;
+- Nele temos registros de um determinado campo, a saber:
+  - A qual entidade pertence;
+  - Como é alimentado;
+  - Quando é atualizado;
+  - Quem é o responsável pela criação;
+  - Quem é o responsável pela atualização;
+  - É um campo de preenchimento obrigatório?
+  - Que conteúdo terá se não for preenchido? Uma data padrão?
+  - Qual o formato? Tem só dia, mês e ano ou precisa de hora e minuto?
+  - Por que foi escolhido esse formato? Existe uma norma que exige?
+
+#### Processos operacionais
+
+- Estando o BD criado fisicamente e pronto para uso, inicia-se a fase de definição e implementação de procedimentos operacionais de administração do banco de dados. Entre esses processos temos:
+  - Monitoração do acesso aos dados;
+  - Monitoração da performance de acesso;
+  - Rotinas de salvamento (backup);
+  - Planos de recuperação e contingência para falhas no BD;
+  - Rotinas de compactação de dados (para redução do espaço em disco);
+  - Rotinas de criação e recriação de índices (melhoria de performance).
