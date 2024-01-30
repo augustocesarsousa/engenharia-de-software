@@ -139,3 +139,27 @@
 - Os BDs não relacionais utilizam os recursos do ambiente relacional (SQL), mas agregam outras facilidades típicas dos modelos orientados a objetos, bem como outras para gerenciamento de distribuição de dados em grandes volumes;
 - Em 2003 o Google criou uma iniciativa de um software livre de banco de dados chamado Hadoop, que manuseia grandes volumes de dados estruturados e não estruturados. Essa plataforma hoje é um dos grandes exemplos de soluções NoSQL;
 - A denominação NoSQL não implica que esse tipo de BD não utilizará o SQL, mas que implementará outros recursos além dele.
+
+## Sistema de gerência de banco de dados
+
+### O que é e para que serve um SGBD?
+
+- Um sistema gerenciador de banco de dados é um conjunto de programas criado para executar as funções de manipulação física dos dados armazenados em um BD;
+- Essas funções podem ser divididas em externas, internas e de apoio:
+  - Funções externas: onde temos o pré-processamento, isto é, a pré-compilação dos comandos de manipulação de dados;
+  - Funções internas: onde encontramos o motor de processamento e de acesso aos dados, realizados por meio de um compilador de linguagem de manipulação de dados;
+  - Funções de apoio: encontramos aquelas ligadas a controles de transações e de concorrência de acesso.
+- Structured Query Language (SQL): é a linguagem padronizada que é dividida em quatro grandes grupos de comandos e são organizados de acordo com a finalidade a que se destinam;
+  - Data Manipulation Language (DML): Select, Insert, Delete, Update etc;
+  - Data Definition Language (DDL): Alter, Create, Drop etc;
+  - Data Control Language (DCL): Grant, Revoke, Deny;
+  - Transactional Control Language (TCL): Commit, Rollback.
+- Dentre os profissionais envolvidos nas atividades diretamente ligadas ao SGBD, temos:
+  - Administrador de banco de dados: criar, monitorar, controlar e executar tarefas operacionais;
+  - Projetistas e arquitetos de soluções: definir arquiteturas e alternativas de uso do SGBD em diferentes projetos;
+  - Usuários eventuais: acessar os dados por meio de ferramentas interativas nas quais cada acesso requer diferentes dados;
+  - Usuários parametrizáveis: acessar os dados por meio de interfaces pré-definidas (normalmente telas de sistemas) nas quais cada acesso segue um padrão pré-programado;
+  - Analistas de sistemas: definir quais dados devem ser acessados e quais as transformações que eles deverão sofrer (especificação);
+  - Programadores: definir como os dados serão acessados e como eles serão transformados (codificação);
+  - Fornecedores de ferramentas: criar softwares complementares às funções básicas do SGBD;
+  - Equipe de suporte e operação: executar atividades operacionais para garantir a disponibilidade e a usabilidade do SGBD.
