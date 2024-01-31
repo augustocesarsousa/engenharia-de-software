@@ -163,3 +163,35 @@
   - Programadores: definir como os dados serão acessados e como eles serão transformados (codificação);
   - Fornecedores de ferramentas: criar softwares complementares às funções básicas do SGBD;
   - Equipe de suporte e operação: executar atividades operacionais para garantir a disponibilidade e a usabilidade do SGBD.
+
+## Vantagens e desvantagens do uso de um SGBD
+
+### Vantagens
+
+- Natureza de autodescrição de um sistema de banco de dados:
+  - Antes da existência dos SGBDs, a definição das estruturas de dados era mantida em uma estrutura separada dos próprios dados;
+  - A descrição da ordem em que os diversos campos iriam aparecer, o tamanho de cada um dos campos, a formatação que apresentariam, entre outras características, eram armazenadas em um local e os dados eram armazenados em outro;
+  - Com o advento dos SGBDs, passou-se a ter uma estrutura integrada de definição dos dados e de armazenamento dos dados, isto é, se a definição muda, os dados mudam;
+  - Os programas não precisam definir o layout (estrutura dos campos) de cada registro, como antes faziam.
+- Isolamento entre programas e dados, abstração de dados:
+  - O programa passa a referenciar um dado por meio de seu nome, tendo total abstração do formato, tamanho, modo de armazenamento, estrutura física, entre outros;
+  - Um mesmo dado pode estar em um banco de dados centralizado, distribuído em um BD local ou remoto, ou, ainda, ser compactado (ou não);
+  - Tudo isso não afetará o código que o programador irá gerar para referenciar ou acessar esse dado, tornando o processo de codificação do programa mais simples e garantindo que ele continuará funcionando mesmo que existam alterações na estrutura do banco de dados.
+- Suporte às múltiplas visões de dados:
+  - Essa habilidade tem grande importância quando lembramos que uma das características principais a serem buscadas no uso de um BD é o compartilhamento;
+  - Ao compartilhar e criar conjuntos coerentes de dados (outra característica importante), poderíamos acabar expondo, de modo indevido, porções dos dados que não interessam ou que não deveriam ser publicadas a todos os que os acessam;
+  - Para contornar essa situação, foi criada uma estrutura definida como view, isto é, uma visão dos dados. Por meio de uma view, é possível restringir um conjunto vertical ou horizontal de dados.
+- Compartilhamento de dados e processamento de transação multiusuário:
+  - Essa é uma das características que é vantagem do próprio banco de dados, mas, aqui, trata-se de uma abordagem do ponto de vista de implementação de funções dentro do SGBD que viabilizam essa função;
+  - Imagine o grau de complexidade com que um programador teria que lidar para permitir que um programa pudesse acessar, de modo concorrente, um mesmo conjunto de dados no qual diversos programas realizassem operações simultâneas de atualização e exclusão;
+  - Pode-se dizer que seria praticamente inviável compartilhar e controlar as operações de atualização simultânea se não existisse, no SGBD, esse controle já automatizado.
+
+### Desvantagens
+
+- Recursos de infraestrutura:
+  - Um SGBD requer muito mais recursos de infraestrutura para ser criado, mantido, publicado, compartilhado e administrado;
+  - Isso significa que é necessário mais poder computacional (hardware e software) para instalar, configurar e disponibilizar um SGBD do que seria necessário para disponibilizar uma estrutura baseada em arquivos convencionais.
+- Custo:
+  - Mesmo nos casos em que se possa pensar no uso de um SGBD open-source (de software livre). O SGBD em si não tem custos, na verdade, a infraestrutura que ele usará terá seus custos (maior capacidade de hardware necessária, outros softwares complementares etc.).
+- Performance:
+  - Se considerarmos que a infraestrutura onde o SGBD será executado é limitada – o que pode ocorrer, por exemplo, em um smartphone ou em uma estação de atendimento do tipo toten –, haverá uma perda de performance cada vez maior, isto é, quanto maior for a complexidade do SGBD utilizado, maior será a perda de performance.
