@@ -164,9 +164,9 @@
   - Fornecedores de ferramentas: criar softwares complementares às funções básicas do SGBD;
   - Equipe de suporte e operação: executar atividades operacionais para garantir a disponibilidade e a usabilidade do SGBD.
 
-## Vantagens e desvantagens do uso de um SGBD
+### Vantagens e desvantagens do uso de um SGBD
 
-### Vantagens
+#### Vantagens
 
 - Natureza de autodescrição de um sistema de banco de dados:
   - Antes da existência dos SGBDs, a definição das estruturas de dados era mantida em uma estrutura separada dos próprios dados;
@@ -186,7 +186,7 @@
   - Imagine o grau de complexidade com que um programador teria que lidar para permitir que um programa pudesse acessar, de modo concorrente, um mesmo conjunto de dados no qual diversos programas realizassem operações simultâneas de atualização e exclusão;
   - Pode-se dizer que seria praticamente inviável compartilhar e controlar as operações de atualização simultânea se não existisse, no SGBD, esse controle já automatizado.
 
-### Desvantagens
+#### Desvantagens
 
 - Recursos de infraestrutura:
   - Um SGBD requer muito mais recursos de infraestrutura para ser criado, mantido, publicado, compartilhado e administrado;
@@ -195,3 +195,16 @@
   - Mesmo nos casos em que se possa pensar no uso de um SGBD open-source (de software livre). O SGBD em si não tem custos, na verdade, a infraestrutura que ele usará terá seus custos (maior capacidade de hardware necessária, outros softwares complementares etc.).
 - Performance:
   - Se considerarmos que a infraestrutura onde o SGBD será executado é limitada – o que pode ocorrer, por exemplo, em um smartphone ou em uma estação de atendimento do tipo toten –, haverá uma perda de performance cada vez maior, isto é, quanto maior for a complexidade do SGBD utilizado, maior será a perda de performance.
+
+### Criação e manutenção de um SGBD
+
+- Dentre as funções do SGBD, podemos destacar o fato de ele servir como ferramenta para integrar três níveis existentes na arquitetura de três esquemas (NAVATHE; ELMASRI, 2006):
+  - Nível interno:
+    - É representado por um esquema interno que descreve toda a estrutura de armazenamento e manipulação física dos dados, ou seja, em um nível próximo do hardware;
+    - Sem esse nível, gerenciado pelo SGBD, teríamos que transferir essa complexa tarefa para o programador, aumentando em muito a dificuldade para interação dos sistemas de informação com os dados que eles viessem a utilizar.
+  - Nível conceitual:
+    - Está associado ao esquema conceitual e descreve de modo integral a estrutura do banco de dados – descrição das entidades, relacionamentos, tipos de dados, regras de acesso, regras de segurança etc;
+    - Nesse nível, os detalhes da estrutura física não são relevantes, precisamos conhecer os dados que temos disponíveis para acesso, porém não é necessário saber como estão fisicamente armazenados.
+  - Nível externo:
+    - Apresenta por meio de uma série de esquemas (ou visões) que publicarão partes de um banco de dados que seja de interesse de um ou mais grupos de usuários;
+    - Por meio desse esquema, podemos proteger o acesso a partes do BD ou simplificar o acesso a conjuntos de dados (ocultando aquilo que não seja relevante).
