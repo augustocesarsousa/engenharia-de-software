@@ -208,3 +208,18 @@
   - Nível externo:
     - Apresenta por meio de uma série de esquemas (ou visões) que publicarão partes de um banco de dados que seja de interesse de um ou mais grupos de usuários;
     - Por meio desse esquema, podemos proteger o acesso a partes do BD ou simplificar o acesso a conjuntos de dados (ocultando aquilo que não seja relevante).
+
+### Tipos de SGBD
+
+- Um mesmo fornecedor pode oferecer diversas versões do mesmo SGBD, porém é necessário atentar ao modelo oferecido e verificar o que mais se adéqua a necessidade do projeto;
+- Modelos do SGBD SQL-Server 2017 da Microsoft:
+  - Enterprise: acesse recursos de missão crítica para alcançar escala, segurança, alta disponibilidade e performance líder incomparáveis para seus workloads de nível 1 de Advanced Analytics, business intelligence e bancos de dados;
+  - Standard: encontre recursos de programação avançados, inovações de segurança e performance rápida para aplicativos de nível intermediário e data marts. Faça upgrade facilmente para a Enterprise Edition sem precisar alterar nenhum código;
+  - Express: crie pequenos aplicativos web e móveis, controlados por dados de até 10 GB, com esse banco de dados de nível básico. Disponível gratuitamente;
+  - Developer: crie, teste e demonstre aplicativos em um ambiente que não seja de produção com esta edição completa do SQL Server 2017.
+- Dentre os vários fatores que devem ser considerados na escolha de um SGBD, um deles é a quantidade de usuários que estarão conectados para obter e atualizar dados por uma ou mais aplicações;
+- Pontos de consideração ao se definir um SGBD:
+  - Quanto maior for a quantidade de usuários simultâneos, maior é a preocupação com a escolha de um SGBD robusto em performance, em segurança, em utilização de recursos de infraestrutura etc;
+  - Crescimento da base de dados com o passar do tempo;
+  - Estabilidade do SGBD, este critério tem correlação com os aspectos de robustez, desempenho e segurança;
+  - Custo total de propriedade (CTP) do SGBD, entende-se o quanto gastamos para adquirir (mesmo que no modelo as a service ou locação), implantar e manter o SGBD em operação. O CTP envolve não apenas custos com software, mas também custos com hardware e, principalmente, custos com mão de obra (talvez o mais significante dos três custos).
