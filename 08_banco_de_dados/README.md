@@ -223,3 +223,14 @@
   - Crescimento da base de dados com o passar do tempo;
   - Estabilidade do SGBD, este critério tem correlação com os aspectos de robustez, desempenho e segurança;
   - Custo total de propriedade (CTP) do SGBD, entende-se o quanto gastamos para adquirir (mesmo que no modelo as a service ou locação), implantar e manter o SGBD em operação. O CTP envolve não apenas custos com software, mas também custos com hardware e, principalmente, custos com mão de obra (talvez o mais significante dos três custos).
+
+## Modelagem de Dados
+
+- Modelagem de dados é o método de planejamento para a criação coerente de tabelas no banco de dados.
+
+### O que é e para que serve um modelo de dados?
+
+- Um modelo é, de modo geral, uma representação de um ou mais objetos do mundo real realizada por meio de uma técnica específica, com uma finalidade específica;
+- Um modelo de dados é a representação de uma porção do mundo real que consegue reproduzir e manter as características essenciais dos objetos e das relações existentes entre esses objetos;
+- Existem várias técnicas para a criação de um modelo de dados onde cada uma irá agregar diferentes níveis de informação ao modelo produzido e, por conseguinte, gerar diferentes níveis de entendimento do mundo real que está representando.
+- Um modelo, independentemente da técnica que tenha sido aplicada para sua construção, precisa respeitar algumas premissas, por exemplo, incluir ou excluir algumas características inerentes do objeto que estamos representando, mas devemos, acima de tudo, manter a coerência com o objeto que está sendo representado.
