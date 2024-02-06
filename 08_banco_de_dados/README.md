@@ -234,3 +234,20 @@
 - Um modelo de dados é a representação de uma porção do mundo real que consegue reproduzir e manter as características essenciais dos objetos e das relações existentes entre esses objetos;
 - Existem várias técnicas para a criação de um modelo de dados onde cada uma irá agregar diferentes níveis de informação ao modelo produzido e, por conseguinte, gerar diferentes níveis de entendimento do mundo real que está representando.
 - Um modelo, independentemente da técnica que tenha sido aplicada para sua construção, precisa respeitar algumas premissas, por exemplo, incluir ou excluir algumas características inerentes do objeto que estamos representando, mas devemos, acima de tudo, manter a coerência com o objeto que está sendo representado.
+
+### Vantagens e desvantagens de um modelo de dados
+
+#### Vantagens
+
+- Capacidade de planejar a estrutura do banco de dados;
+- Reduzir custos e prazos na criação de uma estrutura de banco de dados;
+- Em um modelo de dados, poderemos criar e alterar o planejamento da estrutura de nosso banco de dados, sem que isso represente impacto real em uma estrutura física já construída;
+- Capacidade de prototipagem das estruturas de dados que teremos;
+- Serve de documentação do banco para futuras alterações e migrações;
+- É independente de SGBD, podendo ser portado para diversos SGBDs posteriormente.
+
+#### Desvantagens
+
+- Algumas pessoas apontam a modelagem de dados como uma desvantagem por conta do tempo que é levado para o seu desenvolvimento;
+- Pode ser complexo para o entendimento de leigos;
+- Para alguns, o modelo de dados deixa de ser útil depois que o bando de dados foi implementado.
