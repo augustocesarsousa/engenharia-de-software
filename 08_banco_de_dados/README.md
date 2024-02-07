@@ -251,3 +251,35 @@
 - Algumas pessoas apontam a modelagem de dados como uma desvantagem por conta do tempo que é levado para o seu desenvolvimento;
 - Pode ser complexo para o entendimento de leigos;
 - Para alguns, o modelo de dados deixa de ser útil depois que o bando de dados foi implementado.
+
+### Criação e manutenção de um modelo de dados
+
+- O processo de criação de um modelo de dados foi definido originalmente por Pin-Shan Chen em sua obra denominada _A abordagem entidade-relacionamento para o projeto lógico_, em 1977;
+- A proposta de Chen (1990) para a criação dos modelos de dados também era muito simples. Ele dizia que todos os elementos de um mundo real observado poderiam ser mapeados por somente dois conceitos: as entidades (ou coisas) e os relacionamentos (associações entre coisas);
+- Essa abordagem acabou por se tornar conhecida como _modelo entidade-relacionamento_ ou _modelagem entidade-relacionamento_, pois todo o processo se baseava em conseguir representar em um diagrama as entidades (coisas) e os relacionamentos (associações) observados no mundo real que se estava modelando;
+- A abstração das entidades pode ser feita por meio de cinco critérios básicos:
+  1. Objetos concretos:
+     - Coisas que conseguimos ver, pegar, manusear, medir ou pesar, pois existem concretamente no mundo real. Podem ser seres vivos ou inanimados;
+     - Exemplos: Pessoa, veículo, árvore, caneta, átomo etc.
+  2. Fatos:
+     - Coisas que conseguimos ver, presenciar, participar, conhecer ou documentar, pois aconteceram, acontecem ou acontecerão;
+     - Exemplos: Casamento, acidente de trânsito, fusão de átomos etc.
+  3. Funções:
+     - Papéis exercidos por pessoas, veículos, animais ou coisas concretas. Podem ser seres vivos ou inanimados, porém com qualificação de funções;
+     - Exemplos: Médico (pessoa com função de prestar serviços de saúde), trator (veículo com função de prestar serviços rurais) etc.
+  4. Interações:
+     - Operações em que duas ou mais entidades participam;
+     - Exemplos: Compra (uma pessoa adquire um carro), venda (uma empresa vende um produto), troca (um produto é trocado por outro) etc.
+  5. Especificações:
+     - Representam os modelos ou tipos de coisas, não propriamente as coisas. Além disso, guardam dados sobre os tipos de coisas, não sobre as coisas;
+     - Exemplos: Tipo de funcionário (estagiário, contratado, terceirizado); guardaria dados como: se recebe ou não 13º salário, se tem férias ou não, quantas horas por semana deve trabalhar etc.
+- Atributos (ou campos) são, portanto, as características que nos fazem perceber uma entidade;
+- Cada um desses atributos estará associado a uma entidade por meio de uma lista e deverá ter suas propriedades definidas com o uso de um dicionário de dados;
+- Um identificador único é um atributo que servirá para distinguir uma entidade de outra;
+- Uma entidade pode ter mais de um atributo que seja candidato a identificador único.
+
+#### Cardinalidade:
+
+- 1:1 (leia-se 1 para 1): esse tipo de cardinalidade representa relacionamentos em que um elemento da entidade A tem somente uma associação com um elemento da entidade B e vice-versa;
+- 1:N (leia-se 1 para N ou 1 para muitos): cardinalidade em que um elemento da entidade A pode possuir associações com vários elementos da entidade B, enquanto cada elemento da entidade B só pode estar associado a um único elemento da entidade A;
+- M:N (leia-se M para N ou muitos para muitos): nesse tipo de relacionamento, um elemento da entidade A pode estar associado a vários elementos da entidade B, enquanto cada elemento da entidade B pode também estar associado a vários elementos da entidade A.
