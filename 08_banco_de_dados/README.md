@@ -293,3 +293,37 @@
 - A terceira regra de conversão se aplica ao relacionamento de grau 1:1. Ela determina que, sempre que existir um relacionamento 1:1 entre a entidade A e B, deveremos criar, na entidade B, uma nova coluna que seja cópia da coluna chave da entidade A ou vice-versa;
 - A quarta regra de conversão se aplica ao relacionamento 1:N. Essa regra define que, existindo um relacionamento de grau 1:N entre a entidade A e B, sendo A a entidade de grau 1 e B a entidade de grau N, deverá ser criada, na entidade B, uma coluna que seja cópia da coluna chave da entidade A (chave estrangeira de A);
 - Por fim, a quinta e última regra determina que, havendo uma relação de grau de M:N entre as entidades A e B (já transformadas em tabelas A e B), deve-se criar uma tabela C, que receberá as colunas chaves da entidade A e da entidade B, sendo essas duas colunas (chave estrangeira de A e chave estrangeira de B) a nova chave da tabela C.
+
+## Modelo relacional e normalização
+
+### O que é e para que serve um modelo relacional?
+
+- O ponto de partida do modelo relacional é baseado na **teoria dos conjuntos**;
+- Em uma definição simples, mas formal, podemos definir _conjunto_ como o agrupamento de elementos que possuem características semelhantes, ou uma coleção de objetos. Essa definição também pode representar uma _entidade_ no processo de modelagem;
+- Outro ponto que podemos observar é que os elementos que compõem determinado conjunto podem se relacionar com elementos de outros conjuntos e que essa associação é chamada de _relação entre conjuntos_, onde também podemos representar a _relação entre entidades_ da mesma forma;
+- Com base nessas similaridades, Edgar Frank Codd (1923-2003), pesquisador da empresa IBM, publicou, em 1970, um artigo denominado _Modelo relacional de dados para grandes bancos de dados compartilhados_, no qual apresentou uma proposta para que o armazenamento e a manipulação de grandes bases de dados pudessem ser feitos utilizando-se todos os princípios matemáticos da teoria dos conjunto;
+- Principais conceitos oriundos da teoria dos conjuntos que são aplicados no modelo relacional:
+
+| Conceito                      | Definição                                                                                                                    | Elemento do modelo relacional                                              |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Conjunto                      | Agrupamento de elementos com características semelhantes.                                                                    | Tabela                                                                     |
+| Relação                       | Associação, vínculo ou correspondência entre elementos de diferentes conjuntos.                                              | Relacionamento, Chave estrangeira                                          |
+| Elementos                     | Itens que compõem um conjunto.                                                                                               | Linha                                                                      |
+| Características dos elementos | Propriedades comuns que cada elemento possui com os demais do seu conjunto.                                                  | Coluna, Chave primária, Chave secundária, Chave candidata, Índice          |
+| Operação                      | União, intersecção, diferença ou produto cartesiano de elementos de diferentes conjuntos com base em critérios associativos. | Operação                                                                   |
+| Integridade                   | Garantia de que valores ou referências entre elementos sejam sempre válidos.                                                 | Integridade de identidade, Integridade referencial, Integridade de domínio |
+
+- O primeiro conceito incorporado ao modelo relacional é o de **conjunto**, que, na teoria relacional, transforma-se em uma tabela;
+- O segundo conceito é a **relação**, que, na teoria relacional, converte-se em um relacionamento entre duas tabelas;
+- O terceiro conceito são os **elementos** que compõem o conjunto e que se transformam, no modelo relacional, em tuplas ou linhas da tabela;
+- O quarto conceito são as **características** de cada elemento;
+- O último conceito são as **operações** que acontecem por meio das funções de união (ou junção), intersecção, diferença ou produto cartesiano entre dois conjuntos ou entre duas tabelas, já que as tabelas acabam por representar os conjuntos:
+  - **União entre dois conjuntos**: permite que dois conjuntos semelhantes (algo relevante de se destacar) – isto é, que contenham diferentes elementos com as mesmas características – sejam unidos, resultando em um novo conjunto;
+  - **Intersecção ou junção de dois conjuntos**: operação na qual se consegue, por meio de dois conjuntos, como o próprio nome sugere, produzir um terceiro conjunto;
+  - **Diferença entre conjuntos**: operação na qual um conjunto denominado conjunto 3 é o resultado, um conjunto 1 de elementos será removido de dentro de outro conjunto 2, resultando em um novo conjunto 3, que é menor do que o conjunto 2 original;
+  - **Produto cartesiano**: combina todos os N elementos de um conjunto 1 com todos os M elementos de um conjunto 2, produzindo um novo conjunto com M × N elementos;
+- **Integridade**: consiste na garantia de que os conjuntos e tabelas tenham coerência neles e entre eles. O conceito de integridade é implementado no modelo relacional por meio de dois elementos: **a integridade de identidade** e a **integridade de domínio**;
+  - Esses dois elementos procuram assegurar que, em uma tabela criada para armazenar FRUTAS, não possamos, por exemplo, armazenar dados de um animal;
+  - Não podemos cadastrar chaves primárias duplicadas;
+  - A integridade de domínio também é uma garantia de que os dados armazenados não percam sua coerência com o passar do tempo e, consequentemente, sua utilidade;
+  - **Manutenção da integridade referencial**: esse conceito diz que uma chave estrangeira não pode conter um valor de uma chave primária que não exista.
