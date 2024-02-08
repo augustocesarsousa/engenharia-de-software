@@ -283,3 +283,13 @@
 - 1:1 (leia-se 1 para 1): esse tipo de cardinalidade representa relacionamentos em que um elemento da entidade A tem somente uma associação com um elemento da entidade B e vice-versa;
 - 1:N (leia-se 1 para N ou 1 para muitos): cardinalidade em que um elemento da entidade A pode possuir associações com vários elementos da entidade B, enquanto cada elemento da entidade B só pode estar associado a um único elemento da entidade A;
 - M:N (leia-se M para N ou muitos para muitos): nesse tipo de relacionamento, um elemento da entidade A pode estar associado a vários elementos da entidade B, enquanto cada elemento da entidade B pode também estar associado a vários elementos da entidade A.
+
+### Tipos de modelos de dados
+
+- O modelo de dados proposto por Chen (1990) na abordagem entidade-relacionamento deverá ser transformado, por meio de regras de conversão, em um modelo lógico que implemente a arquitetura hierárquica, rede ou relacional, conforme a necessidade do projeto;
+- O objetivo de conversão é transformar, portanto, um modelo genérico e com mais semântica em um modelo específico de uma tecnologia. Para cumprir essa tarefa de conversão, deveremos respeitar os requisitos da tecnologia relacional;
+- A primeira regra de conversão determina que cada entidade do modelo conceitual deve ser transformada em uma tabela, ou seja, teremos tantas tabelas quanto o número de entidades do modelo;
+- A segunda regra de conversão determina que cada atributo (campo) associado a uma entidade deverá ser transformado em uma coluna na tabela, em que ele aparece localizado no modelo conceitual. Segundo Heuser (2009), deveremos escolher um dentre os atributos que permitem o campo como identificador único para a entidade (_chave primária_);
+- A terceira regra de conversão se aplica ao relacionamento de grau 1:1. Ela determina que, sempre que existir um relacionamento 1:1 entre a entidade A e B, deveremos criar, na entidade B, uma nova coluna que seja cópia da coluna chave da entidade A ou vice-versa;
+- A quarta regra de conversão se aplica ao relacionamento 1:N. Essa regra define que, existindo um relacionamento de grau 1:N entre a entidade A e B, sendo A a entidade de grau 1 e B a entidade de grau N, deverá ser criada, na entidade B, uma coluna que seja cópia da coluna chave da entidade A (chave estrangeira de A);
+- Por fim, a quinta e última regra determina que, havendo uma relação de grau de M:N entre as entidades A e B (já transformadas em tabelas A e B), deve-se criar uma tabela C, que receberá as colunas chaves da entidade A e da entidade B, sendo essas duas colunas (chave estrangeira de A e chave estrangeira de B) a nova chave da tabela C.
