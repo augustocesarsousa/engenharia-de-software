@@ -344,3 +344,19 @@
   11. Independência de distribuição dos dados: qualquer mudança nos critérios de distribuição dos dados – desde um BD não ser originalmente distribuído e passar a ter distribuição, ter uma distribuição entre dois diferentes nós de uma rede e passar a ter três diferentes nós, por exemplo – será transparente para o programa que acessa esses dados;
   12. Não subversão das regras de integridade ou restrições quando se usa uma linguagem hospedeira: mesmo que exista um meio de uma linguagem de mais baixo nível – e não apenas a de alto nível provida pelo SGBD – manipular os dados do BD, não deverá ser possível deixar de manter ativos todos os controles e as regras de integridade asseguradas pelo SGBD;
 - Após as 12 regras terem sido estabelecidas, surgiu uma décima terceira regra, que passou a ser chamada de regra zero: 0. Um SGBD relacional deve gerenciar seus dados usando apenas suas capacidades relacionais.
+
+### Criação e manutenção de um modelo relacional
+
+- Segundo Navathe e Elmasri (2005), a criação de um banco de dados relacional é, na verdade, uma etapa que está vinculada à derivação do modelo entidade-relacionamento (E-R) para um modelo relacional;
+- As regras de derivação do modelo E-R para um modelo relacional podem ser aplicadas em dois momentos:
+  - O primeiro consiste no instante em que o modelo está sendo concebido, pois algumas ferramentas de construção já o fazem orientado para o modelo relacional e, portanto, já incorporam as chaves primárias, chaves estrangeiras etc;
+  - O segundo momento ocorre quando o modelo E-R já está pronto e se deseja iniciar a criação das tabelas no SGBD.
+- As regras genéricas de derivação do modelo E-R podem agregar novos conceitos do modelo relacional (chaves primárias, chaves estrangeiras etc.):
+  - Primeira regra: trata da conversão de entidades e menciona que todos os atributos dessa entidade serão transformados em colunas nas tabelas;
+  - Segunda regra: os atributos de um relacionamento 1:N são sempre transferidos para a entidade em que o grau N está vinculado;
+  - Terceira regra: em um relacionamento de grau 1:1 com atributos, estes podem ser transferidos para qualquer uma das tabelas que participam do relacionamento, não havendo preferência ou exigência de que vá para uma ou para outra;
+  - Quarta regra: diz respeito à derivação dos atributos de relacionamentos de grau M:N – estabelece que os atributos do relacionamento deverão ser mantidos no próprio relacionamento, que, nesse caso, irá se transformar em uma nova tabela (tabela associativa).
+- Normalização de tabelas: método para auxiliar a obter tabelas relacionais com estruturas íntegras, visa reduzir a redundância e aumentar a integridade das tabelas que serão criadas:
+  - Primeira forma normal (1FN): estabelece que, em uma tabela, todos os atributos devem ser atômicos, ou seja, não podem ser itens de repetição nem agrupamentos de outros atributos;
+  - Segunda forma normal (2FN): diz que a tabela deverá estar primeiramente na 1FN, logo todos os atributos não pertencentes à chave primária deverão depender totalmente da chave primária;
+  - Terceira forma normal (3FN): diz que a tabela deverá estar na 2FN e que, entre os atributos não pertencentes à chave primária, não deverá existir uma dependência transitiva de valores, isto é, uma coluna (não chave) não poderá dar origem a outra coluna na mesma tabela.
