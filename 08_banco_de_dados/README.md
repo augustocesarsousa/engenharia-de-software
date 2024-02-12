@@ -374,3 +374,14 @@
   - Entretanto, esse tipo de SGDB não atende a algumas das 12 regras, como as relacionadas à garantia de integridade.
   4. Implementar demais itens:
   - Esse modelo é capaz de prover praticamente todos os recursos sugeridos por Codd, incluindo uma estrutura totalmente tabular, todos os operadores da álgebra relacional, gerenciamento de integridade de domínio, integridade referencial, entre outros.
+
+## Projeto de banco de dados
+
+### O que é e para que serve o projeto de banco de dados?
+
+- Segundo Navathe e Elmasri (2005), o projeto físico do banco de dados é uma atividade na qual o objetivo não é apenas obter uma estrutura de dados apropriada para o armazenamento, mas desenvolvê-lo de modo que garanta um bom desempenho. Essa visão inicial já nos apresenta os dois principais elementos do projeto físico: definir a estrutura física para armazenamento dos dados e assegurar o correto desempenho do BD;
+- Nesta etapa, o processo será finalizado agregando ainda mais alguns elementos de complexidade ligados ao armazenamento físico – consumo de espaço em disco, crescimento de espaço de armazenamento, retenção de históricos, compactação, rotinas de expurgo etc. –, além de um pequeno detalhe que faz toda a diferença: a garantia de desempenho adequado;
+- Realizar o projeto físico passa a ter um novo elemento de complexidade que, muitas vezes, é extremamente difícil de identificar: o padrão de uso destes dados. Como serão usados? Quando e por quem serão usados? Em que volume serão usados?
+- A criação de um banco de dados não é um processo puramente sequencial, com começo, meio e fim. Ele é um processo cíclico e que, de modo incremental, será executado agregando progressivamente novas entidades, novos relacionamentos, e, portanto, fazendo o BD físico também crescer;
+- Um BD apropriado é aquele que consegue combinar a coerência e integridade lógica de seus dados com os mecanismos e facilidades de acesso, e, finalmente, com a performance esperada;
+- Esta etapa, vamos executar o projeto físico para definir as tabelas e as visões que o banco de dados terá. Vamos definir as regras de restrição de integridade e os mecanismos de acesso por meio de índices, além de calcular e alocar espaços físicos para armazenamento de dados e índices.
