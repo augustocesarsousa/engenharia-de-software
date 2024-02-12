@@ -360,3 +360,17 @@
   - Primeira forma normal (1FN): estabelece que, em uma tabela, todos os atributos devem ser atômicos, ou seja, não podem ser itens de repetição nem agrupamentos de outros atributos;
   - Segunda forma normal (2FN): diz que a tabela deverá estar primeiramente na 1FN, logo todos os atributos não pertencentes à chave primária deverão depender totalmente da chave primária;
   - Terceira forma normal (3FN): diz que a tabela deverá estar na 2FN e que, entre os atributos não pertencentes à chave primária, não deverá existir uma dependência transitiva de valores, isto é, uma coluna (não chave) não poderá dar origem a outra coluna na mesma tabela.
+
+### Tipos de modelos relacionais
+
+- Como o conjunto com 12 regras publicado por Codd (1970), era muito complexo para comparar sistemas gerenciadores de banco de dados. Chris Date (1941-) – também pesquisador dos laboratórios da IBM e companheiro de Codd – sugeriu uma classificação para os SGBDs relacionais de acordo com o nível de aderência que eles são capazes de implementar:
+  1. Possuir estrutura tabular:
+  - Para que pudesse ser considerado minimamente relacional, o SGBD deveria atender, pelo menos esse nível;
+  - Esse tipo de SGBD é capaz de suportar uma estrutura física na qual todos os dados são armazenados em tabelas (com linhas e colunas).
+  2. Implementar operadores relacionais:
+  - Também suporta uma estrutura tabular e já é capaz de implementar operadores relacionais, mas não todos.
+  3. Implementar requisitos de integridades:
+  - Além de implementar uma estrutura tabular, são capazes de executar todos os operadores da álgebra relacional propostos por Codd;
+  - Entretanto, esse tipo de SGDB não atende a algumas das 12 regras, como as relacionadas à garantia de integridade.
+  4. Implementar demais itens:
+  - Esse modelo é capaz de prover praticamente todos os recursos sugeridos por Codd, incluindo uma estrutura totalmente tabular, todos os operadores da álgebra relacional, gerenciamento de integridade de domínio, integridade referencial, entre outros.
