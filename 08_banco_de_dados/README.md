@@ -414,3 +414,12 @@
 - O projeto físico não é só impactado pelas características das transações de negócio que um banco de dados deverá atender, mas também por critérios de disponibilidade e de segurança da informação;
 - Hot backup: ocorre quando a cópia física esta sendo feita sem interromper completamente o acesso físico ao banco de dados;
 - Outro ponto a ser avaliado no projeto físico diz respeito ao expurgo de dados históricos. Isso pode significar efetivamente a remoção de dados que não tenham mais aplicabilidade a qualquer processo de negócio (atual ou futuro) ou alternativamente a transferência de parte dos dados da base de dados para uma outra estrutura de banco de dados que não aquela que originou os dados.
+
+### Tipos de projetos de bancos de dados
+
+- Quando falamos em particularidades internas, temos, por exemplo, diferentes algoritmos e estruturas de manipulação de índices;
+- Podemos ter também diferentes métodos de compactação de dados, métodos de criação de cópias de segurança (backup), métodos de importação ou exportação de dados, entre outros;
+- Nem sempre todos os projetos irão demandar o uso dos mesmos recursos; podemos ter projetos físicos orientados para diferentes finalidades;
+- O tipo de projeto que teremos que conduzir para um aplicativo poderá não ser similar ao tipo de projeto que conduziremos para um sistema corporativo;
+- Para que tenham a performance desejada, projetos que manipulem grandes volumes de dados terão requisitos especiais que precisarão do conhecimento mais detalhado do SGBD escolhido;
+- Projetos que envolvem distribuição física de dados em diversas localidades também demandarão conhecimentos específicos do administrador de banco de dados.
