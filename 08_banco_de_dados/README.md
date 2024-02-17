@@ -486,3 +486,183 @@
 - Justamente por essa semelhança com uma estrutura gramatical de uma linguagem fluente, os comandos SQL permitem que tenhamos bastante flexibilidade na construção dos mais variados comandos derivados de um único comando básico;
 - Como toda a estruturação do modelo relacional se baseia em um formato tabular (representação por meio de tabelas), podemos assegurar que qualquer linguagem que consiga referenciar uma ou mais colunas de uma ou mais linhas de uma tabela conseguirá sempre abranger todo o universo de dados dentro de um BD relacional;
 - Se conseguirmos estabelecer, ainda, uma linguagem que possa relacionar (criar relacionamentos) com o uso de referências entre valores de tabelas, podemos também assegurar que será possível agregar dados de diferentes tabelas que tenham um elo por meio de uma ou mais colunas. Isso nos dará capacidade de “navegação” (deslocamento) dentro de um modelo relacional.
+
+### Criação e manutenção de uma SQL
+
+#### Comando CREATE [objeto]
+
+- Nesse comando, o objeto pode ser um dos elementos dispostos a seguir. Cada um deles terá uma sintaxe complementar específica:
+  - CREATE CLUSTER;
+  - CREATE CONTEXT;
+  - CREATE CONTROLFILE;
+  - CREATE DATABASE
+  - CREATE DATABASE LINK;
+  - CREATE DIMENSION;
+  - CREATE DIRECTORY;
+  - CREATE DISKGROUP;
+  - CREATE FLASHBACK ARCHIVE;
+  - CREATE FUNCTION;
+  - CREATE INDEX;
+  - CREATE INDEXTYPE;
+  - CREATE JAVA;
+  - CREATE LIBRARY;
+  - CREATE MATERIALIZED VIEW;
+  - CREATE MATERIALIZED VIEW LOG;
+  - CREATE OPERATOR;
+  - CREATE OUTLINE;
+  - CREATE PACKAGE;
+  - CREATE PACKAGE BODY;
+  - CREATE PFILE;
+  - CREATE PROCEDURE;
+  - CREATE PROFILE;
+  - CREATE RESTORE POINT;
+  - CREATE ROLE;
+  - CREATE ROLLBACK SEGMENT;
+  - CREATE SCHEMA;
+  - CREATE SEQUENCE;
+  - CREATE SPFILE;
+  - CREATE SYNONYM;
+  - CREATE TABLE;
+  - CREATE TABLESPACE;
+  - CREATE TRIGGER;
+  - CREATE TYPE;
+  - CREATE TYPE BODY;
+  - CREATE USER;
+  - CREATE VIEW.
+- Cada um desses comandos se complementa;
+- Sintaxe:
+
+```
+CREATE DATABASE nome
+ [ [ WITH ] [ OWNER [=] dono_do_banco_de_dados ]
+ [ TEMPLATE [=] modelo ]
+ [ ENCODING [=] codificação ]
+ [ TABLESPACE [=] espaço_de_tabelas ]
+ [ CONNECTION LIMIT [=] limite_de_conexões ] ]
+```
+
+#### Comando ALTER [objeto]
+
+- Comando no qual o objeto pode ser um dos elementos a seguir:
+  - ALTER CLUSTER
+  - ALTER DATABASE
+  - ALTER DIMENSION
+  - ALTER DISKGROUP
+  - ALTER FLASHBACK ARCHIVE
+  - ALTER FUNCTION
+  - ALTER INDEX
+  - ALTER INDEXTYPE
+  - ALTER JAVA
+  - ALTER MATERIALIZED VIEW
+  - ALTER MATERIALIZED VIEW LOG
+  - ALTER OPERATOR
+  - ALTER OUTLINE
+  - ALTER PACKAGE
+  - ALTER PROCEDURE
+  - ALTER PROFILE
+  - ALTER RESOURCE COST
+  - ALTER ROLE
+  - ALTER ROLLBACK SEGMENT
+  - ALTER SEQUENCE
+  - ALTER SESSION
+  - ALTER SYSTEM
+  - ALTER TABLE
+  - ALTER TABLESPACE
+  - ALTER TRIGGER
+  - ALTER TYPE
+  - ALTER USER
+  - ALTER VIEW
+- Sintaxe:
+
+```
+ALTER TABLE table-Name
+  {
+    ADD COLUMN column-definition |
+    ADD CONSTRAINT clause |
+    DROP [ COLUMN ] column-name [ CASCADE | RESTRICT ]
+    DROP { PRIMARY KEY | FOREIGN KEY constraint-name | UNIQUE constraint-name |
+    CHECK constraint-name | CONSTRAINT constraint-name }
+    ALTER [ COLUMN ] column-alteration | LOCKSIZE { ROW | TABLE }
+  }
+```
+
+#### Comando SELECT
+
+- Dentre os comandos DML (Data Manipulation Language), temos o SELECT como um dos mais conhecidos e utilizados;
+- É por meio dele que toda a recuperação de dados de um banco de dados é realizada;
+- Sintaxe:
+
+```
+SELECT [ ALL | DISTINCT ]
+  [ TOP ( expression ) [ PERCENT ] [ WITH TIES ] ]
+  <select_list>
+  <select_list> ::=
+  {
+  *
+  | { table_name | view_name | table_alias }.*
+  | {
+  [ { table_name | view_name | table_alias }. ]
+  { column_name | $IDENTITY | $ROWGUID }
+  | udt_column_name [ { . | :: } { { property_name | field_name }
+  | method_name ( argument [ ,...n] ) } ]
+  | expression
+  [ [ AS ] column_alias ]
+  }
+  | column_alias = expression
+  } [ ,...n ]
+```
+
+- **ALL**: especifica quais linhas duplicadas podem aparecer no conjunto de resultados, onde ALL é o padrão;
+- **DISTINCT**: especifica que só linhas exclusivas podem aparecer no conjunto de resultados. Valores nulos são considerados iguais para os propósitos da palavra-chave DISTINCT;
+- **TOP ( expression ) [ PERCENT ] [ WITH TIES ]**: indica que apenas um primeiro conjunto ou uma porcentagem de linhas especificadas será retornado de um conjunto de resultados de consulta. _Expression_ pode ser um número ou uma porcentagem das linhas;
+- **<select_list>**: indica a lista de colunas a serem selecionadas para o conjunto de resultados. A lista de seleções é uma série de expressões separadas por vírgulas. O número máximo de expressões que pode ser especificado na lista de seleção é 4096;
+- O uso do caractere **"\*"** especifica que todas as colunas das tabelas e exibições na cláusula FROM devem ser retornadas. As colunas são retornadas por tabela ou exibição, conforme especificado na cláusula FROM, e na ordem em que existem na tabela ou na exibição (MICROSOFT, 2017a);
+
+#### Comando INSERT
+
+- Em sua sintaxe básica, o comando INSERT tem os seguintes parâmetros: nome da tabela, lista de colunas que receberão os valores e lista de valores que serão armazenados:
+- Exemplo:
+
+```
+INSERT dbo.Products (ProductID, ProductName, Price, ProductDescription)
+VALUES (1, ‘Clamp’, 12.48, ‘Workbench clamp’)
+```
+
+- A ordem das colunas pode ser alterada sem restrições, desde que na lista de valores seja realizada a mesma alteração de ordem, ou seja, os nomes e valores precisam possuir uma equivalência direta;
+- Todas as colunas que tenham indicativo de “not null” (não aceitam ficar sem conteúdo) deverão ter seus dados informados na lista de colunas do comando INSERT;
+- Somente as colunas nas quais esteja definida a regra de restrição “null” (aceitam valores nulos) poderão ficar sem valores durante a inserção de um registro na tabela.
+
+#### Comando UPDATE
+
+- O comando UPDATE permite que realizemos a atualização de uma ou mais linhas de uma tabela em uma ou mais colunas dessa mesma tabela;
+- Com esse recurso, podemos atualizar todas as linhas de uma tabela por meio da execução de um único comando que afetará simultaneamente todas as linhas que respeitem a regra de restrição codificada no comando;
+- No exemplo a seguir, o produto cujo código é igual a 50 terá seu nome alterado para "Flat Head Screwdriver":
+
+```
+UPDATE dbo.Products
+SET ProductName = ‘Flat Head Screwdriver’
+WHERE ProductID = 50
+```
+
+#### Comandos GRANT e REVOKE
+
+- Todo o controle de segurança que será implementado dentro de um banco de dados se utilizará também de comandos SQL para ser ativado ou removido;
+- Essa característica nos permite dar e remover permissões de acesso a vários objetos do banco de dados;
+- O comando GRANT terá a função de criar as permissões, já o comando REVOKE terá a função de removê-las;
+- Sintaxe:
+
+```
+GRANT { { SELECT | INSERT | UPDATE | DELETE | REFERENCES | TRIGGER }
+  [,...] | ALL [ PRIVILEGES ] }
+  ON [ TABLE ] nome_da_tabela [, ...]
+  TO { nome_do_usuário | GROUP nome_do_grupo | PUBLIC } [, ...] [ WITH GRANT OPTION ]
+
+REVOKE { SELECT | INSERT | UPDATE | DELETE | REFERENCES | TRIGGER }
+  ON [ TABLE ] nome_da_tabela [, ...]
+  FROM { nome_do_usuário | GROUP nome_do_grupo | PUBLIC }
+```
+
+#### Comandos COMMIT e ROLLBACK
+
+- O comando COMMIT é utilizado para efetivar uma transação realizada;
+- O comando ROLLBACK é utilizado para reverter uma transação mal-sucedida.
