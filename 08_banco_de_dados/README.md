@@ -423,3 +423,53 @@
 - O tipo de projeto que teremos que conduzir para um aplicativo poderá não ser similar ao tipo de projeto que conduziremos para um sistema corporativo;
 - Para que tenham a performance desejada, projetos que manipulem grandes volumes de dados terão requisitos especiais que precisarão do conhecimento mais detalhado do SGBD escolhido;
 - Projetos que envolvem distribuição física de dados em diversas localidades também demandarão conhecimentos específicos do administrador de banco de dados.
+
+## Linguagem estruturada para consultas
+
+- SQL (Structured Query Language) ou linguagem estruturada de consultas;
+- Segundo Navathe e Elmasri (2005), a SQL foi baseada nas linguagens de álgebra e cálculo relacional e inicialmente denominada SEQUEL(Structured English Query Language), além de ser mais inteligível do que suas linguagens hospedeiras (aquelas nas quais a SQL será incorporada), consideradas técnicas demais para o usuário.
+
+### O que é e para que serve a SQL?
+
+- Teve o início do desenvolvimento em 1970 pela IBM;
+- Tinha o objetivo criar uma linguagem de manipulação de dados que se adequasse ao modelo relacional, que surgia e vinha tomando corpo em um mercado carente de alternativas para o gerenciamento de grandes volumes de dados;
+- A primeira versão comercial foi lançada em 1979 pela Oracle;
+- Após lançado o primeiro produto comercial fundamentado no padrão SQL, entramos em uma nova fase que, de certo modo, teve importância definitiva para que a SQL se transformasse em um padrão;
+- No início dos anos 1980, o Instituto Americano de Padronização (ANSI – American National Standarts Institute) iniciou o desenvolvimento de uma versão padronizada da SQL, publicando-a no ano de 1986;
+- Em 1987, a Organização Internacional para Padronização (ISO – International Standarts Organization) também publicava essa primeira versão padronizada da SQL. Posteriormente, outras versões padronizadas pelo ANSI/ISO foram lançadas, ficando conhecidas como SQL-89, SQL-92, SQL-99, SQL-2003, SQL-2008 e SQL-2011 e SQL-2016. Cada um desses nomes é um indicativo do ano em que essas versões foram revisadas e publicadas;
+- A SQL é, portanto, um conjunto de comandos padronizados que executa funções ligadas diretamente ao banco de dados. Esses comandos podem ser incorporados a outras linguagens de programação, chamadas de linguagens hospedeiras, para permitir que os programadores possam executar funções de criação, atualização e recuperação de dados no BD;
+- Alguns desses comandos podem, ainda, ser utilizados pelo administrador de banco de dados para criar objetos no BD e para administrá-lo;
+  Podemos dividir os comandos da SQL em quatro grandes grupos conforme suas funções:
+
+  - DDL (Data Definition Language): utilizado para definir a estrutura do banco de dados ou esquema:
+    |Comando|Descrição|
+    |-|-|
+    |CREATE|Criar objetos no banco de dados|
+    |ALTER|Alterar a estrutura da base de dados|
+    |TRUNCATE|Remover todos os registros de uma tabela|
+    |COMMENT|Adicionar comentários ao dicionário de dados|
+    |RENAME|Renomear um objeto|
+
+  - DML (Data Manipulation Language): utilizado para o gerenciamento de dados dentro de objetos do BD:
+    |Comando|Descrição|
+    |-|-|
+    |SELECT|Recuperar dados do banco de dados|
+    |INSERT|Inserir dados em uma tabela|
+    |UPDATE|Atualizar os dados existentes em uma tabela|
+    |DELETE|Excluir registros de uma tabela|
+    |CALL|Chamar um subprograma PL/SQL|
+    |EXPLAIN PLAN|Explicar o caminho de acesso aos dados|
+    |LOCK TABLE|Controle de concorrência|
+
+  - DCL (Data Control Language): utilizado para definir as permissões de acesso:
+    |Comando|Descrição|
+    |-|-|
+    |GRANT|Atribuir privilégios de acesso do usuário a objetos do BD|
+    |REVOKE|Remover os privilégios de acesso aos objetos do BD|
+
+  - TCL (Transaction Control Language): utilizado para agrupar e gerenciar as mudanças feitas por instruções DML:
+    |Comando|Descrição|
+    |-|-|
+    |COMMIT|Salvar o trabalho feito|
+    |SAVEPOINT|Criar um ponto de retorno em uma transação|
+    |ROLLBACK|Restaurar o BD ao original desde o último COMMIT|
