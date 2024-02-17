@@ -473,3 +473,16 @@
     |COMMIT|Salvar o trabalho feito|
     |SAVEPOINT|Criar um ponto de retorno em uma transação|
     |ROLLBACK|Restaurar o BD ao original desde o último COMMIT|
+
+### Vantagens e desvantagens de se usar a SQL
+
+- Desde seu surgimento, a SQL tem sido reconhecida como uma linguagem universal para acesso a bancos de dados relacionais;
+- Essa unificação de linguagem de acesso a dados permite, hoje, que qualquer programador – conhecendo qualquer linguagem de programação como Delphi, C++, Visual Basic, Java ou outra qualquer – possa ter a mesma facilidade de acesso a um banco de dados, seja para um sistema de pequeno, médio ou grande porte;
+- Outra característica importante que a SQL apresenta é o fato de ser uma linguagem não procedural. Isso significa que, ao utilizar um comando SQL para acessar, editar, incluir ou até excluir um dado no BD, não precisamos informar como isso deve ser feito, mas somente dizer o que deve ser feito;
+- O fato de a SQL ser uma linguagem declarativa nos leva a outra característica que também traz grande facilidade de uso: ela se utiliza praticamente de uma linguagem fluente que, ao utilizar da língua inglesa como base, oferece muita facilidade para ser lida e interpretada;
+- Exemplo:
+  - Linguagem fluente: SELECIONE Nome, Cidade e Sigla do Estado DA TABELA funcionário ONDE as siglas dos estados são iguais a “PR”;
+  - SQL: SELECT Nome, Cidade, SiglaEstado FROM FUNCIONARIO WHERE SiglaEstado = “PR”;
+- Justamente por essa semelhança com uma estrutura gramatical de uma linguagem fluente, os comandos SQL permitem que tenhamos bastante flexibilidade na construção dos mais variados comandos derivados de um único comando básico;
+- Como toda a estruturação do modelo relacional se baseia em um formato tabular (representação por meio de tabelas), podemos assegurar que qualquer linguagem que consiga referenciar uma ou mais colunas de uma ou mais linhas de uma tabela conseguirá sempre abranger todo o universo de dados dentro de um BD relacional;
+- Se conseguirmos estabelecer, ainda, uma linguagem que possa relacionar (criar relacionamentos) com o uso de referências entre valores de tabelas, podemos também assegurar que será possível agregar dados de diferentes tabelas que tenham um elo por meio de uma ou mais colunas. Isso nos dará capacidade de “navegação” (deslocamento) dentro de um modelo relacional.
