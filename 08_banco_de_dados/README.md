@@ -666,3 +666,16 @@ REVOKE { SELECT | INSERT | UPDATE | DELETE | REFERENCES | TRIGGER }
 
 - O comando COMMIT é utilizado para efetivar uma transação realizada;
 - O comando ROLLBACK é utilizado para reverter uma transação mal-sucedida.
+
+### Tipos de SQL
+
+- Existem diversos SGBDs no mercado, exemplos, SQL Server, Oracle SQL, PostgreSQL, IBM DB2, etc. Porém, cada um conta com pequenos detalhes que os diferenciam tanto nas questões de implementação dos recursos da tecnologia relacional quanto na implementação da linguagem SQL;
+- Originalmente, a ideia era criar uma linguagem padrão para o manuseio dos bancos de dados relacionais;
+- Porém, procurando se distinguir um dos outros, os fabricantes acabaram criando pequenos diferenciais na implementação de suas SQLs;
+- Apesar de manterem grande similaridade, nem todas as SQLs que podem ser executadas em um SGBD de um fabricante poderão ser executadas exatamente com a mesma sintaxe em um SGBD de outro;
+- Ao se criar um programa, utilizar a SQL de um fabricante e futuramente decidir trocar o SGBD, será necessário realizar uma revisão de cada comando para adequá-lo ao novo fabricante;
+- Pensando nessa situação, surgiram alguns frameworks (ambiente de desenvolvimento) que utilizam interfaces genéricas para acesso aos dados, isolando, dessa maneira, o código do programa da camada SQL de um ou de outro fabricante;
+- Um exemplo desse tipo de recurso é o Hibernate, plataforma em que se escrevem comandos para acesso a dados usando uma linguagem parecida com a SQL, mas que, na verdade, não é uma SQL de um fabricante, mas sim uma SQL genérica;
+- O Hibernate criará um mecanismo automático de conversão para poder interagir com a SQL de um fornecedor A, B ou C;
+- A grande vantagem desse método é que o código criado pelo programador não terá vínculo com nenhuma SQL de nenhum fornecedor. Se o SGBD utilizado por um programa for alterado futuramente, não haverá impacto no código previamente escrito, pois ele continuará a ter a mesma sintaxe do Hibernate;
+- Basta que um novo conversor para um novo BD seja aplicado e o programa continuará funcionando normalmente. Toda a inteligência a ser aplicada no processo de conversão de SQLs estará a cargo de uma camada que fará essa tarefa automaticamente, dando flexibilidade ao programador na construção de soluções.
