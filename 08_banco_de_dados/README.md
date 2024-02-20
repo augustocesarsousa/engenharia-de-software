@@ -679,3 +679,40 @@ REVOKE { SELECT | INSERT | UPDATE | DELETE | REFERENCES | TRIGGER }
 - O Hibernate criará um mecanismo automático de conversão para poder interagir com a SQL de um fornecedor A, B ou C;
 - A grande vantagem desse método é que o código criado pelo programador não terá vínculo com nenhuma SQL de nenhum fornecedor. Se o SGBD utilizado por um programa for alterado futuramente, não haverá impacto no código previamente escrito, pois ele continuará a ter a mesma sintaxe do Hibernate;
 - Basta que um novo conversor para um novo BD seja aplicado e o programa continuará funcionando normalmente. Toda a inteligência a ser aplicada no processo de conversão de SQLs estará a cargo de uma camada que fará essa tarefa automaticamente, dando flexibilidade ao programador na construção de soluções.
+
+## Atividades
+
+1. Por que podemos afirmar que, ao criar um banco de dados, os dados não são nossos?
+   R: Porque os dados que forem armazenados no banco de dados, podem ser acessados por todos os sistemas que usarão o mesmo repositório.
+2. Por que um administrador de dados nem sempre é o profissional indicado para ser o administrador do banco de dados?
+   R: Porque são atividades com funções diferentes, o administrador de dados é mais focado em atividades de gestão dos dados, até mesmo daqueles que não tem a ver com banco de dados. O administrador de banco de dados, é o profissional responsável pelos dados do banco de dados, ele presa pela segurança, qualidade e performance do banco.
+3. Por que um banco de dados deve ser sempre visto como uma porção do mundo real?
+   R: Porque o banco de dados armazena dados que são baseados em objetos que referenciam o mundo real, exemplo, o banco de dados pode armazenar os dados de um pedido de uma venda, esses dados representam atributos que realmente existem fisicamente no mundo real.
+4. Justifique por que o uso de um SGBD não é obrigatório no desenvolvimento de todos os sistemas de informação.
+   R: Porque nem todos os sistemas necessitam compartilhar dados entre vários sistemas, sistemas menores podem armazenar dados localmente para tarefas específicas.
+5. Se o objetivo de um BD é compartilhar dados, por qual razão um SGBD oferece recursos para criação de views que ocultam parte dos dados de um BD?
+   R: Principalmente pelo fator segurança, onde, em muitos casos, nem todos os dados precisam ser exibidos, por essa razão o SGBD fornece recursos para que esses dados possam ser ocultados nas pesquisas.
+6. Qual é a vantagem de trabalharmos com uma arquitetura de três níveis – físico, conceitual e externo?
+   R: Temos a vantagem de isolar a complexidade da cada nível, com o objetivo de focar os esforços necessários em cada etapa.
+7. Quais são os fatores que impactam o custo de propriedade de um SGBD?
+   R: Os custos que impactam a propriedade de um SGBD são vários, desde custos de operação (treinamentos, manutenção e backups), quanto custos de licenciamentos e assinaturas.
+8. Justifique por que a criação de um banco de dados não é uma atividade intuitiva que possa ser realizada sem planejamento.
+   R: Da mesma forma que um engenheiro civil não pode construir um prédio sem um planejamento, a criação de um DB segue os mesmos princípios, ao se construir um DB, deve se levar em consideração a qual propósito ele irá servir, isso também envolve questões de manutenibilidade e escalabilidade.
+9. Explique por que a atividade de modelagem pode ser vista, ao mesmo tempo, como benefício por alguns e desvantagem por outros.
+   R: Para alguns o tempo gasto na criação de modelos e documentações é algo desnecessário, já para outros, é uma questão de investimento, onde esse processo pode facilitar questões futuras como manutenções e até mesmo expansões do DB.
+10. Explique por que uma entidade não pode existir sem pelo menos um atributo.
+    R: Pelo fato de que as entidades representam objetos do mundo real, e no mundo real não existem objetos sem características que no banco de dados são convertido em atributos.
+11. Qual é a vantagem de se utilizar o processo de derivação para obtenção do modelo lógico?
+    R: A vantagem é a utilização de regras predefinidas que podem ser aplicadas aé mesmo de modo automático sobre as definições do um modelo conceitual.
+12. Explique quais benefícios são obtidos ao se aplicar a teoria dos conjuntos à teoria relacional.
+13. Por que as 12 regras de Codd podem ser vistas como um referencial para a identificação dos benefícios do modelo relacional?
+14. Justifique por que o processo de normalização pode, eventualmente, ser dispensado na criação de alguns modelos relacionais.
+15. Por que um SGBD precisa ter pelo menos uma estrutura tabular para ser considerado relacional?
+16. Explique por que o uso de índices nem sempre pode ser a melhor solução para melhorar a performance de um banco de dados.
+17. Por que o administrador de banco de dados não pode realizar o projeto físico sem a colaboração de vários outros profissionais da área de informática?
+18. Justifique por que uma transação de negócio prioritária deve ter seus requisitos avaliados com maior importância do que outra não prioritária.
+19. Por que cada projeto físico pode ser diferente de outro já realizado anteriormente?
+20. Explique o motivo de a padronização proposta para a linguagem SQL não ter sido mantida integralmente por todos os fornecedores de sistemas gerenciadores de bancos de dados.
+21. Por que os comandos SQL se tornaram facilmente compreensíveis, reconhecidos e utilizados pelos programadores?
+22. Explique o que significa o fato de o padrão SQL ser um padrão de direito e não somente um padrão de fato.
+23. Por que alguns comandos, como o CREATE, têm tantas sintaxes diferentes?
