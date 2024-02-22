@@ -705,14 +705,26 @@ REVOKE { SELECT | INSERT | UPDATE | DELETE | REFERENCES | TRIGGER }
 11. Qual é a vantagem de se utilizar o processo de derivação para obtenção do modelo lógico?
     R: A vantagem é a utilização de regras predefinidas que podem ser aplicadas aé mesmo de modo automático sobre as definições do um modelo conceitual.
 12. Explique quais benefícios são obtidos ao se aplicar a teoria dos conjuntos à teoria relacional.
+    R: A teoria dos conjuntos é utilizada a anos, por ser simples e possuir operadores apropriados para a manipulação de conjuntos, ela se tornou perfeita para ser aplicada a teoria relacional.
 13. Por que as 12 regras de Codd podem ser vistas como um referencial para a identificação dos benefícios do modelo relacional?
+    R: Ao aplicar as 12 regras de Codd, garante que o fabricante do SGBD tenha um programa com diversos benefícios para quem irá utilizá-lo, esses benefícios podem ser relacionados á programação, gerenciamento, manutenção, acessibilidade e expansão.
 14. Justifique por que o processo de normalização pode, eventualmente, ser dispensado na criação de alguns modelos relacionais.
+    R: Para a criação de modelos mais simples que geralmente são utilizados apenas para exemplos, o processo de normalização acaba não sendo necessário.
 15. Por que um SGBD precisa ter pelo menos uma estrutura tabular para ser considerado relacional?
+    R: O modelo relacional exige que seus elementos sejam representados em forma de tabelas, com linhas e colunas.
 16. Explique por que o uso de índices nem sempre pode ser a melhor solução para melhorar a performance de um banco de dados.
+    R: Os índices podem gerar uma sobrecarga, nas atividades do banco de dados, ocasionando em uma perca de performance, esse problema pode ser contornado aplicando outros métodos que garantem uma melhora nas atividades do banco.
 17. Por que o administrador de banco de dados não pode realizar o projeto físico sem a colaboração de vários outros profissionais da área de informática?
+    R: Porque muitas das informações que ele precisa para a criação dependem de outros profissionais, como os programadores, analistas de sistemas, a equipe de segurança da informação e outros profissionais que estejam envolvidos no desenvolvimento do sistema.
 18. Justifique por que uma transação de negócio prioritária deve ter seus requisitos avaliados com maior importância do que outra não prioritária.
+    R: Porque devemos focar na prioridade dos processos de negócio como elemento de diferenciação, pois o BD tem como finalidade atender não a um sistema, mas aos processos de negócio da organização.
 19. Por que cada projeto físico pode ser diferente de outro já realizado anteriormente?
+    R: Porque projetos anteriores podem ter tido diferentes requisitos ou características que exigiram outras estratégias de projeto que agora não poderão ser aproveitadas na íntegra.
 20. Explique o motivo de a padronização proposta para a linguagem SQL não ter sido mantida integralmente por todos os fornecedores de sistemas gerenciadores de bancos de dados.
+    R: Porque os fornecedores de SGBDs procuraram criar algumas características exclusivas nos seus sistemas para atender clientes específicos.
 21. Por que os comandos SQL se tornaram facilmente compreensíveis, reconhecidos e utilizados pelos programadores?
+    R: Porque essa linguagem se utiliza de comandos com sintaxes que praticamente reproduzem a linguagem fluente em inglês, formando frases facilmente compreensíveis.
 22. Explique o que significa o fato de o padrão SQL ser um padrão de direito e não somente um padrão de fato.
+    R: Porque algumas entidades certificadoras e criadoras de padrões, como a ANSI e a ISO, formalizaram o padrão e ele passou a ser um padrão de direito.
 23. Por que alguns comandos, como o CREATE, têm tantas sintaxes diferentes?
+    R: Porque cada sintaxe se refere á um tipo de objeto distinto, como por exemplo, tabelas, índices, restrições etc.
