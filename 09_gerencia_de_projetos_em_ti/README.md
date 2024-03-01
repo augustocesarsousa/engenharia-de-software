@@ -80,3 +80,30 @@
 - Caso não aprovada, pode ser modificada e adaptada;
 - Processo repetido até aprovação;
 - Termo de aceite assinado pelos patrocinadores e envolvidos.
+
+### Gerenciamento de projetos
+
+- É o ramo de trabalho que busca definir e atingir objetivos, otimizando o uso de recursos durante o curso de um projeto;
+- Envolve recursos como tempo, dinheiro, pessoas, materiais, energia e espaço;
+- O PMBOK (Project Management Body of Knowledge) define gerência de projetos como a aplicação de conhecimento, habilidades, ferramentas e técnicas nas atividades do projeto para atender aos seus requisitos;
+- Embora não haja uma definição universalmente aceita, há consenso de que a gestão deve incluir um conjunto de tarefas para garantir a utilização eficaz dos recursos disponibilizados pela organização;
+- O gerente de projetos é responsável por manter todas as partes do projeto funcionando em equilíbrio e sintonia. Deve evitar que o projeto pare ou se torne inviável;
+- O equilíbrio do projeto envolve o controle adequado de demandas concorrentes, como escopo, prazo, custo e qualidade.
+
+#### História do gerenciamento de projetos
+
+- A ideia de gerenciar projetos remonta há mais de 4.000 anos, desde a construção das pirâmides do Egito. Porém, as primeiras ideias estruturadas e planificadas para um controle mais adequado surgiram recentemente;
+- Após a Revolução Industrial, nos EUA, a Central Pacific Railroad foi a primeira grande organização a praticar conceitos de gerenciamento de projetos. Começaram suas atividades por volta de 1870, com a construção da estrada de ferro transcontinental;
+- Taylor e Gantt foram pioneiros em direcionar a atenção para o ser humano e suas atividades na indústria;
+- Gantt afirmava que o elemento humano era o mais importante na administração de projetos;
+- Taylor focava na eficiência e eficácia operacional na administração industrial. Suas teorias radicais e controle inflexível elevaram o desempenho das indústrias, mas também geraram demissões, insatisfações e estresse entre os subordinados;
+- Gantt criou diagramas com barras de tarefas e marcos para esboçar a sequência e duração das atividades em um processo. Esses diagramas, conhecidos como diagramas de Gantt, permaneceram inalterados por quase 100 anos;
+- A complexidade dos projetos aumentou após a Segunda Guerra Mundial. Surgiram os diagramas PERT (Program Evaluation and Review Technique) e o método CPM (Critical Path Method);
+- Essas ferramentas ofereceram maior controle sobre a execução das tarefas de um projeto;
+- Na década de 1960, os projetos eram vistos como "organismos vivos". Para sobreviver e prosperar, todas as partes funcionais dos projetos deveriam trabalhar de forma integrada, visando metas e cumprindo cronogramas;
+- Após quase 5.000 anos e vários projetos icônicos, a arte de gerenciar projetos foi formalmente reconhecida como uma ciência;
+- O Projeto Manhattan, de criação da bomba atômica, foi o primeiro projeto reconhecido no século XX;
+- Crises de escassez de matérias-primas, como o petróleo, levaram ao desenvolvimento de softwares específicos para planejamento e controle de projetos com muitas atividades;
+- Microcomputadores permitiram aos gerentes de projeto acesso rápido às informações e a possibilidade de alterar parâmetros do projeto conforme mudanças ou imprevistos;
+- Introdução da EAP (Estrutura Analítica do Projeto) e EAO (Estrutura Analítica da Organização), que permitem a vinculação de atividades às unidades específicas da organização;
+- Metodologias seguem uma visão mecanicista, dividindo, controlando, monitorando e padronizando o trabalho humano seguindo processos formais.
