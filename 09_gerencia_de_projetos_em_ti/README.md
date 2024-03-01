@@ -107,3 +107,28 @@
 - Microcomputadores permitiram aos gerentes de projeto acesso rápido às informações e a possibilidade de alterar parâmetros do projeto conforme mudanças ou imprevistos;
 - Introdução da EAP (Estrutura Analítica do Projeto) e EAO (Estrutura Analítica da Organização), que permitem a vinculação de atividades às unidades específicas da organização;
 - Metodologias seguem uma visão mecanicista, dividindo, controlando, monitorando e padronizando o trabalho humano seguindo processos formais.
+
+### Metodologias de gerenciamento de projetos
+
+- Metodologia é um conjunto de métodos, princípios e regras para regulamentar uma disciplina;
+- Método é um procedimento, técnica ou maneira específica de fazer algo;
+- A metodologia é o estudo dos métodos ou receitas para as etapas em um processo. É fundamental para o desenvolvimento de projetos;
+- O uso de uma metodologia não garante automaticamente o sucesso do projeto;
+- Cada empresa tem processos e cultura organizacional distintos, exigindo adaptação da metodologia;
+- A metodologia estabelece melhores práticas com base em estudos históricos e conhecimento organizacional;
+- Uma metodologia mal empregada pode gerar excesso de burocracia e atrapalhar o desenvolvimento do projeto;
+- Metodologias que sustentam as melhores práticas para se trabalhar com gestão de projetos em tecnologia da informação, segundo Fernandes
+  (2006 apud MASSOT, 2008, p. 4):
+
+| Metodologia                                                       | Escopo                                                                                                                                                             |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| COBIT (Control Objectives for Information and Related Technology) | Modelo abrangente aplicável à auditoria e ao controle de processo de TI, desde o planejamento da tecnologia até a monitoração e a auditoria de todos os processos. |
+| CMMI (Capability Maturity Model Integration)                      | Desenvolvimento de produtos e projetos de sistemas de software.                                                                                                    |
+| ITIL (Information Technology Infrastructure Library)              | Infraestrutura de tecnologia da informação (serviços de TI, segurança, gerenciamento da infraestrutura, gestão de ativos e aplicativos etc.).                      |
+| Modelo ISO (International Organization for Standardization)       | Sistema de Qualidade, ciclo de vida de software, teste de software etc.                                                                                            |
+| eSCM-SP (Service Provider Capability Maturity Model)              | Outsourcing em serviços que usam TI de forma intensiva.                                                                                                            |
+| PRINCE2 (Project in Controlled Environment)                       | Metodologia de gerenciamento de projetos.                                                                                                                          |
+| PMBOK (Project Management Body of Knowledge)                      | Base de conhecimento em gestão de projetos.                                                                                                                        |
+| BSC (Balance Scorecard)                                           | Metodologia de planejamento de gestão estratégica.                                                                                                                 |
+| Six Sigma                                                         | Metodologia para melhoramento da qualidade de processos.                                                                                                           |
+| SAS 70 (Statement on Auditing Standards for Services)             | Regras de auditoria para empresas de serviços.                                                                                                                     |
