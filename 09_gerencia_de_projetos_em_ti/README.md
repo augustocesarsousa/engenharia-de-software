@@ -180,3 +180,46 @@
 - Projetos vs. Operações:
   - Projetos: Únicos, com início, meio e fim definidos;
   - Operações: Atividades contínuas, focadas na manutenção e eficiência dos processos de negócios, com o objetivo de atender exigências dos clientes.
+
+### Estruturas organizacionais versus PMO
+
+- Cada empresa possui sua estrutura, cultura e estilo únicos;
+- Esses aspectos influenciam normas, crenças, comportamentos, expectativas e valores;
+- A importância dos fatores culturais são essenciais para entender como a empresa e os colaboradores interagem com projetos e trabalho em equipe;
+- A cultura, o estilo, as normas e as crenças são refletidos na estrutura organizacional. Esta é tangível e identificável, ao contrário dos aspectos culturais mais abstratos;
+- Entender a estrutura organizacional ajuda a prever problemas, limitações ou restrições na implantação de um PMO.
+
+#### Organização funcional clássica
+
+- Fortemente hierarquizada, com linhas de autoridade claras;
+- Funcionários divididos em departamentos baseados em especialidades (ex: produção, marketing, contabilidade, engenharia);
+- Departamentos operam quase como entidades separadas dentro da empresa;
+- Trabalho em projetos feito sem conhecimento global ou interação com outros departamentos;
+- Cria desafios significativos para a implementação e eficácia de um escritório de projetos;
+- Não existe um gerente de projetos e sua função é dividida entre os gerentes funcionais das diversas áreas, atividade que normalmente os sobrecarrega;
+- Esse tipo de estrutura organizacional é um caso clássico em que os gerentes funcionais (também responsáveis pelo projeto) dão prioridade para as atividades rotineiras (disponibilização de recursos humanos e materiais) do departamento, em detrimento das atividades dos projetos.
+
+#### Organização matricial
+
+- Definição: estrutura organizacional intermediária entre a estrutura funcional clássica e a estrutura por projetos;
+- Subtipos de estrutura matricial:
+  - Matricial Fraca: semelhante à estrutura funcional clássica, sem um gerente de projetos definido, funções gerenciais divididas entre funcionários de diferentes departamentos;
+  - Matricial Balanceada: coordenação do projeto realizada por várias pessoas do mesmo nível hierárquico, mas sem representatividade no corpo gerencial, dificultando a alocação de recursos;
+  - Matricial Forte: inclui a figura formal do gerente de projetos com área funcional própria e autoridade hierárquica para resolver conflitos de interesse na alocação de recursos.
+- Na estrutura matricial, o gerente de projetos não desempenha seu papel em tempo integral e acumula funções, estando subordinado a um gerente funcional, o que pode gerar dificuldades na gestão de projetos, semelhantes às da estrutura matricial fraca;
+- Na versão mais fortalecida da estrutura, o gerente de projetos possui formalidade e autoridade, facilitando a gestão de conflitos e alocação de recursos.
+
+#### Estrutura organizacional projetizada
+
+- Estrutura Organizacional Projetizada:
+  - Ideal para gerentes de projetos, com todos os recursos (humanos, tecnológicos, financeiros, infraestrutura) disponíveis integralmente;
+  - Gera alto nível de ociosidade dos recursos, considerada utópica por Vaz (2012) devido ao potencial desperdício.
+- Estrutura Organizacional Composta:
+  - Surgimento de áreas projetadas dentro das organizações para minimizar custos e maximizar resultados;
+  - Mescla características das estruturas de matriz forte e matriz fraca;
+  - Inclui uma área funcional específica para gerência de projetos, com autoridade formalmente reconhecida do gestor de projetos;
+  - Garante representatividade hierárquica para pleitear recursos;
+  - Membros da equipe de projetos podem liderar outros projetos ou subprojetos.
+- Interatividade do Gerente de Projetos:
+  - Pode interagir em todos os níveis organizacionais (estratégicos, de média gerência, operacionais);
+  - A extensão da interação varia conforme a importância estratégica do projeto, influência das partes interessadas, maturidade em gerenciamento de projetos, sistemas gerenciais adotados e comunicações organizacionais.
