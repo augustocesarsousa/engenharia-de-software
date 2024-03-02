@@ -132,3 +132,51 @@
 | BSC (Balance Scorecard)                                           | Metodologia de planejamento de gestão estratégica.                                                                                                                 |
 | Six Sigma                                                         | Metodologia para melhoramento da qualidade de processos.                                                                                                           |
 | SAS 70 (Statement on Auditing Standards for Services)             | Regras de auditoria para empresas de serviços.                                                                                                                     |
+
+## Escritório de gerenciamento de projetos
+
+### O que é e como funciona um PMO?
+
+- Definição Segundo o PMBOK (2013):
+  - PMO (Project Management Office) ou EGP (Escritório de Gerenciamento de Projetos) é uma estrutura que padroniza processos de governança de projetos e facilita o compartilhamento de recursos, metodologias,ferramentas e técnicas.
+- Objetivo e Estrutura:
+  - Estabelecer um departamento específico composto por recursos humanos e materiais para centralizar a organização e o acompanhamento dos projetos;
+  - Variabilidade das funções, podendo oferecer desde suporte até o gerenciamento direto de projetos;
+  - Envolvimento na seleção, gerenciamento e mobilização de recursos.
+- Clarificação:
+  - Um PMO não deve ser confundido com o gestor de projetos;
+  - Pode abrigar vários profissionais e atuar como um "quartel-general" de projetos.
+- Diferentes Perfis de PMO:
+  - Corporativo: Define regras de gestão de projetos em toda a corporação;
+  - Organizacional ou Departamental: Ligado a áreas específicas como TI, focado em operações do departamento;
+  - Para fins especiais: Objetivos específicos e temporários, como gerenciar um programa estratégico.
+- Níveis Diferentes de PMO:
+  - Os níveis variam de acordo com a maturidade da empresa e as necessidades de gestão de projetos.
+- Papel do Gerente de Projetos Segundo o PMBOK (2013):
+  - Responsável por atender necessidades de tarefas, equipe e individuais;
+  - Estratégico, fazendo a ligação entre a estratégia de execução de projetos e a equipe de desenvolvimento.
+- Competências Requeridas para o Gerente de Projetos:
+  - Conhecimento: Sobre gerenciamento de projetos;
+  - Desempenho: Capacidade de aplicar o conhecimento;
+  - Pessoal: Habilidade de guiar equipes, liderança, características de personalidade.
+- Considerações sobre a criação de um PMO:
+  - Não é essencial para o sucesso de projetos, mas depende da complexidade do projeto e da maturidade da empresa;
+  - Motivações para implantação incluem: maior assertividade em projetos, priorização adequada de projetos, manutenção ou aumento de lucros, competitividade de mercado.
+- Níveis de PMO:
+  - PMO de nível 1: Controle dos projetos, monitoramento e obtenção das informações para a confecção de relatórios de status. Não influencia no gerenciamento do empreendimento;
+  - PMO de nível 2: Influir no andamento dos projetos por meio de definições de metodologias, técnicas, métricas e ferramentas a serem utilizadas, além de gerir a evolução contínua do gerenciamento de projetos. Auditar projetos e programas;
+  - PMO de nível 3: Assegurar o alinhamento dos projetos e programas às estratégias do negócio da empresa.
+- Responsabilidades dos níveis de PMO são acumulativas: o PMO de nível 2 executa tudo o que o de nível 1 faz mais as suas próprias responsabilidades e funções, e assim por diante;
+- Tipos de PMO Segundo o PMBOK (2013):
+  - PMO de suporte: desempenha papel consultivo nos projetos, tendo como principal papel fornecer modelos, indicar melhores práticas, treinamentos, fornecer acesso a informações e lições aprendidas em outros projetos. Possui um nível de controle baixo. É o correspondente ao que Vaz (2012) chama de PMO nível 1;
+  - PMO de controle: tem a função de fornecer suporte e exige a adoção de estruturas ou metodologias de gerenciamento de projetos, por vários meios, tais como modelos, formulários e ferramentas específicas. Possui um nível de controle médio. É o correspondente ao que Vaz (2012) chama de PMO nível 2;
+  - PMO diretivo: assume o controle do projeto pelo seu gerenciamento direto. Possui nível de controle alto. É o correspondente ao que Vaz (2012) chama de PMO nível 3.
+- Resultados e Benefícios de um PMO:
+  - Aumento da taxa de sucesso dos projetos;
+  - Melhor utilização dos recursos, com redução de desperdícios e custos;
+  - Adaptação dinâmica de metodologias de projetos;
+  - Promoção de reuniões para acompanhamento de projetos;
+  - Implementação de ações para equilibrar custo, prazo, escopo e qualidade.
+- Projetos vs. Operações:
+  - Projetos: Únicos, com início, meio e fim definidos;
+  - Operações: Atividades contínuas, focadas na manutenção e eficiência dos processos de negócios, com o objetivo de atender exigências dos clientes.
