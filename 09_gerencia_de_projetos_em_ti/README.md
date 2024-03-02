@@ -223,3 +223,16 @@
 - Interatividade do Gerente de Projetos:
   - Pode interagir em todos os níveis organizacionais (estratégicos, de média gerência, operacionais);
   - A extensão da interação varia conforme a importância estratégica do projeto, influência das partes interessadas, maturidade em gerenciamento de projetos, sistemas gerenciais adotados e comunicações organizacionais.
+
+### A tecnologia da informação
+
+- Aumento da complexidade e velocidade nos negócios promove a competitividade.
+  Organizações adaptam estruturas para mais flexibilidade organizacional, utilizando tecnologia da informação (TI);
+- TI é essencial para melhorar processos administrativos, gerenciais e o manuseio de informações;
+- TI envolve hardware, software, banco de dados e redes para facilitar o acesso e gerenciamento de informações;
+- TI suporta coleta, armazenamento, transformação e distribuição de informações.
+  Profissionais de TI criam ferramentas e sistemas para análise de dados e tomada de decisão;
+- Área de TI conta com diversas especialidades: programação, segurança, redes, análise de sistemas, infraestrutura, hardware e suporte técnico;
+- Investimento em TI é crucial para o cuidado com a informação, gerando conhecimento, permitindo análise e melhoria de processos;
+- Gestão eficiente de projetos de TI é vital para manter competitividade, envolvendo desenvolvimento de sistemas, segurança de dados e infraestrutura;
+- Questionamentos sobre riscos, custos, qualidade e responsabilidades em projetos de TI indicam a importância de uma gestão de projetos adequada.
