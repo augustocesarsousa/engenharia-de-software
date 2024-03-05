@@ -236,3 +236,26 @@
 - Investimento em TI é crucial para o cuidado com a informação, gerando conhecimento, permitindo análise e melhoria de processos;
 - Gestão eficiente de projetos de TI é vital para manter competitividade, envolvendo desenvolvimento de sistemas, segurança de dados e infraestrutura;
 - Questionamentos sobre riscos, custos, qualidade e responsabilidades em projetos de TI indicam a importância de uma gestão de projetos adequada.
+
+## Auditoria de TI
+
+### Indicadores de controle
+
+- Gerenciamento de Projetos: Define e busca atingir objetivos otimizando recursos;
+- Equilíbrio do projeto depende do controle de escopo, prazo, custo e qualidade.
+- Importância dos Indicadores:
+  - Necessários para manter equilíbrio nas áreas-chave;
+  - Permitem avaliar a distância até o cenário desejado e se as metas foram alcançadas.
+- Definição e Função:
+  - São parâmetros numéricos que facilitam gerenciamento e busca por melhores resultados;
+  - Essenciais para o controle e gestão eficaz do projeto.
+- Tipos de Indicadores:
+  - Indicadores de Impacto: Resultado longo prazo e contribuição para organização/sociedade.
+  - Indicadores de Efetividade: Medem resultado de objetivos no tempo, após o projeto;
+  - Indicadores de Desempenho: Monitoram processos para atingir as metas;
+  - Indicadores Operacionais: Medem recursos e atividades, indicam tendências de prazo, custo, etc.
+- Gerenciamento do Valor Agregado (EVM):
+  - Técnica de mensuração e controle do desempenho;
+  - Utiliza PV (Valor Planejado), AC (Custo Real) e EV (Valor Agregado) para monitorar o projeto;
+  - Calcula variações de custo (CV) e prazo (SV), além de índices de desempenho em custo (CPI) e prazo (SPI);
+  - Citação de Edwards Deming: Enfatiza a importância da medição e conhecimento para o sucesso do gerenciamento.
