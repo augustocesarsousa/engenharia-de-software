@@ -259,3 +259,34 @@
   - Utiliza PV (Valor Planejado), AC (Custo Real) e EV (Valor Agregado) para monitorar o projeto;
   - Calcula variações de custo (CV) e prazo (SV), além de índices de desempenho em custo (CPI) e prazo (SPI);
   - Citação de Edwards Deming: Enfatiza a importância da medição e conhecimento para o sucesso do gerenciamento.
+
+### Auditoria de TI
+
+- Conceito de Auditoria: Exame sistemático das atividades de uma empresa para verificar conformidade, eficácia e adequação com planejamentos e regulamentos;
+- Importância da Auditoria de TI: Garantir a confiabilidade dos sistemas de controle internos e estruturas tecnológicas que gerenciam grandes volumes de dados e transações;
+- Objetivos da Auditoria de TI (Buarque, 2017):
+  - Avaliar governança de TI;
+  - Verificar controles de acesso;
+  - Avaliar processos de TI;
+  - Verificar a conformidade de contratações de bens e serviços com normas e leis.
+- Papel na Gestão de Projetos: Parte crucial do gerenciamento de projetos em TI. Envolve monitorar conformidade com padrões e políticas através de auditorias;
+- Metodologia de Auditoria (Arima, 1993):
+  - Planejamento do projeto de auditoria;
+  - Levantamento dos itens a serem auditados;
+  - Identificação e inventário dos pontos de controle;
+  - Priorização e seleção dos pontos de controle;
+  - Revisão e avaliação dos pontos de controle;
+  - Acompanhamento e conclusão da auditoria.
+- Objetivo Final da Auditoria: Assegurar que os processos atendem às necessidades da empresa e estão em conformidade com as leis de TI;
+- Funções Principais de uma Boa Auditoria:
+  - Elaborar e monitorar metas;
+  - Detectar pontos críticos;
+  - Reduzir riscos de erros e fraudes;
+  - Certificar informações confiáveis.
+- Cuidados Importantes: Evitar o estresse, focar na solução de problemas e evitar um clima de culpabilização;
+- Tipos de Auditoria de TI:
+  - Auditoria de Infraestrutura de TI;
+  - Auditoria de Desenvolvimento de Sistemas;
+  - Auditoria de Segurança Física;
+  - Auditoria de Integridade de Dados;
+  - Auditoria de Planejamento e Gestão.
