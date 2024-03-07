@@ -290,3 +290,22 @@
   - Auditoria de Segurança Física;
   - Auditoria de Integridade de Dados;
   - Auditoria de Planejamento e Gestão.
+
+### Conceito de Maturidade
+
+- Origem do conceito por Argyris (1968): mudanças graduais e aquisição de competências para transformação em pessoas maduras;
+- Definição por Kerzner (2017): desenvolvimento de sistemas e processos repetitivos para garantir sucesso;
+- Maturidade em gerenciamento de projetos: habilidade de uma organização gerenciar seus projetos.
+
+#### Modelos de Maturidade de Gestão de Projetos
+
+- Capability Maturity Model (CMM):
+  - Desenvolvido pela Universidade Carnegie Mellon e pelo Instituto de Engenharia de Software;
+  - Níveis de maturidade de 1 (inicial) a 5 (otimização).
+- Project Management Maturity Model (PMMM):
+  - Desenvolvido por Kerzner, baseado no PMBOK;
+  - Cinco níveis de maturidade, avaliação através de questionário.
+- Organizational Project Management Maturity Model (OPM3):
+  - Lançado pelo Project Management Institute (PMI) em 2004;
+  - Dividido em Conhecimento, Avaliação e Aperfeiçoamento;
+  - Não utiliza classificação em níveis, e sim em valores percentuais.
