@@ -309,3 +309,23 @@
   - Lançado pelo Project Management Institute (PMI) em 2004;
   - Dividido em Conhecimento, Avaliação e Aperfeiçoamento;
   - Não utiliza classificação em níveis, e sim em valores percentuais.
+- Modelo de Maturidade em Gerenciamento de Projetos (MMGP):
+  - Lançado por Darci Prado em 2002;
+  - Avalia maturidade de um setor ou departamento, adotando níveis do CMM;
+  - Cinco níveis de maturidade: inicial, conhecimento, padronização, gerenciado, otimizado.
+
+## Tópicos especiais de gestão de projetos de TI
+
+### Entendendo o problema
+
+- Importância das ferramentas de controle: Indicadores de controle e auditorias são fundamentais na gestão de projetos de TI, desde que os indicadores sejam relevantes e apresentem dados significativos;
+- Seleção de indicadores relevantes: Gestores precisam conhecer detalhadamente o projeto, incluindo ambiente, atividades operacionais e nuances negociais, para escolher os indicadores de controle adequados;
+- Mapeamento de processos: Destacado como uma técnica valiosa para identificar indicadores relevantes e entender o projeto em profundidade;
+- Definição de processo: Atividades realizadas em sequência lógica para produzir um bem ou serviço de valor, conforme definições de autores renomados;
+- Fases do projeto: Divisão em iniciação, planejamento, execução, monitoramento e controle, e encerramento. Cada fase requer detalhamento em atividades e controle por meio de indicadores;
+- Importância da medição de processos: Fundamental para avaliar a satisfação dos requisitos do cliente, a execução do processo e a identificação de problemas potenciais;
+- Estrutura de um processo: Composição de inputs, outputs, tempo, espaço, ordenação, objetivos e valores, visando gerar um produto ou serviço específico;
+- Implementação de estratégias de negócios: Processos refletem o funcionamento da empresa e ajudam a implementar sua visão e valores;
+- Representação esquemática de processos: Utilização de diagramas e descrições textuais para detalhar as atividades de um processo, seguindo padrões como a linguagem de modelagem unificada (UML);
+- Detalhamento de processos: A importância de detalhar processos ao máximo para clareza entre todos os envolvidos, e a classificação de tarefas em rotineiras e não rotineiras;
+- Execução de trabalho: Classificação de trabalho em formal e informal, e o papel dos procedimentos na execução de atividades de um processo.
