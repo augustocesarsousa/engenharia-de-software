@@ -329,3 +329,37 @@
 - Representação esquemática de processos: Utilização de diagramas e descrições textuais para detalhar as atividades de um processo, seguindo padrões como a linguagem de modelagem unificada (UML);
 - Detalhamento de processos: A importância de detalhar processos ao máximo para clareza entre todos os envolvidos, e a classificação de tarefas em rotineiras e não rotineiras;
 - Execução de trabalho: Classificação de trabalho em formal e informal, e o papel dos procedimentos na execução de atividades de um processo.
+
+### Mapeamento de Processos
+
+- Definição e Propósito:
+  - Mapear processos envolve entender claramente cada atividade, seus custos e prazos;
+  - É uma ferramenta gerencial e de comunicação destinada a melhorar ou implementar novos processos.
+- Benefícios:
+  - Redução de custos no desenvolvimento de produtos e serviços;
+  - Diminuição de problemas de integração entre sistemas;
+  - Melhoria no desempenho organizacional;
+  - Documentação e correção de elementos problemáticos nos processos;
+  - Facilita a identificação de atividades que não agregam valor.
+- Implementação:
+  - Inicia com o entendimento dos objetivos do processo;
+  - Decomposição em atividades/tarefas que, executadas corretamente, atingem os objetivos do processo;
+  - Identificação de atores envolvidos e realização de entrevistas semiestruturadas para entender rotinas e potenciais melhorias.
+- Avaliação das Atividades:
+  - Questionamentos sobre a necessidade das atividades como estão, possibilidades de simplificação, número de departamentos envolvidos, e a adequação dos custos e treinamento das pessoas envolvidas.
+- Caminho Principal e Alternativos:
+  - Detalhamento das atividades na sequência correta para o sucesso do processo;
+  - Identificação de atividades alternativas em caso de falhas, limitações ou problemas.
+- Tratamento de Exceções:
+  - Estabelece procedimentos caso atividades principais e alternativas falhem, buscando evitar a paralisação do processo.
+- Praticidade e Realismo:
+  - Reconhece que nem sempre é possível ter sequências infinitas de atividades alternativas;
+  - Destaque para atividades críticas, que devem ser realizadas preferencialmente pelo caminho principal com o máximo de garantia de sucesso.
+- Auditoria e Controle:
+  - Atividades estratégicas e alternativas são marcadas como pontos de controle na auditoria dos processos.
+- Entrevistas e Questões:
+  - Sugestões de perguntas para entender melhor os processos, atividades envolvidas, prazos, documentos, responsáveis, objetivos, relatórios, e fatores críticos.
+- Exemplo Aplicado:
+  - Descrição de um processo de atendimento ao cliente em uma pizzaria, mostrando como se mapeiam as atividades principais, alternativas e como se identificam e tratam exceções.
+- Procedimentos Operacionais Padrão:
+  - Introdução à importância dos procedimentos operacionais padrão na sequência do capítulo.
