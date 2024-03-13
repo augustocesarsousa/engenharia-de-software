@@ -363,3 +363,34 @@
   - Descrição de um processo de atendimento ao cliente em uma pizzaria, mostrando como se mapeiam as atividades principais, alternativas e como se identificam e tratam exceções.
 - Procedimentos Operacionais Padrão:
   - Introdução à importância dos procedimentos operacionais padrão na sequência do capítulo.
+
+### Procedimento operacional padrão
+
+- Definição e Propósito do POP:
+  - Documento que estipula como uma atividade deve ser realizada;
+  - Específica envolvidos, responsáveis, materiais necessários e ações corretivas.
+- Aplicação no Gerenciamento de Projetos em TI:
+  - Início com levantamento da situação atual de processos;
+  - Criação de um mapa de processos, mostrando atividades, fluxo de informações e possíveis alternativas;
+  - Identificação dos pontos de controle e indicadores para gestão do processo.
+- Implementação e Monitoramento:
+  - Medição de indicadores em intervalos de tempo definidos;
+  - Comparação de resultados obtidos com concorrentes ou metas estabelecidas;
+  - Estabelecimento de POPs baseado nas regras para melhorar esses indicadores.
+- Abrangência do POP:
+  - Aplicável a quase qualquer atividade empresarial, da operação básica ao lançamento de um satélite;
+  - Importância na não criação de POPs para atividades irrelevantes ou descontroladas para evitar desperdícios e desconfortos.
+- Estrutura de um POP:
+  - Nome, data de criação e última alteração, responsável pela execução e compliance;
+  - Detalhamento das atividades críticas, material utilizado, manuseio do material e ações corretivas.
+- Exemplo Prático:
+  - Procedimento para nomenclatura de variáveis em um projeto de desenvolvimento de software;
+  - Inclui regras específicas para variáveis locais e globais, materiais utilizados, e regras de manuseio;
+  - Detalha ações corretivas para o descumprimento das regras estabelecidas.
+- Componentes Essenciais de um POP:
+  - Uniquidade na identificação (nome);
+  - Claro apontamento de datas de criação e modificações;
+  - Precisão na definição de responsabilidades e ações necessárias.
+- Importância da Customização do POP:
+  - Cada empresa deve adaptar o POP às suas necessidades, garantindo a aderência ao padrão estabelecido.
+- A efetividade do POP ressalta a necessidade de uma cuidadosa implementação e a sensibilidade em não sobrecarregar a equipe com controles desnecessários, equilibrando a gestão de processos com a prática operacional.
