@@ -394,3 +394,24 @@
 - Importância da Customização do POP:
   - Cada empresa deve adaptar o POP às suas necessidades, garantindo a aderência ao padrão estabelecido.
 - A efetividade do POP ressalta a necessidade de uma cuidadosa implementação e a sensibilidade em não sobrecarregar a equipe com controles desnecessários, equilibrando a gestão de processos com a prática operacional.
+
+## As áreas de conhecimento da gestão de projetos
+
+### Revisão de conceitos
+
+- Metodologia do PMI:
+  - Identifica dez áreas de conhecimento necessárias para um gerenciamento eficaz;
+  - Distribuídas em cinco fases de gerenciamento: iniciação, planejamento, execução, controle e encerramento.
+
+#### As Dez Áreas de Conhecimento:
+
+1. Gerência de Integração do Projeto: Coordenar todos os aspectos do projeto;
+2. Gerência do Escopo do Projeto: Definir os objetivos e o que será realizado;
+3. Gerência do Tempo do Projeto: Gerenciar prazos e cronogramas;
+4. Gerência dos Custos do Projeto: Controlar orçamentos e custos;
+5. Gerência da Qualidade do Projeto: Assegurar a qualidade das entregas;
+6. Gerência de Recursos Humanos do Projeto: Organizar e gerenciar a equipe;
+7. Gerência da Comunicação do Projeto: Facilitar a comunicação efetiva;
+8. Gerência dos Riscos do Projeto: Identificar e gerenciar riscos;
+9. Gerência das Aquisições do Projeto: Gerenciar compras e contratos;
+10. Gerência das Partes Interessadas do Projeto: Engajar e gerenciar expectativas.
