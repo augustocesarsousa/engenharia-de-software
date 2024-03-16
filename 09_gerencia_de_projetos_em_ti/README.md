@@ -415,3 +415,38 @@
 8. Gerência dos Riscos do Projeto: Identificar e gerenciar riscos;
 9. Gerência das Aquisições do Projeto: Gerenciar compras e contratos;
 10. Gerência das Partes Interessadas do Projeto: Engajar e gerenciar expectativas.
+
+### Gestão do escopo do projeto
+
+- Definição e Importância da Gestão do Escopo do Projeto:
+  - Fundamental para atender expectativas do cliente;
+  - Equilibra custo previsto com custo real e tempo previsto com tempo real;
+  - Define e controla o que está e o que não está incluído no projeto.
+- Processos de Gerenciamento do Escopo segundo o PMI:
+  - Iniciação: Não especificado;
+  - Planejamento:
+    - Planejar o gerenciamento do escopo;
+    - Coletar os requisitos;
+    - Definir o escopo;
+    - Criar a Estrutura Analítica do Projeto (EAP).
+  - Execução: Não especificado;
+  - Controle:
+    - Validar o escopo;
+    - Controlar o escopo.
+  - Encerramento: Não especificado.
+- Fases do Projeto enfatizadas:
+  - Planejamento e Controle são fases críticas para o gerenciamento do escopo.
+- Detalhamento dos Processos:
+  - Planejar o Gerenciamento do Escopo:
+    - Produz um documento sobre como o escopo será definido, validado e controlado.
+  - Coletar os Requisitos:
+    - Determina, documenta e gerência necessidades e requisitos das partes interessadas.
+  - Definir o Escopo:
+    - Descreve detalhadamente o projeto, produto, serviço, ou resultado desejado.
+  - Criar a EAP (Estrutura Analítica do Projeto):
+    - Subdivide o projeto em entregas menores e mais gerenciáveis.
+  - Validar Escopo:
+    - Formaliza a aceitação das entregas do projeto.
+  - Controlar Escopo:
+    - Monitora o escopo do projeto para evitar mudanças significativas.
+- Cada processo destaca o seu papel fundamental no sucesso do projeto, evidenciando a importância de um gerenciamento de escopo eficaz para o cumprimento de objetivos, controle de custos e tempo, além da satisfação das partes interessadas.
