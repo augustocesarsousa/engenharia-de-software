@@ -450,3 +450,38 @@
   - Controlar Escopo:
     - Monitora o escopo do projeto para evitar mudanças significativas.
 - Cada processo destaca o seu papel fundamental no sucesso do projeto, evidenciando a importância de um gerenciamento de escopo eficaz para o cumprimento de objetivos, controle de custos e tempo, além da satisfação das partes interessadas.
+
+## Gestão de tempo e recursos humanos
+
+### Cronograma
+
+- Gerenciamento do tempo do projeto:
+  - Inclui processos para gerenciar o término pontual do projeto;
+  - Acontecem nas etapas de planejamento e de controle.
+- Cronograma:
+  - Ferramenta de planejamento e controle;
+  - Objetivos:
+    - Relacionar atividades e o tempo previsto;
+    - Identificar atividades e o tempo de execução;
+    - Estimar tempo considerando recursos disponíveis;
+    - Analisar possibilidade de atividades paralelas;
+    - Verificar a dependência entre atividades.
+- Planejar o gerenciamento do cronograma:
+  - Definir regras, técnicas, políticas e métodos para acompanhar o projeto;
+  - Não é a geração do cronograma mas a definição de como gerenciá-lo.
+- Definir as atividades:
+  - Identificar e documentar ações específicas;
+  - Beneficia na divisão do objetivo do projeto em itens menores.
+- Sequenciar as atividades:
+  - Identificar e documentar relações entre atividades;
+  - Definir sequência lógica para eficiência de execução.
+- Estimar os recursos e a duração das atividades:
+  - Definir equipe, recursos de infraestrutura e duração das atividades;
+  - Qualidade e quantidade de recursos afetam duração e custo.
+- Desenvolver o cronograma do projeto:
+  - Analisar sequências, durações, recursos e restrições para criar modelo do cronograma;
+  - Inserção no software gera cronograma com datas planejadas.
+- Controlar o cronograma:
+  - Monitorar avanço das atividades;
+  - Atualizar dados e gerenciar mudanças na linha de base;
+  - Objetivo de manter visibilidade sobre diferenças entre o planejado e o realizado.
