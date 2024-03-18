@@ -485,3 +485,28 @@
   - Monitorar avanço das atividades;
   - Atualizar dados e gerenciar mudanças na linha de base;
   - Objetivo de manter visibilidade sobre diferenças entre o planejado e o realizado.
+
+### Definindo as especialidades necessárias
+
+- Definição das Especialidades Necessárias:
+  - Importância das habilidades específicas: Cada integrante da equipe deve ter habilidades ou conhecimentos específicos que definem sua importância no projeto;
+  - Responsabilidades da gestão de Recursos Humanos:
+    - Estabelecimento dos papeis, responsabilidades e organogramas do projeto;
+    - Elaboração do plano de gerenciamento de pessoal, incluindo cronograma para mobilização e liberação de pessoal;
+    - A maioria desses processos ocorre na fase de execução, não na de planejamento.
+- Processos do Gerenciamento dos Recursos Humanos:
+  1. Planejar o gerenciamento:
+     - Identificar e documentar papeis, responsabilidades e habilidades necessárias;
+     - Planejar visando o cumprimento dos objetivos com eficácia.
+  2. Mobilizar a equipe do projeto:
+     - Mobilizar e liberar membros da equipe conforme a necessidade das atividades do projeto;
+     - Impacto direto no custo pela administração e controle dos recursos humanos.
+  3. Desenvolver a equipe do projeto:
+     - Desenvolvimento de competências técnicas e integração da equipe;
+     - Melhoria do desempenho, motivação e redução da rotatividade.
+  4. Gerenciar a equipe do projeto:
+     - Acompanhar desempenho, fornecer feedback, resolver problemas e gerenciar mudanças;
+     - Influência no comportamento da equipe e otimização do desempenho do projeto.
+- Observações Adicionais:
+  - A gestão eficaz da equipe é crucial para o sucesso do projeto;
+  - O gestor do projeto tem papel ativo na seleção e motivação dos integrantes da equipe.
