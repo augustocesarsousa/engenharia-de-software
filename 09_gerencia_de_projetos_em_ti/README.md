@@ -510,3 +510,17 @@
 - Observações Adicionais:
   - A gestão eficaz da equipe é crucial para o sucesso do projeto;
   - O gestor do projeto tem papel ativo na seleção e motivação dos integrantes da equipe.
+
+### Alguns conceitos e ferramentas
+
+- Diagrama de Rede
+  - Organiza e relaciona as atividades de um projeto em sequência lógica;
+  - Utiliza o método do diagrama de precedência (MDP) para representar atividades e dependências;
+  - Quatro tipos de dependências: obrigatória, arbitrada, externa, interna;
+  - Quatro tipos de relacionamentos entre as atividades: Término para início (TI), Início para início (II), Término para término (TT), Início para término (IT).
+- Método do Caminho Crítico
+  - Técnica para planejamento e controle de projetos, enfocando tempos e custos;
+  - Estima a duração mínima do projeto e determina flexibilidade nos caminhos lógicos;
+  - Utiliza o PERT/CPM para calcular o caminho crítico, a sequência de atividades que consome mais tempo;
+  - Identifica o caminho crítico e as folgas de tempo disponíveis em caminhos não críticos;
+  - A folga livre e a folga total definem o atraso permitido de uma atividade sem impactar o cronograma do projeto.
