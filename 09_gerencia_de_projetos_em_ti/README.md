@@ -549,3 +549,18 @@
   - Liberação de materiais contratados ao final da atividade;
   - Inclusão de avaliação da produtividade do material utilizado;
   - Processo finaliza todas as aquisições do projeto, documentando acordos e desempenhos.
+
+### Riscos do projeto
+
+- Natureza dos Riscos em Projetos: Todos os projetos estão sujeitos a riscos, que podem ser internos ou externos, previsíveis ou imprevisíveis, e podem afetar negativamente os resultados do projeto;
+- Definição de Risco: Origina-se do termo italiano "risicare", indicando uma escolha ou ação humana com potencial para resultados tanto positivos quanto negativos;
+- Planejamento do Gerenciamento de Riscos: Descreve a importância de definir uma abordagem apropriada ao gerenciamento de riscos, considerando a natureza variável destes;
+- Classificação de Riscos:
+  - Riscos Puros (estáticos): Geram perdas quando materializados;
+  - Riscos Especulativos (dinâmicos): Afetam o projeto dependendo das decisões ou mudanças no ambiente.
+- Documento de Plano de Gerenciamento de Riscos: Inclui estruturas analíticas dos riscos (EAR) e métodos para agrupar riscos baseados em suas causas;
+- Identificação dos Riscos: Processo crucial para definir os riscos potenciais e suas características;
+- Análise Qualitativa dos Riscos: Prioriza riscos com base em sua probabilidade de ocorrência e impacto potencial no projeto;
+- Análise Quantitativa dos Riscos: Analisa numericamente o efeito dos riscos identificados nos objetivos do projeto;
+- Planejar as Respostas aos Riscos: Desenvolvimento de estratégias para mitigar ameaças e explorar oportunidades relacionadas aos riscos identificados;
+- Controlar os Riscos: Implementação de respostas aos riscos, monitoramento e avaliação da eficácia da estratégia de gerenciamento de riscos ao longo do projeto.
