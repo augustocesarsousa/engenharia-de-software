@@ -524,3 +524,28 @@
   - Utiliza o PERT/CPM para calcular o caminho crítico, a sequência de atividades que consome mais tempo;
   - Identifica o caminho crítico e as folgas de tempo disponíveis em caminhos não críticos;
   - A folga livre e a folga total definem o atraso permitido de uma atividade sem impactar o cronograma do projeto.
+
+## Gestão de recursos materiais e riscos
+
+### Determinar os materiais necessários para o projeto
+
+- Identificar Materiais Necessários para o Projeto:
+  - Identificação da tarefa, equipe responsável, e recursos materiais é essencial;
+  - Exemplo: A duração necessária para um lenhador derrubar árvores depende da sua experiência e da ferramenta disponível;
+  - Importância da adequação entre ferramenta tecnológica e habilidade do usuário;
+  - Gestão de recursos materiais ou gerenciamento de aquisições verifica e gerencia demandas materiais.
+- Gestão de Aquisições do Projeto (segundo PMBOK):
+  - Inclui processos para comprar ou adquirir produtos, serviços ou resultados necessários;
+  - Requer planejamento, condução, controle e encerramento das aquisições.
+- Planejar o Gerenciamento das Aquisições:
+  - Documentação das decisões de compras, abordagem e identificação de fornecedores potenciais.
+- Conduzir as Aquisições:
+  - Seleção de fornecedores e assinatura de contratos;
+  - Envolve obtenção de respostas, seleção de fornecedor e adjudicação de contrato.
+- Controlar as Aquisições:
+  - Gerenciamento das relações de aquisição, monitoramento do desempenho do contrato;
+  - Permite correções necessárias para alinhamento ao cronograma do projeto ou ajustes de custos.
+- Encerrar as Aquisições:
+  - Liberação de materiais contratados ao final da atividade;
+  - Inclusão de avaliação da produtividade do material utilizado;
+  - Processo finaliza todas as aquisições do projeto, documentando acordos e desempenhos.
