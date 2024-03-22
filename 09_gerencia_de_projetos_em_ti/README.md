@@ -564,3 +564,27 @@
 - Análise Quantitativa dos Riscos: Analisa numericamente o efeito dos riscos identificados nos objetivos do projeto;
 - Planejar as Respostas aos Riscos: Desenvolvimento de estratégias para mitigar ameaças e explorar oportunidades relacionadas aos riscos identificados;
 - Controlar os Riscos: Implementação de respostas aos riscos, monitoramento e avaliação da eficácia da estratégia de gerenciamento de riscos ao longo do projeto.
+
+### Outros procedimentos para análise de riscos do projeto
+
+- Diagrama Tornado:
+  - Ferramenta gráfica para análise de sensibilidade do projeto;
+  - Ajuda a tomar decisões e a concentrar-se nos elementos críticos;
+  - Compara impacto das variáveis com alta incerteza às mais estáveis;
+  - Positivos ou negativos, os riscos são mapeados em um plano x e y.
+- Árvore de Decisões:
+  - Diagrama que representa probabilidades de eventos;
+  - Cada nó representa um status ou situação;
+  - Utilizado para visualizar possíveis resultados e suas probabilidades.
+- Análise de Causa Raiz:
+  - Investigação do problema para identificar causas e tomar ações corretivas;
+  - Processo de perguntas sucessivas até a identificação da causa raiz;
+  - Envolve a análise dos porquês para explorar o problema desde a origem.
+- Análise SWOT:
+  - Identificação de forças, fraquezas, oportunidades e ameaças;
+  - Forças e fraquezas são fatores internos; oportunidades e ameaças, externos;
+  - Oportunidades e forças podem ser vistos como riscos positivos; ameaças e fraquezas como negativos.
+- Lista de Verificação
+  - Ferramenta composta por uma lista de riscos já ocorridos ou identificados em outros projetos;
+  - Possui colunas para causas potenciais, descrição do risco e impactos potenciais;
+  - Utilizada para verificar a aplicação de medidas recomendadas na análise de riscos.
