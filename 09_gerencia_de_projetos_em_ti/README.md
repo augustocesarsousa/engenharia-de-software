@@ -588,3 +588,32 @@
   - Ferramenta composta por uma lista de riscos já ocorridos ou identificados em outros projetos;
   - Possui colunas para causas potenciais, descrição do risco e impactos potenciais;
   - Utilizada para verificar a aplicação de medidas recomendadas na análise de riscos.
+
+## Gestão de qualidade e integração do projeto
+
+### Gestão da qualidade do projeto
+
+- Importância da qualidade em produtos ou serviços para satisfação do cliente a preços razoáveis;
+- Gestão da qualidade em projetos visa minimizar o impacto no dia a dia empresarial;
+- Metodologia do PMI:
+  - Área de conhecimento sobre a qualidade: política de qualidade, objetivos e responsabilidades;
+  - Cada entrega do projeto deve satisfazer expectativas de clientes, patrocinadores e interessados.
+- Processo de Gestão da Qualidade:
+  1. Planejar o Gerenciamento da Qualidade:
+     - Definir padrões de qualidade aceitáveis;
+     - Auditorias para verificar cumprimento de atividades e alcançar aceitabilidade;
+     - Entradas incluem plano de gerenciamento do projeto, registros de riscos, entre outros;
+     - Utiliza análise custo-benefício, custo da qualidade, ferramentas de qualidade, benchmarking, entre outros;
+     - Saídas como plano de gerenciamento de qualidade, métricas da qualidade, atualizações nos documentos do projeto.
+  2. Realizar a Garantia da Qualidade:
+     - Utiliza plano de gerenciamento da qualidade, métricas da qualidade, medições de controle da qualidade;
+     - Ferramentas incluem auditorias de qualidade e análise de processo;
+     - Gera solicitações de mudança, atualizações no plano e documentos do projeto.
+  3. Controlar a Qualidade:
+     - Baseia-se em plano de gerenciamento do projeto, métricas da qualidade, dados de desempenho;
+     - Aplica sete ferramentas de qualidade básicas, amostragem estatística e inspeção;
+     - Produz medições do controle da qualidade, alterações validadas, entregas verificadas, atualizações em documentos e planos.
+- Ferramentas Importantes para Controle de Qualidade:
+  - Sete ferramentas da qualidade: fluxograma, diagrama Ishikawa, folha de verificação, diagrama de Pareto, histograma, diagrama de dispersão, cartas de controle.
+- Ênfase:
+  - Técnicas de qualidade definem, mensuram, analisam e propõem soluções para problemas afetando desempenho dos processos de trabalho.
