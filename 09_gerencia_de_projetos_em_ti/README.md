@@ -630,7 +630,7 @@
   1. Desenvolver o Termo de Abertura do Projeto:
      - Justifica a necessidade do projeto;
      - Define início do projeto e limites;
-     - Inclui especificações do trabalho, necessidades do negócio e alinhamento estratégico;
+     - Inclui especificações do trabalho, necessidades do negócio e alinhamento estratégico.
   2. Desenvolver o Plano de Gerenciamento do Projeto:
      - Coordena planos subsidiários de outras áreas em um plano integrado;
      - Define produtos, serviços, ou resultados do projeto, integrando necessidades dos interessados.
@@ -649,3 +649,30 @@
 - Conclusão:
   - A gestão de integração é fundamental para o sucesso do projeto, assegurando que todas as áreas estejam alinhadas e que o projeto avance de maneira coordenada até sua conclusão;
   - O encerramento formal assegura aprendizado e liberação de recursos.
+
+### Ferramentas da qualidade
+
+- Diagrama de Causa e Efeito (Ishikawa):
+  - Utilizado para identificar e analisar potenciais causas de variação no processo;
+  - Criado por Kaoru Ishikawa em 1943;
+  - Etapas de montagem:
+    1. Definir o problema a ser estudado:
+    2. Estudar o processo através de observação, documentação, e interação;
+    3. Discutir o problema em reuniões;
+    4. Coletar e organizar informações em causas principais, secundárias e terciárias;
+    5. Montar o diagrama e validar com os envolvidos.
+  - Exemplo aplicado: acidentes de trabalho devido à falta de materiais e distrações por cansaço.
+- Mapas de Processos (Fluxogramas):
+  - Representações gráficas dos passos em sequência de um processo;
+  - O PMBOK define como ferramenta para apresentar a sequência de etapas e possibilidades de ramificações;
+  - Exemplo mencionado: fluxograma de compras.
+- Diagrama de Pareto:
+  - Utilizado para identificar fontes críticas que geram a maioria dos efeitos de um problema;
+  - Aplica a análise de Pareto para dividir o problema em causas vitais (importantes) e triviais;
+  - Passos para montagem:
+    1. Identificar categorias de problemas que impactam o projeto;
+    2. Calcular o valor percentual para cada categoria;
+    3. Traçar um gráfico XY com o eixo Y mostrando a percentagem cumulativa de impacto;
+    4. Identificar qual categoria de problema tem maior impacto nos objetivos do projeto;
+    5. Considerar não apenas perdas financeiras ou de prazo, mas também a imagem da empresa;
+  - Exemplo fornecido: gráfico de Pareto destacando maiores impactos em um projeto.
