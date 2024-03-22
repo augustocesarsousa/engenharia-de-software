@@ -617,3 +617,35 @@
   - Sete ferramentas da qualidade: fluxograma, diagrama Ishikawa, folha de verificação, diagrama de Pareto, histograma, diagrama de dispersão, cartas de controle.
 - Ênfase:
   - Técnicas de qualidade definem, mensuram, analisam e propõem soluções para problemas afetando desempenho dos processos de trabalho.
+
+### Gestão de integração do projeto
+
+- Importância da Gestão de Integração:
+  - Essencial para alinhar diversos processos de projeto para alcançar objetivo dentro do tempo e custo;
+  - Integra todas as áreas do conhecimento para unificar e consolidar ações.
+- Características Gerais:
+  - Ativa em todas as cinco etapas do projeto: da iniciação ao encerramento;
+  - Supervisiona o projeto, estabelecendo e desenvolvendo o termo de abertura até o documento de encerramento.
+- Processos Chave da Gestão de Integração:
+  1. Desenvolver o Termo de Abertura do Projeto:
+     - Justifica a necessidade do projeto;
+     - Define início do projeto e limites;
+     - Inclui especificações do trabalho, necessidades do negócio e alinhamento estratégico;
+  2. Desenvolver o Plano de Gerenciamento do Projeto:
+     - Coordena planos subsidiários de outras áreas em um plano integrado;
+     - Define produtos, serviços, ou resultados do projeto, integrando necessidades dos interessados.
+  3. Orientar e Gerenciar o Trabalho do Projeto:
+     - Faz escolhas de recursos, gerencia conflitos entre interessados;
+     - Responsável pela execução conforme o plano de gerenciamento do projeto.
+  4. Monitorar e Controlar o Trabalho do Projeto:
+     - Monitora execução, controla desvios;
+     - Mantém partes interessadas informadas sobre progresso e possíveis mudanças.
+  5. Realizar o Controle Integrado de Mudanças:
+     - Gerencia mudanças de forma a considerar impacto em todas as áreas do conhecimento;
+     - Revisa, aprova mudanças, e comunica resultados.
+  6. Encerrar o Projeto ou Fase:
+     - Formaliza a finalização das atividades do projeto ou de suas fases;
+     - Revisa entregas e assegura que os objetivos foram alcançados.
+- Conclusão:
+  - A gestão de integração é fundamental para o sucesso do projeto, assegurando que todas as áreas estejam alinhadas e que o projeto avance de maneira coordenada até sua conclusão;
+  - O encerramento formal assegura aprendizado e liberação de recursos.
