@@ -46,3 +46,19 @@
 - Manutenção a Distância: Com a manutenção a distância, técnicos ou engenheiros podem atuar de onde estiverem, sem precisar enviar pessoal ao local físico;
 - Manutenção Preditiva: A manutenção preditiva atua intervindo em uma máquina antes que ela falhe, proporcionando um significativo ganho de eficiência de manutenção e de transparência de informação;
 - Alcances Possíveis para o M2M: É inevitável ponderar sobre os alcances possíveis para o M2M, em um contexto de Inteligência Artificial, onde as máquinas estabelecerão a melhor linguagem para o M2M, independentemente da intervenção humana.
+
+## Cloud computing
+
+### A trajetória da virtualização
+
+- Marco da Quarta Revolução Industrial: A computação em nuvem (cloud computing) é um marco da Indústria 4.0, elevando a produtividade industrial e a inovação tecnológica;
+- Ubiquidade da Computação em Nuvem: Dispensa a dependência física e geográfica de servidores para armazenamento e processamento, permitindo redundâncias múltiplas e disponibilidade global da informação;
+- Conceito de Computação Ubíqua: Disponibilidade de recursos de TI no cotidiano de modo quase invisível ao usuário, em múltiplos dispositivos como smartphones, smartwatches, e dispositivos da Internet of Things (IoT);
+- Miniaturização de Dispositivos Eletrônicos: Permite a presença de recursos computacionais em variados objetos do cotidiano;
+- Infraestrutura da Computação em Nuvem: Favorece o compartilhamento simultâneo de recursos de TI, simplificando o acesso a redes de computadores, servidores, armazenamento, aplicações, e serviços através da internet;
+- Vantagens da Computação em Nuvem: Acesso eficiente e custo reduzido para usuários e organizações, permitindo economia de escala para os provedores de serviço;
+- Modelo Comercial Pay-as-You-Go: Pagamento conforme o uso, diferenciando-se dos modelos convencionais de licenciamento de software;
+- Cinco Atributos Essenciais (segundo NIST, 2011): Autosserviço sob demanda, amplo acesso de rede, agrupamento de recursos, elasticidade rápida, e medição de serviço;
+- Histórico da Computação em Nuvem: Desde as noções de compartilhamento de tempo em 1960, a popularização dos PCs no fim de 1980, o surgimento de redes privadas virtuais (VPN) em 1990, até o desenvolvimento de softwares para nuvens privadas e híbridas no início dos anos 2000;
+- Desenvolvimentos Chave e Provedores de Serviço: Iniciativas como o OpenNebula da Nasa em 2008, e lançamentos de plataformas por grandes empresas (Amazon Elastic Compute Cloud em 2006, Microsoft Azure em 2008, Google Apps em 2006 etc.);
+- Estratégias da Indústria de TI para Computação em Nuvem: Mudança para modelos baseados em serviços e a importância do software livre, como exemplificado pela iniciativa OpenStack da Nasa em 2010.
