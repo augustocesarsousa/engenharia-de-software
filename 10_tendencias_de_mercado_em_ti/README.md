@@ -88,3 +88,36 @@
   - Nuvem Distribuída: Constituída por máquinas em diferentes locais conectadas a uma rede;
   - Intercloud: Interconexão de múltiplas nuvens públicas para interoperabilidade;
   - Multicloud: Uso de vários serviços de computação em nuvem numa única arquitetura heterogênea para flexibilidade e mitigação contra desastres.
+
+### Os pontos-chave de segurança
+
+- A noção de segurança absoluta é inexistente em ambientes de computação na nuvem, sendo a privacidade uma das principais preocupações;
+- Acessibilidade dos Provedores aos Dados:
+  - Provedores de serviços têm acesso aos dados armazenados na nuvem;
+  - Incidentes podem levar à alteração ou exclusão de dados;
+  - Informações podem ser compartilhadas com terceiros por motivos judiciais ou comerciais.
+- Práticas Recomendadas:
+  - A criptografia de dados é aconselhável para proteger a privacidade.
+- Principais Ameaças Segundo a CSA (2010):
+  - Interfaces e APIs inseguras;
+  - Vazamento e perda de dados;
+  - Falha de hardware.
+- Riscos Associados:
+  - Possibilidade de dados de diferentes clientes estarem alocados no mesmo servidor, podendo ocasionar vazamentos;
+  - Crackers buscam explorar vulnerabilidades.
+- Exemplo Notável de Ataque: O vírus Wannacry em 2017, destacando a importância de manter sistemas atualizados.
+- Desafios de Segurança:
+  - Armazenamento centralizado de dados aumenta o risco de ataques em larga escala;
+  - Incidentes envolvendo grandes empresas, como Dropbox e iCloud, demonstram vulnerabilidades.
+- Propriedade Legal dos Dados: Questões sobre quem detém os direitos sobre os dados armazenados na nuvem.
+- Comparação Nuvem Privada vs. Nuvem Pública:
+  - Nuvem privada oferece mais segurança e controle;
+  - Nuvem pública apresenta flexibilidade e menor custo.
+- Desvantagens da Computação em Nuvem:
+  - Menor nível de personalização para o usuário;
+  - Questões jurídicas podem limitar o uso da nuvem por grandes organizações;
+  - Controle limitado sobre a infraestrutura, aplicações, dados e serviços por parte dos usuários.
+- Riscos de Privacidade e Confidencialidade: especialmente para trabalhos que exigem alto nível de confidencialidade.
+- Pesquisa e Desenvolvimento Contínuos:
+  - A computação em nuvem é um campo de intensa pesquisa e inovação;
+  - Grandes investimentos em P&D por empresas líderes de tecnologia, como a Microsoft.
