@@ -62,3 +62,29 @@
 - Histórico da Computação em Nuvem: Desde as noções de compartilhamento de tempo em 1960, a popularização dos PCs no fim de 1980, o surgimento de redes privadas virtuais (VPN) em 1990, até o desenvolvimento de softwares para nuvens privadas e híbridas no início dos anos 2000;
 - Desenvolvimentos Chave e Provedores de Serviço: Iniciativas como o OpenNebula da Nasa em 2008, e lançamentos de plataformas por grandes empresas (Amazon Elastic Compute Cloud em 2006, Microsoft Azure em 2008, Google Apps em 2006 etc.);
 - Estratégias da Indústria de TI para Computação em Nuvem: Mudança para modelos baseados em serviços e a importância do software livre, como exemplificado pela iniciativa OpenStack da Nasa em 2010.
+
+### As diversas nuvens
+
+- Era do Everything as a Service (EaaS): A arquitetura de TI orientada ao serviço possibilita quase tudo ser ofertado como serviço;
+- Modelos Padrões de Negócio Segundo o NIST (2011):
+  - Infrastructure as a Service (IaaS): Oferece processamento, armazenamento, redes e outros recursos fundamentais;
+  - Platform as a Service (PaaS): Disponibiliza uma plataforma para implantação de conteúdos ou programas criados pelo usuário, usando diversas ferramentas fornecidas;
+  - Software as a Service (SaaS): Permite usar aplicativos executados em infraestrutura de nuvem, acessíveis por navegadores web.
+- Modelos Especializados Diante do Crescimento do PaaS:
+  - Integration Platform as a Service (iPaaS) e Data Platform as a Service (dPaaS): Focam em integração e gerenciamento de dados;
+  - Blockchain as a Service (BaaS): Incorpora blockchain em suas ofertas.
+- Cobrança e Acesso:
+  - IaaS: Cobrado com base no uso de recursos;
+  - PaaS: Foca no desenvolvimento com recursos que escalam automaticamente;
+  - SaaS: Usuários acessam aplicativos na nuvem, com cobrança geralmente por uso ou assinatura.
+- Segurança e Computação sem Servidores:
+  - Security as a Service (SECaaS): Segurança oferecida como um serviço da nuvem;
+  - Serverless Computing: Execução de código em nuvem gerenciada pelo provedor, cobrada por recursos necessários.
+- Tipos de Arquitetura de Nuvem:
+  - Nuvem Privada: Operada exclusivamente por uma única organização;
+  - Nuvem Pública: Serviços prestados por meio de uma rede aberta para uso público;
+  - Nuvem Híbrida: Combinação de duas ou mais nuvens (privadas, comunitárias ou públicas) que permanecem distintas;
+  - Nuvem Comunitária: Compartilha infraestrutura entre várias organizações de uma comunidade específica;
+  - Nuvem Distribuída: Constituída por máquinas em diferentes locais conectadas a uma rede;
+  - Intercloud: Interconexão de múltiplas nuvens públicas para interoperabilidade;
+  - Multicloud: Uso de vários serviços de computação em nuvem numa única arquitetura heterogênea para flexibilidade e mitigação contra desastres.
