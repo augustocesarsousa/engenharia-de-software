@@ -34,3 +34,15 @@
 - Eliminação de Intermediários: A digitalização tende a eliminar intermediários, colocando o cliente cada vez mais envolvido nos processos de trabalho da empresa;
 - Inovação e Competitividade: Digitalizar os processos industriais ajuda a inovar, aumentando a competitividade das empresas;
 - Informação como Insumo Essencial: No novo modelo de negócio, o dinheiro é commodity e o insumo essencial é a informação.
+
+### M2M
+
+- Automação dos Processos: A Indústria 4.0 é marcada pela automação refinada dos processos, com máquinas capazes de se comunicar entre si e com componentes de uma linha de produção;
+- Conceito M2M: M2M (Machine to Machine) é a comunicação direta entre diversos dispositivos ou sistemas artificiais, usando qualquer tipo de canal de comunicação viável;
+- Aplicações M2M: As aplicações mais recentes de M2M estão voltadas para uma rede inteligente que se comunica com eletrodomésticos e outros dispositivos presentes nas residências das pessoas;
+- Expansão das Redes IP: A expansão das redes IP (Internet Protocol) tornou a comunicação entre as máquinas muito mais fácil e rápida, inclusive com expressiva redução de gasto de energia elétrica;
+- Integração de Carros com Dispositivos: Na indústria automobilística, os carros estão cada vez mais integrados com outros dispositivos da vida do proprietário, tornando-se mais um dispositivo de acesso à internet;
+- Benefícios da Tecnologia M2M: A tecnologia M2M traz benefícios aos processos de manutenção, começando pelo desempenho praticamente zero de tempo de inatividade das máquinas e do sistema em geral;
+- Manutenção a Distância: Com a manutenção a distância, técnicos ou engenheiros podem atuar de onde estiverem, sem precisar enviar pessoal ao local físico;
+- Manutenção Preditiva: A manutenção preditiva atua intervindo em uma máquina antes que ela falhe, proporcionando um significativo ganho de eficiência de manutenção e de transparência de informação;
+- Alcances Possíveis para o M2M: É inevitável ponderar sobre os alcances possíveis para o M2M, em um contexto de Inteligência Artificial, onde as máquinas estabelecerão a melhor linguagem para o M2M, independentemente da intervenção humana.
