@@ -153,3 +153,24 @@
   - Dificuldades com informações não estruturadas, como textos em redes sociais;
   - A Inteligência Artificial desempenha papel-chave no sucesso do Big Data;
   - Transição para uma computação quântica pode romper limites atuais e aproximar a inteligência artificial da mente humana.
+
+### Smart cities e a nova gestão pública
+
+- Desafios da Gestão Pública:
+  - Eficiência e eficácia na gestão pública são difíceis devido à complexidade, incerteza, e ambiguidade.
+- Big Data e Cidades Inteligentes:
+  - Big Data potencializa a efetividade da gestão pública, propiciando o desenvolvimento de smart cities;
+  - Smart cities integram Tecnologia de Informação e Comunicação (TIC), Big Data e Internet das Coisas (IoT).
+- Funcionalidades de uma Cidade Inteligente:
+  - Melhora a interação governamental com a comunidade e infraestrutura;
+  - Monitora eventos em tempo real, promovendo qualidade de vida.
+- Perspectivas de Smart City:
+  - Quadro Tecnológico: Uso intensivo de tecnologia em vários arranjos como cidade digital, virtual, da informação, inteligente e U-city;
+  - Quadro Humano: Foco nas pessoas, incentivando a criatividade, aprendizado e desenvolvimento humano;
+  - Quadro Institucional: A importância da instituição no apoio à tecnologia para resolver necessidades sociais e comerciais.
+- Exemplos de Smart Cities:
+  - Songdo, Coreia do Sul: Primeira cidade inteligente do mundo, com foco em sustentabilidade e mobilidade;
+  - Copenhague, Dinamarca: Redução significativa na emissão de carbono, com prioridade em bicicletas e construções sustentáveis;
+  - Santa Ana, EUA: Reutilização avançada da água, incluindo tratamento de água dos sanitários.
+- Aplicação Prática de Big Data:
+  - Resolução de problemas urbanos complexos, como explosões de bueiros, através de análise preditiva e Big Data.
