@@ -121,3 +121,35 @@
 - Pesquisa e Desenvolvimento Contínuos:
   - A computação em nuvem é um campo de intensa pesquisa e inovação;
   - Grandes investimentos em P&D por empresas líderes de tecnologia, como a Microsoft.
+
+## Big Data
+
+### Um Tsunami de Informações Digitais
+
+- Definição e Escala de Big Data:
+  - Big Data refere-se a um volume vasto e crescente de dados;
+  - Exemplos incluem 400 horas de vídeo adicionadas ao YouTube por minuto em 2017, e uma companhia aérea gerando mais de 1Tb de dados por dia desde 2013;
+  - Em 2010, 5 bilhões de gigabytes de informação eram produzidos a cada 2 dias; em 2013, a mesma quantidade era produzida a cada 10 minutos;
+  - O tráfego global de internet ultrapassou 1 zettabyte em 2016, equivalendo a mais de um trilhão de gigabytes.
+- Crescimento Exponencial e Impactos Tecnológicos:
+  - Mais de 90% da informação digital do mundo foi produzida nos últimos dois anos;
+  - Apenas 0,5% do volume total de informação online é analisada ou utilizada para fins industriais;
+  - O smartphone é um grande responsável pela explosão na produção de dados digitais.
+- Evoluções Previstas e IoT (Internet of Things):
+  - Uso massivo da tecnologia 5G é projetado para os primeiros anos da década de 2020;
+  - Proliferação de objetos conectados (IoT), intensificando o impacto da tecnologia da informação;
+  - Projeções indicam mais de 100 bilhões de objetos conectados ao redor do mundo até 2025.
+- Oportunidades de Negócios e Inovações:
+  - Volume de novos negócios relacionados a Big Data projetados entre US$ 100 bilhões e US$ 130 bilhões ainda para 2021;
+  - Inovações em diversas áreas, como Saúde Digital e indústria automobilística, incluindo benefícios de robôs cirúrgicos e carros autônomos.
+- Tecnologia Big Data e suas Características (5V):
+  - Volume, Variedade, Velocidade, Variabilidade, Veracidade.
+- 6C Associados a Sistemas Ciberfísicos:
+  - Conexão, Cloud, Cyber, Conteúdo/contexto, Comunidade, Customização.
+- Análise e Processamento de Dados:
+  - Ferramentas avançadas são necessárias para captação, armazenamento, análise e proteção de dados;
+  - Análises preditivas e de comportamento do usuário ganham importância.
+- Desafios e Futuro da Tecnologia da Informação:
+  - Dificuldades com informações não estruturadas, como textos em redes sociais;
+  - A Inteligência Artificial desempenha papel-chave no sucesso do Big Data;
+  - Transição para uma computação quântica pode romper limites atuais e aproximar a inteligência artificial da mente humana.
