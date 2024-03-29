@@ -235,12 +235,23 @@
 
 ### Um mundo de sensores
 
-- Sensores Avançados: Aborda a importância dos sensores modernos na facilitação da Internet das Coisas (IoT);
-- Interação Máquina-Máquina (M2M): Explica como máquinas interagem e se comunicam sem intervenção humana;
-- Automatização: Destaca o papel dos sensores na automatização e eficiência dos processos industriais e cotidianos;
-- Dados em Tempo Real: Enfatiza a capacidade dos sensores de fornecer dados em tempo real para análise e ação imediata;
-- Monitoramento e Controle: Examina como os sensores permitem o monitoramento contínuo e o controle de sistemas complexos;
-- Inovação em IoT: Discute inovações recentes em sensores e seu impacto no avanço da IoT;
-- Desafios Técnicos: Aborda os desafios técnicos e as limitações atuais dos sensores e da tecnologia de IoT;
-- Segurança e Privacidade: Levanta questões sobre a segurança e privacidade dos dados coletados por sensores;
-- Futuro da IoT: Especula sobre o futuro da IoT e como os sensores continuarão a transformar nosso mundo.
+- Internet das Coisas (IoT): A maioria dos dispositivos da IoT são sensores que fornecem informações variadas para os computadores;
+- Analogia com o corpo humano: Assim como o cérebro humano se beneficia de uma rede de neurônios para funcionar efetivamente, a computação depende de sensores espalhados pelo mundo para coletar e processar informações;
+- Definição de sensor: Um sensor é um componente eletrônico que detecta eventos ou mudanças em um ambiente e envia a informação para outros dispositivos eletrônicos, geralmente processadores de computador;
+- Uso de sensores: Os sensores são usados em objetos do cotidiano e na indústria, e sua presença é tão expressiva que as pessoas raramente estão cientes de sua presença maciça.
+  Avanços tecnológicos: A Quarta Revolução Industrial e os avanços na tecnologia MEMS expandiram o potencial de uso de sensores além dos campos convencionais de medição de temperatura, pressão e fluxo;
+- Sensores inteligentes: Sensores inteligentes são mais elaborados que os sensores comuns e possuem funções como autoteste, autoidentificação, autovalidação e autoadaptação;
+- Tipos de sensores inteligentes: Incluem sensores de proximidade, acelerômetros, giroscópios, sensores de temperatura, umidade, pressão e nível;
+- Oportunidades: O mundo está cheio de informações latentes que podem ser aproveitadas para diversas soluções inovadoras, especialmente com o uso de sensores;
+- Mercado de sensores: O mercado global de sensores pode atingir mais de US$ 154 bilhões até 2020, com uma taxa de crescimento anual acima de 10%.
+
+### Desafios ainda a serem superados
+
+- Novas possibilidades de uso: A diferença entre as aplicações pretendidas para novos artefatos tecnológicos e as aplicações que se consolidam como efetivas na prática;
+- Necessidade de padrões abertos: A necessidade de que dispositivos inteligentes de múltiplos fabricantes diferentes possam se comunicar entre si por meio de linguagem comum;
+- Demandas energéticas: O aumento correspondente nas demandas de energia elétrica exigida pela IoT;
+- Geração de resíduos: A questão da geração de resíduos eletrônicos devido à obsolescência planejada;
+- Problemas de armazenamento: A necessidade de definir políticas sobre o tipo de informação armazenada, o tempo de armazenamento, os níveis de acesso autorizado e as exceções que podem ser toleradas;
+- Falta de privacidade: A produção de um conjunto valioso de informações a respeito dos usuários da IoT;
+- Falta de segurança: A fragilidade de segurança de muitos sistemas da IoT e a necessidade de os usuários adotarem boas práticas de segurança;
+- Esperar o inesperado: A probabilidade de surgirem obstáculos que não se pode prever de antemão à medida que a IoT avança.
