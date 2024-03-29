@@ -217,3 +217,18 @@
   - A IoT traz novos desafios à privacidade digital;
   - Smart TVs, carros conectados e outros dispositivos podem ser hackeados;
   - As senhas padrão de fábrica são frequentemente usadas, o que aumenta o risco de segurança.
+
+## Internet das Coisas (IoT)
+
+### Computação ubíqua
+
+- Computação Ubíqua: Refere-se à onipresença da computação no dia a dia, integrada ao ambiente de maneira natural e imperceptível;
+- Conceito: A ideia central é que a tecnologia se torne uma parte invisível da vida cotidiana, semelhante a como percebemos a eletricidade;
+- Integração com o Cotidiano: A tecnologia ubíqua está integrada em objetos do dia a dia, permitindo uma interação contínua e não intrusiva;
+- Tecnologia Pervasiva: Outro termo para computação ubíqua, destacando sua presença difusa e generalizada;
+- Sensores: Elementos vitais na computação ubíqua, coletam dados do ambiente para processamento e ação;
+- Interconexão: Os dispositivos estão interconectados, comunicando-se e colaborando sem intervenção humana direta;
+- Inteligência Ambiental: O ambiente reage e se adapta às necessidades dos indivíduos, melhorando a experiência do usuário;
+- Desafios: Existem desafios técnicos e sociais, como privacidade e segurança, que precisam ser superados;
+- Aplicações: A computação ubíqua tem aplicações em diversas áreas, desde casas inteligentes até cidades inteligentes;
+- Futuro da Tecnologia: A computação ubíqua é vista como o futuro da interação homem-máquina, com potencial para transformar significativamente a sociedade.
