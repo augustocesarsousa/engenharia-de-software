@@ -174,3 +174,46 @@
   - Santa Ana, EUA: Reutilização avançada da água, incluindo tratamento de água dos sanitários.
 - Aplicação Prática de Big Data:
   - Resolução de problemas urbanos complexos, como explosões de bueiros, através de análise preditiva e Big Data.
+
+### O Mito da Privacidade Digital
+
+- A Ilusão da Privacidade:
+  - Evidências demonstram que a privacidade digital não existe;
+  - Terceiros têm acesso aos dados das pessoas, independentemente da sua vontade;
+  - O debate gira em torno do que se faz com esses dados e como recompensar os usuários por seu uso.
+- O Valor dos Dados Pessoais:
+  - Empresas obtêm vantagens financeiras e comerciais com o uso de informações privilegiadas;
+  - O costume de clicar em "Eu aceito", nós termos de uso sem ler as cláusulas é comum;
+  - A recusa em aceitar os termos impede o acesso a produtos e serviços digitais.
+- O Facebook e o WhatsApp:
+  - A aquisição do WhatsApp pelo Facebook demonstra o valor dos dados dos usuários;
+  - A publicidade digital altamente segmentada é o principal negócio do Facebook;
+  - Informações sobre perfil demográfico, preferências e hábitos de consumo são valiosas.
+- Big Data e Anonimato:
+  - O Big Data permite a sobreposição e o confronto de informações, mesmo que anonimizadas;
+  - Edward Snowden revelou a amplitude da coleta de dados digitais por governos;
+  - A segurança nacional e a soberania das nações são usadas como justificativa para a vigilância.
+- Perda de Controle:
+  - Celulares, operadoras de cartão de crédito e redes sociais rastreiam o comportamento dos usuários;
+  - A censura e o bloqueio de informações podem ter efeito contrário ao desejado;
+  - Mark Zuckerberg, CEO do Facebook, bloqueia a webcam e o microfone de seu computador.
+- Pegadas Digitais e Arrependimento:
+  - O passado digital das pessoas pode ser facilmente acessado e rastreado;
+  - É difícil apagar completamente o histórico de atividades online;
+  - Celebridades e pessoas famosas são particularmente vulneráveis a isso.
+- Deep Web:
+  - A Deep Web, conteúdo não indexado pelos mecanismos de busca, é um desafio à privacidade;
+  - Cerca de 70% a 75% do conteúdo online está na Deep Web;
+  - Isso torna o controle do que está disponível online ainda mais difícil.
+- Due Diligence e Recrutamento:
+  - A due diligence é cada vez mais utilizada para verificar o histórico de candidatos a emprego;
+  - Informações online podem ser mais confiáveis do que entrevistas de emprego;
+  - É importante ter cuidado com o que é postado em redes sociais.
+- Segurança Pessoal:
+  - Expor dados pessoais online pode ser perigoso;
+  - Criminosos podem usar essas informações para cometer crimes;
+  - É recomendável evitar postar informações sobre viagens futuras.
+- Internet das Coisas (IoT):
+  - A IoT traz novos desafios à privacidade digital;
+  - Smart TVs, carros conectados e outros dispositivos podem ser hackeados;
+  - As senhas padrão de fábrica são frequentemente usadas, o que aumenta o risco de segurança.
