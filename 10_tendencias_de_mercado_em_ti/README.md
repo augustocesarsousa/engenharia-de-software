@@ -268,3 +268,21 @@
 - Materiais de Construção: Para o desempenho de voo, os materiais precisam ser leves. Isso tem sido favorecido pelos avanços no campo da nanotecnologia e ciência dos materiais;
 - Primeira Entrega com Drones: Em 7 de dezembro de 2016, a Amazon realizou sua primeira entrega de produtos feita com drones;
 - Tipos de Drones: Existem vários tipos de drones, incluindo quadricópteros, hexacópteros, octocópteros, drones com asa fixa e minidrones.
+
+### Impressoras 3D
+
+- Definição de Impressoras 3D: Equipamentos que produzem objetos tridimensionais a partir de um arquivo-fonte digital, utilizando a tecnologia de modelagem por acumulação;
+- Uso na Indústria: A impressão 3D é uma tecnologia de prototipagem rápida, muito utilizada na indústria para a produção de partes e peças com diferentes propriedades físicas e mecânicas;
+- Modelagem Computacional: Para a impressão de um objeto físico em três dimensões, é necessário um arquivo-fonte criado por meio de softwares específicos ou digitalização em três dimensões;
+- Processo de Impressão: O computador envia as instruções do arquivo-fonte para a impressora, que produz o objeto em uma pilha de camadas finas continuamente sobrepostas;
+- História da Tecnologia: A tecnologia de impressão 3D remonta à década de 1980, com as primeiras máquinas baseadas em estereolitografia;
+- Aplicações Diversas: As impressoras 3D são utilizadas em diversas indústrias, como arquitetura, joalheria, automotiva, calçados, design de produto, aeroespacial e medicina;
+- Controvérsias: Uma das maiores polêmicas em relação às impressoras 3D é a possibilidade de imprimir armas de fogo;
+- Impressão em Cores: Já é possível imprimir um objeto que tenha várias cores, o que aumenta o valor dessa solução tecnológica para a indústria em geral;
+- Complexidade dos Objetos: Não existe limite para a complexidade dos objetos impressos, nem para o tamanho da impressão;
+- Personalização de Produtos: A impressão 3D permite um alto grau de personalização de produtos;
+- Produção de Comida: As impressoras 3D já são capazes de produzir comida, como frutas, bolos e chocolates;
+- Impressão de Órgãos Humanos: O recente avanço da tecnologia já possibilita a impressão de órgãos humanos em uma impressora 3D;
+- Auto-replicação: Existem impressoras 3D capazes de criar outras impressoras 3D;
+- Repositórios Online: Websites como o Thingiverse atuam como repositórios online, oferecendo gratuitamente arquivos-fonte para a produção de inúmeros objetos diferentes;
+- Transformação Digital da Indústria: A impressão 3D contribui fortemente para a transformação digital da indústria e da sociedade, permitindo a fabricação local de mercadorias com impressoras 3D.
