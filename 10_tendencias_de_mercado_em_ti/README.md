@@ -255,3 +255,16 @@
 - Falta de privacidade: A produção de um conjunto valioso de informações a respeito dos usuários da IoT;
 - Falta de segurança: A fragilidade de segurança de muitos sistemas da IoT e a necessidade de os usuários adotarem boas práticas de segurança;
 - Esperar o inesperado: A probabilidade de surgirem obstáculos que não se pode prever de antemão à medida que a IoT avança.
+
+## A nova robótica
+
+### Drones
+
+- Definição de Drones: São "robôs que voam", controlados a distância, sem a necessidade de um piloto embarcado. Também são conhecidos como VANT (veículo aéreo não tripulado);
+- História dos Drones: Originalmente concebidos para uso militar, os drones foram inspirados nas bombas voadoras alemãs e nos aeromodelos controlados por rádio;
+- Uso Militar: Os drones foram utilizados em missões de alto risco, como inteligência ou espionagem militar, apoio e controle de tiro de artilharia, cobertura aérea a tropas de infantaria e cavalaria em atividade bélica e controle de mísseis de cruzeiro;
+- Uso Civil: Além do uso militar, os drones têm sido utilizados para fins civis, como fotografia e filmagem, serviços de entrega de produtos, resgates em áreas de difícil acesso, vigilância e segurança, e agricultura;
+- Inteligência Artificial: A maioria dos drones depende de um controle remoto, mas as novas gerações de drones estão ganhando cada vez mais recursos de inteligência artificial;
+- Materiais de Construção: Para o desempenho de voo, os materiais precisam ser leves. Isso tem sido favorecido pelos avanços no campo da nanotecnologia e ciência dos materiais;
+- Primeira Entrega com Drones: Em 7 de dezembro de 2016, a Amazon realizou sua primeira entrega de produtos feita com drones;
+- Tipos de Drones: Existem vários tipos de drones, incluindo quadricópteros, hexacópteros, octocópteros, drones com asa fixa e minidrones.
