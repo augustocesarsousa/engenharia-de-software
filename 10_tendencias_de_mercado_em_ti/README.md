@@ -286,3 +286,13 @@
 - Auto-replicação: Existem impressoras 3D capazes de criar outras impressoras 3D;
 - Repositórios Online: Websites como o Thingiverse atuam como repositórios online, oferecendo gratuitamente arquivos-fonte para a produção de inúmeros objetos diferentes;
 - Transformação Digital da Indústria: A impressão 3D contribui fortemente para a transformação digital da indústria e da sociedade, permitindo a fabricação local de mercadorias com impressoras 3D.
+
+### Cibernética
+
+- Origem e Importância: A cibernética, iniciada em 1942 por Norbert Wiener e Arturo Rosenblueth Stearns, é crucial para o desenvolvimento de várias tecnologias, incluindo a computação digital. Ela aborda questões de recursividade, informação e automação;
+- Definição: A cibernética é o campo que compreende os fluxos de informação que cercam um sistema (biológico ou artificial), incluindo como essa informação é usada pelo sistema para autocontrole;
+- Interdisciplinaridade: A cibernética está intimamente ligada à Física, ao estudo do cérebro humano, à Biologia e à Computação;
+- Ciborgues: Na era da Quarta Revolução Industrial, uma aplicação da cibernética que ganha cada vez mais espaço é a relativa aos ciborgues, organismos dotados de partes orgânicas e cibernéticas combinadas;
+- Aplicações: Os ciborgues no mundo real têm sido destinados a aplicações nobres, como combater as deficiências físicas e mentais das pessoas;
+- Futuro: O futuro reserva a tendência de uma integração ainda maior entre homens e máquinas. A tecnologia da informação passa a ser integralmente acolhida no campo da cibernética;
+- Ciborgues Sociais: Mais recentemente, surgiu uma corrente que defende o conceito de ciborgues sociais, aplicáveis a entidades que não são seres humanos individuais. Isso inclui sistemas como cidades, malhas de estradas, redes de software, corporações, mercados e governos.
