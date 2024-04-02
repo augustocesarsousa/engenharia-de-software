@@ -296,3 +296,17 @@
 - Aplicações: Os ciborgues no mundo real têm sido destinados a aplicações nobres, como combater as deficiências físicas e mentais das pessoas;
 - Futuro: O futuro reserva a tendência de uma integração ainda maior entre homens e máquinas. A tecnologia da informação passa a ser integralmente acolhida no campo da cibernética;
 - Ciborgues Sociais: Mais recentemente, surgiu uma corrente que defende o conceito de ciborgues sociais, aplicáveis a entidades que não são seres humanos individuais. Isso inclui sistemas como cidades, malhas de estradas, redes de software, corporações, mercados e governos.
+
+## A TI dos novos negócios
+
+### LegalTech
+
+- Definição: LegalTech, também conhecida como Tecnologia Legal, refere-se ao uso de novas tecnologias para inovar serviços e negócios na área jurídica. As empresas deste setor são geralmente startups que visam inovar um mercado altamente conservador;
+- Impacto da Digitalização: A digitalização dos processos tem multiplicado as oportunidades no setor jurídico. O uso de novas tecnologias resulta em melhorias na gestão de escritórios de advocacia, armazenamento e gerenciamento de documentos, faturamento e contabilidade;
+- Acesso à Justiça: A transformação digital na advocacia tem proporcionado aos cidadãos acesso a sistemas online que reduzem ou eliminam a necessidade de consultas presenciais com advogados;
+- Desafios: A resistência ao risco por parte dos advogados e a falta de regras claras da OAB sobre publicidade nas atividades de advocacia são alguns dos desafios enfrentados;
+- Pressão do Cliente: Os clientes estão se tornando mais exigentes em relação à tecnologia utilizada nos serviços prestados, o que está pressionando os advogados a adotarem novas tecnologias;
+- Robôs Advogados: A criação de robôs advogados, como o Ross e o Eli, tem permitido aos advogados explorar ao máximo suas capacidades cognitivas, ao mesmo tempo que levanta questões sobre a possível diminuição da demanda por advogados humanos;
+- Iniciativas Brasileiras: No Brasil, destaca-se o San Pedro Valley, polo tecnológico de Belo Horizonte, onde foram desenvolvidas empresas inovadoras na área do Direito, como a Dubbio, Meu Vade Mecum online e Juris Correspondente. Além disso, foi criada a Associação Brasileira de Lawtechs e Legaltechs (AB2L) em 2017;
+- Controvérsias: Ainda há muita controvérsia em torno das tecnologias inovadoras na área jurídica, incluindo a questão de se a revolução industrial está tirando o emprego dos trabalhadores humanos;
+- Outras Soluções Criativas: Além dos robôs advogados, existem outras soluções criativas baseadas na tecnologia da informação, como a Sem Processo, uma startup brasileira que visa facilitar acordos rápidos entre advogados e empresas.
