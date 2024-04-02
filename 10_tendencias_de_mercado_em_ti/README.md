@@ -310,3 +310,13 @@
 - Iniciativas Brasileiras: No Brasil, destaca-se o San Pedro Valley, polo tecnológico de Belo Horizonte, onde foram desenvolvidas empresas inovadoras na área do Direito, como a Dubbio, Meu Vade Mecum online e Juris Correspondente. Além disso, foi criada a Associação Brasileira de Lawtechs e Legaltechs (AB2L) em 2017;
 - Controvérsias: Ainda há muita controvérsia em torno das tecnologias inovadoras na área jurídica, incluindo a questão de se a revolução industrial está tirando o emprego dos trabalhadores humanos;
 - Outras Soluções Criativas: Além dos robôs advogados, existem outras soluções criativas baseadas na tecnologia da informação, como a Sem Processo, uma startup brasileira que visa facilitar acordos rápidos entre advogados e empresas.
+
+### AdTech
+
+- Definição de AdTech: AdTech é a abreviação de Advertising Technology, que se refere ao uso de novas tecnologias, especialmente integradas à tecnologia da informação, para a produção e divulgação de anúncios publicitários;
+- Princípios da AdTech: A mídia precisa da AdTech para monetizar (gerar receita financeira) e a AdTech não pode sobreviver financeiramente sem a mídia;
+- Mídia Programática: É um mecanismo que decide qual anúncio deve ser exibido para qual grupo ou perfil de pessoas. As plataformas mais famosas de mídia programática são o Google e o Facebook;
+- RTB (Real Time Bidding): É um sistema que permite que informações sobre um consumidor e a página ou aplicativo em que ele está posicionado no momento sejam enviadas para uma plataforma de negociação de anúncios, onde os anunciantes fazem lances de compra em frações de segundo;
+- Termos Técnicos em AdTech: Incluem RTB, Ad Exchange, DSP, Ad Network, SSP, DMP e ATD;
+- Google Adwords: É a principal ferramenta de links patrocinados da internet e a principal fonte de receita do Google. Os anúncios são exibidos em forma de links patrocinados quando alguém realiza uma busca;
+- Marketing de Proximidade: É uma tecnologia que permite que as marcas entrem em contato direto com seu público no momento mais pertinente possível. Isso é feito entregando um anúncio no celular de um usuário que esteja fisicamente próximo ao ponto de venda de um cliente.
