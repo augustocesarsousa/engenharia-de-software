@@ -446,3 +446,13 @@
 - Avanços da Tecnologia da Informação: Os avanços da tecnologia da informação tendem a tornar a informação digitalizada mais segura. A redundância de dados e a distribuição de canais de comunicação são alguns dos aspectos que contribuem para essa segurança;
 - Investimento em Segurança Digital: As organizações são pressionadas a investir em segurança digital. É necessário ter uma noção clara dos riscos para dimensionar adequadamente o investimento;
 - Sistemas de Segurança de TI Proativos: Os sistemas de segurança de TI estão se tornando cada vez mais proativos, o que é importante para tornar o ambiente geral mais confiável. Mecanismos como senhas eletrônicas, tokens e autenticação em duas instâncias são exemplos de medidas de segurança adotadas.
+
+### Recursos Humanos
+
+- Transformação Digital Global: A transformação digital é um fenômeno global que afeta todos os contextos e lugares. Mesmo em meio a crises econômicas, como a que o Brasil recentemente enfrentou, a digitalização continua a avançar;
+- Preparação de Recursos Humanos: É crucial preparar os recursos humanos para serem a força de trabalho e empreendedora nesse movimento de transformação digital. A única opção é aderir ao novo paradigma da Quarta Revolução Industrial;
+- Inovação e P&D: A inovação se torna uma necessidade essencial como resposta à Indústria 4.0. As empresas precisam investir em Pesquisa e Desenvolvimento (P&D) e dedicar pessoal competente a essa atividade;
+- Alfabetização Digital: A “alfabetização digital” dos cargos em geral torna-se cada vez mais imprescindível. Gestores e empreendedores, em especial, precisam de uma capacitação contínua em tecnologia da informação;
+- Desafios no Brasil: No Brasil, o maior desafio tecnológico é a falta de recursos humanos qualificados para atender à transformação digital industrial. A maior barreira não reside em recursos financeiros, mas sim em recursos humanos;
+- Empreendedorismo: O empreendedorismo é uma das soluções mais contundentes para a equação dos recursos humanos na Indústria 4.0. É necessário melhorar a formação de empreendedores no Brasil, começando desde a Educação Básica;
+- Profissões Promissoras: Algumas profissões ligadas à TI, como cientista de dados, especialista em Internet das Coisas e técnico em manutenção de drones, parecem bastante promissoras para os próximos anos.
