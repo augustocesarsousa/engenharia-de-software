@@ -388,3 +388,12 @@
 - Observações Importantes:
   - Fraudes com bitcoins geralmente ocorrem em casas de câmbio digitais, não no blockchain;
   - O blockchain não se limita a operações financeiras, podendo revolucionar outros setores.
+
+### EdTech
+
+- EdTech: As novas tecnologias voltadas à educação, ou EdTech, surgem para dar uma nova resposta de efetividade ao crescente número de pessoas sendo educadas no século XXI;
+- App Prova: Uma plataforma tecnológica brasileira que serve de interface entre instituições de ensino e alunos no processo de preparação para o vestibular e o Enem;
+- Moodle: Lançada em 2001, é um software livre de apoio à aprendizagem e um dos mais bem-sucedidos sistemas para estruturação de ambientes virtuais de aprendizagem (AVA);
+- MOOC: Cursos abertos oferecidos por meio de ambientes virtuais de aprendizagem, como o Coursera e o Veduca, que oferecem a oportunidade de ampliar conhecimentos para um grande número de pessoas;
+- Nanodegree: Um “título” reconhecido cada vez mais por empregadores que identifica nos candidatos a empregos um importante diferencial: a iniciativa em investir em suas próprias carreiras para reunir conhecimento técnico específico;
+- Realidade Aumentada e Virtual na Educação: A aplicação da realidade aumentada e virtual na educação, por meio de smartphones, tablets e óculos especiais, proporciona ricas experiências de aprendizado nas mais diversas frentes, como história, geografia, engenharia, medicina, veterinária e treinamentos especializados.
