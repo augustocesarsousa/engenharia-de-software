@@ -456,3 +456,40 @@
 - Desafios no Brasil: No Brasil, o maior desafio tecnológico é a falta de recursos humanos qualificados para atender à transformação digital industrial. A maior barreira não reside em recursos financeiros, mas sim em recursos humanos;
 - Empreendedorismo: O empreendedorismo é uma das soluções mais contundentes para a equação dos recursos humanos na Indústria 4.0. É necessário melhorar a formação de empreendedores no Brasil, começando desde a Educação Básica;
 - Profissões Promissoras: Algumas profissões ligadas à TI, como cientista de dados, especialista em Internet das Coisas e técnico em manutenção de drones, parecem bastante promissoras para os próximos anos.
+
+### Recursos Financeiros
+
+- Investimento em alta tecnologia:
+  - Alto risco, alto retorno.
+  - Investidores de capital de risco (VC investors).
+  - Busca por escalabilidade: startups e unicórnios.
+  - Exemplo: Airbnb, Dropbox, Uber, Snapchat.
+- Retorno do investimento:
+  - Expectativa: 7-2-1 (7 perdas, 2 empates, 1 grande retorno).
+  - Diversificação de aportes.
+  - Critérios de investimento:
+  - Acreditação do empreendedor no negócio.
+  - Bootstrapping (investimento próprio).
+  - Exemplo: Airbnb e caixas de cereais.
+- Dilema do empreendedor:
+  - Abrir mão de parte dos lucros para crescer.
+  - Visão de longo prazo: 100% de um negócio de R$ 100 mil vs 40% de um negócio de R$ 3 milhões.
+- Fontes de financiamento para startups:
+  - Investidores anjo.
+  - Capitalistas de risco.
+  - Financiamento governamental.
+  - Incubadoras e aceleradoras de startups.
+- Incentivos fiscais no Brasil:
+  - PPB (Processo Produtivo Básico): redução de IPI e ICMS.
+  - Lei da Informática: redução de IPI.
+  - Lei do Bem: dedução de IRPJ, CSLL, IPI e depreciação acelerada.
+- Impacto da crise de 2015:
+  - Suspensão da Lei do Bem.
+  - Cancelamento de projetos de inovação.
+  - Fuga de investimentos.
+  - Desindustrialização.
+  - Cortes orçamentários na Finep.
+  - Paralisação do RHAE.
+- Futuro do mercado de tecnologia no Brasil:
+  - Tendência a consumir mais tecnologia estrangeira do que produzir nacional.
+  - Dificuldade de reverter o quadro a curto prazo.
