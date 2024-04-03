@@ -297,7 +297,7 @@
 - Futuro: O futuro reserva a tendência de uma integração ainda maior entre homens e máquinas. A tecnologia da informação passa a ser integralmente acolhida no campo da cibernética;
 - Ciborgues Sociais: Mais recentemente, surgiu uma corrente que defende o conceito de ciborgues sociais, aplicáveis a entidades que não são seres humanos individuais. Isso inclui sistemas como cidades, malhas de estradas, redes de software, corporações, mercados e governos.
 
-## A TI dos novos negócios
+## A TI dos novos negócios I
 
 ### LegalTech
 
@@ -320,3 +320,71 @@
 - Termos Técnicos em AdTech: Incluem RTB, Ad Exchange, DSP, Ad Network, SSP, DMP e ATD;
 - Google Adwords: É a principal ferramenta de links patrocinados da internet e a principal fonte de receita do Google. Os anúncios são exibidos em forma de links patrocinados quando alguém realiza uma busca;
 - Marketing de Proximidade: É uma tecnologia que permite que as marcas entrem em contato direto com seu público no momento mais pertinente possível. Isso é feito entregando um anúncio no celular de um usuário que esteja fisicamente próximo ao ponto de venda de um cliente.
+
+### CleanTech
+
+- Definição e Importância: CleanTech, ou tecnologia limpa, refere-se a tecnologias voltadas para a sustentabilidade ambiental. É uma tendência global que se preocupa com o impacto dos recursos tecnológicos no meio ambiente;
+- Princípios: Os princípios da CleanTech incluem o uso de recursos tecnológicos que demandam menos energia, o emprego de matéria-prima e substâncias menos tóxicas na fabricação dos produtos e esforços para minimizar impactos no descarte dos produtos;
+- TI Verde: A tecnologia da informação verde (Green IT) envolve o cumprimento da legislação ambiental e o diagnóstico dos aspectos e impactos ambientais de atividades relacionadas aos processos industriais;
+- Redução de Gases: Uma das frentes de atuação da tecnologia é a redução de gases relacionados ao aquecimento global. A quantidade de CO2 é proporcional à atividade industrial convencional;
+- Consumo de Energia: Com o aumento do uso de processos digitais, há uma demanda crescente de infraestrutura computacional em todo o mundo, levando a um maior consumo de energia elétrica em TI;
+- Boas Práticas: Existem várias boas práticas que contribuem para a redução do consumo de energia elétrica, como a racionalização e virtualização de servidores, configuração para economia de energia nos computadores e servidores, entre outros;
+- Hardware e Descarte: O hardware tem sua importância na TI verde, com a seleção de materiais mais adequados. O descarte é um dos aspectos mais importantes de uma boa política de gestão ambiental;
+- Visão Holística: Para implementar a TI verde, é necessário adotar uma visão holística sobre o impacto ambiental da tecnologia nas organizações;
+- Cidadania Corporativa: A TI verde contribui para uma melhor interação das organizações com as comunidades locais, regionais e globais;
+- Seleção de Fornecedores: Uma prática que se adota cada vez mais é a seleção de fornecedores de bens e serviços com base em critérios que incluam o desempenho ambiental.
+
+## A TI dos novos negócios II
+
+### FinTech
+
+- O que é FinTech?
+  - FinTech é a junção dos termos "Financial" e "Technologies", que significa tecnologias financeiras;
+  - Refere-se a novas tecnologias e inovações que competem ou reinventam os serviços financeiros tradicionais;
+  - Plataformas como smartphones e aplicativos impulsionam a transformação digital do setor.
+- Exemplos de FinTech no Brasil:
+  - Nubank: cartão de crédito operado por aplicativo, sem necessidade de documentos físicos;
+  - Custo de manutenção mais competitivo que os bancos tradicionais, devido à economia com estrutura física.
+- Criptomoedas: a Disrupção da FinTech:
+  - Bitcoin: a primeira criptomoeda, viabilizando o dinheiro digital;
+  - Tecnologia blockchain garante a segurança das transações, impedindo o gasto duplo;
+  - Valor do bitcoin depende da confiança que as pessoas depositam nele.
+- Histórico do Bitcoin:
+  - Criado em 2008 por Satoshi Nakamoto (pseudônimo);
+  - Valor inicial em 2009 era praticamente nulo (US$ 0,07);
+  - Em 2017, um bitcoin valia quase US$ 5 mil;
+  - Grande oscilação no valor da moeda é comum.
+- Usos do Bitcoin:
+  - Inicialmente, era mais ideológico que prático (atraindo libertários);
+  - Possibilidade de uso por pessoas sem acesso a bancos tradicionais;
+  - Serve como alternativa em países com controle cambial ou hiperinflação.
+- Riscos do Bitcoin:
+  - Alta volatilidade: possibilidade de grandes lucros ou perdas em curto prazo;
+  - Considerado investimento de alto risco;
+  - Maioria das pessoas o utiliza como poupança, não como moeda de troca.
+- Tecnologia Blockchain:
+  - Base para o Bitcoin e outras criptomoedas;
+  - Garante a segurança das transações através da criptografia;
+  - Permite o controle do gasto duplo de moedas virtuais.
+- Funcionamento do Blockchain:
+  - Cada transação é criptografada em todos os computadores da rede;
+  - Chave pública identifica a carteira e lista as transações;
+  - Chave privada é usada para assinar transações e extrair bitcoins;
+  - As transações são validadas por "nós" da rede;
+  - Blocos de transações válidas são adicionados à blockchain.
+- Segurança do Blockchain:
+  - Alta redundância: no mínimo 6 nós validam cada transação;
+  - Fraude exigiria alterar registros em metade da rede e forjar contas;
+  - Blindagem contra fraudes: outros nós invalidariam transações falsas.
+- Mineração de Bitcoins:
+  - Processo de validação de transações e criação de novos bitcoins;
+  - Computadores que validam transações são chamados de "mineradores";
+  - Recebem recompensa em bitcoins por minerar novos blocos;
+  - Número de bitcoins é finito (21 milhões).
+- Benefícios do Blockchain:
+  - Dispensa a necessidade de uma autoridade central;
+  - Maior segurança e transparência nas transações;
+  - Possibilidade de aplicação em diversos setores (loterias, cartórios, contabilidade).
+- Observações Importantes:
+  - Fraudes com bitcoins geralmente ocorrem em casas de câmbio digitais, não no blockchain;
+  - O blockchain não se limita a operações financeiras, podendo revolucionar outros setores.
