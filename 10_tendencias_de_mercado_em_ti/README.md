@@ -397,3 +397,52 @@
 - MOOC: Cursos abertos oferecidos por meio de ambientes virtuais de aprendizagem, como o Coursera e o Veduca, que oferecem a oportunidade de ampliar conhecimentos para um grande número de pessoas;
 - Nanodegree: Um “título” reconhecido cada vez mais por empregadores que identifica nos candidatos a empregos um importante diferencial: a iniciativa em investir em suas próprias carreiras para reunir conhecimento técnico específico;
 - Realidade Aumentada e Virtual na Educação: A aplicação da realidade aumentada e virtual na educação, por meio de smartphones, tablets e óculos especiais, proporciona ricas experiências de aprendizado nas mais diversas frentes, como história, geografia, engenharia, medicina, veterinária e treinamentos especializados.
+
+### MedTech
+
+- A MedTech está transformando a medicina:
+  - A MedTech oferece um futuro promissor para a medicina, com diagnósticos mais precisos, tratamentos personalizados e maior qualidade de vida para os pacientes;
+  - É importante investir em pesquisa e desenvolvimento para tornar as tecnologias MedTech mais acessíveis à população;
+  - A integração da MedTech com o sistema de saúde tradicional é fundamental para garantir o melhor atendimento possível aos pacientes.
+- Exemplos de MedTech no Brasil:
+  - Cirurgia robótica: maior precisão e menos trauma para o paciente;
+  - O cirurgião humano controla os braços robóticos, não os substitui;
+  - Pesquisas visam aperfeiçoar a tecnologia e torná-la mais acessível;
+  - App Conemo: tratamento da depressão através do monitoramento do comportamento;
+  - Desenvolvido na USP e testado na rede pública de saúde;
+  - Oferece estímulos personalizados para aliviar os sintomas da depressão;
+  - Chatbot Docbot: orientação médica personalizada para doenças de baixa complexidade;
+  - Utiliza inteligência artificial para conhecer o perfil e hábitos dos usuários;
+  - Filtra informações confiáveis ​​na internet e oferece um canal de comunicação direto com o paciente;
+  - Exames laboratoriais rápidos e sem agulhas: maior conveniência e precisão;
+  - Coleta de sangue por sucção da pele, sem dor ou aflição;
+  - Pré-análise da amostra no próprio aparelho coletor;
+  - Laudo técnico digital enviado diretamente ao smartphone do paciente.
+- Telemedicina:
+  - O futuro da medicina, com médicos e pacientes conectados por smartphones e outros dispositivos móveis.
+  - Exemplos:
+  - Ecocardiogramas digitais em tempo real, com o médico monitorando o paciente à distância;
+  - Monitoramento da gravidez em tempo real, com acesso à frequência cardíaca fetal e contrações intrauterinas;
+  - Monitoramento do sono através de smartphones, com gráficos precisos da qualidade do sono;
+  - Aplicativos de saúde que atuam como assistentes pessoais, com funções como:
+    - Bioimpedanciametria para diagnósticos;
+    - Podômetro para contagem de passos e distância caminhada;
+    - Monitoramento da ingestão de calorias;
+    - Lembretes para beber água e praticar atividade física.
+- MedTech para idosos:
+  - Robôs cuidadores que proporcionam companhia, interação e monitoramento da saúde;
+  - Exemplo: sistema Wilson da startup curitibana Wilson;
+  - Reduz a solidão e os riscos associados a morar sozinho;
+  - Mantém a família informada sobre o estado de saúde do idoso.
+
+## O calcanhar de Aquiles da nova TI
+
+### Segurança
+
+- Profissionalização dos Crackers e Cibercriminosos: A digitalização de processos em empresas aumenta a vulnerabilidade a ataques de crackers e cibercriminosos. No entanto, a indústria de segurança também está se profissionalizando para combater essas ameaças;
+- Oportunidades de Negócios em Segurança Digital: A segurança é um fator crítico na Indústria 4.0, mas também representa uma grande oportunidade de negócios. É provável que vejamos um aumento de fornecedores especializados em segurança digital;
+- Espionagem Industrial e Inteligência Competitiva: A preocupação com a espionagem industrial sempre existiu nas organizações. Com a digitalização, os canais de informação aumentam, o que pode levar a vazamentos indesejados. No entanto, a tecnologia da informação também fornece soluções para esses problemas;
+- Segurança da Informação e Segredo Industrial: A segurança da informação voltada para a preservação do segredo industrial é um dos objetivos mais relevantes da segurança digital na Indústria 4.0;
+- Avanços da Tecnologia da Informação: Os avanços da tecnologia da informação tendem a tornar a informação digitalizada mais segura. A redundância de dados e a distribuição de canais de comunicação são alguns dos aspectos que contribuem para essa segurança;
+- Investimento em Segurança Digital: As organizações são pressionadas a investir em segurança digital. É necessário ter uma noção clara dos riscos para dimensionar adequadamente o investimento;
+- Sistemas de Segurança de TI Proativos: Os sistemas de segurança de TI estão se tornando cada vez mais proativos, o que é importante para tornar o ambiente geral mais confiável. Mecanismos como senhas eletrônicas, tokens e autenticação em duas instâncias são exemplos de medidas de segurança adotadas.
